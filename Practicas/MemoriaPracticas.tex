@@ -34,6 +34,9 @@
 \usepackage{enumitem}
 \usepackage{mathptmx}
 
+\usepackage{titletoc,tocloft}
+\setlength{\cftsubsecindent}{2cm}
+\setlength{\cftsubsubsecindent}{4cm}
 
 
 \begin{document}
@@ -56,16 +59,14 @@
 \\[2cm]
 
 
-
-
-
 % TITLE SECTION
 \HRule \\[0.4cm]
-{ \huge \bfseries Memoria de Prácticas}\\[0.4cm] % Title of your document
-\HRule \\[2.5cm]
+{ \huge \bfseries Memoria de Prácticas}\\[0.2cm] % Title of your document
+\HRule \\[1.5cm]
 
 \textsc{\Large Máster Universitario En Formación del Profesorado de Ed.Secundaria, Bachillerato, FP e Idiomas }\\[0.7cm]
-\textsc{ Especialidad en Informática y Tecnología }\\[1cm]
+\textsc{\Large Especialidad en Informática y Tecnología }\\[1cm]
+\textsc{\Large Curso 2018-2019}\\[2cm]
 
 % AUTHOR SECTION
 \begin{flushright}
@@ -76,13 +77,13 @@ CENTRO: Escuela Politécnica Giner\linebreak
 
 \vspace{1cm}
 
-% DATE SECTION
-{ {2019}}\\[3cm]
-% LOGO SECTION
+
 
 \vfill % Fill the rest of the page with whitespace
 
 \end{titlepage}
+
+\afterpage{\blankpage}
 
 \newgeometry{textwidth=15cm, textheight=22.5cm, top=3.5cm, bottom=3.5cm,left= 3cm,right=3cm}
 
@@ -90,9 +91,11 @@ CENTRO: Escuela Politécnica Giner\linebreak
 \setlist[itemize,2]{topsep=0mm}
 \setlist[itemize]{itemsep=0mm}
 
+\setlength{\parskip}{8pt} %Espacio entre parrafos
+
 \afterpage{\blankpage}
 \pagenumbering{roman}
-\setlength{\parskip}{8pt}
+
 
 % ÍNDICE
 \tableofcontents % indice de contenidos
@@ -103,18 +106,18 @@ CENTRO: Escuela Politécnica Giner\linebreak
 \pagenumbering{arabic} 
 
 
-
 \section{INTRODUCCIÓN} % 1-2 paginas
-%En este primer apartado de la memoria de prácticas, se va a proceder a realizar una descripción sobre la estancia personal en el centro de prácticas.
 
 En este primer apartado de la memoria de prácticas, se va a proceder a realizar una breve descripción sobre las expectativas personales, la contextualización del centro y la documentación que se ha manejado.
 
+\subsection{Expectativas personales}
 En primer lugar, es necesario destacar que es la primera vez que he tenido la ocasión de ejercer como docente, por tanto, existían unas expectativas que partían de la base de aprender como ejercer la docencia y eliminar cualquier posible miedo que se pueda tener en el aula. Por tanto, durante todas las clases en las que he asistido, he tenido una actitud de observación. Intentando aprender sobre situaciones en el aula puesto que en un futuro no me encontrare acompañado por ningún docente. También he tenido una actitud de interacción con los alumnos lo máximo posible, siendo una persona extrovertida. De esta forma he conseguido eliminar cualquier miedo que pueda existir.
 
 Por otro lado, me he dado cuenta que la docencia requiere una serie de horas que el docente necesita para preparar las sesiones que impartirá en clase. De esta forma, he comprobado también que los niveles superiores son más complejos que los inferiores, puesto que requiere un mayor preparamiento de las sesiones a impartir. Sin embargo, también he comprobado que el temario no es complejo, por lo que los miedos a explicar el contenido de una asignatura han remitido.
 
 En cuanto al desarrollo profesional, puedo destacar el aprendizaje de aptitudes y conocimientos. Por tanto, no solo he aprendido a educar y enseñar a terceros, sino que también he recuperado conocimientos ya olvidados. Entre conocimientos muy concretos puedo destacar aquellos relacionados con las redes de computadoras. De esta forma, también me he dado cuenta que las practicas me han ayudado a obtener conocimientos, pero lo importante y lo que mejor he asimilado han sido las formas de actuar ante diversas situaciones.
 
+\subsection{Contexto del centro}
 El primer día de contacto con el tutor me enseño el centro, indicándome los lugares e instalaciones que este dispone. Me di cuenta que, para ser un centro pequeño en dimensiones, tiene un gran número de alumnos matriculados, rondando los 500. Por tanto, a simple vista se puede observar una gran gestión del centro.
 
 Para situarnos en contexto, las practicas se han desarrollado en el centro Politécnica Giner, este centro ofrece una serie de enseñanzas en distintos niveles.
@@ -145,7 +148,7 @@ Respecto a las enseñanzas que imparte son las siguientes:
 
 Durante estas prácticas, he asistido a la impartición de asignaturas en el ámbito de la informática. Concretamente, he asistido a la docencia de asignaturas relativas a la enseñanza de \textit{Informática y Comunicaciones} de Formación Básica Profesional y \textit{Sistemas Microinformáticos y Redes} de Grado Medio.
 
-El centro educativo se encuentra en el distrito de "Latina", concretamente en el barrio de Campamento, barrio mayormente de población obrera. La titularidad del centro es Privado/Concertado, sin embargo, los niveles en los que he asistido son públicos. 
+El centro educativo se encuentra en el distrito de ''Latina", concretamente en el barrio de Campamento, barrio mayormente de población obrera. La titularidad del centro es Privado/Concertado, sin embargo, los niveles en los que he asistido son públicos. 
 
 Teniendo en cuenta la situación geográfica del centro y el nivel educativo en el que he asistido, el rechazo escolar es una situación a la que los alumnos están predispuestos. 
 
@@ -153,6 +156,7 @@ Centrándonos en la organización del centro, podemos destacar que existe un equ
 
 El centro tiene un total de 42 profesores, siendo 32 de ellos titulares, 10 adjuntos, 31 fijos y 11 temporales. También existe una persona encargada de la administración y 3 personas responsables de la limpieza del centro.
 
+\subsection{Documentación manejada}
 Por último, respecto a la documentación que se ha manejado, ha sido la siguiente:
 \begin{itemize}
 \item \textbf{Programación General Anual (P.G.A)}. Se ha revisado la programación de algunas de las asignaturas de Formación Profesional Básica y de Grado Medio. También se ha revisado las unidades de dichas asignaturas y el criterio de evaluación.
@@ -357,7 +361,6 @@ Con estas actividades, concluye lo que ha sido mi unidad didáctica, en la que h
 
 
 \section{CONCLUSIÓN Y VALORACIÓN PERSONAL} %1-2 paginas
-
 A lo largo del desarrollo de las prácticas en el centro docente, he establecido relaciones con distintos profesores que me han aportado muchos conocimientos tanto en el ámbito de ejercer la docencia como a nivel de contenidos, algo de lo que estoy muy agradecido. Como ya he comentado, he descubierto una gran diferencia entre los distintos niveles de alumnos, pues cada nivel tiene alumnos que se encuentran en distintas etapas de la adolescencia. 
 
 Otro aspecto del que me he dado cuenta es que existen ciertos alumnos que causan la inestabilidad total de un grupo en su mayoría. En este aspecto, he tenido la ocasión de observar un par de alumnos que eran capaces de alterar al resto, y, que, en sus ausencias, el grupo permanecía totalmente normal. También se ha visto este mismo efecto con un alumno que tenía una conducta similar al TDAH. Su ausencia producía un mayor rendimiento en los compañeros que le rodeaban.
