@@ -167,11 +167,17 @@ Propone dar una solución al problema actual mediante el uso de herramientas y m
 %En primer lugar, y, antes de comenzar la investigación, se ha acudido a los datos del INE (Instituto Nacional de Estadística) y a los del ministerio de educación, ciencia y deportes (MECD).
 %Como la investigación va dirigida a los alumnos de la ESO, se ha buscado información respectiva a este nivel educativo. 
 \justify
-El la actualidad existen numerosos informes acerca del uso de la ciencia de datos y sus tecnicas en el ambito educativo. 
+El la actualidad existen numerosos informes acerca del uso de la ciencia de datos y sus técnicas en el ámbito educativo. Para la realización de este TFM se han analizado distintas publicaciones de la base de datos científica de ScienceDirect. Para realizar la búsqueda se han utilizado las siguientes palabra claves: educational, data y mining. Se debe recordar que el éxito de la búsqueda depende de estas palabras claves.
+
+\justify
+De la búsqueda anterior se han obtenido 160 artículos. Posteriormente se han seleccionado aquellos de los últimos 4 años (2016,2017,2018 y 2019). De esta forma obtenemos resultados actuales. Filtrando por fechas, hemos conseguido reducir los resultados a 73 artículos. Se ha realizado una observación sobre los artículos obtenidos y se ha comprobado la existencia de artículos que no resultaban útiles en esta investigación. Por tanto, se ha realizado otra búsqueda utilizando las claves anteriores y añadiendo la clave "prediction". Esta vez, se han obtenido 26 resultados. De todos los resultados obtenido, se han seleccionado 15 artículos que se consideran útiles y que servirán de ayuda.
+
 \justify
 En el artículo de prensa de Fernandes \cite{Fernandes2018}, se muestra el uso de técnicas como los métodos de clasificación y el algoritmo predictivo de GBM (Gradient Boosting Model) con el objetivo de obtener aquellas variables en el entorno del alumno, que hace que este obtenga mejores o peores resultados escolares. Este estudio, además, tiene el objetivo de aportar información útil para los representantes políticos en el ámbito educativo, el consejo escolar y los profesores con el objetivo de que estos puedan realizar políticas públicas, materiales didácticos y trabajo social para beneficiar a los estudiantes.
+
 \justify
 Los datos escolares a estudiar proceden de alumnos de colegios de un Distrito Federal de Brasil durante el 2015 y el 2016. Estos datos se han obtenido a partir de la base de datos de iEducar que contiene atributos relacionados con cada alumno. 
+
 \justify
 Algunas de las variables que se estudian en el articulo anterior pertenecen concretamente al ámbito personal, social y geográfico del alumno. Estas variables son:
 \begin{enumerate}[itemsep=0mm]
@@ -183,6 +189,7 @@ Algunas de las variables que se estudian en el articulo anterior pertenecen conc
 \item El genero. 
 \item El entorno en el aula.
 \end{enumerate}
+
 \justify
 En esta investigacion se utiliza la metodologia CRISP-DM (del ingles Cross Industry Standard Process for Data Mining) que es una metodologia frecuente en el desarrollo de proyectos de Data Mining.
 \justify
@@ -202,7 +209,7 @@ En el articulo de R.Asif et al. \cite{AsifR2017}, se analiza el rendimiento de l
 \end{enumerate}
 \justify
 Los datos utilizados en esta investigacion proceden de las calificaciones del cuarto año del grado de ingenieria de Tecnologia Informática de una universidad de Pakistan. Se van a tomar 210 alumnos que se han matriculado en los cursos de 2007-2008 y 2008-2009. Los datos contienen variables relacionadas con las calificaciones de pre-admision de los alumnos y de las calificaciones de estos en los siguientes 4 años del programa de grado.
-Por tanto, para lograr los objetivos establecidos, R.Asif et al. \cite{AsifR2017}, va a utilizar los arboles de decision y el clustering como tecnicas de mineria de datos.
+Por tanto, para lograr los objetivos establecidos, R.Asif et al. \cite{AsifR2017}, va a utilizar los arboles de decision y clustering como tecnicas de mineria de datos.
 \justify
 
 
@@ -230,43 +237,56 @@ Uno de los pilares básicos en el diseño de una investigación es indicar el ca
 \justify
 La norma UNE 166006:2018 tiene como objeto facilitar la formación y estructuración del proceso de recogida, análisis y comunicación de la información sobre el entorno de una organización. No solo muestra un proceso, sino que también establece roles, responsabilidades y políticas.
 
+\justify 
+La UNE 166006:2018 establece un proceso generico para satisfacer los objetivos deseados y contemplar la realizacion de la vigilancia e inteligencia. Este proceso se divide en distintas etapas basicas. En la imagen  \ref{fig:UNEsquema} se puede observar cada etapa.
+\begin{figure*}[h]
+\centering
+ \includegraphics[width=0.8\textwidth]{recursos/UNEEsquema}
+\caption{Proceso de la vigilancia e inteligencia}
+\label{fig:UNEsquema}
+\end{figure*}
+
 \justify
-Existe una serie de procesos o metodologías para llevar a cabo proyectos de ciencia de datos. Entre ellos podemos destacar los siguientes: 
-%file:///C:/Users/abelt/Desktop/TFM%20Educacion/303-601-2-PB.pdf
+En los proximos puntos se va a describir las actividades que se van a realizar en este proceso.
+
+\subsection{Identificación de necesidades, fuentes de información y medios de acceso}
+\subsubsection{Identificación de necesidades de información}
+Para realizar la identificacion de las necesidades de información se va a partir de varios factores como son:
 \begin{itemize}
-\item Descubrimiento de Conocimiento en Bases de Datos (Knowledge Discovery in Databases - KDD):
-\begin{figure*}[h]
-\centering
- \includegraphics[width=0.8\textwidth]{recursos/KDDEsquema}
-\caption{Esquema KDD}
-\label{fig:EsquemaKDD}
-\end{figure*}
-\item SEMMA
-\begin{figure*}[h]
-\centering
- \includegraphics[width=0.8\textwidth]{recursos/SEMMA.jpg}
-\caption{Esquema SEMMA}
-\label{fig:EsquemaSEMMA}
-\end{figure*}
-\FloatBarrier
-\item CRISP-DM
-\begin{figure*}[h]
-\centering
- \includegraphics[width=0.8\textwidth]{recursos/CRISPDMEsquema}
-\caption{Esquema SEMMA}
-\label{fig:CRISPDMEsquema}
-\end{figure*}
-\FloatBarrier
+\item las demandas esperadas o manifestadas por (en este caso) una unidad de la consejeria de educacion.
+\item el analisis, la evolucion de productos, procesos, materiales y tecnologias en el ambito de la mineria de datos educativos.
 \end{itemize}
-%imagen :http://fcojlanda.me/es/ciencia-de-los-datos/kdd-y-mineria-de-datos-espanol/
 
-\justify
-En este apartado, se va a presentar la forma en la que se va a realizar la investigación. En primer lugar, se va a realizar un proceso ETL, posteriormente se va a realizar un análisis descriptivo mediante sus técnicas que se explicaran posteriormente, además se va a incluir técnicas de aprendizaje no supervisada en este análisis.
-Una vez que se ha realizado el análisis descriptivo, se va a realizar un análisis predictivo. En este análisis se va a utilizar técnicas de aprendizaje supervisadas.
+\subsubsection{Identificación de fuentes internas y externas de información}
+Teniendo en cuenta las principales necesidades de informacion, se debe identificar las fuentes de informacion y recursos disponibles ya sean internos o externos a la organizacion. En este caso, se van a utilizar las siguientes fuentes:
+\begin{itemize}
+\item Fundamentalmente se va a utilizar documentos y recursos internos de la organizacion como van a ser:
+\begin{itemize}
+\item Repositorios documentales.
+\item Carpetas locales.
+\item Bases de datos.
+\item Etc.
+\end{itemize}
+\item Fuentes documentales a las que tiene acceso a la organizacion, ya sea en soporte fisico (revistas, catalogos, etc.) como en soporte electronico. Ademas se utilizaran recursos de informacion en Internet (portales, noticias, redes sociales, foros, etc). 
+\item Personas con conocimientos o experiencias relacionadas con la necesidades de informacion. En este aspecto se van a realizar distintas reuniones con las personas encargadas de esta unidad de la consejeria de educacion.
+\item Documentacion tecnica como reglamentaciones, especificaciones, propiedad industrial e intelectual o normas.
+\item Resultados de analisis existentes sobre las tendencias de futuro preferentemente en el ambito educativo.
+\end{itemize}
 
-\subsection{Proceso de Extracción, Extracción y Carga}
+\subsection{Planificacion de la realizacion de la vigilancia e inteligencia}
+Para realizar la planificacion del proceso, se debe tener en cuenta si se requiere el uso de nuevas areas desconocidas que puedan llevar a la busqueda y a la investigacion, o si se va a realizar un seguimiento sistematico de areas que ya estan identificadas. En el caso de esta investigacion, se va a utilizar metodos y tecnicas ya identificadas, sin embargo como se puede esperar, los objetivos son distintos a otras investigaciones.
+
+
+\subsection{Busqueda y tratamiento de la informacion}
 \justify
-En primer lugar, se va a realizar un tratamiento de datos, para ello, se utilizará la técnica conocida como ETL (extracción, transformación y carga) que consiste básicamente en obtener los datos de la fuente de origen (bases de datos, ficheros Excel, ficheros JSON, etc), seleccionar aquellos datos que convengan al estudio, transfórmalos según las necesidades que se tenga y depurarlos (evitando así datos erróneos). (Prakash, 2017) (Guillermo Matos, 2006) (Sharma, 2014).
+La informacion fundamentalmente se encontrara en bases de datos internas, aunque se va acceder a bases de datos externas en caso de necesidad para cumplimentar la informacion. En este aspecto, se debe recurrir a la ayuda de personas con conocimeintos sobre el estado de las bases de datos. Como cualquier organizacion, la consejeria de educacion maneja grandes volumenes de datos, por tanto, se debe tener conocimiento sobre donde se puede encontrar la informacion que satisfaga con las necesidades. 
+El desconocimiento del estado de las bases de datos conlleva la inversion de una gran cantidad de tiempo en la busqueda de los datos relevantes. 
+\justify
+Una vez que se tienen los datos, muchas veces es necesario realizar un tratamiento de estos, que consiste en una limpieza y una normalizacion de los mismos. Muchas veces este tratamiento conlleva la convesion de datos, como por ejemplo fechas, correccion de datos, etc.
+
+\subsubsection{Proceso de Extracción, Extracción y Carga}
+\justify
+Para realizar este tratamiento de datos se utilizará la técnica conocida como ETL (extracción, transformación y carga) que consiste básicamente en obtener los datos de la fuente de origen (bases de datos, ficheros Excel, ficheros JSON, etc), seleccionar aquellos datos que convengan al estudio, transfórmalos según las necesidades que se tenga y depurarlos (evitando así datos erróneos). (Prakash, 2017) (Guillermo Matos, 2006) (Sharma, 2014).
 Para realizar este tratamiento, se ha va a utilizar Pentaho BI, que es un conjunto de programas libres para realizar entre otras muchas actividades, las técnicas de ETL. Concretamente, se ha utilizado la herramienta Spoon para desarrollar esta técnica. 
 Una vez que se tienen los datos limpios y estructurados, se pueden realizar dos operaciones:
 \justify
@@ -275,7 +295,8 @@ Una vez que se tienen los datos limpios y estructurados, se pueden realizar dos 
 \item  En segundo lugar, se puede almacenar la información en un texto plano para poder trabajar con herramientas de análisis descriptivo y predictivo. Estos análisis se van a realizar a través del entorno y lenguaje de programación R, que es una referencia en el ámbito de la estadística.
 \end{enumerate}
 
-\subsection{Análisis Descriptivo}
+
+\subsubsection{Análisis Descriptivo}
 \justify
 El análisis predictivo (también conocido como estadísticas predictivas) se encarga de resumir los datos en bruto para que puedan ser interpretados. Estos análisis son útiles ya que permiten aprender sobre comportamientos o patrones pasados e entender cómo pueden influir en los resultados futuros. En este tipo de análisis se van a utilizar tanto métodos graficos como medidas resumen.
 \justify
@@ -295,8 +316,15 @@ El QQ-plot se va a utilizar para evaluar la cercanía de los datos a una distrib
 %(https://www.sergas.es/gal/documentacionTecnica/docs/SaudePublica/Apli/Epidat4/Ayuda/Ayuda_Epidat_4_Analisis_descriptivo_Octubre2014.pdf)
 Por otro lado, se va a complementar el análisis descriptivo mediante el aprendizaje no supervisado, donde también se extraerán otras características de los datos.
 
-\subsection{Machine Learning}
-\subsubsection{Aprendizaje No Supervisado}
+
+\justify
+%En este apartado, se va a presentar la forma en la que se va a realizar la investigación. En primer lugar, se va a realizar un proceso ETL, posteriormente se va a realizar un análisis descriptivo mediante sus técnicas que se explicaran posteriormente, además se va a incluir técnicas de aprendizaje no supervisada en este análisis.
+%Una vez que se ha realizado el análisis descriptivo, se va a realizar un análisis predictivo. En este análisis se va a utilizar técnicas de aprendizaje supervisadas.
+
+
+
+\subsubsection{Machine Learning}
+\paragraph {Aprendizaje No Supervisado}
 \begin{enumerate}
 \item Algoritmos de Clustering. El objetivo de estos algoritmos consiste en investigar si los datos pueden ser organizados en grupos o \textit{clusters} que posean caracteristicas similares. %http://www.iesta.edu.uy/wp-content/uploads/2014/05/Escueladeverano_RegionalNorteSalto_2013_PresentacionNoSupervisado_Aspirot_Castro1.pdf 
 Los metodos de clustering tienen la caracteristica comun que para poder llevar a cabo las agrupaciones necesitan definir y cuantificar la similitud entre las observaciones. Por ejemplo la distancia euclidea, la distancia de Manhattan, la correlacion, el indice de Jaccard, etc. %https://rpubs.com/Joaquin_AR/310338
@@ -312,7 +340,7 @@ Para realizar este analisis, se va a utilizar el algoritmo de K-Means. %https://
 %https://machinelearningmastery.com/descriptive-statistics-examples-with-r/
 %http://cms.dm.uba.ar/academico/materias/verano2015/estadisticaQ/descriptiva.pdf
 
-\subsubsection{Aprendizaje Supervisado}
+\paragraph{Aprendizaje Supervisado}
 \justify
 Una vez terminado el análisis descriptivo, se va a realizar un análisis predictivo. Se debe tener en cuenta, que, dentro de la ciencia de datos, existen técnicas de aprendizaje automáticas, cuyo objetivo es la construcción de un sistema que sea capaz de aprender a resolver problemas sin la intervención de un humano. \cite{Marin2018}.
 \justify
@@ -320,11 +348,11 @@ El aprendizaje supervisado consiste en la búsqueda de patrones en datos histór
 Algunos de los algoritmos que se van a utilizar son:
 \begin{enumerate}
 \item Arboles de decisión
-\justify
+
 Se basa en el descubrimiento de patrones a partir de ejemplos. Un árbol de decisión está formado por un conjunto de nodos (de decisión) y de hojas (nodos-respuesta).
-\justify
+
 Los nodos están asociados a los atributos y tiene varias ramas que salen de él (dependiendo de los valores que tomen la variable asociada). Estos nodos pueden asemejarse a preguntas que, dependiendo de la respuesta que conlleve, se tomara un flujo en las ramas salientes.
-\justify
+
 Los nodos respuesta están asociados a la clasificación que se desea proporcionar, devolviendo así la decisión del árbol con respecto al ejemplo de entrada utilizado.
 
 \begin{figure*}[htb]
@@ -336,15 +364,50 @@ Los nodos respuesta están asociados a la clasificación que se desea proporcion
 \FloatBarrier
 
 
-\item Clasificación de Naïve Bayes
+\item Clasificación de Naïve Bayes.
+
+Es un algoritmo que se basa en la tecnica de clasificacion utilizando el teorema de Bayes.
+
+El algoritmo es capaz de agrupar un registro mediante las caracteristicas de este. Para ello aplica probabilidades condicionales de las caracteristicas para determinar a que categoria pertenece. 
+
+Por ejemplo, una fruta puede considerarse una manzana si es de color rojo, redonda y tiene un determinado peso.
+
+\begin{figure*}[htb]
+\centering
+ \includegraphics[width=0.4\textwidth]{recursos/BayesFormula}
+\caption{Teorema de Bayes}
+\label{fig:BayesFormula}
+\end{figure*}
+\FloatBarrier
+
 \item Regresión Logística
+
+Es un algoritmo de regresion que se utiliza para predecir el resultado de una variable categorica en funcion de las variables independientes o predictoras. Para predecir el resultado, se establecen pesos en funcion de la puntuacion dada a cada variable independiente.
+
 \item Redes Neuronales
+%https://www.tuinteligenciaartificial.es/las-redes-neuronales-en-la-inteligencia-artificial-explicacion-clara-y-sencilla/
+Las redes neuronales son un algoritmo de inteligencia artificial que se inspira en los mecanismos presentes en la naturaleza. Las neuronas envian señales electricas de manera fuerte o debil a otras neuronas. La combinacion de todas las conexiones entre neuronas es lo que genera el conocimiento. Estas señales se envian cuando existe unos estimulos (inputs) externos a traves de los sentidos. A lo largo de la vida, las neuronas aprenden que deben hacer a partir de dichos estimulos y por lo tanto, los seres vivos aprenden a actuar ante distintas señales y situaciones. El funcionamiento de las redes neuronales en la inteligencia artificial es similar.
+
+\begin{figure*}[htb]
+\centering
+ \includegraphics[width=0.4\textwidth]{recursos/red-neuronal}
+\caption{Red Neuronal}
+\label {fig:RedNeuronal}
+\end{figure*}
+\FloatBarrier
+
+Como se puede observar en la figura \ref{fig:RedNeuronal}, la primera fila (con neuronas de color rojo), se conocen como nodos de entrada y son aquellos que se encargan de recoger la informacion. Los nodos en la gama azul son los que se conocen como nodos de salida. Los nodos situados en el medio son aquellos que se encargan de hacer el aprendizaje, y se conocen como nodos ocultos.
+
+En primer lugar, se obtiene la información a partir de los nodos de entrada, una vez que se tiene la informacion, se envia a las capas ocultas, que se activan o no dependiendo del aprenziaje previo. Los nodos ocultos se activan dependiendo de una serie del resultado de unas operaciones matematicas. Si los nodos se activan, entonces enviaran la informacion a la siguiente capa.
+
 \item Potenciacion del gradiente
+Es un metodo que se encarga de construir modelos de manera secuencial, cada uno de ellos se centra en los datos que el anterior modelo clasificaba mal.
 \item Random Forest
 \item Combinacion de modelos
 \end{enumerate}
 
-
+\subsection{Distribución y Almacenamiento}
+Respecto a la distribucion de la informacion, esta no podra salir de la consejeria de educacion. Aunque se trate de datos anonimizados y agregados, se trata de datos de caracter sensible y no pueden ser distribuidos. Por otro lado, dichos datos se almacenaran en un gestor de bases de datos MySQL. Este gestor se encontrara en un servidor de la Consejeria de Educación. Solo se va a poder acceder a dicho servidor desde la propia sede.
 
 
 \section{ANÁLISIS DE RESULTADOS}

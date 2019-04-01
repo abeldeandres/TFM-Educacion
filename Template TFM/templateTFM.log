@@ -1,60 +1,61 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.26)  8 FEB 2018 07:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  1 APR 2019 19:13
 entering extended mode
- restricted \write18 enabled.
- file:line:error style messages enabled.
- %&-line parsing enabled.
-**templateTFM.tex
-(./templateTFM.tex
-LaTeX2e <2015/01/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/paper/paper.cls
+**./templateTFM.tex
+(templateTFM.tex
+LaTeX2e <2018-12-01>
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/paper\paper.cls"
 Document Class: paper 2008/05/30 1.0l LaTeX document class (wm).
-\hours=\count79
-\minutes=\count80
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+\hours=\count80
+\minutes=\count81
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size12.clo"
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \beforetitlespace=\skip41
-\c@part=\count81
-\c@section=\count82
-\c@subsection=\count83
-\c@subsubsection=\count84
-\c@paragraph=\count85
-\c@subparagraph=\count86
+\c@part=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
 \exampleindent=\skip42
-\c@figure=\count87
-\c@table=\count88
+\c@figure=\count88
+\c@table=\count89
 \abovecaptionskip=\skip43
 \belowcaptionskip=\skip44
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/afterpage.sty
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\afterpage.st
+y"
 Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@output=\toks14
-\AP@partial=\box26
-\AP@footins=\box27
+\AP@partial=\box27
+\AP@footins=\box28
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
+sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.st
+y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.s
+ty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifvtex.
+sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.
+sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count89
-\Gm@cntv=\count90
-\c@Gm@tempcnt=\count91
+\Gm@cnth=\count90
+\Gm@cntv=\count91
+\c@Gm@tempcnt=\count92
 \Gm@bindingoffset=\dimen103
 \Gm@wd@mp=\dimen104
 \Gm@odd@mp=\dimen105
@@ -65,6 +66,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks16
 
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
+cfg")
 
 Package geometry Warning: Over-specification in `h'-direction.
     `width' (426.79134pt) is ignored.
@@ -73,104 +76,120 @@ Package geometry Warning: Over-specification in `h'-direction.
 Package geometry Warning: Over-specification in `v'-direction.
     `height' (640.187pt) is ignored.
 
-) (/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/09/25 3.9l The Babel package
+) ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.st
+y"
+Package: babel 2018/11/13 3.27 The Babel package
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-spanish/spanish.ldf
-Language: spanish.ldf 2014/04/24 v5.0n Spanish support from the babel system
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\switch.def
+"
+File: switch.def 2018/11/13 3.27 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/babel-spanish\span
+ish.ldf"
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/09/25 3.9l Babel common definitions
-\babel@savecnt=\count92
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2018/11/13 3.27 Babel common definitions
+\babel@savecnt=\count93
 \U@D=\dimen111
+
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
+ef")
+\bbl@dirlevel=\count94
 )
 \es@quottoks=\toks17
-\es@quotdepth=\count93
-Package babel Info: Making " an active character on input line 516.
-Package babel Info: Making . an active character on input line 617.
-Package babel Info: Making < an active character on input line 662.
-Package babel Info: Making > an active character on input line 662.
+\es@quotdepth=\count95
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2015/03/17 v1.2c Input encoding file
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks18
 \inpenc@posthook=\toks19
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/applemac.def
-File: applemac.def 2015/03/17 v1.2c Input encoding file
-))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
-)
-Package graphics Info: Driver file: pdftex.def on input line 94.
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx.
+sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics.
+sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\graph
+ics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-\Gread@gobject=\count94
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdfte
+x.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.st
+y"
+Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.st
+y"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty
+"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
 \ex@=\dimen114
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty
+"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen115
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 1999/12/14 v2.01 operator names
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty
+"
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count95
-LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count96
-\leftroot@=\count97
-LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count98
-\DOTSCASE@=\count99
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
+\inf@bad=\count96
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count97
+\leftroot@=\count98
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count99
+\DOTSCASE@=\count100
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
 \big@size=\dimen116
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
 \dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
 \tag@help=\toks21
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
 \andhelp@=\toks22
 \eqnshift@=\dimen117
 \alignsep@=\dimen118
@@ -182,41 +201,51 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip46
 \multlinetaggap=\skip47
 \mathdisplay@stack=\toks24
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.s
+ty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.
+sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count107
+\c@float@type=\count108
 \float@exts=\toks25
-\float@box=\box30
+\float@box=\box31
 \@float@everytoks=\toks26
-\@floatcapt=\box31
+\@floatcapt=\box32
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/changepage/changepage.sty
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/placeins\placeins.
+sty"
+Package: placeins 2005/04/18  v 2.2
+)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/changepage\changep
+age.sty"
 Package: changepage 2009/10/20 v1.0c check page and change page layout
-\c@cp@cntr=\count108
-\cp@tempcnt=\count109
+\c@cp@cntr=\count109
+\cp@tempcnt=\count110
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\subcaption
+.sty"
+Package: subcaption 2018/05/01 v1.1-162 Sub-captions (AR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.st
+y"
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.s
+ty"
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen123
 \captionmargin@=\dimen124
 \captionwidth=\dimen125
@@ -225,47 +254,80 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen128
 \caption@hangindent=\dimen129
 )
-\c@ContinuedFloat=\count110
+\c@caption@flags=\count111
+\c@ContinuedFloat=\count112
 Package caption Info: float package is loaded.
 )
-\c@subfigure=\count111
-\c@subtable=\count112
+\c@subfigure=\count113
+\c@subtable=\count114
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/algorithms/algorithm.sty
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\ragged2e.sty"
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ms\everysel.sty"
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+\CenteringLeftskip=\skip48
+\RaggedLeftLeftskip=\skip49
+\RaggedRightLeftskip=\skip50
+\CenteringRightskip=\skip51
+\RaggedLeftRightskip=\skip52
+\RaggedRightRightskip=\skip53
+\CenteringParfillskip=\skip54
+\RaggedLeftParfillskip=\skip55
+\RaggedRightParfillskip=\skip56
+\JustifyingParfillskip=\skip57
+\CenteringParindent=\skip58
+\RaggedLeftParindent=\skip59
+\RaggedRightParindent=\skip60
+\JustifyingParindent=\skip61
+)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/algorithms\algorit
+hm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks27
-\c@algorithm=\count113
+\c@algorithm=\count115
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/multirow\multirow.
+sty"
+Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
+\multirow@colwidth=\skip62
+\multirow@cntb=\count116
+\multirow@dima=\skip63
 \bigstrutjot=\dimen130
 )
-(./templateTFM.aux
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\enumitem.
+sty"
+Package: enumitem 2019/01/14 v3.7 Customized lists
+\labelindent=\skip64
+\enit@outerparindent=\dimen131
+\enit@toks=\toks28
+\enit@inbox=\box33
+\enit@count@id=\count117
+\enitdp@description=\count118
+) (templateTFM.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-
-
-LaTeX Warning: Label `fig:proceso' multiply defined.
-
 )
 \openout1 = `templateTFM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -275,14 +337,148 @@ LaTeX Font Info:    ... okay on input line 34.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: twoside 
-* h-part:(L,W,R)=(113.81102pt, 426.79135pt, 56.9055pt)
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(14.22636pt, 731.23584pt, 99.58464pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-95.04362pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=85.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
+
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pdf.mk
+ii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count119
+\scratchdimen=\dimen132
+\scratchbox=\box34
+\nofMPsegments=\count120
+\nofMParguments=\count121
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen133
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
+\everyMPtoPDFconversion=\toks30
+)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
+base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infware
+rr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.st
+y"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvdefin
+ekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds
+.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoptions
+.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetke
+ys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcmd
+s.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluate
+x.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdftexc
+mds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 39.
+<recursos/Logo_URJC.png, id=1, 301.125pt x 301.125pt>
+File: recursos/Logo_URJC.png Graphic file (type png)
+<use recursos/Logo_URJC.png>
+Package pdftex.def Info: recursos/Logo_URJC.png  used on input line 55.
+(pdftex.def)             Requested size: 170.71652pt x 170.72406pt.
+
+Overfull \hbox (20.23587pt too wide) in paragraph at lines 54--57
+[]  [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
+[1
+
+{C:/Users/abelt/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./recursos/
+Logo_URJC.png>]
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (426.79134pt) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (640.187pt) is ignored.
+
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
 * v-part:(T,H,B)=(99.58464pt, 645.87756pt, 99.58464pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=426.79135pt
 * \textheight=645.87756pt
-* \oddsidemargin=41.54103pt
-* \evensidemargin=-15.36449pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
 * \topmargin=-9.68535pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -301,87 +497,8 @@ LaTeX Font Info:    ... okay on input line 34.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen131
-\scratchbox=\box32
-\nofMPsegments=\count115
-\nofMParguments=\count116
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen132
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks29
-) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
+[0
 
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
-
-<recursos/logoFi.png, id=1, 120.45pt x 127.97812pt>
-File: recursos/logoFi.png Graphic file (type png)
- <use recursos/logoFi.png>
-Package pdftex.def Info: recursos/logoFi.png used on input line 44.
-(pdftex.def)             Requested size: 64.01869pt x 68.0214pt.
-
-<recursos/logoupm.png, id=3, 184.43906pt x 201.75375pt>
-File: recursos/logoupm.png Graphic file (type png)
-
-<use recursos/logoupm.png>
-Package pdftex.def Info: recursos/logoupm.png used on input line 46.
-(pdftex.def)             Requested size: 56.9055pt x 62.24747pt.
-
-Underfull \vbox (badness 7595) has occurred while \output is active []
-
- [1
-
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./recur
-sos/logoFi.png> <./recursos/logoupm.png>] [0
 
 ] [1] [2
 
@@ -389,368 +506,308 @@ sos/logoFi.png> <./recursos/logoupm.png>] [0
 
 ] [5] [6
 
-] (./templateTFM.toc
+] (templateTFM.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 2.
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write3
 \openout3 = `templateTFM.toc'.
 
-LaTeX Info: Redefining \. on input line 104.
-LaTeX Info: Redefining \% on input line 104.
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
 [7]
-LaTeX Info: Redefining \. on input line 104.
-LaTeX Info: Redefining \% on input line 104.
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
 [8
 
-] (./templateTFM.lof
+] (templateTFM.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lof=\write4
 \openout4 = `templateTFM.lof'.
 
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
 [9]
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
 [10
 
-] (./templateTFM.lot
+] (templateTFM.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lot=\write5
 \openout5 = `templateTFM.lot'.
 
-LaTeX Info: Redefining \. on input line 110.
-LaTeX Info: Redefining \% on input line 110.
+LaTeX Info: Redefining \. on input line 124.
+LaTeX Info: Redefining \% on input line 124.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[11] <recursos/Proceso.png, id=56, 627.84563pt x 903.375pt>
-File: recursos/Proceso.png Graphic file (type png)
+[11]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 149.
 
-<use recursos/Proceso.png>
-Package pdftex.def Info: recursos/Proceso.png used on input line 149.
-(pdftex.def)             Requested size: 277.41176pt x 399.14035pt.
- [1
-
-]
-LaTeX Info: Redefining \. on input line 161.
-LaTeX Info: Redefining \% on input line 161.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[2 <./recursos/Proceso.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 166.
-
-
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+ ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 149.
+ [1
 
-Overfull \hbox (33.67603pt too wide) in paragraph at lines 186--187
-[]\OT1/cmr/m/n/12 El alumno de-ber^^Sa tam-bi^^Sen en-viar a la \OT1/cmr/bx/n/1
-2 Se-cre-tar^^S^^Pa del M^^Saster \OT1/cmr/m/n/12 (mas-te-ria.dia@fi.upm.es)
- []
-
-LaTeX Info: Redefining \. on input line 193.
-LaTeX Info: Redefining \% on input line 193.
-[3]
-LaTeX Info: Redefining \. on input line 217.
-LaTeX Info: Redefining \% on input line 217.
+]
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[4]
-LaTeX Info: Redefining \. on input line 233.
-LaTeX Info: Redefining \% on input line 233.
- [5]
-LaTeX Info: Redefining \. on input line 233.
-LaTeX Info: Redefining \% on input line 233.
+[2] [3
+
+]
+LaTeX Info: Redefining \. on input line 209.
+LaTeX Info: Redefining \% on input line 209.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[4] [5]
+LaTeX Info: Redefining \. on input line 216.
+LaTeX Info: Redefining \% on input line 216.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
 [6
 
-] <recursos/Figure1a.png, id=80, 578.16pt x 433.62pt>
-File: recursos/Figure1a.png Graphic file (type png)
-
-<use recursos/Figure1a.png>
-Package pdftex.def Info: recursos/Figure1a.png used on input line 241.
-(pdftex.def)             Requested size: 213.39568pt x 160.04651pt.
-
-<recursos/Figure1b.png, id=81, 578.16pt x 433.62pt>
-File: recursos/Figure1b.png Graphic file (type png)
-
-<use recursos/Figure1b.png>
-Package pdftex.def Info: recursos/Figure1b.png used on input line 246.
-(pdftex.def)             Requested size: 213.39568pt x 160.04651pt.
- <recursos/Figure2.png, id=82, 578.16pt x 433.62pt>
-File: recursos/Figure2.png Graphic file (type png)
-
-<use recursos/Figure2.png>
-Package pdftex.def Info: recursos/Figure2.png used on input line 256.
-(pdftex.def)             Requested size: 213.39568pt x 160.04651pt.
- [7 <./recursos/Figure1a.png> <./recursos/Figure1b.png>]
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 293.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 293.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 293.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 293.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 294.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 294.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 296.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 296.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 296.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 296.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 298.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 299.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 299.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 299.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 299.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 299.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 301.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 301.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 301.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 301.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 301.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 301.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 306.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 306.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 306.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 306.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 307.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 308.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 308.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 308.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 309.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 309.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 309.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 309.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 310.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 311.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 311.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 311.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 312.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 314.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 314.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 314.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 314.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 314.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 314.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 379.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 379.
-
-LaTeX Info: Redefining \. on input line 392.
-LaTeX Info: Redefining \% on input line 392.
+] [7]
+LaTeX Info: Redefining \. on input line 232.
+LaTeX Info: Redefining \% on input line 232.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[8 <./recursos/Figure2.png>]
+[8
+
+]
+<recursos/UNEEsquema.png, id=80, 444.4605pt x 377.0085pt>
+File: recursos/UNEEsquema.png Graphic file (type png)
+<use recursos/UNEEsquema.png>
+Package pdftex.def Info: recursos/UNEEsquema.png  used on input line 244.
+(pdftex.def)             Requested size: 341.43437pt x 289.63013pt.
+ [9 <./recursos/UNEEsquema.png>]
+LaTeX Info: Redefining \. on input line 278.
+LaTeX Info: Redefining \% on input line 278.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[10]
+LaTeX Info: Redefining \. on input line 302.
+LaTeX Info: Redefining \% on input line 302.
+ [11]
+LaTeX Info: Redefining \. on input line 335.
+LaTeX Info: Redefining \% on input line 335.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[12]
+<recursos/arbol_decision_img1.jpg, id=96, 650.43pt x 243.91125pt>
+File: recursos/arbol_decision_img1.jpg Graphic file (type jpg)
+<use recursos/arbol_decision_img1.jpg>
+Package pdftex.def Info: recursos/arbol_decision_img1.jpg  used on input line 3
+60.
+(pdftex.def)             Requested size: 341.43437pt x 128.04042pt.
+LaTeX Info: Redefining \. on input line 364.
+LaTeX Info: Redefining \% on input line 364.
+ [13]
+<recursos/BayesFormula.png, id=100, 301.125pt x 172.645pt>
+File: recursos/BayesFormula.png Graphic file (type png)
+<use recursos/BayesFormula.png>
+Package pdftex.def Info: recursos/BayesFormula.png  used on input line 377.
+(pdftex.def)             Requested size: 170.71393pt x 97.87915pt.
+LaTeX Info: Redefining \. on input line 390.
+LaTeX Info: Redefining \% on input line 390.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[14 <./recursos/arbol_decision_img1.jpg> <./recursos/BayesFormula.png (PNG copy
+)>]
+<recursos/red-neuronal.jpg, id=104, 696.6025pt x 391.4625pt>
+File: recursos/red-neuronal.jpg Graphic file (type jpg)
+<use recursos/red-neuronal.jpg>
+Package pdftex.def Info: recursos/red-neuronal.jpg  used on input line 393.
+(pdftex.def)             Requested size: 170.71393pt x 95.93005pt.
 LaTeX Info: Redefining \. on input line 413.
 LaTeX Info: Redefining \% on input line 413.
- [9]
+ [15 <./recursos/red-neuronal.jpg>]
 LaTeX Info: Redefining \. on input line 413.
 LaTeX Info: Redefining \% on input line 413.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[10] [11
+[16
 
-]
-LaTeX Info: Redefining \. on input line 435.
-LaTeX Info: Redefining \% on input line 435.
- [12
-
-] [13]
-LaTeX Info: Redefining \. on input line 439.
-LaTeX Info: Redefining \% on input line 439.
+] [17]
+LaTeX Info: Redefining \. on input line 415.
+LaTeX Info: Redefining \% on input line 415.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[14
+[18
 
-] [15]
-LaTeX Info: Redefining \. on input line 519.
-LaTeX Info: Redefining \% on input line 519.
- [16] [17
-
-]
-LaTeX Info: Redefining \. on input line 525.
-LaTeX Info: Redefining \% on input line 525.
- [18
+] [19]
+LaTeX Info: Redefining \. on input line 417.
+LaTeX Info: Redefining \% on input line 417.
+ [20
 
 ]
-LaTeX Info: Redefining \. on input line 537.
-LaTeX Info: Redefining \% on input line 537.
- [19] (./templateTFM.aux
+
+LaTeX Warning: Citation `Ashtiani2014' on page 21 undefined on input line 434.
+
+
+LaTeX Warning: Citation `Ashtiani2014' on page 21 undefined on input line 434.
+
+
+LaTeX Warning: Citation `Mateos2009' on page 21 undefined on input line 434.
+
+
+LaTeX Warning: Citation `Vicente2016' on page 21 undefined on input line 434.
+
+[21]
+LaTeX Info: Redefining \. on input line 496.
+LaTeX Info: Redefining \% on input line 496.
+ [22] [23]
+LaTeX Info: Redefining \. on input line 497.
+LaTeX Info: Redefining \% on input line 497.
+ [24
+
+] [25]
+LaTeX Info: Redefining \. on input line 500.
+LaTeX Info: Redefining \% on input line 500.
+ [26
+
+] [27]
+LaTeX Info: Redefining \. on input line 505.
+LaTeX Info: Redefining \% on input line 505.
+ [28
+
+]
+Underfull \hbox (badness 3128) in paragraph at lines 517--518
+[]\OT1/cmr/m/n/12 Marn, J. L. (2018, 5 abril). \OT1/cmr/m/it/12 Cien-cia de d
+a-tos, ma-chi-ne lear-ning y
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 517--518
+\OT1/cmr/m/it/12 deep lear-ning \OT1/cmr/m/n/12 (Co-mu-ni-ca-do de pren-sa). Re
+-cu-pe-ra-do 17 enero, 2019,
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 517--518
+\OT1/cmr/m/n/12 de https://datos.gob.es/es/noticia/ciencia-de-datos-machine-lea
+rning-y-deep-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
+[]\OT1/cmr/m/n/12 Marn, J. M. (s.f.). Es-tadsti-ca Des-crip-ti-va Uni-va-ri
+an-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
+\OT1/cmr/m/n/12 te [Te-ma Uni-ver-si-ta-rio]. Re-cu-pe-ra-do 17 enero, 2019, de
+
+ []
+
+
+Overfull \hbox (19.92207pt too wide) in paragraph at lines 518--519
+\OT1/cmr/m/n/12 http://halweb.uc3m.es/esp/Personal/personas/jmmarin/esp/AMult/t
+ema2am.pdf 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
+[]\OT1/cmr/m/n/12 Orellana, L. (2001). In-tro-duc-cion. In L. Ore-lla-na (Ed.)
+,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
+\OT1/cmr/m/n/12 Es-tadsti-ca Des-crip-ti-va (pp. 1{64). Re-cu-pe-ra-do de
+ []
+
+
+Overfull \hbox (21.95203pt too wide) in paragraph at lines 519--520
+\OT1/cmr/m/n/12 http://www.dm.uba.ar/materias/estadistica[]Q/2011/1/modulo$ $%2
+0descriptiva.pdf 
+ []
+
+LaTeX Info: Redefining \. on input line 523.
+LaTeX Info: Redefining \% on input line 523.
+[29] (templateTFM.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5249 strings out of 493089
- 75840 string characters out of 6134841
- 159865 words of memory out of 5000000
- 8617 multiletter control sequences out of 15000+600000
- 14744 words of font info for 54 fonts, out of 8000000 for 9000
+ 5822 strings out of 492946
+ 88071 string characters out of 3126266
+ 172444 words of memory out of 3000000
+ 9586 multiletter control sequences out of 15000+200000
+ 13155 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,11n,40p,577b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pf
-b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
-/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on templateTFM.pdf (32 pages, 779553 bytes).
+ 42i,8n,40p,838b,485s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmcsc10.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abelt/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abelt/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/abelt
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C
+:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmss12.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmssbx10.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abelt/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on templateTFM.pdf (42 pages, 500057 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
+ 186 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
