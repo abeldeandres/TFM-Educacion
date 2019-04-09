@@ -1,0 +1,263 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Ashraf%
+, Zaman%
+\BCBL {}\ \BBA {} Ahmed%
+}{%
+Ashraf%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+ASHRAF20181021}
+\APACinsertmetastar {%
+ASHRAF20181021}%
+\begin{APACrefauthors}%
+Ashraf, M.%
+, Zaman, M.%
+\BCBL {}\ \BBA {} Ahmed, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Using Ensemble StackingC Method and Base Classifiers to
+  Ameliorate Prediction Accuracy of Pedagogical Data} {Using ensemble stackingc
+  method and base classifiers to ameliorate prediction accuracy of pedagogical
+  data}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Procedia Computer Science}{132}{}{1021 - 1040}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com/science/article/pii/S1877050918307506}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{International Conference on Computational Intelligence and Data
+  Science}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.procs.2018.05.018}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Asif%
+, Merceron%
+, Ali%
+\BCBL {}\ \BBA {} Haider%
+}{%
+Asif%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+ASIF2017177}
+\APACinsertmetastar {%
+ASIF2017177}%
+\begin{APACrefauthors}%
+Asif, R.%
+, Merceron, A.%
+, Ali, S\BPBI A.%
+\BCBL {}\ \BBA {} Haider, N\BPBI G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Analyzing undergraduate students' performance using
+  educational data mining} {Analyzing undergraduate students' performance using
+  educational data mining}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computers \& Education}{113}{}{177 - 194}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com/science/article/pii/S0360131517301124}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.compedu.2017.05.007}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Delen%
+}{%
+Delen%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+DELEN2010498}
+\APACinsertmetastar {%
+DELEN2010498}%
+\begin{APACrefauthors}%
+Delen, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A comparative analysis of machine learning techniques
+  for student retention management} {A comparative analysis of machine learning
+  techniques for student retention management}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Decision Support Systems}{49}{4}{498 - 506}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com/science/article/pii/S0167923610001041}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.dss.2010.06.003}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Şen%
+, Uçar%
+\BCBL {}\ \BBA {} Delen%
+}{%
+Şen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+SEN20129468}
+\APACinsertmetastar {%
+SEN20129468}%
+\begin{APACrefauthors}%
+Şen, B.%
+, Uçar, E.%
+\BCBL {}\ \BBA {} Delen, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Predicting and analyzing secondary education
+  placement-test scores: A data mining approach} {Predicting and analyzing
+  secondary education placement-test scores: A data mining approach}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Expert Systems with Applications}{39}{10}{9468 - 9476}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com/science/article/pii/S0957417412003752}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.eswa.2012.02.112}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fernandes%
+\ \protect \BOthers {.}}{%
+Fernandes%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+FERNANDES2019335}
+\APACinsertmetastar {%
+FERNANDES2019335}%
+\begin{APACrefauthors}%
+Fernandes, E.%
+, Holanda, M.%
+, Victorino, M.%
+, Borges, V.%
+, Carvalho, R.%
+\BCBL {}\ \BBA {} Erven, G\BPBI V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Educational data mining: Predictive analysis of academic
+  performance of public school students in the capital of Brazil} {Educational
+  data mining: Predictive analysis of academic performance of public school
+  students in the capital of brazil}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of Business Research}{94}{}{335 - 343}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com/science/article/pii/S0148296318300870}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.jbusres.2018.02.012}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Panahi%
+\ \protect \BOthers {.}}{%
+Panahi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+PANAHI2019161}
+\APACinsertmetastar {%
+PANAHI2019161}%
+\begin{APACrefauthors}%
+Panahi, M.%
+, Yekrangnia, M.%
+, Bagheri, Z.%
+, Pourghasemi, H\BPBI R.%
+, Rezaie, F.%
+, Aghdam, I\BPBI N.%
+\BCBL {}\ \BBA {} Damavandi, A\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {7 - GIS-Based SWARA and Its Ensemble by RBF and ICA
+  Data-Mining Techniques for Determining Suitability of Existing Schools and
+  Site Selection of New School Buildings} {7 - gis-based swara and its ensemble
+  by rbf and ica data-mining techniques for determining suitability of existing
+  schools and site selection of new school buildings}.{\BBCQ}
+\newblock
+\BIn{} H\BPBI R.~Pourghasemi\ \BBA {} C.~Gokceoglu\ (\BEDS), \APACrefbtitle
+  {Spatial Modeling in GIS and R for Earth and Environmental Sciences} {Spatial
+  modeling in gis and r for earth and environmental sciences}\ (\BPG~161 -
+  188).
+\newblock
+\APACaddressPublisher{}{Elsevier}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com/science/article/pii/B9780128152263000077}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/B978-0-12-815226-3.00007-7}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shahiri%
+, Husain%
+\BCBL {}\ \BBA {} Rashid%
+}{%
+Shahiri%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+SHAHIRI2015414}
+\APACinsertmetastar {%
+SHAHIRI2015414}%
+\begin{APACrefauthors}%
+Shahiri, A\BPBI M.%
+, Husain, W.%
+\BCBL {}\ \BBA {} Rashid, N\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Review on Predicting Student's Performance Using Data
+  Mining Techniques} {A review on predicting student's performance using data
+  mining techniques}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Procedia Computer Science}{72}{}{414 - 422}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com/science/article/pii/S1877050915036182}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{The Third Information Systems International Conference 2015}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.procs.2015.12.157}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
