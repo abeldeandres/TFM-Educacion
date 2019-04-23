@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  9 APR 2019 11:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  23 APR 2019 17:23
 entering extended mode
 **./templateTFM.tex
 (templateTFM.tex
@@ -392,24 +392,77 @@ Package tocbibind Info: The document has section divisions on input line 50.
 
 Package tocbibind Note: Using section or other style headings.
 
+)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/titlesec\titletoc.
+sty"
+Package: titletoc 2011/12/15 v1.6 TOC entries
+\ttl@leftsep=\dimen143
+)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tocloft\tocloft.st
+y"
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip72
+\cftbeforetoctitleskip=\skip73
+\cftaftertoctitleskip=\skip74
+\cftbeforepartskip=\skip75
+\cftpartnumwidth=\skip76
+\cftpartindent=\skip77
+\cftbeforesecskip=\skip78
+\cftsecindent=\skip79
+\cftsecnumwidth=\skip80
+\cftbeforesubsecskip=\skip81
+\cftsubsecindent=\skip82
+\cftsubsecnumwidth=\skip83
+\cftbeforesubsubsecskip=\skip84
+\cftsubsubsecindent=\skip85
+\cftsubsubsecnumwidth=\skip86
+\cftbeforeparaskip=\skip87
+\cftparaindent=\skip88
+\cftparanumwidth=\skip89
+\cftbeforesubparaskip=\skip90
+\cftsubparaindent=\skip91
+\cftsubparanumwidth=\skip92
+\cftbeforeloftitleskip=\skip93
+\cftafterloftitleskip=\skip94
+\cftbeforefigskip=\skip95
+\cftfigindent=\skip96
+\cftfignumwidth=\skip97
+\c@lofdepth=\count130
+\c@lotdepth=\count131
+\cftbeforelottitleskip=\skip98
+\cftafterlottitleskip=\skip99
+\cftbeforetabskip=\skip100
+\cfttabindent=\skip101
+\cfttabnumwidth=\skip102
+) ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\verbatim.sty
+"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks30
+\verbatim@line=\toks31
+\verbatim@in@stream=\read1
 ) (templateTFM.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `templateTFM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -445,23 +498,23 @@ LaTeX Font Info:    ... okay on input line 44.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
-\scratchdimen=\dimen143
+\scratchcounter=\count132
+\scratchdimen=\dimen144
 \scratchbox=\box61
-\nofMPsegments=\count131
-\nofMParguments=\count132
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count133
-\MPscratchDim=\dimen144
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
-\everyMPtoPDFconversion=\toks31
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count135
+\MPscratchDim=\dimen145
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks33
 )
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
 base.sty"
@@ -520,8 +573,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 44.
-\c@maskedRefs=\count136
+LaTeX Info: Redefining \selectfont on input line 50.
+\c@maskedRefs=\count138
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/apacite\spanish.ap
 c"
@@ -532,12 +585,15 @@ LaTeX Info: Redefining \BHBI on input line 139.
 <recursos/escudo_urjc.jpg, id=1, 143.226pt x 156.366pt>
 File: recursos/escudo_urjc.jpg Graphic file (type jpg)
 <use recursos/escudo_urjc.jpg>
-Package pdftex.def Info: recursos/escudo_urjc.jpg  used on input line 65.
+Package pdftex.def Info: recursos/escudo_urjc.jpg  used on input line 75.
 (pdftex.def)             Requested size: 170.71652pt x 186.3856pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [1
 
 {C:/Users/abelt/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./recursos/
-escudo_urjc.jpg>]
+escudo_urjc.jpg>] [2]
 
 Package geometry Warning: Over-specification in `h'-direction.
     `width' (426.79134pt) is ignored.
@@ -585,9 +641,7 @@ Package geometry Warning: Over-specification in `v'-direction.
 
 ] [3] [4
 
-] [5] [6
-
-] (templateTFM.toc
+] [5] (templateTFM.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
@@ -598,46 +652,46 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 2.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 2.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 3.
+
+)
 \tf@toc=\write3
 \openout3 = `templateTFM.toc'.
 
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
+ [6
+
+]
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[7]
-LaTeX Info: Redefining \. on input line 117.
-LaTeX Info: Redefining \% on input line 117.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[8
-
-] (templateTFM.lof
+[7] (templateTFM.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+
+Overfull \hbox (6.97035pt too wide) in paragraph at lines 3--3
+ [][] []\OT1/cmr/m/n/12 Comparacion me-to-do-logas de Mi-nera de Da-tos. R
+e-cu-pe-ra-do de []Moine, 
+ []
+
 )
 \tf@lof=\write4
 \openout4 = `templateTFM.lof'.
 
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[9]
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[10
+ [8
 
 ] (templateTFM.lot
 LaTeX Info: Redefining \. on input line 1.
@@ -646,275 +700,286 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lot=\write5
 \openout5 = `templateTFM.lot'.
 
-LaTeX Info: Redefining \. on input line 123.
-LaTeX Info: Redefining \% on input line 123.
+ [9
 
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+] (Introduccion.tex [0
 
-
-[11] (Introduccion.tex
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 22.
+]
+<recursos/arquitecturaDatawarehouse.jpg, id=51, 903.375pt x 527.9725pt>
+File: recursos/arquitecturaDatawarehouse.jpg Graphic file (type jpg)
+<use recursos/arquitecturaDatawarehouse.jpg>
+Package pdftex.def Info: recursos/arquitecturaDatawarehouse.jpg  used on input 
+line 18.
+(pdftex.def)             Requested size: 256.07741pt x 149.66005pt.
+ [1]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
+LaTeX Info: Redefining \. on input line 48.
+LaTeX Info: Redefining \% on input line 48.
 
-[1
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
-]) (JustTeorica.tex
+
+[2 <./recursos/arquitecturaDatawarehouse.jpg>]
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
+ [3]) (JustTeorica.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[2] [3
+[4] [5
 
 ]
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[4]
-<recursos/CRISPCiclo.png, id=64, 354.123pt x 298.716pt>
-File: recursos/CRISPCiclo.png Graphic file (type png)
-<use recursos/CRISPCiclo.png>
-Package pdftex.def Info: recursos/CRISPCiclo.png  used on input line 51.
-(pdftex.def)             Requested size: 256.07741pt x 216.02797pt.
- [5 <./recursos/CRISPCiclo.png>]
-LaTeX Info: Redefining \. on input line 74.
-LaTeX Info: Redefining \% on input line 74.
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
 [6]
-<recursos/PrecisionMetodos.png, id=76, 412.54124pt x 214.401pt>
+LaTeX Info: Redefining \. on input line 68.
+LaTeX Info: Redefining \% on input line 68.
+ [7]
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[8]
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
+ [9]
+<recursos/ComparacionModelosDM.png, id=84, 334.24875pt x 272.81924pt>
+File: recursos/ComparacionModelosDM.png Graphic file (type png)
+<use recursos/ComparacionModelosDM.png>
+Package pdftex.def Info: recursos/ComparacionModelosDM.png  used on input line 
+100.
+(pdftex.def)             Requested size: 341.43437pt x 278.70488pt.
+LaTeX Info: Redefining \. on input line 112.
+LaTeX Info: Redefining \% on input line 112.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[10 <./recursos/ComparacionModelosDM.png>]
+<recursos/CRISPCiclo.png, id=90, 354.123pt x 298.716pt>
+File: recursos/CRISPCiclo.png Graphic file (type png)
+<use recursos/CRISPCiclo.png>
+Package pdftex.def Info: recursos/CRISPCiclo.png  used on input line 123.
+(pdftex.def)             Requested size: 256.07741pt x 216.02797pt.
+LaTeX Info: Redefining \. on input line 131.
+LaTeX Info: Redefining \% on input line 131.
+ [11 <./recursos/CRISPCiclo.png>]
+<recursos/PrecisionMetodos.png, id=95, 412.54124pt x 214.401pt>
 File: recursos/PrecisionMetodos.png Graphic file (type png)
 <use recursos/PrecisionMetodos.png>
-Package pdftex.def Info: recursos/PrecisionMetodos.png  used on input line 82.
+Package pdftex.def Info: recursos/PrecisionMetodos.png  used on input line 137.
+
 (pdftex.def)             Requested size: 341.43437pt x 177.44896pt.
+LaTeX Info: Redefining \. on input line 145.
+LaTeX Info: Redefining \% on input line 145.
 
-Underfull \vbox (badness 3536) has occurred while \output is active []
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
- [7 <./recursos/PrecisionMetodos.png>]
+
+[12 <./recursos/PrecisionMetodos.png>]
+<recursos/ComparacionModelos.png, id=101, 454.69875pt x 222.23026pt>
+File: recursos/ComparacionModelos.png Graphic file (type png)
+<use recursos/ComparacionModelos.png>
+Package pdftex.def Info: recursos/ComparacionModelos.png  used on input line 15
+2.
+(pdftex.def)             Requested size: 341.43437pt x 166.87573pt.
+LaTeX Info: Redefining \. on input line 164.
+LaTeX Info: Redefining \% on input line 164.
+ [13 <./recursos/ComparacionModelos.png>]
+<recursos/top10tools.jpg, id=106, 451.6875pt x 319.94531pt>
+File: recursos/top10tools.jpg Graphic file (type jpg)
+<use recursos/top10tools.jpg>
+Package pdftex.def Info: recursos/top10tools.jpg  used on input line 170.
+(pdftex.def)             Requested size: 426.79135pt x 302.33038pt.
+LaTeX Info: Redefining \. on input line 186.
+LaTeX Info: Redefining \% on input line 186.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[14 <./recursos/top10tools.jpg>]) (PropuestaIntervencion.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [15]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[16
+
+] [17]
+LaTeX Info: Redefining \. on input line 38.
+LaTeX Info: Redefining \% on input line 38.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[18]) (Disenio.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [19]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[20]
+<recursos/UNEEsquema.png, id=129, 444.4605pt x 377.0085pt>
+File: recursos/UNEEsquema.png Graphic file (type png)
+<use recursos/UNEEsquema.png>
+Package pdftex.def Info: recursos/UNEEsquema.png  used on input line 14.
+(pdftex.def)             Requested size: 341.43437pt x 289.63013pt.
+ [21
+
+ <./recursos/UNEEsquema.png>]
+LaTeX Info: Redefining \. on input line 47.
+LaTeX Info: Redefining \% on input line 47.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[22]
+LaTeX Info: Redefining \. on input line 67.
+LaTeX Info: Redefining \% on input line 67.
+ [23]
 LaTeX Info: Redefining \. on input line 100.
 LaTeX Info: Redefining \% on input line 100.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[8]) (Referencias.tex (templateTFM.bbl [9]
+[24]
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+ [25]
+<recursos/arbol_decision_img1.jpg, id=147, 650.43pt x 243.91125pt>
+File: recursos/arbol_decision_img1.jpg Graphic file (type jpg)
+<use recursos/arbol_decision_img1.jpg>
+Package pdftex.def Info: recursos/arbol_decision_img1.jpg  used on input line 1
+32.
+(pdftex.def)             Requested size: 341.43437pt x 128.04042pt.
+<recursos/BayesFormula.png, id=148, 301.125pt x 172.645pt>
+File: recursos/BayesFormula.png Graphic file (type png)
+<use recursos/BayesFormula.png>
+Package pdftex.def Info: recursos/BayesFormula.png  used on input line 149.
+(pdftex.def)             Requested size: 256.07741pt x 146.83058pt.
+LaTeX Info: Redefining \. on input line 157.
+LaTeX Info: Redefining \% on input line 157.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[26 <./recursos/arbol_decision_img1.jpg> <./recursos/BayesFormula.png (PNG copy
+)>]
+<recursos/RedNeuronalArtificial.png, id=152, 144.54pt x 80.58105pt>
+File: recursos/RedNeuronalArtificial.png Graphic file (type png)
+<use recursos/RedNeuronalArtificial.png>
+Package pdftex.def Info: recursos/RedNeuronalArtificial.png  used on input line
+ 166.
+(pdftex.def)             Requested size: 256.07741pt x 142.77106pt.
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
+ [27 <./recursos/RedNeuronalArtificial.png>]
+<recursos/k_NN.png, id=157, 588.69937pt x 408.02437pt>
+File: recursos/k_NN.png Graphic file (type png)
+<use recursos/k_NN.png>
+Package pdftex.def Info: recursos/k_NN.png  used on input line 199.
+(pdftex.def)             Requested size: 256.07741pt x 177.48294pt.
+) (Referencias.tex
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[28 <./recursos/k_NN.png>] (templateTFM.bbl
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [29]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[10
+[30
 
 ]
-Underfull \hbox (badness 1062) in paragraph at lines 16--41
-\OT1/cmr/m/n/12 met-hod and ba-se clas-si-fiers to ame-lio-ra-te pre-dic-tion a
-c-cu-racy of pe-da-go-gi-
+Underfull \hbox (badness 1303) in paragraph at lines 197--209
+[]\OT1/cmr/m/n/12 de la Fuen-te Fer-nan-dez, S.  (2011).  \OT1/cmr/m/it/12 Com-
+po-nen-tes prin-ci-pa-les.  \OT1/cmr/m/n/12 Des-car-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--41
-\OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/article/pii/S187705091830
-7506
- []
-
-
-Underfull \hbox (badness 1902) in paragraph at lines 56--78
-[]\OT1/cmr/m/n/12 Asif, R., Mer-ce-ron, A., Ali, S. A., y Hai-der, N. G.  (2017
-).  Analy-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--78
-\OT1/cmr/m/n/12 zing un-der-gra-dua-te stu-dents' per-for-man-ce using edu-ca-t
-io-nal da-ta mi-
- []
-
-
-Underfull \hbox (badness 6658) in paragraph at lines 56--78
-\OT1/cmr/m/n/12 ning.  \OT1/cmr/m/it/12 Com-pu-ters & Edu-ca-tion\OT1/cmr/m/n/1
-2 , \OT1/cmr/m/it/12 113\OT1/cmr/m/n/12 , 177 - 194.  Des-car-ga-do de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--78
-\OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/article/pii/S036013151730
-1124
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--109
-\OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/article/pii/S016792361000
-1041
- []
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 123--144
-[][]\OT1/cmr/m/n/12 en, B., Ucar, E., y De-len, D.  (2012).  Pre-dic-ting and 
-analy-zing se-
- []
-
-
-Underfull \hbox (badness 2253) in paragraph at lines 123--144
-\OT1/cmr/m/n/12 con-dary edu-ca-tion placement-test sco-res: A da-ta mi-ning ap
--proach.  \OT1/cmr/m/it/12 Ex-
- []
-
-
-Underfull \hbox (badness 4024) in paragraph at lines 123--144
-\OT1/cmr/m/it/12 pert Sys-tems with Ap-pli-ca-tions\OT1/cmr/m/n/12 , \OT1/cmr/m
-/it/12 39\OT1/cmr/m/n/12 (10), 9468 - 9476.  Des-car-ga-do de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--144
-\OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/article/pii/S095741741200
-3752
- []
-
-
-Underfull \hbox (badness 5388) in paragraph at lines 156--181
-[]\OT1/cmr/m/n/12 Fernandes, E., Ho-lan-da, M., Vic-to-rino, M., Bor-ges, V., C
-ar-val-ho, R.,
- []
-
-
-Underfull \hbox (badness 2753) in paragraph at lines 156--181
-\OT1/cmr/m/n/12 y Er-ven, G. V.  (2019).  Edu-ca-tio-nal da-ta mi-ning: Pre-dic
--ti-ve analy-
- []
-
-
-Underfull \hbox (badness 2181) in paragraph at lines 156--181
-\OT1/cmr/m/n/12 sis of aca-de-mic per-for-man-ce of pu-blic school stu-dents in
- the ca-pi-tal of
- []
-
-
-Underfull \hbox (badness 2134) in paragraph at lines 156--181
-\OT1/cmr/m/n/12 bra-zil.  \OT1/cmr/m/it/12 Jour-nal of Bu-si-ness Re-search\OT1
-/cmr/m/n/12 , \OT1/cmr/m/it/12 94\OT1/cmr/m/n/12 , 335 - 343.  Des-car-ga-do de
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--181
-\OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/article/pii/S014829631830
-0870
- []
-
-
-Underfull \hbox (badness 1072) in paragraph at lines 193--225
-[]\OT1/cmr/m/n/12 Panahi, M., Ye-kran-gnia, M., Bag-he-ri, Z., Pourg-ha-se-mi, 
-H. R., Re-zaie, F.,
- []
-
-
-Underfull \hbox (badness 1122) in paragraph at lines 193--225
-\OT1/cmr/m/n/12 Agh-dam, I. N., y Da-ma-van-di, A. A.  (2019).  7 - gis-based s
-wa-ra and
- []
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 193--225
-\OT1/cmr/m/n/12 its en-sem-ble by rbf and ica data-mining tech-ni-ques for de-t
-er-mi-ning sui-ta-
- []
-
-
-Underfull \hbox (badness 1248) in paragraph at lines 193--225
-\OT1/cmr/m/n/12 bi-lity of exis-ting schools and si-te se-lec-tion of new schoo
-l buil-dings.  En
- []
-
-
-Underfull \hbox (badness 1057) in paragraph at lines 193--225
-\OT1/cmr/m/n/12 H. R. Pourg-ha-se-mi y C. Gok-ceo-glu (Eds.[]), \OT1/cmr/m/it/1
-2 Spa-tial mo-de-ling in gis and r
- []
-
-
-Overfull \hbox (5.1588pt too wide) in paragraph at lines 193--225
-\OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/article/pii/B978012815226
-3000077
- []
-
-[11]
-Underfull \hbox (badness 7047) in paragraph at lines 239--262
-[]\OT1/cmr/m/n/12 Shahiri, A. M., Hu-sain, W., y Ras-hid, N. A.  (2015).  A re-
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--262
-\OT1/cmr/m/n/12 view on pre-dic-ting stu-dent's per-for-man-ce using da-ta mi-n
-ing tech-ni-
- []
-
-
-Underfull \hbox (badness 4859) in paragraph at lines 239--262
-\OT1/cmr/m/n/12 ques.  \OT1/cmr/m/it/12 Pro-ce-dia Com-pu-ter Scien-ce\OT1/cmr/
-m/n/12 , \OT1/cmr/m/it/12 72\OT1/cmr/m/n/12 , 414 - 422.  Des-car-ga-do de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 239--262
-\OT1/cmtt/m/n/12 http://www.sciencedirect.com/science/article/pii/S187705091503
-6182
- []
-
-
-Underfull \hbox (badness 5203) in paragraph at lines 239--262
-\OT1/cmr/m/n/12 (The Third In-for-ma-tion Sys-tems In-ter-na-tio-nal Con-fe-ren
--ce 2015)  doi:
- []
-
-))
-LaTeX Info: Redefining \. on input line 141.
-LaTeX Info: Redefining \% on input line 141.
+[31]
+LaTeX Info: Redefining \. on input line 517.
+LaTeX Info: Redefining \% on input line 517.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[12] (templateTFM.aux
+[32]
+Missing character: There is no Ã in font cmtt12!
+Missing character: There is no ¡ in font cmtt12!
+Missing character: There is no Ã in font cmtt12!
+Missing character: There is no © in font cmtt12!
+ [33]))
+LaTeX Info: Redefining \. on input line 153.
+LaTeX Info: Redefining \% on input line 153.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[34] (templateTFM.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-) ) 
+)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
 Here is how much of TeX's memory you used:
- 6559 strings out of 492946
- 98488 string characters out of 3126266
- 187383 words of memory out of 3000000
- 10290 multiletter control sequences out of 15000+200000
- 12729 words of font info for 47 fonts, out of 3000000 for 9000
+ 7181 strings out of 492946
+ 108774 string characters out of 3126266
+ 200620 words of memory out of 3000000
+ 10882 multiletter control sequences out of 15000+200000
+ 14274 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,7n,40p,867b,467s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmcsc10.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abelt/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abelt/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/abel
-t/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><
-C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmss12.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmssbx10.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abelt/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/abelt/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on templateTFM.pdf (25 pages, 287491 bytes).
+ 42i,8n,40p,847b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbx8.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/abelt/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abelt/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abel
+t/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
+/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mss10.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmss12.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/abelt/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abelt/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/abelt
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on templateTFM.pdf (47 pages, 1008358 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 221 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

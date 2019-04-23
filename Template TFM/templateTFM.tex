@@ -39,9 +39,19 @@
 \usepackage{multicol}
 \usepackage{wrapfig}
 \usepackage{apacite}
-\usepackage[nottoc,numbib]{tocbibind}
+\usepackage[nottoc,numbib]{tocbibind} %Para la bibliografia
+\usepackage{titletoc,tocloft}%Identar las subsecciones del TOC
+
+\usepackage[hyphens]{url} %Para las URL de la bibliografia
+
+\usepackage{verbatim} % comentarios
+
 
 \begin{document}
+\setlength{\cftsubsecindent}{1cm} %Identar las subsecciones del TOC
+\renewcommand{\BOthers}[1]{et al.\hbox{}}%para poner el et.al
+
+
 %\maketitle
 %\thispagestyle{empty}
 \begin{titlepage}
@@ -63,12 +73,12 @@
 % HEADING SECTIONS
 %\includegraphics[width=2.25cm]{recursos/logoFi.png}
 \includegraphics[width=6cm]{recursos/escudo_urjc}
-\\[2cm]
+\\[1cm]
 
 \textsc{\Large Trabajo Fin de Máster }\\[0.2cm]
 % TITLE SECTION
 \HRule \\[0.4cm]
-{ \huge \bfseries Trabajo Fin de Máster}\\[0.2cm] % Title of your document
+{ \Huge \bfseries Explotación y modelos para predicción de datos en el Sistema Educativo de la Comunidad de Madrid}\\[0.2cm] % Title of your document
 \HRule \\[1.5cm]
 
 \textsc{\Large Máster Universitario En Formación del Profesorado de Ed.Secundaria, Bachillerato, FP e Idiomas }\\[0.7cm]
@@ -79,7 +89,7 @@
 \begin{flushright}
 	\large
 	AUTOR: Abel de Andrés Gómez\\
-	CENTRO: Escuela Politécnica Giner\linebreak
+	DIRECTOR: Aurelio Berges García\linebreak
 \end{flushright}
 
 \vspace{1cm}
@@ -108,26 +118,28 @@ Extensión máxima de una página
 Extensión máxima de una página
 
 
+\clearpage
 %	ÍNDICE
 \tableofcontents % indice de contenidos
 
 
-
+\clearpage
 %	INDICE DE FIGURAS Y TABLAS
 \listoffigures
+\clearpage
 \listoftables
-
 
 
 %	CAPaTULOS DEL TRABAJO FIN DE MaSTER
 \newpage
 \pagenumbering{arabic} 
 
+\afterpage{\blankpage}
 
 \input{Introduccion.tex}
 \input{JustTeorica.tex}
-%\input{PropuestaIntervencion.tex}
-%\input{Disenio.tex}
+\input{PropuestaIntervencion.tex}
+\input{Disenio.tex}
 %\input{Analisis.tex}
 %\input{Conclusiones.tex}
 %\input{SobreReferencias.tex}

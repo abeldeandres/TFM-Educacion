@@ -1,33 +1,58 @@
 \section{PROPUESTA DE INTERVENCIÓN}
-
+\subsection{Minería de datos}
 Con el objetivo de resolver el problema comentado en los apartados anteriores, se plantea el uso de la ciencia de datos como proceso para descubrir relaciones entre los datos, que sean significativas. Además, se van a buscar patrones y tendencias en los datos que ayuden a la toma de decisiones.
 
-En primer lugar, se debe tener en cuenta que la ciencia de datos aúna métodos y tecnologías que provienen del campo de las matemáticas, la estadística y la informática entre las que se pueden encontrar el análisis descriptivo o exploratorio, el aprendizaje automático (“machine learning”), el aprendizaje profundo (“Deep learning”), etc. \cite{Marin2018}. En esta propuesta de intervención, se va a centrar en el análisis descriptivo y el aprendizaje automático.
+En primer lugar, se debe tener en cuenta que la ciencia de datos aúna métodos y tecnologías que provienen del campo de las matemáticas, la estadística y la informática entre las que se pueden encontrar el análisis descriptivo o exploratorio, el aprendizaje automático (“machine learning”), el aprendizaje profundo (“Deep learning”), etc. \cite{MARIN2018}. En esta propuesta de intervención, se va a centrar en el \textbf{análisis descriptivo} y el \textbf{aprendizaje automático}.
 
-El análisis descriptivo, como ya se ha comentado, va a ser útil para observar características de los propios datos. Entre estas características se va a poder observar cuales son las variables que más convienen al estudio por su importancia, utilizando técnicas como el análisis principal de componentes. El articulo de Costa \cite{Costa2017} incluye el apartado de pre-procesado, en el que realiza un estudio para reducir la dimensionalidad de las variables, puesto que están trabajando con un gran numero de ellas.
+El análisis descriptivo, como ya se ha comentado, va a ser útil para observar características de los propios datos. Entre estas características se va a poder observar cuales son las variables que más convienen al estudio por su importancia, utilizando técnicas como el análisis principal de componentes. El artículo de \citeA{COSTA2017247} incluye el apartado de pre-procesado, en el que realiza un estudio para reducir la dimensionalidad de las variables, puesto que están trabajando con un gran número de ellas.
 
+%https://cleverdata.io/conceptos-basicos-machine-learning/
+%http://publicaciones.americana.edu.co/index.php/pensamientoamericano/article/view/133
+%http://disi.unal.edu.co/~eleonguz/cursos/md/presentaciones/Sesion3_AED.pdf
+%https://ciberconta.unizar.es/leccion/aed/ead.pdf
 El aprendizaje automático, se divide en dos áreas: el aprendizaje supervisado y el no supervisado. 
 
 \begin{itemize}
-\item El aprendizaje supervisado se basa en algoritmos que intentan encontrar una función, que, dadas las entradas, asigne unas salidas adecuadas. Estos algoritmos se entrenan mediante datos históricos y de esta forma aprende a asignar salidas adecuadas en función de dichas entradas, dicho de otra forma, predice el valor de salida. A su vez, el aprendizaje supervisado se divide en regresión (si la salida es de tipo numérico) y clasificación (si la salida es del tipo categórico). \cite{Recuero2017}
-\item El aprendizaje no supervisado se utiliza en datos en los que existen variables de entrada, pero no existen variables de salida para dichas variables de entrada. Por consiguiente, solo se puede describir la estructura de los datos, para intentar conseguir algún tipo de estructura u organización que simplifique el análisis.\cite{Recuero2017}
+\item El aprendizaje supervisado (o predictivos): se basa en algoritmos que intentan encontrar una función, que, dadas las entradas, asigne unas salidas adecuadas. Estos algoritmos se entrenan mediante datos históricos y de esta forma aprende a asignar salidas adecuadas en función de dichas entradas, dicho de otra forma, predice el valor de salida. A su vez, el aprendizaje supervisado se divide en regresión (si la salida es de tipo numérico) y clasificación (si la salida es del tipo categórico). \cite{Recuero2017}
+\item El aprendizaje no supervisado: se utiliza en datos en los que existen variables de entrada, pero no existen variables de salida para dichas variables de entrada. Por consiguiente, solo se puede describir la estructura de los datos, para intentar conseguir algún tipo de tendencias y patrones que simplifiquen el análisis.\cite{Recuero2017} \cite{rodriguez2009herramientas}
 \end{itemize}
 
-Los metodos de prediccion que se van a utilizar para resolver el problema en cuestion van a ser aquellos que mejores resultados han obtenido utilizando los datos de varias lineas de investigación estudiadas. Estos métodos son los siguientes: árboles de decisión, redes neuronales, k-vecinos cercanos, bosques aleatorios y regresión logística. Obviamente se debe destacar que, aunque se han utilizado dichos métodos, pueden existir otros que se ajusten mejor a los datos.
+\subsection{Lenguaje R y RStudio}
+Una vez que se tienen claros los conceptos y las técnicas, se deberá elegir la herramienta de trabajo. En esta línea de investigación se va a utilizar R como lenguaje de programación y RStudio como entorno de desarrollo para R.
 
-Las métricas que se va a utilizar para obtener la precisión de los modelos van a ser aquellas descritas en el articulo de Costa et al. \cite{Costa2017}, Helal et.al \cite{Helal2018} y Ashraf et al.\cite{Ashraf2018}. Estas métricas son frecuentes en ámbitos como la obtención de información, aprendizaje automático y otros dominios como la clasificación binaria. Dichas métricas van a ser las siguientes:
+Como ya se ha comentado, R es un lenguaje de programación para el análisis estadístico. Al estar orientado a la estadística, proporciona un gran número de bibliotecas y herramientas. Destaca también por la generación de gráficos estadísticos de gran calidad. Posee muchos paquetes dedicados a la graficacion. Además, es una herramienta que facilita el cálculo numérico y el uso en la minería de datos. \cite{emanuel2014}
+
+Su potencia reside fundamentalmente en que es un software gratuito y de código abierto. Como ya se ha comentado, posee un gran número de herramientas que pueden ampliarse mediante paquetes, librerías o definiendo funciones propias.
+
+Por otro lado, RStudio es el entorno de desarrollo para R. Es también software libre y tiene la ventaja que se puede ejecutar sobre distintas plataformas (Windows, Mac y Linux).
+
+% https://www.maximaformacion.es/blog-dat/que-es-r-software/
+\subsection{Modelos seleccionados}
+Los métodos de predicción que se van a utilizar para resolver el problema en cuestión van a ser aquellos que mejores resultados han obtenido utilizando los datos de varias líneas de investigación estudiadas. Estos métodos son los siguientes: árboles de decisión, redes neuronales, k-vecinos cercanos, bosques aleatorios y regresión logística. Obviamente se debe destacar que, aunque se van a utilizar dichos métodos, pueden existir otros que se ajusten mejor a los datos.
+
+\subsubsection{Criterio de selección}
+Una vez que se han seleccionado las variables y los algoritmos a estudiar, es hora de realizar el propio modelado. Al realizar el modelado, deberemos tener en cuenta que variables son mejores para este modelado. Es posible que existan variables que únicamente empeoren los resultados del modelado, por lo tanto, se deberán desestimar. Para ello se va a utilizar el criterio de Akaike (AIC). 
+
+Este criterio indica el ajuste que tienen los datos experimentales con el modelo utilizado. Obviamente, el criterio de AIC solo tiene sentido cuando se realizan comparaciones con otros modelos (utilizando el mismo conjunto de datos). \cite{martinez2009criterio}
+
+Cuanto menor sea el valor de este criterio, mejor se ajustan los datos al modelo. Por tanto, se deberá seleccionar el modelo que menor AIC tenga. \cite{martinez2009criterio}
+
+\subsubsection{Métricas de precisión}
+Las métricas que se va a utilizar para obtener la precisión de los modelos van a ser aquellas descritas en el artículo de  \citeA{COSTA2017247}, \citeA{Helal2018} y \citeA{ASHRAF20181021}. Estas métricas son frecuentes en ámbitos como la obtención de información, aprendizaje automático y otros dominios como la clasificación binaria. Dichas métricas van a ser las siguientes:
 
 \begin{itemize}
 	\item FMeasure: es la media armónica de la precisión y recuperación de un clasificador; es decir, FMeasure = 2 * Precision * Recall / (Precision + Recall).
 	\item Precision: es la fracción de verdaderos positivos entre todos los ejemplos clasificados como positivos. P= TP/(FP+TP).
-	\item Recall: es la fracción de verdaderos positivos clasificados correctamente. R=TP/(FN+TP).
+	\item Recall: es la fracción de verdaderos positivos clasificados correctamente. R = TP/(FN+TP).
 	\item AUC: el área bajo la característica de operación del receptor. La curva (ROC) indica la probabilidad de que un clasificador clasifique un positivo seleccionado aleatoriamente sobre un negativo. Un AUC con valor de 1 indica un perfecto clasificador, mientras que 0.5 implica que el clasificador lo hace de forma aleatoria.
 \end{itemize}
 
 Donde:
 \begin{itemize}
-	\item TP - Verdadero Positivo: es el numero de instancias positivas clasificadas correctamente como positivas. 
-	\item FP - Falso Negativo: es el numero de instancias positivas clasificadas incorrectamente como negativas.
-	\item FP - Falso Positivo: es el numero de instancias negativas clasificadas incorrectamente como positivas.
-	\item TN - Verdadero Negativo: es el numero de instancias negativas clasificadas correctamente como negativas.
+	\item TP - Verdadero Positivo: es el número de instancias positivas clasificadas correctamente como positivas. 
+	\item FP - Falso Negativo: es el número de instancias positivas clasificadas incorrectamente como negativas.
+	\item FP - Falso Positivo: es el número de instancias negativas clasificadas incorrectamente como positivas.
+	\item TN - Verdadero Negativo: es el número de instancias negativas clasificadas correctamente como negativas.
 \end{itemize}
+
+Estas métricas se van a mostrar utilizando un gráfico conocido como matriz de confusión.

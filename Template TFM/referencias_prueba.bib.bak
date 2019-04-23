@@ -117,4 +117,263 @@
   keywords = {Data mining, Decision trees, Clustering, Performance prediction, Performance progression, Quality of educational processes},
 }
 
+@Article{COSTA2017247,
+  author   = {Evandro B. Costa and Baldoino Fonseca and Marcelo Almeida Santana and Fabrísia Ferreira de Araújo and Joilson Rego},
+  title    = {Evaluating the effectiveness of educational data mining techniques for early prediction of students' academic failure in introductory programming courses},
+  journal  = {Computers in Human Behavior},
+  year     = {2017},
+  volume   = {73},
+  pages    = {247 - 256},
+  issn     = {0747-5632},
+  doi      = {https://doi.org/10.1016/j.chb.2017.01.047},
+  url      = {http://www.sciencedirect.com/science/article/pii/S0747563217300596},
+  abstract = {The data about high students' failure rates in introductory programming courses have been alarming many educators, raising a number of important questions regarding prediction aspects. In this paper, we present a comparative study on the effectiveness of educational data mining techniques to early predict students likely to fail in introductory programming courses. Although several works have analyzed these techniques to identify students' academic failures, our study differs from existing ones as follows: (i) we investigate the effectiveness of such techniques to identify students likely to fail at early enough stage for action to be taken to reduce the failure rate; (ii) we analyse the impact of data preprocessing and algorithms fine-tuning tasks, on the effectiveness of the mentioned techniques. In our study we evaluated the effectiveness of four prediction techniques on two different and independent data sources on introductory programming courses available from a Brazilian Public University: one comes from distance education and the other from on-campus. The results showed that the techniques analyzed in our study are able to early identify students likely to fail, the effectiveness of some of these techniques is improved after applying the data preprocessing and/or algorithms fine-tuning, and the support vector machine technique outperforms the other ones in a statistically significant way.},
+  keywords = {Artificial intelligence in education, Automatic instructional planner, Automatic prediction, Educational data mining, Interactive learning environment, Learner modeling},
+}
+
+@Online{MARIN2018,
+  author = {Jose Luis Marín},
+  title  = {Ciencia de datos, machine learning y deep learning},
+  year   = {2018},
+  date   = {2018-04-05},
+  url    = {https://datos.gob.es/es/noticia/ciencia-de-datos-machine-learning-y-deep-learning},
+  note   = {Recuperado 17 enero, 2019},
+}
+
+@inproceedings{tang2002integrating,
+  title={Integrating GIS and spatial data mining technique for target marketing of university courses},
+  author={Tang, Hong and McDonald, Simon},
+  organization={Citeseer}
+}
+
+@inproceedings{moine2011analisis,
+  title={An{\'a}lisis comparativo de metodolog{\'\i}as para la gesti{\'o}n de proyectos de Miner{\'\i}a de Datos},
+  author={Moine, Juan Miguel and Gordillo, Silvia Ethel and Haedo, Ana Silvia},
+  booktitle={Congreso Argentino de Ciencias de la Computaci{\'o}n},
+  volume={17},
+  year={2011}
+}
+
+@Article{jose2016explotacion,
+  author = {Jos{\'e}, Barrera G{\'o}mez Francisco},
+  title  = {Explotaci{\'o}n y modelos para predicci{\'o}n de datos de un centro educativo},
+  year   = {2016},
+}
+
+@Article{miranda2017analisis,
+  author    = {Miranda, Mauricio A and Guzm{\'a}n, Jheser},
+  title     = {An{\'a}lisis de la deserci{\'o}n de estudiantes universitarios usando t{\'e}cnicas de miner{\'\i}a de datos},
+  journal   = {Formaci{\'o}n universitaria},
+  year      = {2017},
+  volume    = {10},
+  number    = {3},
+  pages     = {61--68},
+  publisher = {Centro de Informaci{\'o}n Tecnol{\'o}gica},
+}
+
+@Article{ADEKITAN2019e01250,
+  author   = {Aderibigbe Israel Adekitan and Odunayo Salau},
+  title    = {The impact of engineering students' performance in the first three years on their graduation result using educational data mining},
+  journal  = {Heliyon},
+  year     = {2019},
+  volume   = {5},
+  number   = {2},
+  pages    = {e01250},
+  issn     = {2405-8440},
+  doi      = {https://doi.org/10.1016/j.heliyon.2019.e01250},
+  url      = {http://www.sciencedirect.com/science/article/pii/S240584401836924X},
+  abstract = {Research studies on educational data mining are on the increase due to the benefits obtained from the knowledge acquired from machine learning processes which help to improve decision making processes in higher institutions of learning. In this study, predictive analysis was carried out to determine the extent to which the fifth year and final Cumulative Grade Point Average (CGPA) of engineering students in a Nigerian University can be determined using the program of study, the year of entry and the Grade Point Average (GPA) for the first three years of study as inputs into a Konstanz Information Miner (KNIME) based data mining model. Six data mining algorithms were considered, and a maximum accuracy of 89.15% was achieved. The result was verified using both linear and pure quadratic regression models, and R2 values of 0.955 and 0.957 were recorded for both cases. This creates an opportunity for identifying students that may graduate with poor results or may not graduate at all, so that early intervention may be deployed.},
+  keywords = {Education, Information science, Computer science},
+}
+
+@Article{alvarez2010violencia,
+  author  = {{\'A}lvarez Garc{\'\i}a, David and {\'A}lvarez P{\'e}rez, Luis and N{\'u}{\~n}ez P{\'e}rez, Jos{\'e} Carlos and Gonz{\'a}lez Castro, Mar{\'\i}a Paloma and Gonz{\'a}lez Garc{\'\i}a, Julio Antonio and Rodr{\'\i}guez P{\'e}rez, Celestino and Cerezo Men{\'e}ndez, Rebeca},
+  title   = {Violencia en los centros educativos y fracaso acad{\'e}mico},
+  journal = {Revista Iberoamericana de Psicolog{\'\i}a y salud},
+  year    = {2010},
+}
+
+@Article{ballesteros2013mineria,
+  author  = {Ballesteros Rom{\'a}n, Alejandro and S{\'a}nchez-Guzm{\'a}n, Daniel and Garc{\'\i}a Salcedo, Ricardo},
+  title   = {Miner{\'\i}a de datos educativa: Una herramienta para la investigaci{\'o}n de patroness de aprendizaje sobre un contexto educativo.},
+  journal = {Latin-American Journal of Physics Education},
+  year    = {2013},
+  volume  = {7},
+  number  = {4},
+}
+
+@Article{rodriguez2009herramientas,
+  author    = {Rodr{\'\i}guez Su{\'a}rez, Yuniet and D{\'\i}az Amador, Anolandy},
+  title     = {Herramientas de miner{\'\i}a de datos},
+  journal   = {Revista Cubana de Ciencias Inform{\'a}ticas},
+  year      = {2009},
+  volume    = {3},
+  number    = {3-4},
+  publisher = {Universidad de las Ciencias Inform{\'a}ticas},
+}
+
+@MastersThesis{galan2016aplicacion,
+  author = {Gal{\'a}n Cortina, V{\'\i}ctor},
+  title  = {Aplicaci{\'o}n de la metodolog{\'\i}a CRISP-DM a un proyecto de miner{\'\i}a de datos en el entorno universitario},
+  year   = {2016},
+  type   = {{B.S.} thesis},
+}
+
+@Article{jaramillo2015aplicacion,
+  author  = {Jaramillo, Ang{\'e}lica and Arias, Henry Patricio Paz},
+  title   = {Aplicaci{\'o}n de T{\'e}cnicas de Miner{\'\i}a de Datos para Determinar las Interacciones de los Estudiantes en un Entorno Virtual de Aprendizaje},
+  journal = {Revista Tecnol{\'o}gica-ESPOL},
+  year    = {2015},
+  volume  = {28},
+  number  = {1},
+}
+
+@Article{vera2012prediccion,
+  author  = {Vera, Carlos M{\'a}rquez and Morales, Crist{\'o}bal Romero and Soto, Sebasti{\'a}n Ventura},
+  title   = {Predicci{\'o}n del fracaso escolar mediante t{\'e}cnicas de miner{\'\i}a de datos},
+  journal = {Revista Iberoamericana de Tecnolog{\'\i}as del/da Aprendizaje/Aprendizagem},
+  year    = {2012},
+  volume  = {109},
+}
+
+@WWW{rexer2013,
+  author = {Gregory Piatetsky},
+  title  = {Rexer Analytics 2013 Data Miner Survey Highlights},
+  year   = {2013},
+  date   = {2019-04-14},
+  url    = {https://www.predictiveanalyticsworld.com/patimes/rexer-analytics-2013-data-miner-survey-highlights/2777/},
+}
+
+@InProceedings{dapozo2006aplicacion,
+  author    = {Dapozo, Gladys N and Porcel, Eduardo and L{\'o}pez, Mar{\'\i}a Victoria and Bogado, Ver{\'o}nica S and Bargiela, Roberto},
+  title     = {Aplicaci{\'o}n de miner{\'\i}a de datos con una herramienta de software libre en la evaluaci{\'o}n del rendimiento acad{\'e}mico de los alumnos de la carrera de Sistemas de la FACENA-UNNE},
+  booktitle = {VIII Workshop de Investigadores en Ciencias de la Computaci{\'o}n},
+  year      = {2006},
+}
+
+@WWW{Recuero2017,
+  author  = {Paloma Recuero},
+  title   = {Los 2 tipos de aprendizaje en Machine Learning: supervisado y no supervisado},
+  year    = {2017},
+  url     = {https://data-speaks.luca-d3.com/2017/11/que-algoritmo-elegir-en-ml-aprendizaje.html},
+  urldate = {2019-01-17},
+}
+
+@Article{zambrano2011analisis,
+  author    = {Zambrano Matamala, Carolina and Rojas D{\'\i}az, Dar{\'\i}o and Carvajal Cuello, Karina and Acu{\~n}a Leiva, Gonzalo},
+  title     = {An{\'a}lisis de rendimiento acad{\'e}mico estudiantil usando data warehouse y redes neuronales},
+  journal   = {Ingeniare. Revista chilena de ingenier{\'\i}a},
+  year      = {2011},
+  volume    = {19},
+  number    = {3},
+  pages     = {369--381},
+  publisher = {Universidad de Tarapac{\'a}},
+}
+
+@WWW{emanuel2014,
+  author  = {Pablo Emanuel Goette},
+  title   = {R, un lenguaje y entorno de programación para análisis estadístico},
+  year    = {2014},
+  url     = {https://www.genbeta.com/desarrollo/r-un-lenguaje-y-entorno-de-programacion-para-analisis-estadistico},
+  urldate = {2019-04-16},
+}
+
+@Article{martinez2009criterio,
+  author  = {Mart{\i}nez, Diego R and Julio, L Alb{\i}n and Cabaleiro, Jos{\'e} Carlos and Pena, Tom{\'a}s F and Rivera, Francisco F and Blanco, Vicente},
+  title   = {El criterio de informaci{\'o}n de Akaike en la obtenci{\'o}n de modelos estad{\i}sticos de rendimiento},
+  journal = {XX Jornadas de Paralelismo},
+  year    = {2009},
+}
+
+@Article{matos2006metodologia,
+  author    = {Matos, Guillermo and Chalmeta, Ricardo and Coltell, Oscar},
+  title     = {Metodolog{\'\i}a para la extracci{\'o}n del conocimiento empresarial a partir de los datos},
+  journal   = {Informaci{\'o}n tecnol{\'o}gica},
+  year      = {2006},
+  volume    = {17},
+  number    = {2},
+  pages     = {81--88},
+  publisher = {Centro de Informaci{\'o}n Tecnol{\'o}gica},
+}
+
+@Article{gour2010improve,
+  author    = {Gour, Vishal and Sarangdevot, SS and Tanwar, Govind Singh and Sharma, Anand},
+  title     = {Improve performance of extract, transform and load (ETL) in data warehouse},
+  journal   = {International Journal on Computer Science and Engineering},
+  year      = {2010},
+  volume    = {2},
+  number    = {3},
+  pages     = {786--789},
+  publisher = {Engg Journals Publications},
+}
+
+@Article{prakash2017etl,
+  author  = {Prakash, Gajare Harikishan and Rangdale, P},
+  title   = {ETL Data conversion: Extraction transformation and loading Data conversion},
+  journal = {International Journal Of Engineering And Computer Science},
+  year    = {2017},
+  pages   = {22545--22550},
+}
+
+@Misc{une2018,
+  author = {{UNE 166006}},
+  title  = {Gestión de la I+D+i: Sistema de vigilancia e inteligencia},
+  year   = {2018},
+}
+
+@WWW{JMMarin,
+  author = {Juan Miguel Marin Diazaraque},
+  title  = {Tema 2: Estadística Descriptiva Multivariante},
+  date   = {2019-04-18},
+  url    = {http://halweb.uc3m.es/esp/Personal/personas/jmmarin/esp/AMult/tema2am.pdf},
+}
+
+@WWW{Orellana2001,
+  author = {Liliana Orellana},
+  title  = {Estadística Descriptiva},
+  year   = {2001},
+  date   = {2019-04-18},
+  url    = {http://www.dm.uba.ar/materias/estadistica_Q/2011/1/modulo%20descriptiva.pdf},
+}
+
+@WWW{santiago2011,
+  author = {Santiago de la Fuente Fernandez},
+  title  = {Componentes Principales},
+  year   = {2011},
+  date   = {2019-04-18},
+  url    = {http://www.estadistica.net/Master-Econometria/Componentes_Principales.pdf},
+}
+
+@WWW{Manguart2017,
+  author = {Antonio Manguart Páez},
+  title  = {Conceptos básicos del aprendizaje supervisado (para personas no técnicas)},
+  year   = {2017},
+  date   = {2019-04-18},
+  url    = {https://medium.com/@manguart/machine-learning-conceptos-básicos-del-aprendizaje-supervisado-para-personas-no-técnicas-142bbb222140},
+}
+
+@WWW{klein2018,
+  author = {Bernd Klein},
+  title  = {k-Nearest-Neighbor Classifier},
+  year   = {2018},
+  date   = {2019-04-18},
+  url    = {https://www.python-course.eu/k_nearest_neighbor_classifier.php},
+}
+
+@WWW{yepes2017,
+  author = {Víctor Yepes Piqueras},
+  title  = {¿Qué es y para qué sirve una red neuronal artificial?},
+  year   = {2017},
+  date   = {2019-04-18},
+  url    = {https://victoryepes.blogs.upv.es/2017/01/07/que-es-y-para-que-sirve-una-red-neuronal-artificial/},
+}
+
+@WWW{Sayad2019,
+  author = {Saed Sayad},
+  title  = {An Introduction to Data Science},
+  year   = {2019},
+  date   = {2019-04-19},
+  url    = {https://www.saedsayad.com/data_mining_map.htm},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
