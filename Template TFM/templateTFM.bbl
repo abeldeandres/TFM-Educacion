@@ -143,6 +143,39 @@ Asif, R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Chalaris%
+, Gritzalis%
+, Maragoudakis%
+, Sgouropoulou%
+\BCBL {}\ \BBA {} Tsolakidis%
+}{%
+Chalaris%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+chalaris2014improving}
+\APACinsertmetastar {%
+chalaris2014improving}%
+\begin{APACrefauthors}%
+Chalaris, M.%
+, Gritzalis, S.%
+, Maragoudakis, M.%
+, Sgouropoulou, C.%
+\BCBL {}\ \BBA {} Tsolakidis, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Improving quality of educational processes providing new
+  knowledge using data mining techniques} {Improving quality of educational
+  processes providing new knowledge using data mining techniques}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Procedia-Social and Behavioral
+  Sciences}{147}{}{390--397}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Costa%
 , Fonseca%
 , Santana%
@@ -184,30 +217,6 @@ Costa, E\BPBI B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-de~la Fuente~Fernandez%
-}{%
-de~la Fuente~Fernandez%
-}{%
-{\protect \APACyear {2011}}%
-}]{%
-santiago2011}
-\APACinsertmetastar {%
-santiago2011}%
-\begin{APACrefauthors}%
-de~la Fuente~Fernandez, S.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2011}{}{}.
-\newblock
-\APACrefbtitle {Componentes Principales.} {Componentes principales.}
-\newblock
-\begin{APACrefURL}
-  \url{http://www.estadistica.net/Master-Econometria/Componentes_Principales.pdf}
-  \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Delen%
 }{%
 Delen%
@@ -236,31 +245,6 @@ Delen, D.%
 \newblock
 \begin{APACrefDOI} \doi{https://doi.org/10.1016/j.dss.2010.06.003}
   \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Diazaraque%
-}{%
-Diazaraque%
-}{%
-{\protect \APACyear {{\protect \bibnodate {}}}}%
-}]{%
-JMMarin}
-\APACinsertmetastar {%
-JMMarin}%
-\begin{APACrefauthors}%
-Diazaraque, J\BPBI M\BPBI M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
-\newblock
-\APACrefbtitle {Tema 2: Estadística Descriptiva Multivariante.} {Tema 2:
-  Estadística descriptiva multivariante.}
-\newblock
-\begin{APACrefURL}
-  \url{http://halweb.uc3m.es/esp/Personal/personas/jmmarin/esp/AMult/tema2am.pdf}
-  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -362,37 +346,6 @@ Goette, P\BPBI E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Gour%
-, Sarangdevot%
-, Tanwar%
-\BCBL {}\ \BBA {} Sharma%
-}{%
-Gour%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2010}}%
-}]{%
-gour2010improve}
-\APACinsertmetastar {%
-gour2010improve}%
-\begin{APACrefauthors}%
-Gour, V.%
-, Sarangdevot, S.%
-, Tanwar, G\BPBI S.%
-\BCBL {}\ \BBA {} Sharma, A.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2010}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Improve performance of extract, transform and load (ETL)
-  in data warehouse} {Improve performance of extract, transform and load (etl)
-  in data warehouse}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{International Journal on Computer Science and
-  Engineering}{2}{3}{786--789}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Helal%
 \ \protect \BOthers {.}}{%
 Helal%
@@ -483,28 +436,63 @@ Jos{\'e}, B\BPBI G\BPBI F.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Klein%
+Kaur%
+, Singh%
+\BCBL {}\ \BBA {} Josan%
 }{%
-Klein%
-}{%
-{\protect \APACyear {2018}}%
+Kaur%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
 }]{%
-klein2018}
+kaur2015classification}
 \APACinsertmetastar {%
-klein2018}%
+kaur2015classification}%
 \begin{APACrefauthors}%
-Klein, B.%
+Kaur, P.%
+, Singh, M.%
+\BCBL {}\ \BBA {} Josan, G\BPBI S.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2018}{}{}.
+\APACrefYearMonthDay{2015}{}{}.
 \newblock
-\APACrefbtitle {k-Nearest-Neighbor Classifier.} {k-nearest-neighbor
-  classifier.}
+{\BBOQ}\APACrefatitle {Classification and prediction based data mining
+  algorithms to predict slow learners in education sector} {Classification and
+  prediction based data mining algorithms to predict slow learners in education
+  sector}.{\BBCQ}
 \newblock
-\begin{APACrefURL}
-  \url{https://www.python-course.eu/k_nearest_neighbor_classifier.php}
-  \end{APACrefURL}
+\APACjournalVolNumPages{Procedia Computer Science}{57}{}{500--508}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lehr%
+\ \protect \BOthers {.}}{%
+Lehr%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+lehr2016use}
+\APACinsertmetastar {%
+lehr2016use}%
+\begin{APACrefauthors}%
+Lehr, S.%
+, Liu, H.%
+, Kinglesmith, S.%
+, Konyha, A.%
+, Robaszewska, N.%
+\BCBL {}\ \BBA {} Medinilla, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Use educational data mining to predict undergraduate
+  retention} {Use educational data mining to predict undergraduate
+  retention}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2016 IEEE 16th International Conference on Advanced
+  Learning Technologies (ICALT)} {2016 ieee 16th international conference on
+  advanced learning technologies (icalt)}\ (\BPGS\ 428--430).
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -565,31 +553,26 @@ Mart{\i}nez, D\BPBI R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Matos%
-, Chalmeta%
-\BCBL {}\ \BBA {} Coltell%
+Mart{\'\i}nez%
 }{%
-Matos%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2006}}%
+Mart{\'\i}nez%
+}{%
+{\protect \APACyear {2016}}%
 }]{%
-matos2006metodologia}
+martinez2016mineria}
 \APACinsertmetastar {%
-matos2006metodologia}%
+martinez2016mineria}%
 \begin{APACrefauthors}%
-Matos, G.%
-, Chalmeta, R.%
-\BCBL {}\ \BBA {} Coltell, O.%
+Mart{\'\i}nez, M.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2006}{}{}.
+\APACrefYearMonthDay{2016}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Metodolog{\'\i}a para la extracci{\'o}n del conocimiento
-  empresarial a partir de los datos} {Metodolog{\'\i}a para la extracci{\'o}n
-  del conocimiento empresarial a partir de los datos}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Miner{\'\i}a de datos} {Miner{\'\i}a de datos}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Informaci{\'o}n tecnol{\'o}gica}{17}{2}{81--88}.
+\APACjournalVolNumPages{Universidad Nacional del Noroeste Facultad de Ciencias
+  Exactas, Naturales y Agrimensura, Argentina}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -623,26 +606,26 @@ Moine, J\BPBI M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Orellana%
+Nielsen%
 }{%
-Orellana%
+Nielsen%
 }{%
-{\protect \APACyear {2001}}%
+{\protect \APACyear {2018}}%
 }]{%
-Orellana2001}
+Nielsen2018}
 \APACinsertmetastar {%
-Orellana2001}%
+Nielsen2018}%
 \begin{APACrefauthors}%
-Orellana, L.%
+Nielsen, J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2001}{}{}.
+\APACrefYearMonthDay{2018}{}{}.
 \newblock
-\APACrefbtitle {Estadística Descriptiva.} {Estadística descriptiva.}
+\APACrefbtitle {Nielsen's Law of Internet Bandwidth.} {Nielsen's law of
+  internet bandwidth.}
 \newblock
-\begin{APACrefURL}
-  \url{http://www.dm.uba.ar/materias/estadistica_Q/2011/1/modulo%20descriptiva.pdf}
+\begin{APACrefURL} \url{https://www.nngroup.com/articles/law-of-bandwidth/}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
@@ -691,29 +674,35 @@ Panahi, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Páez%
+Peña-Ayala%
 }{%
-Páez%
+Peña-Ayala%
 }{%
-{\protect \APACyear {2017}}%
+{\protect \APACyear {2014}}%
 }]{%
-Manguart2017}
+PENAAYALA20141432}
 \APACinsertmetastar {%
-Manguart2017}%
+PENAAYALA20141432}%
 \begin{APACrefauthors}%
-Páez, A\BPBI M.%
+Peña-Ayala, A.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2017}{}{}.
+\APACrefYearMonthDay{2014}{}{}.
 \newblock
-\APACrefbtitle {Conceptos básicos del aprendizaje supervisado (para personas
-  no técnicas).} {Conceptos básicos del aprendizaje supervisado (para
-  personas no técnicas).}
+{\BBOQ}\APACrefatitle {Educational data mining: A survey and a data
+  mining-based analysis of recent works} {Educational data mining: A survey and
+  a data mining-based analysis of recent works}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Expert Systems with Applications}{41}{4, Part 1}{1432 -
+  1462}.
 \newblock
 \begin{APACrefURL}
-  \url{https://medium.com/@manguart/machine-learning-conceptos-básicos-del-aprendizaje-supervisado-para-personas-no-técnicas-142bbb222140}
+  \url{http://www.sciencedirect.com/science/article/pii/S0957417413006635}
   \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.eswa.2013.08.042}
+  \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -739,59 +728,6 @@ Piatetsky, G.%
 \begin{APACrefURL}
   \url{https://www.predictiveanalyticsworld.com/patimes/rexer-analytics-2013-data-miner-survey-highlights/2777/}
   \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Piqueras%
-}{%
-Piqueras%
-}{%
-{\protect \APACyear {2017}}%
-}]{%
-yepes2017}
-\APACinsertmetastar {%
-yepes2017}%
-\begin{APACrefauthors}%
-Piqueras, V\BPBI Y.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-\APACrefbtitle {¿Qué es y para qué sirve una red neuronal artificial?}
-  {¿qué es y para qué sirve una red neuronal artificial?}
-\newblock
-\begin{APACrefURL}
-  \url{https://victoryepes.blogs.upv.es/2017/01/07/que-es-y-para-que-sirve-una-red-neuronal-artificial/}
-  \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Prakash%
-\ \BBA {} Rangdale%
-}{%
-Prakash%
-\ \BBA {} Rangdale%
-}{%
-{\protect \APACyear {2017}}%
-}]{%
-prakash2017etl}
-\APACinsertmetastar {%
-prakash2017etl}%
-\begin{APACrefauthors}%
-Prakash, G\BPBI H.%
-\BCBT {}\ \BBA {} Rangdale, P.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {ETL Data conversion: Extraction transformation and
-  loading Data conversion} {Etl data conversion: Extraction transformation and
-  loading data conversion}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{International Journal Of Engineering And Computer
-  Science}{}{}{22545--22550}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -821,6 +757,34 @@ Recuero, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Riquelme~Santos%
+, Ruiz%
+\BCBL {}\ \BBA {} Gilbert%
+}{%
+Riquelme~Santos%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+riquelme2006mineria}
+\APACinsertmetastar {%
+riquelme2006mineria}%
+\begin{APACrefauthors}%
+Riquelme~Santos, J\BPBI C.%
+, Ruiz, R.%
+\BCBL {}\ \BBA {} Gilbert, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Miner{\'\i}a de datos: Conceptos y tendencias}
+  {Miner{\'\i}a de datos: Conceptos y tendencias}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Inteligencia Artificial: Revista Iberoamericana de
+  Inteligencia Artificial, 10 (29), 11-18.}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Rodr{\'\i}guez~Su{\'a}rez%
 \ \BBA {} D{\'\i}az~Amador%
 }{%
@@ -847,27 +811,30 @@ Rodr{\'\i}guez~Su{\'a}rez, Y.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Sayad%
+Romero%
+\ \BBA {} Ventura%
 }{%
-Sayad%
+Romero%
+\ \BBA {} Ventura%
 }{%
-{\protect \APACyear {2019}}%
+{\protect \APACyear {2010}}%
 }]{%
-sayad2019}
+romero2010educational}
 \APACinsertmetastar {%
-sayad2019}%
+romero2010educational}%
 \begin{APACrefauthors}%
-Sayad, S.%
+Romero, C.%
+\BCBT {}\ \BBA {} Ventura, S.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2019}{}{}.
+\APACrefYearMonthDay{2010}{}{}.
 \newblock
-\APACrefbtitle {An Introduction to Data Science.} {An introduction to data
-  science.}
+{\BBOQ}\APACrefatitle {Educational data mining: a review of the state of the
+  art} {Educational data mining: a review of the state of the art}.{\BBCQ}
 \newblock
-\begin{APACrefURL} \url{https://www.saedsayad.com/data_mining_map.htm}
-  \end{APACrefURL}
+\APACjournalVolNumPages{IEEE Transactions on Systems, Man, and Cybernetics,
+  Part C (Applications and Reviews)}{40}{6}{601--618}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -908,46 +875,58 @@ Shahiri, A\BPBI M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-{UNE 166006}%
+Silva%
+\ \BBA {} Fonseca%
 }{%
-{UNE 166006}%
+Silva%
+\ \BBA {} Fonseca%
 }{%
-{\protect \APACyear {2018}}%
+{\protect \APACyear {2017}}%
 }]{%
-une2018}
+inbook}
 \APACinsertmetastar {%
-une2018}%
+inbook}%
 \begin{APACrefauthors}%
-{UNE 166006}.%
+Silva, C.%
+\BCBT {}\ \BBA {} Fonseca, J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2018}{}{}.
+\APACrefYearMonthDay{2017}{09}{}.
 \newblock
-\APACrefbtitle {Gestión de la I+D+i: Sistema de vigilancia e inteligencia.}
-  {Gestión de la i+d+i: Sistema de vigilancia e inteligencia.}
+{\BBOQ}\APACrefatitle {Educational Data Mining: A Literature Review}
+  {Educational data mining: A literature review}.{\BBCQ}
+\newblock
+\BIn{} (\BPG~87-94).
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-319-46568-5_9} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-{University of Cincinnati}%
+Sin%
+\ \BBA {} Muthu%
 }{%
-{University of Cincinnati}%
+Sin%
+\ \BBA {} Muthu%
 }{%
-{\protect \APACyear {2018}}%
+{\protect \APACyear {2015}}%
 }]{%
-uCincinnati2018}
+sin2015application}
 \APACinsertmetastar {%
-uCincinnati2018}%
+sin2015application}%
 \begin{APACrefauthors}%
-{University of Cincinnati}.%
+Sin, K.%
+\BCBT {}\ \BBA {} Muthu, L.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2018}{}{}.
+\APACrefYearMonthDay{2015}{}{}.
 \newblock
-\APACrefbtitle {Naïve Bayes Classifier.} {Naïve bayes classifier.}
+{\BBOQ}\APACrefatitle {APPLICATION OF BIG DATA IN EDUCATION DATA MINING AND
+  LEARNING ANALYTICS--A LITERATURE REVIEW.} {Application of big data in
+  education data mining and learning analytics--a literature review.}{\BBCQ}
 \newblock
-\begin{APACrefURL} \url{http://uc-r.github.io/naive_bayes} \end{APACrefURL}
+\APACjournalVolNumPages{ICTACT journal on soft computing}{5}{4}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

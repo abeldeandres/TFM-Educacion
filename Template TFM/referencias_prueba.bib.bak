@@ -376,4 +376,115 @@
   url    = {https://www.saedsayad.com/data_mining_map.htm},
 }
 
+@WWW{uCincinnati2018,
+  author = {{University of Cincinnati}},
+  title  = {Naïve Bayes Classifier},
+  year   = {2018},
+  url    = {http://uc-r.github.io/naive_bayes},
+}
+
+@WWW{Nielsen2018,
+  author = {Jakob Nielsen},
+  title  = {Nielsen's Law of Internet Bandwidth},
+  year   = {2018},
+  date   = {2019-04-25},
+  url    = {https://www.nngroup.com/articles/law-of-bandwidth/},
+}
+
+@Article{romero2010educational,
+  author    = {Romero, Crist{\'o}bal and Ventura, Sebasti{\'a}n},
+  title     = {Educational data mining: a review of the state of the art},
+  journal   = {IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)},
+  year      = {2010},
+  volume    = {40},
+  number    = {6},
+  pages     = {601--618},
+  publisher = {Ieee},
+}
+
+@Book{hand1997construction,
+  author    = {Hand, David J},
+  title     = {Construction and assessment of classification rules},
+  year      = {1997},
+  volume    = {15},
+  publisher = {Wiley Chichester},
+}
+
+@Article{riquelme2006mineria,
+  author    = {Riquelme Santos, Jos{\'e} Crist{\'o}bal and Ruiz, Roberto and Gilbert, Karina},
+  title     = {Miner{\'\i}a de datos: Conceptos y tendencias},
+  journal   = {Inteligencia Artificial: Revista Iberoamericana de Inteligencia Artificial, 10 (29), 11-18.},
+  year      = {2006},
+  publisher = {IBERAMIA: Sociedad Iberoamericana de Inteligencia Artificial},
+}
+
+@Article{sin2015application,
+  author  = {Sin, Katrina and Muthu, Loganathan},
+  title   = {APPLICATION OF BIG DATA IN EDUCATION DATA MINING AND LEARNING ANALYTICS--A LITERATURE REVIEW.},
+  journal = {ICTACT journal on soft computing},
+  year    = {2015},
+  volume  = {5},
+  number  = {4},
+}
+
+@InBook{inbook,
+  author = {Silva, Carla and Fonseca, Jose},
+  title  = {Educational Data Mining: A Literature Review},
+  year   = {2017},
+  pages  = {87-94},
+  doi    = {10.1007/978-3-319-46568-5_9},
+  month  = {09},
+}
+
+@Article{PENAAYALA20141432,
+  author   = {Alejandro Peña-Ayala},
+  title    = {Educational data mining: A survey and a data mining-based analysis of recent works},
+  journal  = {Expert Systems with Applications},
+  year     = {2014},
+  volume   = {41},
+  number   = {4, Part 1},
+  pages    = {1432 - 1462},
+  issn     = {0957-4174},
+  doi      = {https://doi.org/10.1016/j.eswa.2013.08.042},
+  url      = {http://www.sciencedirect.com/science/article/pii/S0957417413006635},
+  abstract = {This review pursues a twofold goal, the first is to preserve and enhance the chronicles of recent educational data mining (EDM) advances development; the second is to organize, analyze, and discuss the content of the review based on the outcomes produced by a data mining (DM) approach. Thus, as result of the selection and analysis of 240 EDM works, an EDM work profile was compiled to describe 222 EDM approaches and 18 tools. A profile of the EDM works was organized as a raw data base, which was transformed into an ad-hoc data base suitable to be mined. As result of the execution of statistical and clustering processes, a set of educational functionalities was found, a realistic pattern of EDM approaches was discovered, and two patterns of value-instances to depict EDM approaches based on descriptive and predictive models were identified. One key finding is: most of the EDM approaches are ground on a basic set composed by three kinds of educational systems, disciplines, tasks, methods, and algorithms each. The review concludes with a snapshot of the surveyed EDM works, and provides an analysis of the EDM strengths, weakness, opportunities, and threats, whose factors represent, in a sense, future work to be fulfilled.},
+  keywords = {Data mining, Educational data mining, Data mining profile, Educational data mining approach pattern, Pattern for descriptive and predictive educational data mining approaches},
+}
+
+@Article{kaur2015classification,
+  author    = {Kaur, Parneet and Singh, Manpreet and Josan, Gurpreet Singh},
+  title     = {Classification and prediction based data mining algorithms to predict slow learners in education sector},
+  journal   = {Procedia Computer Science},
+  year      = {2015},
+  volume    = {57},
+  pages     = {500--508},
+  publisher = {Elsevier},
+}
+
+@InProceedings{lehr2016use,
+  author       = {Lehr, Steven and Liu, Hong and Kinglesmith, Sean and Konyha, Alex and Robaszewska, Natalia and Medinilla, Jacob},
+  title        = {Use educational data mining to predict undergraduate retention},
+  booktitle    = {2016 IEEE 16th International Conference on Advanced Learning Technologies (ICALT)},
+  year         = {2016},
+  organization = {IEEE},
+  pages        = {428--430},
+}
+
+@Article{chalaris2014improving,
+  author    = {Chalaris, Manolis and Gritzalis, Stefanos and Maragoudakis, Manolis and Sgouropoulou, Cleo and Tsolakidis, Anastasios},
+  title     = {Improving quality of educational processes providing new knowledge using data mining techniques},
+  journal   = {Procedia-Social and Behavioral Sciences},
+  year      = {2014},
+  volume    = {147},
+  pages     = {390--397},
+  publisher = {Elsevier},
+}
+
+@article{martinez2016mineria,
+  title={Miner{\'\i}a de datos},
+  author={Mart{\'\i}nez, MD},
+  journal={Universidad Nacional del Noroeste Facultad de Ciencias Exactas, Naturales y Agrimensura, Argentina},
+  year={2016}
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}

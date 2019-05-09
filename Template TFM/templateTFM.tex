@@ -62,8 +62,11 @@
 
 
 %Separacion de los listados
-\setlist[itemize,2]{topsep=0mm}
-\setlist[itemize]{itemsep=0mm}
+%\setlist[itemize,2]{topsep=0mm}
+%\setlist[itemize]{itemsep=0pt,topsep=0pt,partopsep=0pt}
+%\setenumerate{itemsep=0pt,topsep=0pt}
+%\SetEnumitemKey{midsep}{topsep=0pt, partopsep=0pt}
+
 
 \center % Center everything on the page
 \vspace*{5pt}
@@ -92,14 +95,14 @@
 	DIRECTOR: Aurelio Berges García\linebreak
 \end{flushright}
 
-\vspace{1cm}
+%\vspace{1cm}
 
 \vfill % Fill the rest of the page with whitespace
 
 \end{titlepage}
 
 \newgeometry{textwidth=15cm, textheight=22.5cm, top=3.5cm, bottom=3.5cm,left= 3cm,right=3cm}
-\afterpage{\blankpage}
+%\afterpage{\blankpage}
 \pagenumbering{roman}
 \onehalfspacing
 
@@ -119,6 +122,9 @@ Extensión máxima de una página
 
 
 \clearpage
+
+
+\blankpage{\clearpage}
 %	ÍNDICE
 \tableofcontents % indice de contenidos
 
@@ -134,12 +140,18 @@ Extensión máxima de una página
 \newpage
 \pagenumbering{arabic} 
 
-\afterpage{\blankpage}
+%\afterpage{\blankpage}
+
+\blankpage
+
+\setlist[itemize,2]{topsep=0mm}
+\setlist[itemize]{itemsep=0pt,topsep=-5pt,partopsep=0pt}
+\setenumerate{itemsep=-5pt,topsep=0pt,partopsep=-5pt}
 
 \input{Introduccion.tex}
 \input{JustTeorica.tex}
 \input{PropuestaIntervencion.tex}
-\input{Disenio.tex}
+%\input{Disenio.tex}
 %\input{Analisis.tex}
 %\input{Conclusiones.tex}
 %\input{SobreReferencias.tex}
