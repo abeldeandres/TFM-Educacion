@@ -46,6 +46,13 @@
 
 \usepackage{verbatim} % comentarios
 
+\usepackage[toc,page]{appendix}
+\usepackage{appendix}
+\addto\captionsspanish{%
+	\renewcommand\appendixname{Anexo}
+	\renewcommand\appendixpagename{Anexos}
+}
+
 
 \begin{document}
 \setlength{\cftsubsecindent}{1cm} %Identar las subsecciones del TOC
@@ -148,15 +155,15 @@ Extensión máxima de una página
 \setlist[itemize]{itemsep=-5pt,topsep=0pt,partopsep=0pt}
 \setenumerate{itemsep=0pt,topsep=5pt,partopsep=-5pt}
 
-%\input{Introduccion.tex}
-%\input{JustTeorica.tex}
-%\input{PropuestaIntervencion.tex}
+\input{Introduccion.tex}
+\input{JustTeorica.tex}
+\input{PropuestaIntervencion.tex}
 \input{Disenio.tex}
 %\input{Analisis.tex}
 %\input{Conclusiones.tex}
 %\input{SobreReferencias.tex}
-%\input{Anexos.tex}
 \input{Referencias.tex}
+\input{Anexos.tex}
 
 
 

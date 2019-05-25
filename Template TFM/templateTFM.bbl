@@ -176,6 +176,34 @@ Chalaris, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Consejería de Educación e Investigación}%
+}{%
+{Consejería de Educación e Investigación}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+INSTRCONSE}
+\APACinsertmetastar {%
+INSTRCONSE}%
+\begin{APACrefauthors}%
+{Consejería de Educación e Investigación}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {INSTRUCCIONES DE LA DIRECCIÓN GENERAL DE EDUCACIÓN INFANTIL,
+  PRIMARIA Y SECUNDARIA SOBRE LA PLANIFICACIÓN DEL PRÓXIMO CURSO ESCOLAR
+  2018/2019 EN LOS CENTROS PÚBLICOS QUE IMPARTEN ESO Y BACHILLERATO, CREACIÓN
+  DE NUEVOS CENTROS Y MODIFICACIÓN DE LA RED, IMPLANTACIÓN Y AUTORIZACIÓN DE
+  ENSEÑANZAS Y PROPUESTA DE GRUPOS.} {Instrucciones de la direcciÓn general
+  de educaciÓn infantil, primaria y secundaria sobre la planificaciÓn del
+  prÓximo curso escolar 2018/2019 en los centros pÚblicos que imparten eso y
+  bachillerato, creaciÓn de nuevos centros y modificaciÓn de la red,
+  implantaciÓn y autorizaciÓn de enseÑanzas y propuesta de grupos.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Costa%
 , Fonseca%
 , Santana%
@@ -245,6 +273,31 @@ Delen, D.%
 \newblock
 \begin{APACrefDOI} \doi{https://doi.org/10.1016/j.dss.2010.06.003}
   \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Diazaraque%
+}{%
+Diazaraque%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+JMMarin}
+\APACinsertmetastar {%
+JMMarin}%
+\begin{APACrefauthors}%
+Diazaraque, J\BPBI M\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {Tema 2: Estadística Descriptiva Multivariante.} {Tema 2:
+  Estadística descriptiva multivariante.}
+\newblock
+\begin{APACrefURL}
+  \url{http://halweb.uc3m.es/esp/Personal/personas/jmmarin/esp/AMult/tema2am.pdf}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -346,6 +399,37 @@ Goette, P\BPBI E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Gour%
+, Sarangdevot%
+, Tanwar%
+\BCBL {}\ \BBA {} Sharma%
+}{%
+Gour%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+gour2010improve}
+\APACinsertmetastar {%
+gour2010improve}%
+\begin{APACrefauthors}%
+Gour, V.%
+, Sarangdevot, S.%
+, Tanwar, G\BPBI S.%
+\BCBL {}\ \BBA {} Sharma, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Improve performance of extract, transform and load (ETL)
+  in data warehouse} {Improve performance of extract, transform and load (etl)
+  in data warehouse}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal on Computer Science and
+  Engineering}{2}{3}{786--789}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Helal%
 \ \protect \BOthers {.}}{%
 Helal%
@@ -380,6 +464,29 @@ Helal, S.%
 \newblock
 \begin{APACrefDOI} \doi{https://doi.org/10.1016/j.knosys.2018.07.042}
   \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hyde%
+}{%
+Hyde%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+MONDRIAN}
+\APACinsertmetastar {%
+MONDRIAN}%
+\begin{APACrefauthors}%
+Hyde, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+\APACrefbtitle {Mondrian Documentation.} {Mondrian documentation.}
+\newblock
+\begin{APACrefURL} \url{https://mondrian.pentaho.com/documentation/schema.php}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -465,6 +572,31 @@ Kaur, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Klein%
+}{%
+Klein%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+klein2018}
+\APACinsertmetastar {%
+klein2018}%
+\begin{APACrefauthors}%
+Klein, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {k-Nearest-Neighbor Classifier.} {k-nearest-neighbor
+  classifier.}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.python-course.eu/k_nearest_neighbor_classifier.php}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Lehr%
 \ \protect \BOthers {.}}{%
 Lehr%
@@ -493,6 +625,20 @@ Lehr, S.%
 \BIn{} \APACrefbtitle {2016 IEEE 16th International Conference on Advanced
   Learning Technologies (ICALT)} {2016 ieee 16th international conference on
   advanced learning technologies (icalt)}\ (\BPGS\ 428--430).
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+\APACcitebtitle {Manual CRISP-DM de IBM SPSS Modeler}}{%
+\APACcitebtitle {Manual CRISP-DM de IBM SPSS Modeler}}{%
+{\protect \APACyear {2012}}%
+}]{%
+IBMCRISP2012}
+\APACinsertmetastar {%
+IBMCRISP2012}%
+\APACrefbtitle {Manual CRISP-DM de IBM SPSS Modeler.} {Manual crisp-dm de ibm
+  spss modeler.}
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -576,6 +722,70 @@ Mart{\'\i}nez, M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Matos%
+, Chalmeta%
+\BCBL {}\ \BBA {} Coltell%
+}{%
+Matos%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+matos2006metodologia}
+\APACinsertmetastar {%
+matos2006metodologia}%
+\begin{APACrefauthors}%
+Matos, G.%
+, Chalmeta, R.%
+\BCBL {}\ \BBA {} Coltell, O.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Metodolog{\'\i}a para la extracci{\'o}n del conocimiento
+  empresarial a partir de los datos} {Metodolog{\'\i}a para la extracci{\'o}n
+  del conocimiento empresarial a partir de los datos}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Informaci{\'o}n tecnol{\'o}gica}{17}{2}{81--88}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mohamad%
+\ \BBA {} Tasir%
+}{%
+Mohamad%
+\ \BBA {} Tasir%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+MOHAMAD2013320}
+\APACinsertmetastar {%
+MOHAMAD2013320}%
+\begin{APACrefauthors}%
+Mohamad, S\BPBI K.%
+\BCBT {}\ \BBA {} Tasir, Z.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Educational Data Mining: A Review} {Educational data
+  mining: A review}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Procedia - Social and Behavioral Sciences}{97}{}{320 -
+  324}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.sciencedirect.com/science/article/pii/S1877042813036859}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{The 9th International Conference on Cognitive Science}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.sbspro.2013.10.240}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Moine%
 , Gordillo%
 \BCBL {}\ \BBA {} Haedo%
@@ -626,6 +836,30 @@ Nielsen, J.%
   internet bandwidth.}
 \newblock
 \begin{APACrefURL} \url{https://www.nngroup.com/articles/law-of-bandwidth/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Orellana%
+}{%
+Orellana%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+Orellana2001}
+\APACinsertmetastar {%
+Orellana2001}%
+\begin{APACrefauthors}%
+Orellana, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{}{}.
+\newblock
+\APACrefbtitle {Estadística Descriptiva.} {Estadística descriptiva.}
+\newblock
+\begin{APACrefURL}
+  \url{http://www.dm.uba.ar/materias/estadistica_Q/2011/1/modulo%20descriptiva.pdf}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
@@ -706,6 +940,32 @@ Peña-Ayala, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Páez%
+}{%
+Páez%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+Manguart2017}
+\APACinsertmetastar {%
+Manguart2017}%
+\begin{APACrefauthors}%
+Páez, A\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+\APACrefbtitle {Conceptos básicos del aprendizaje supervisado (para personas
+  no técnicas).} {Conceptos básicos del aprendizaje supervisado (para
+  personas no técnicas).}
+\newblock
+\begin{APACrefURL}
+  \url{https://medium.com/@manguart/machine-learning-conceptos-básicos-del-aprendizaje-supervisado-para-personas-no-técnicas-142bbb222140}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Piatetsky%
 }{%
 Piatetsky%
@@ -731,29 +991,56 @@ Piatetsky, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Recuero%
+Piqueras%
 }{%
-Recuero%
+Piqueras%
 }{%
 {\protect \APACyear {2017}}%
 }]{%
-Recuero2017}
+yepes2017}
 \APACinsertmetastar {%
-Recuero2017}%
+yepes2017}%
 \begin{APACrefauthors}%
-Recuero, P.%
+Piqueras, V\BPBI Y.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
 \APACrefYearMonthDay{2017}{}{}.
 \newblock
-\APACrefbtitle {Los 2 tipos de aprendizaje en Machine Learning: supervisado y
-  no supervisado.} {Los 2 tipos de aprendizaje en machine learning: supervisado
-  y no supervisado.}
+\APACrefbtitle {¿Qué es y para qué sirve una red neuronal artificial?}
+  {¿qué es y para qué sirve una red neuronal artificial?}
 \newblock
 \begin{APACrefURL}
-  [{2019-01-17}]\url{https://data-speaks.luca-d3.com/2017/11/que-algoritmo-elegir-en-ml-aprendizaje.html}
+  \url{https://victoryepes.blogs.upv.es/2017/01/07/que-es-y-para-que-sirve-una-red-neuronal-artificial/}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Prakash%
+\ \BBA {} Rangdale%
+}{%
+Prakash%
+\ \BBA {} Rangdale%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+prakash2017etl}
+\APACinsertmetastar {%
+prakash2017etl}%
+\begin{APACrefauthors}%
+Prakash, G\BPBI H.%
+\BCBT {}\ \BBA {} Rangdale, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {ETL Data conversion: Extraction transformation and
+  loading Data conversion} {Etl data conversion: Extraction transformation and
+  loading data conversion}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal Of Engineering And Computer
+  Science}{}{}{22545--22550}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -835,6 +1122,30 @@ Romero, C.%
 \newblock
 \APACjournalVolNumPages{IEEE Transactions on Systems, Man, and Cybernetics,
   Part C (Applications and Reviews)}{40}{6}{601--618}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sayad%
+}{%
+Sayad%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+sayad2019}
+\APACinsertmetastar {%
+sayad2019}%
+\begin{APACrefauthors}%
+Sayad, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {An Introduction to Data Science.} {An introduction to data
+  science.}
+\newblock
+\begin{APACrefURL} \url{https://www.saedsayad.com/data_mining_map.htm}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -927,6 +1238,28 @@ Sin, K.%
   education data mining and learning analytics--a literature review.}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{ICTACT journal on soft computing}{5}{4}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{University of Cincinnati}%
+}{%
+{University of Cincinnati}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+uCincinnati2018}
+\APACinsertmetastar {%
+uCincinnati2018}%
+\begin{APACrefauthors}%
+{University of Cincinnati}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Naïve Bayes Classifier.} {Naïve bayes classifier.}
+\newblock
+\begin{APACrefURL} \url{http://uc-r.github.io/naive_bayes} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

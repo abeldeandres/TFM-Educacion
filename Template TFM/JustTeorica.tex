@@ -1,19 +1,20 @@
 \section{JUSTIFICACIÓN TEÓRICA}
 \subsection{Introducción}
 %https://www.thetechedvocate.org/8-ways-machine-learning-will-improve-education/
-%En primer lugar, y, antes de comenzar la investigación, se ha acudido a los datos del INE (Instituto Nacional de Estadística) y a los del ministerio de educación, ciencia y deportes (MECD).
-%Como la investigación va dirigida a los alumnos de la ESO, se ha buscado información respectiva a este nivel educativo. 
-En primer lugar, esta investigación se realiza con el propósito de aportar conocimiento existente sobre la importancia de determinadas variables educativas y su relevancia en la predicción, la planificación y la gestión educativa. 
 
-En segundo lugar, y, teniendo en cuenta los propósitos de esta investigación, se debe establecer el objeto de búsqueda. Por tanto, esta labor de búsqueda se va a centrar en obtener documentación científica acerca de la minería de datos en el ámbito educativo, más concretamente, en la educación secundaria. 
+Uno de los intereses que se tienen a la hora de realizar cualquier proyecto de ``Big Data'', ``Business Intelligence'' o un análisis predictivo son las variables a utilizar, ya que son las que van a permitir obtener la mayor información esperada.
 
-A partir del objeto de búsqueda, se debe establecer las fuentes que se van a utilizar para obtener resultados fiables, ya que en la actualidad existen numerosos artículos acerca del uso de la ciencia de datos, pero es necesario acotar la búsqueda a lo relativo a educación.
+Esta investigación se realiza con el propósito de aportar conocimiento existente sobre la importancia de determinadas variables educativas y su relevancia en la predicción, la planificación y la gestión educativa. 
+
+Para ello, y, teniendo en cuenta los propósitos de esta investigación, se debe establecer el objeto de búsqueda de documentación científica acerca de la minería de datos en el ámbito educativo, más concretamente, en la educación secundaria. 
+
+A partir del objeto de búsqueda, se debe establecer las fuentes que se utilizan para obtener resultados fiables, ya que en la actualidad existen numerosos artículos acerca del uso de la ciencia de datos, pero es necesario acotar la búsqueda a lo relativo a educación.
 
 Para la realización de este TFM se han analizado distintas publicaciones de la base de datos científica de Web of Science. 
 
 Para realizar la búsqueda se han utilizado las siguientes palabras clave: ``educational", ``data'' y ``mining". Se debe recordar que el éxito de la búsqueda depende de estas palabras claves. También se ha realizado una búsqueda utilizando estas claves en Teseo, ScienceDirect y Google Academics.
 
-De la búsqueda en ``Web of Science'' con las claves comentadas se han obtenido un gran numero de publicaciones. Por tanto, se ha tenido que acotar la búsqueda incluyendo nuevas claves (``models'' y ``predictions''). De esta nueva búsqueda se han obtenido 47 artículos. Posteriormente se ha realizado una observación sobre los artículos obtenidos y se ha comprobado la existencia de artículos que no resultan útiles en esta investigación, por lo que se han descartado.
+De la búsqueda en ``Web of Science'' con las claves comentadas se han obtenido un gran número de publicaciones. Por tanto, se ha tenido que acotar la búsqueda incluyendo nuevas palabras claves (``models'' y ``predictions''). De esta nueva búsqueda se han obtenido 47 artículos. Posteriormente se ha realizado una observación sobre los artículos obtenidos y se ha comprobado la existencia de artículos que no resultan útiles en esta investigación, por lo que se han descartado.
 
 Además, de la primera búsqueda, donde se obtenían gran cantidad de resultados, se han revisado, entre otros, los artículos más populares (respecto a su número de citas) y actuales, y se han seleccionado 15 que se ajustan a las necesidades de este estudio.
 
@@ -22,30 +23,36 @@ Complementariamente, también se ha realizado búsquedas incluyendo la clave de 
 
 %De la búsqueda en ScienceDirect se han obtenido 160 artículos. Posteriormente se han tenido en cuenta aquellos de los últimos 5 años (2015, 2016, 2017, 2018 y 2019), sin olvidarse del resto. De esta forma obtenemos resultados actuales (concretamente 73 artículos). Posteriormente se ha realizado una observación sobre los artículos obtenidos y se ha comprobado la existencia de artículos que no resultaban útiles en esta investigación. Por tanto, se ha realizado otra búsqueda utilizando las claves anteriores y añadiendo la clave "prediction". Esta vez, se han obtenido 26 resultados. De todos los resultados obtenido, se han seleccionado 15 artículos que se consideran útiles y que servirán de ayuda.
 
-Debemos destacar que la mayoría de los resultados obtenidos tratan de artículos centrados en la predicción de los resultados académicos de los alumnos teniendo en cuenta ciertos factores internos (como las propias calificaciones a lo largo del curso) y externos (como factores etnográficos, edad, situación económica familiar, etc.).
+Debemos destacar que la mayoría de los resultados obtenidos tratan de artículos centrados en la predicción de los resultados académicos de los alumnos teniendo en cuenta ciertos factores internos (como las propias calificaciones a lo largo del curso) y externos (como factores etnográficos, edad, situación económica familiar, etc.). Estos factores se han utilizado principalmente para obtener una aproximación sobre las calificaciones, y el fracaso escolar. Mostrando de forma implícita las relaciones de estos aspectos con el resultado (calificación).
+
+%AMPLIAR UN POCO ESTO, ES LO MAS IMPORTANTE
 
 %En este sentido es interesante realizar un análisis de dichos artículos, puesto que en primer lugar se deberá tener en cuenta cuales son las metodologías de la ciencia de datos que se están utilizando. Además, en segundo lugar, se debe tener en cuenta los modelos que se utilizan para predecir variables de carácter educativo. 
 
 %Una vez que se han analizado los artículos, se ha decido realizar otra búsqueda en ScienceDirect, teniendo en cuenta las palabras claves: "gis", "data", "mining'' y ''education''. De esta búsqueda se han obtenido 22 resultados. De estos resultados se ha analizado un único artículo que se considera importante. El motivo de esta búsqueda es intentar encontrar artículos centrados en GIS (Sistemas de Información Geográfica). Los sistemas de información geográfica, como su propio nombre indica, se utilizan para referenciar datos en el espacio. 
 
 \subsection{Análisis trabajos previos relevantes}
-En este apartado se va a tener en cuenta los artículos más representativos, que son aquellos que realizan un estado de la cuestión. Estos artículos investigan acerca de las publicaciones sobre la minería de datos en el entorno educativo.
+En este apartado se resaltan los artículos más representativos que han realizado un estado del arte sobre la minería de datos en la educación recogiendo información genérica de otros artículos.  Estos artículos mas representativos van a servir de referencia no sólo para obtener nuevos artículos sino para ver las metodologías comunes utilizadas y las aplicaciones concretas de la ciencia de datos en el ámbito educativo.
 
-En este aspecto se pueden destacar los artículos de \citeA{inbook}, \citeA{romero2010educational} y \citeA{PENAAYALA20141432}.
+En este sentido se pueden destacar los artículos de \citeA{inbook}, \citeA{romero2010educational} y \citeA{PENAAYALA20141432}.
 
 \citeA{inbook} en su artículo, realiza una revisión sobre las publicaciones realizadas, citando diversos artículos y resumiendo brevemente el estudio y las técnicas y algoritmos utilizadas en este. Además, de forma genérica agrupa los algoritmos más utilizados en las técnicas de clasificación, ``clustering'' y regresión.
 
 En el artículo de \citeA{PENAAYALA20141432} se muestra el número de publicaciones existentes hasta el momento que utilizan ciertos algoritmos predictivos como el K-Means, J-48, Naives Bayes, etc. En este mismo artículo, se clasifican las publicaciones en seis categorías. Podemos destacar que la categoría mayoritaria (con un 21\%) es el modelado del comportamiento del alumno seguida del rendimiento académico del alumno (con un 20\%). \citeA{romero2010educational} utiliza también categorías para clasificar las publicaciones.
 
-Estos artículos sirven como referencia y ayuda en la localización de artículos de una determinada temática según las clasificaciones dadas.
+Mediante estos artículos se ha obtenido una vista general de la minería de datos, proporcionando información y realizando comparaciones que acotan la búsqueda de nuevas técnicas, herramientas, algoritmos, etc.
+
+%LOS MAS GENÉRICOS SON EN ESTE PUNTO, HAY QUE ACLARARLO. CON ALGUNA FRASE
 
 \subsection{Estudios más relacionados con la minería de datos en educación}
-%Después de realizar un análisis sobre los artículos encontrados, se ha descubierto que la minería de datos se utiliza para resolver distintos problemas en la educación. 
+%Después de realizar un análisis sobre los artículos encontrados, se ha descubierto que la minería de datos se utiliza para resolver distintos problemas en la educación.
+Este apartado se centra en las categorías que tienen mayor relación con el problema a resolver en esta investigación. De esta forma se puede observar como dichos artículos satisfacen con sus propios objetivos.
+
 Como ya se ha comentado con anterioridad, existen una serie de clasificaciones sobre las publicaciones realizadas en la minería de datos en educación. La mayoría de los artículos se centran en el rendimiento y en las calificaciones de los alumnos y, cómo teniendo en cuenta estas investigaciones, se puede mejorar la calidad educativa.
 
 En el artículo de \citeA{FERNANDES2019335}, los datos escolares a estudiar proceden de alumnos de colegios de un Distrito Federal de Brasil durante el 2015 y el 2016. Estos datos se han obtenido a partir de la base de datos de iEducar que contiene atributos relacionados con cada alumno. 
 
-Algunas de las variables que se estudian en este artículo pertenecen concretamente al ámbito personal, social y geográfico del alumno. Estas variables son: el barrio del alumno, el centro educativo, la edad del alumno, los ingresos del alumno, los alumnos con necesidades especiales, el genero y el entorno en el aula.
+Algunas de las variables que se estudian en este artículo pertenecen concretamente al ámbito personal, social y geográfico del alumno. Estas variables son: el barrio del alumno, el centro educativo, la edad del alumno, los ingresos del alumno, los alumnos con necesidades especiales, el género y el entorno en el aula.
 
 \begin{comment}
 Artículo de FEERNANDES:
@@ -93,13 +100,17 @@ En el libro de \citeA{PANAHI2019161}, se ha realizado una serie de investigacion
 	\item \textbf{Centros culturales:} La proximidad de los centros culturales incrementa la salud espiritual y psicológica del alumno, incrementando así sus conocimientos. Curiosamente, si existen estos tipos de centros cercanos al colegio, entonces no es necesario que dichos colegios dispongan de estos servicios (pudiéndose ampliar las aulas, el comedor, etc)
 \end{itemize}                     
 
-La investigación se ha llevado a cabo en la ciudad de Tehran. Se han tomado para el estudio dos distritos. Uno de ellos contiene 106 colegios y el otro 137. A partir de la geolocalización de dichos colegios y de los subfactores comentados, se ha realizado un estudio sobre la relación existente entre los factores y subfactores y los colegios.
+La investigación se lleva a cabo en la ciudad de Tehran. Se han tomado para el estudio dos distritos. Uno de ellos contiene 106 colegios y el otro 137. A partir de la geolocalización de dichos colegios y de los sub-factores comentados, se ha realizado un estudio sobre la relación existente entre los factores y sub-factores y los colegios.
 
-%Los pesos dados a cada factor y subfactor se han determinado utilizando un algoritmo llamado SWARA. 
-Los resultados finales obtenidos indican que existen subfactores que influyen más o menos en la posición del centro.
+%Los pesos dados a cada factor y sub-factor se han determinado utilizando un algoritmo llamado SWARA. 
+El objetivo de esta investigación es determinar la idoneidad para seleccionar los lugares de construcción de los centros, investigando los sub-factores dados.
+
+Los resultados finales que se obtienen indican que los factores por orden de importancia para la construcción son: los posibles daños que puedan amenazar a los alumnos y sus familias, la reducir del coste para las familias y el incremento de la eficiencia escolar.
 
 \subsection{Metodología de trabajo en el desarrollo de proyectos de minería de datos}
-En primer lugar, y antes de realizar cualquier trabajo, es necesario tener en cuenta una metodología valida a seguir, es decir, se debe seguir una serie de pasos para conseguir los objetivos determinados. Existen distintas metodologías de trabajo para realizar un proyecto de minería de datos. Sin embargo, según el artículo de \citeA{moine2011analisis}, las metodologías que abarcan todas las posibles etapas de un proyecto serían las metodologías CRISP-DM y Catalyst. El resto de metodologías no completan todas las fases que se debiera o simplemente establecen los pasos a seguir, pero no las tareas. La comparativa se muestra en la figura \ref{fig:compMod}.
+En primer lugar, y antes de realizar cualquier trabajo, es necesario tener en cuenta una metodología valida a seguir, es decir, se debe seguir una serie de pasos para conseguir los objetivos determinados. Por tanto, en este apartado se va a estudiar los métodos de trabajo existentes en los artículos estudiados, ver sus ventajas y desventajas para posteriormente seleccionar el que se considere apto para esta investigación.
+
+Existen distintas metodologías de trabajo para realizar un proyecto de minería de datos. Sin embargo, según el artículo de \citeA{moine2011analisis}, las metodologías que abarcan todas las posibles etapas de un proyecto serían las metodologías CRISP-DM y Catalyst. El resto de metodologías no completan todas las fases que se debiera o simplemente establecen los pasos a seguir, pero no las tareas. La comparativa se muestra en la figura \ref{fig:compMod}.
 
 \begin{figure*}[htb]
 	\centering
@@ -113,25 +124,6 @@ En primer lugar, y antes de realizar cualquier trabajo, es necesario tener en cu
 
 
 La metodología de trabajo predominante en los artículos observados de carácter educativo ha sido la metodología CRISP-DM (del inglés Cross Industry Standard Process for Data Mining) que es una metodología frecuente en el desarrollo de proyectos de minería de datos. Esta metodología indica cómo debe realizarse, mediante tareas, dichos proyectos. Esta metodología se ha utilizado en artículos como \citeA{FERNANDES2019335}, \citeA{DELEN2010498}, \citeA{SEN20129468}, \citeA{jaramillo2015aplicacion} y \citeA{chalaris2014improving}.
-
-Según este mismo artículo de \citeA{SEN20129468}, esta metodología contiene las siguientes fases en el ciclo:
-\begin{enumerate}
-	\item Entendimiento del negocio. Debe comprenderse los objetivos del negocio. Se debe realizar una descripción del problema. Por ultimo debe hacerse un plan de proyecto para alcanzar los objetivos deseados.
-	\item Entendimiento de los datos. Debe identificarse las fuentes de los datos y obtener aquellos datos relevantes para la consecución de los objetivos.
-	\item Preparación de los datos. Conlleva el pre-procesado, la limpieza y la transformación de los datos relevantes con el objetivo de usar algoritmos de minería de datos.
-	\item Construcción del modelo. Se debe desplegar un gran número de modelos y quedarse con aquellos que devuelvan valores óptimos para los datos utilizados.
-	\item Evaluación y Test. Debe evaluarse y probarse los modelos. Deben compararse entre sí y comprobar que son útiles para los datos expuestos.
-	\item Puesta en marcha. Realizar actividades usando los modelos seleccionados en el proceso de la toma de decisión.
-\end{enumerate}
-
-En la figura \ref{fig:cicloCrisp}, obtenida del artículo de \citeA{SEN20129468} se muestra el ciclo de CRISP.
-
-\begin{figure*}[htb]
-	\centering
-	\caption{Ciclo de la metodología CRISP. Recuperado de \protect\citeA{SEN20129468}}
-	\includegraphics[width=0.6\textwidth]{recursos/CRISPCiclo}
-	\label{fig:cicloCrisp}
-\end{figure*}
 
 Según \citeA{jaramillo2015aplicacion}, en su investigación se ha seleccionado Crisp-DM por las siguientes razones: ''La metodología a utilizar es Crisp-DM ya que cada una de sus fases se encuentra claramente estructurada definiendo de tal forma las actividades y tareas que se requieren para lograr el objetivo planteado, es decir, la más completa entre las metodologías comparadas, es flexible por ende se puede hacer usos de cualquier herramienta de minería de datos'', idea ya presentada en el artículo de \cite{moine2011analisis}.
 
@@ -163,15 +155,22 @@ En cuanto al artículo de \citeA{ADEKITAN2019e01250}, nuevamente se han utilizad
 	\includegraphics[width=0.8\textwidth]{recursos/ComparacionModelos}
 	\label{fig:compResMod}
 \end{figure*}
+\FloatBarrier
 
 En este artículo \citeA{ADEKITAN2019e01250}, se puede observar como la regresión logística obtiene la mayor precisión en los resultados. Por tanto, es capaz de clasificar correctamente los datos y, en consiguiente, obtener mejores predicciones. Otro artículo donde la regresión logística es la que mayor precisión da es el de \citeA{lehr2016use}, donde además se utilizan los algoritmos de Naïves Bayes, Bosques aleatorios, arboles de decisión y K-vecinos-cercanos.
 
 
 
 \subsection{Herramientas analizadas para la minería de datos}
-Existen diversas herramientas para realizar minería de datos, por lo tanto, se deberá analizar cuales se están utilizando en los artículos estudiados e incluso se debe revisar no solo en el ámbito educativo, sino de forma general. De esta forma obtendremos las herramientas más utilizadas.
+Existen diversas herramientas para realizar minería de datos, por lo tanto, se debe analizar cuales se están utilizando en los artículos estudiados e incluso se debe revisar no solo en el ámbito educativo, sino de forma general. De esta forma obtendremos las herramientas más utilizadas.
 
 En el artículo de \citeA{rodriguez2009herramientas} se recogen algunas de las más utilizadas. Entre ellas se puede destacar SPSS Clementine, WEKA y Oracle Data Miner. Además, artículos como el de \citeA{jose2016explotacion} han utilizado R, que es un lenguaje estadístico.
+
+R al estar orientado a la estadística, proporciona un gran número de bibliotecas y herramientas. Destaca también por la generación de gráficos estadísticos de gran calidad. Posee muchos paquetes dedicados a la graficación. Además, es una herramienta que facilita el cálculo numérico y el uso en la minería de datos. \cite{emanuel2014}
+
+Su potencia reside fundamentalmente en que es un software gratuito y de código abierto. Como ya se ha comentado, posee un gran número de herramientas que pueden ampliarse mediante paquetes, librerías o definiendo funciones propias.
+
+Por otro lado, RStudio es el entorno de desarrollo para R. Es también software libre y tiene la ventaja que se puede ejecutar sobre distintas plataformas (Windows, Mac y Linux).
 
 En el artículo de \citeA{jaramillo2015aplicacion}, se ha realizado una breve comparación nuevamente entre las herramientas de WEKA, RapidMiner y Knime. De esta comparación, los autores han seleccionado la herramienta de RapidMiner para realizar las investigaciones por las siguientes características: ``posee una licencia libre, combinación de modelos, interfaz amiga, multiplataforma, empleo de técnicas, además permite aplicar varios algoritmos de minería de datos...'' \cite{jaramillo2015aplicacion}
 
@@ -185,9 +184,20 @@ En la figura \ref{fig:top10tools} se pueden observar las 10 herramientas más ut
 \end{figure*}
 \FloatBarrier
 
-Como se puede observar en la figura anterior, las herramientas más utilizadas son R, IBM SPSS Statistics, RapidMiner, y también en puestos superiores se encuentra Weka.
+Como se puede observar en la figura \ref{fig:top10tools}, las herramientas más utilizadas son R, IBM SPSS Statistics, RapidMiner, y también en puestos superiores se encuentra Weka.
+
+Por otro lado, también se ha consultado la página de Gartner, que es una empresa consultora y de investigación de las tecnologías de la información y que realiza informe sobre las herramientas existentes. En la siguiente figura \ref{fig:gartner} se muestra las herramientas más usadas dividas en cuadrantes dependiendo de la habilidad necesaria para usarlas y la visión completa de estas.
+
+\begin{figure*}[htb]
+	\centering
+	\caption{Plataformas de ciencia de datos y aprendizaje de máquina. Recuperado de Gartner (https://www.gartner.com)}
+	\includegraphics[width=0.6\textwidth]{recursos/gartner}
+	\label{fig:gartner}
+\end{figure*}
+\FloatBarrier
 
 Teniendo conocimiento sobre las herramientas más utilizadas, se debe elegir una de ellas para realizar la investigación de este TFM.
+
 
 
 \subsection{Conclusiones}
@@ -199,13 +209,13 @@ En cuanto a las metodologías, existen muchas investigaciones que utilizan sus p
 
 Por otro lado, también se ha comprobado que existen un gran número de variables comunes de estudio en la mayoría de los artículos. Esto se debe a que la mayoría de los artículos tienen una gran relación, y es investigar acerca de factores que impliquen un mejor rendimiento en los alumnos. Algunas de estas variables se pueden considerar en la investigación de este TFM.
 
-Respecto a los modelos utilizados, se han utilizado algoritmos comunes en varios artículos, y como ya se ha comentado, en ciertas ocasiones han sido más precisos que en otras. Esto se debe a los propios datos. Por tanto, en este TFM se van a realizar pruebas con distintos modelos y se va a seleccionar el que mejor resultados obtenga.
+Respecto a los modelos utilizados, se han utilizado algoritmos comunes en varios artículos, y como ya se ha comentado, en ciertas ocasiones han sido más precisos que en otras. Esto se debe a los propios datos. Por tanto, en este TFM se realizan pruebas con distintos modelos y se selecciona el que mejor resultados obtenga.
 
 Por último, en muchos artículos no se ha referenciado las herramientas utilizadas para llevar a cabo la investigación, sin embargo, se ha acudido a otras fuentes para obtener las herramientas con mayor uso. El uso de unas herramientas u otras, no es relevante, puesto que, a día de hoy, la mayoría de las herramientas satisfacen las necesidades de los investigadores, sin embargo, se debe tener en cuenta la licencia comercial, las posibles librerías, etc. que nos pueda o no proporcionar la herramienta.
 
 %Por tanto, una vez que se ha estudiado una metodología de trabajo, y se han observado un gran número de variables relacionadas con los alumnos y con los centros, además de haber agrupado ciertos algoritmos que pueden aportar mayor información sobre los datos educativos, se va a realizar la investigación propia para resolver el problema propio de este TFM.
 
-
+Por ello, se considera muy oportuno definir, en base a la literatura existente y a los métodos, técnicas, herramientas, etc. más extendidos entre la comunidad científica, una metodología para diseñar esta investigación y unas herramientas para utilizar en dicha metodología y así satisfacer las necesidades dadas.
 
 %manage, education, data mining -> Castilla y Leon
 %GIS-Based SWARA and Its Ensemble by RBF and ICA Data-Mining Techniques for Determining Suitability of Existing Schools and Site Selection of New School Buildings

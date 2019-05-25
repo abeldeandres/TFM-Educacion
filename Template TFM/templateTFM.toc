@@ -1,6 +1,6 @@
 \babel@toc {spanish}{}
-\contentsline {section}{\'{I}ndice de figuras}{\es@scroman {vii}}% 
-\contentsline {section}{\'{I}ndice de cuadros}{\es@scroman {viii}}% 
+\contentsline {section}{\'{I}ndice de figuras}{\es@scroman {viii}}% 
+\contentsline {section}{\'{I}ndice de cuadros}{\es@scroman {ix}}% 
 \contentsline {section}{\numberline {1}INTRODUCCI\IeC {\'O}N}{1}% 
 \contentsline {subsection}{\numberline {1.1}Introducci\IeC {\'o}n}{1}% 
 \contentsline {subsection}{\numberline {1.2}Contexto}{2}% 
@@ -10,17 +10,28 @@
 \contentsline {section}{\numberline {2}JUSTIFICACI\IeC {\'O}N TE\IeC {\'O}RICA}{7}% 
 \contentsline {subsection}{\numberline {2.1}Introducci\IeC {\'o}n}{7}% 
 \contentsline {subsection}{\numberline {2.2}An\IeC {\'a}lisis trabajos previos relevantes}{8}% 
-\contentsline {subsection}{\numberline {2.3}Estudios m\IeC {\'a}s relacionados con la miner\IeC {\'\i }a de datos en educaci\IeC {\'o}n}{8}% 
-\contentsline {subsection}{\numberline {2.4}Metodolog\IeC {\'\i }a de trabajo en el desarrollo de proyectos de miner\IeC {\'\i }a de datos}{11}% 
+\contentsline {subsection}{\numberline {2.3}Estudios m\IeC {\'a}s relacionados con la miner\IeC {\'\i }a de datos en educaci\IeC {\'o}n}{9}% 
+\contentsline {subsection}{\numberline {2.4}Metodolog\IeC {\'\i }a de trabajo en el desarrollo de proyectos de miner\IeC {\'\i }a de datos}{12}% 
 \contentsline {subsection}{\numberline {2.5}Modelos utilizados en el desarrollo de proyectos de miner\IeC {\'\i }a de datos en el entorno educativo}{13}% 
 \contentsline {subsection}{\numberline {2.6}Herramientas analizadas para la miner\IeC {\'\i }a de datos}{15}% 
 \contentsline {subsection}{\numberline {2.7}Conclusiones}{17}% 
 \contentsline {section}{\numberline {3}PROPUESTA DE INTERVENCI\IeC {\'O}N}{19}% 
 \contentsline {subsection}{\numberline {3.1}Justificaci\IeC {\'o}n}{19}% 
-\contentsline {subsection}{\numberline {3.2}Miner\IeC {\'\i }a de datos}{20}% 
-\contentsline {subsection}{\numberline {3.3}Lenguaje R y RStudio}{21}% 
-\contentsline {subsection}{\numberline {3.4}Modelos seleccionados}{21}% 
-\contentsline {subsubsection}{\numberline {3.4.1}Criterio de selecci\IeC {\'o}n}{21}% 
-\contentsline {subsubsection}{\numberline {3.4.2}M\IeC {\'e}tricas de precisi\IeC {\'o}n}{22}% 
-\contentsline {section}{\numberline {4}BIBLIOGRAF\IeC {\'I}A}{25}% 
+\contentsline {section}{\numberline {4}DISE\IeC {\~N}O DE INVESTIGACI\IeC {\'O}N}{23}% 
+\contentsline {subsection}{\numberline {4.1}Introducci\IeC {\'o}n}{23}% 
+\contentsline {subsection}{\numberline {4.2}Arquitectura Inicial}{23}% 
+\contentsline {subsection}{\numberline {4.3}Dise\IeC {\~n}o de la miner\IeC {\'\i }a de datos}{26}% 
+\contentsline {subsubsection}{\numberline {4.3.1}Comprensi\IeC {\'o}n del negocio}{28}% 
+\contentsline {subsubsection}{\numberline {4.3.2}Comprensi\IeC {\'o}n de los datos}{28}% 
+\contentsline {subsubsection}{\numberline {4.3.3}Preparaci\IeC {\'o}n de los datos}{29}% 
+\contentsline {subsection}{\numberline {4.4}Modelado}{31}% 
+\contentsline {subsubsection}{\numberline {4.4.1}Evaluaci\IeC {\'o}n}{35}% 
+\contentsline {subsubsection}{\numberline {4.4.2}Distribuci\IeC {\'o}n}{36}% 
+\contentsline {subsection}{\numberline {4.5}Herramientas utilizadas}{36}% 
+\contentsline {subsubsection}{\numberline {4.5.1}Lenguaje R y RStudio}{36}% 
+\contentsline {subsubsection}{\numberline {4.5.2}Suite de Pentaho BI}{36}% 
+\contentsline {section}{\numberline {5}BIBLIOGRAF\IeC {\'I}A}{39}% 
+\contentsline {section}{Appendices}{44}% 
+\contentsline {section}{\numberline {A}Graph Appendix}{45}% 
+\contentsline {section}{\numberline {B}Another Appendix}{47}% 
 \contentsfinish 

@@ -3,8 +3,23 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces Velocidad de transferencia a lo largo del tiempo. (Fuente: Nielsen Norman Group)\relax }}{1}% 
 \contentsline {figure}{\numberline {3}{\ignorespaces Art\IeC {\'\i }culos aceptados y publicados desde 2011. Recuperado de \citeA {sin2015application}\relax }}{3}% 
 \contentsline {figure}{\numberline {4}{\ignorespaces Comparaci\IeC {\'o}n metodolog\IeC {\'\i }as de Miner\IeC {\'\i }a de Datos. Recuperado de \citeA {moine2011analisis} \relax }}{12}% 
-\contentsline {figure}{\numberline {5}{\ignorespaces Ciclo de la metodolog\IeC {\'\i }a CRISP. Recuperado de \citeA {SEN20129468}\relax }}{13}% 
-\contentsline {figure}{\numberline {6}{\ignorespaces Predicci\IeC {\'o}n en la precisi\IeC {\'o}n agrupada por algoritmos desde 2002 a 2015. Recuperado de \citeA {SHAHIRI2015414}\relax }}{14}% 
-\contentsline {figure}{\numberline {7}{\ignorespaces Comparaci\IeC {\'o}n de los resultados obtenidos. Recuperado de \citeA {ADEKITAN2019e01250}\relax }}{15}% 
-\contentsline {figure}{\numberline {8}{\ignorespaces Herramientas m\IeC {\'a}s usadas. Recuperado de \cite {rexer2013}\relax }}{16}% 
+\contentsline {figure}{\numberline {5}{\ignorespaces Predicci\IeC {\'o}n en la precisi\IeC {\'o}n agrupada por algoritmos desde 2002 a 2015. Recuperado de \citeA {SHAHIRI2015414}\relax }}{14}% 
+\contentsline {figure}{\numberline {6}{\ignorespaces Comparaci\IeC {\'o}n de los resultados obtenidos. Recuperado de \citeA {ADEKITAN2019e01250}\relax }}{15}% 
+\contentsline {figure}{\numberline {7}{\ignorespaces Herramientas m\IeC {\'a}s usadas. Recuperado de \cite {rexer2013}\relax }}{16}% 
+\contentsline {figure}{\numberline {8}{\ignorespaces Plataformas de ciencia de datos y aprendizaje de m\IeC {\'a}quina. Recuperado de Gartner (https://www.gartner.com)\relax }}{17}% 
+\contentsline {figure}{\numberline {9}{\ignorespaces Arquitectura l\IeC {\'o}gica del proyecto. Recuperado de la Consejer\IeC {\'\i }a de Educaci\IeC {\'o}n e Investigaci\IeC {\'o}n de la Comunidad de Madrid.\relax }}{23}% 
+\contentsline {figure}{\numberline {10}{\ignorespaces Esquema en estrella. Recuperado de http://carlospesquera.com\relax }}{24}% 
+\contentsline {figure}{\numberline {11}{\ignorespaces Cubo de Mondrian. Recuperado de: https://www.businessintelligence.info\relax }}{25}% 
+\contentsline {figure}{\numberline {12}{\ignorespaces Fases del ciclo de vida de CRISP-DM. Recuperado de \citeA {IBMCRISP2012}.\relax }}{27}% 
+\contentsline {figure}{\numberline {13}{\ignorespaces Funcionamiento \IeC {\'A}rboles Decisi\IeC {\'o}n. Recuperado de \citeA {sayad2019}\relax }}{32}% 
+\contentsline {figure}{\numberline {14}{\ignorespaces Teorema de Bayes. Recuperado de \cite {uCincinnati2018}\relax }}{32}% 
+\contentsline {figure}{\numberline {15}{\ignorespaces Red Neuronal. Recuperado de \citeA {yepes2017}\relax }}{33}% 
+\contentsline {figure}{\numberline {16}{\ignorespaces KNN. Recuperado de \citeA {klein2018}\relax }}{34}% 
+\contentsline {figure}{\numberline {17}{\ignorespaces Estadisticos de las variables. Elaboraci\IeC {\'o}n propia\relax }}{47}% 
+\contentsline {figure}{\numberline {18}{\ignorespaces Diagrama de cajas. Elaboraci\IeC {\'o}n propia\relax }}{47}% 
+\contentsline {figure}{\numberline {19}{\ignorespaces Matriz de correlaciones. Elaboraci\IeC {\'o}n propia\relax }}{48}% 
+\contentsline {figure}{\numberline {20}{\ignorespaces Variables mas correladas. Elaboraci\IeC {\'o}n propia\relax }}{48}% 
+\contentsline {figure}{\numberline {21}{\ignorespaces Mayor correlacion con variable a predecir. Elaboraci\IeC {\'o}n propia\relax }}{49}% 
+\contentsline {figure}{\numberline {22}{\ignorespaces Correlaci\IeC {\'o}n entre variables NM\_ALUMNOS y NM\_GRUPOS. Elaboraci\IeC {\'o}n propia\relax }}{49}% 
 \contentsfinish 
+\contentsline {figure}{\numberline {23}{\ignorespaces Correlaci\IeC {\'o}n entre variables NM\_ALUMNOS y NM\_GRUPOS. Elaboraci\IeC {\'o}n propia\relax }}{50}% 

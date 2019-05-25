@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  7 MAY 2019 10:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  24 MAY 2019 13:21
 entering extended mode
 **./templateTFM.tex
 (templateTFM.tex
@@ -445,24 +445,31 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks30
 \verbatim@line=\toks31
 \verbatim@in@stream=\read1
+)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/appendix\appendix.
+sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count132
+\c@@ppsavesec=\count133
+\c@@ppsaveapp=\count134
 ) (templateTFM.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
 \openout1 = `templateTFM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -498,22 +505,22 @@ LaTeX Font Info:    ... okay on input line 50.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 50.
-LaTeX Info: Redefining \% on input line 50.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count132
+\scratchcounter=\count135
 \scratchdimen=\dimen144
 \scratchbox=\box61
-\nofMPsegments=\count133
-\nofMParguments=\count134
+\nofMPsegments=\count136
+\nofMParguments=\count137
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count135
+\MPscratchCnt=\count138
 \MPscratchDim=\dimen145
-\MPnumerator=\count136
-\makeMPintoPDFobject=\count137
+\MPnumerator=\count139
+\makeMPintoPDFobject=\count140
 \everyMPtoPDFconversion=\toks33
 )
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
@@ -573,8 +580,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 50.
-\c@maskedRefs=\count138
+LaTeX Info: Redefining \selectfont on input line 57.
+\c@maskedRefs=\count141
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/apacite\spanish.ap
 c"
@@ -585,7 +592,7 @@ LaTeX Info: Redefining \BHBI on input line 139.
 <recursos/escudo_urjc.jpg, id=1, 143.226pt x 156.366pt>
 File: recursos/escudo_urjc.jpg Graphic file (type jpg)
 <use recursos/escudo_urjc.jpg>
-Package pdftex.def Info: recursos/escudo_urjc.jpg  used on input line 78.
+Package pdftex.def Info: recursos/escudo_urjc.jpg  used on input line 85.
 (pdftex.def)             Requested size: 170.71652pt x 186.3856pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -667,13 +674,19 @@ Package spanish Warning: Replacing `OT1/cmr/bx/sc' by
 Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
 (spanish)                faked small caps on input line 3.
 
-)
+[6
+
+])
 \tf@toc=\write3
 \openout3 = `templateTFM.toc'.
 
- [6
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
 
-] (templateTFM.lof
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[7] (templateTFM.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
@@ -682,11 +695,17 @@ Overfull \hbox (6.97035pt too wide) in paragraph at lines 5--5
 e-cu-pe-ra-do de []Moine, 
  []
 
+
+Overfull \hbox (9.23256pt too wide) in paragraph at lines 12--12
+ [][] []\OT1/cmr/m/n/12 Cubo de Mon-drian. Re-cu-pe-ra-do de: https://www.busin
+essintelligence.info []  
+ []
+
 )
 \tf@lof=\write4
 \openout4 = `templateTFM.lof'.
 
- [7
+ [8
 
 ] (templateTFM.lot
 LaTeX Info: Redefining \. on input line 1.
@@ -695,16 +714,16 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lot=\write5
 \openout5 = `templateTFM.lot'.
 
- [8
+ [9
 
 ] [0] (Introduccion.tex
-<recursos/processor_performance.jpg, id=46, 1145.78062pt x 686.565pt>
+<recursos/processor_performance.jpg, id=52, 1145.78062pt x 686.565pt>
 File: recursos/processor_performance.jpg Graphic file (type jpg)
 <use recursos/processor_performance.jpg>
 Package pdftex.def Info: recursos/processor_performance.jpg  used on input line
  11.
 (pdftex.def)             Requested size: 256.07741pt x 153.4438pt.
-<recursos/bandwidth-growth-nielsen-law.png, id=47, 1694.33pt x 1195.46625pt>
+<recursos/bandwidth-growth-nielsen-law.png, id=53, 1694.33pt x 1195.46625pt>
 File: recursos/bandwidth-growth-nielsen-law.png Graphic file (type png)
 <use recursos/bandwidth-growth-nielsen-law.png>
 Package pdftex.def Info: recursos/bandwidth-growth-nielsen-law.png  used on inp
@@ -714,23 +733,23 @@ ut line 18.
 
  <./recursos/processor_performance.jpg> <./recursos/bandwidth-growth-nielsen-la
 w.png>]
-LaTeX Info: Redefining \. on input line 48.
-LaTeX Info: Redefining \% on input line 48.
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
 [2]
-<recursos/artPublicados.png, id=58, 204.765pt x 148.75575pt>
+<recursos/artPublicados.png, id=62, 204.765pt x 148.75575pt>
 File: recursos/artPublicados.png Graphic file (type png)
 <use recursos/artPublicados.png>
-Package pdftex.def Info: recursos/artPublicados.png  used on input line 53.
+Package pdftex.def Info: recursos/artPublicados.png  used on input line 46.
 (pdftex.def)             Requested size: 256.07741pt x 186.04408pt.
-LaTeX Info: Redefining \. on input line 98.
-LaTeX Info: Redefining \% on input line 98.
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
  [3 <./recursos/artPublicados.png>]
-LaTeX Info: Redefining \. on input line 129.
-LaTeX Info: Redefining \% on input line 129.
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
@@ -748,149 +767,360 @@ Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 [6
 
 ] [7]
-LaTeX Info: Redefining \. on input line 49.
-LaTeX Info: Redefining \% on input line 49.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
 [8]
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
  [9]
-LaTeX Info: Redefining \. on input line 92.
-LaTeX Info: Redefining \% on input line 92.
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
 [10]
-<recursos/ComparacionModelosDM.png, id=87, 334.24875pt x 272.81924pt>
-File: recursos/ComparacionModelosDM.png Graphic file (type png)
-<use recursos/ComparacionModelosDM.png>
-Package pdftex.def Info: recursos/ComparacionModelosDM.png  used on input line 
-109.
-(pdftex.def)             Requested size: 341.43437pt x 278.70488pt.
+Underfull \vbox (badness 2922) has occurred while \output is active []
+
 LaTeX Info: Redefining \. on input line 112.
 LaTeX Info: Redefining \% on input line 112.
  [11]
-LaTeX Info: Redefining \. on input line 123.
-LaTeX Info: Redefining \% on input line 123.
+<recursos/ComparacionModelosDM.png, id=95, 334.24875pt x 272.81924pt>
+File: recursos/ComparacionModelosDM.png Graphic file (type png)
+<use recursos/ComparacionModelosDM.png>
+Package pdftex.def Info: recursos/ComparacionModelosDM.png  used on input line 
+120.
+(pdftex.def)             Requested size: 341.43437pt x 278.70488pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
 [12 <./recursos/ComparacionModelosDM.png>]
-<recursos/CRISPCiclo.png, id=95, 354.123pt x 298.716pt>
-File: recursos/CRISPCiclo.png Graphic file (type png)
-<use recursos/CRISPCiclo.png>
-Package pdftex.def Info: recursos/CRISPCiclo.png  used on input line 132.
-(pdftex.def)             Requested size: 256.07741pt x 216.02797pt.
-LaTeX Info: Redefining \. on input line 142.
-LaTeX Info: Redefining \% on input line 142.
+<recursos/PrecisionMetodos.png, id=101, 412.54124pt x 214.401pt>
+File: recursos/PrecisionMetodos.png Graphic file (type png)
+<use recursos/PrecisionMetodos.png>
+Package pdftex.def Info: recursos/PrecisionMetodos.png  used on input line 140.
+
+(pdftex.def)             Requested size: 341.43437pt x 177.44896pt.
+LaTeX Info: Redefining \. on input line 147.
+LaTeX Info: Redefining \% on input line 147.
 
 Overfull \hbox (9.91647pt too wide) has occurred while \output is active
 \OT1/cmss/m/n/10.95 2.5 Modelos utilizados en el desarrollo de proyectos de min
 era de datos en el entorno educativo[] \OT1/cmr/m/n/10.95 13
  []
 
-[13 <./recursos/CRISPCiclo.png>]
-<recursos/PrecisionMetodos.png, id=101, 412.54124pt x 214.401pt>
-File: recursos/PrecisionMetodos.png Graphic file (type png)
-<use recursos/PrecisionMetodos.png>
-Package pdftex.def Info: recursos/PrecisionMetodos.png  used on input line 148.
-
-(pdftex.def)             Requested size: 341.43437pt x 177.44896pt.
-LaTeX Info: Redefining \. on input line 157.
-LaTeX Info: Redefining \% on input line 157.
+[13]
+<recursos/ComparacionModelos.png, id=105, 454.69875pt x 222.23026pt>
+File: recursos/ComparacionModelos.png Graphic file (type png)
+<use recursos/ComparacionModelos.png>
+Package pdftex.def Info: recursos/ComparacionModelos.png  used on input line 15
+5.
+(pdftex.def)             Requested size: 341.43437pt x 166.87573pt.
+LaTeX Info: Redefining \. on input line 158.
+LaTeX Info: Redefining \% on input line 158.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
 [14 <./recursos/PrecisionMetodos.png>]
-<recursos/ComparacionModelos.png, id=106, 454.69875pt x 222.23026pt>
-File: recursos/ComparacionModelos.png Graphic file (type png)
-<use recursos/ComparacionModelos.png>
-Package pdftex.def Info: recursos/ComparacionModelos.png  used on input line 16
-3.
-(pdftex.def)             Requested size: 341.43437pt x 166.87573pt.
-LaTeX Info: Redefining \. on input line 176.
-LaTeX Info: Redefining \% on input line 176.
+LaTeX Info: Redefining \. on input line 173.
+LaTeX Info: Redefining \% on input line 173.
  [15 <./recursos/ComparacionModelos.png>]
-<recursos/top10tools.jpg, id=111, 451.6875pt x 319.94531pt>
+<recursos/top10tools.jpg, id=114, 451.6875pt x 319.94531pt>
 File: recursos/top10tools.jpg Graphic file (type jpg)
 <use recursos/top10tools.jpg>
-Package pdftex.def Info: recursos/top10tools.jpg  used on input line 183.
+Package pdftex.def Info: recursos/top10tools.jpg  used on input line 182.
 (pdftex.def)             Requested size: 426.79135pt x 302.33038pt.
-LaTeX Info: Redefining \. on input line 197.
-LaTeX Info: Redefining \% on input line 197.
+LaTeX Info: Redefining \. on input line 190.
+LaTeX Info: Redefining \% on input line 190.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[16 <./recursos/top10tools.jpg>]) (PropuestaIntervencion.tex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [17]
+[16 <./recursos/top10tools.jpg>]
+<recursos/gartner.png, id=118, 386.6445pt x 423.38174pt>
+File: recursos/gartner.png Graphic file (type png)
+<use recursos/gartner.png>
+Package pdftex.def Info: recursos/gartner.png  used on input line 194.
+(pdftex.def)             Requested size: 256.07741pt x 280.42123pt.
+LaTeX Info: Redefining \. on input line 211.
+LaTeX Info: Redefining \% on input line 211.
+ [17 <./recursos/gartner.png>])
+(PropuestaIntervencion.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[18
+[18] [19
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 17.
- ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
- [19]
-LaTeX Info: Redefining \. on input line 46.
-LaTeX Info: Redefining \% on input line 46.
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
 [20]
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
- [21]) (Referencias.tex (templateTFM.bbl
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 51.
+LaTeX Info: Redefining \% on input line 51.
+ [21]) (Disenio.tex
+! Undefined control sequence.
+l.1 \chapter
+            {ADAS}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
 [22]
+<recursos/arquitecturaDWH2.png, id=139, 1081.79156pt x 603.75563pt>
+File: recursos/arquitecturaDWH2.png Graphic file (type png)
+<use recursos/arquitecturaDWH2.png>
+Package pdftex.def Info: recursos/arquitecturaDWH2.png  used on input line 26.
+(pdftex.def)             Requested size: 341.43437pt x 190.55252pt.
+ [23
+
+ <./recursos/arquitecturaDWH2.png>]
+<recursos/Esquema_en_estrella.png, id=143, 534.99875pt x 439.6425pt>
+File: recursos/Esquema_en_estrella.png Graphic file (type png)
+<use recursos/Esquema_en_estrella.png>
+Package pdftex.def Info: recursos/Esquema_en_estrella.png  used on input line 3
+8.
+(pdftex.def)             Requested size: 341.43437pt x 280.59206pt.
+<recursos/modelo-dimensional-cubo.png, id=144, 357.58594pt x 234.1247pt>
+File: recursos/modelo-dimensional-cubo.png Graphic file (type png)
+<use recursos/modelo-dimensional-cubo.png>
+Package pdftex.def Info: recursos/modelo-dimensional-cubo.png  used on input li
+ne 48.
+(pdftex.def)             Requested size: 341.43437pt x 223.56036pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 51.
+LaTeX Info: Redefining \% on input line 51.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[24 <./recursos/Esquema_en_estrella.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 61.
+LaTeX Info: Redefining \% on input line 61.
+ [25 <./recursos/modelo-dimensional-cubo.png>]
+<recursos/CRISPCicloIBM.png, id=153, 378.81525pt x 348.70274pt>
+File: recursos/CRISPCicloIBM.png Graphic file (type png)
+<use recursos/CRISPCicloIBM.png>
+Package pdftex.def Info: recursos/CRISPCicloIBM.png  used on input line 77.
+(pdftex.def)             Requested size: 256.07741pt x 235.72067pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[26]
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
+ [27 <./recursos/CRISPCicloIBM.png>]
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[28]
+LaTeX Info: Redefining \. on input line 149.
+LaTeX Info: Redefining \% on input line 149.
+ [29]
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[30]
+<recursos/arbol_decision_img1.jpg, id=171, 650.43pt x 243.91125pt>
+File: recursos/arbol_decision_img1.jpg Graphic file (type jpg)
+<use recursos/arbol_decision_img1.jpg>
+Package pdftex.def Info: recursos/arbol_decision_img1.jpg  used on input line 2
+07.
+(pdftex.def)             Requested size: 341.43437pt x 128.04042pt.
+LaTeX Info: Redefining \. on input line 209.
+LaTeX Info: Redefining \% on input line 209.
+ [31]
+<recursos/BayesFormula.png, id=175, 301.125pt x 172.645pt>
+File: recursos/BayesFormula.png Graphic file (type png)
+<use recursos/BayesFormula.png>
+Package pdftex.def Info: recursos/BayesFormula.png  used on input line 224.
+(pdftex.def)             Requested size: 256.07741pt x 146.83058pt.
+LaTeX Info: Redefining \. on input line 236.
+LaTeX Info: Redefining \% on input line 236.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[32 <./recursos/arbol_decision_img1.jpg> <./recursos/BayesFormula.png (PNG copy
+)>]
+<recursos/RedNeuronalArtificial.png, id=179, 144.54pt x 80.58105pt>
+File: recursos/RedNeuronalArtificial.png Graphic file (type png)
+<use recursos/RedNeuronalArtificial.png>
+Package pdftex.def Info: recursos/RedNeuronalArtificial.png  used on input line
+ 241.
+(pdftex.def)             Requested size: 256.07741pt x 142.77106pt.
+LaTeX Info: Redefining \. on input line 257.
+LaTeX Info: Redefining \% on input line 257.
+ [33 <./recursos/RedNeuronalArtificial.png>]
+<recursos/k_NN.png, id=184, 588.69937pt x 408.02437pt>
+File: recursos/k_NN.png Graphic file (type png)
+<use recursos/k_NN.png>
+Package pdftex.def Info: recursos/k_NN.png  used on input line 274.
+(pdftex.def)             Requested size: 256.07741pt x 177.48294pt.
+LaTeX Info: Redefining \. on input line 288.
+LaTeX Info: Redefining \% on input line 288.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[34 <./recursos/k_NN.png>]
+LaTeX Info: Redefining \. on input line 310.
+LaTeX Info: Redefining \% on input line 310.
+ [35]
+Overfull \hbox (19.44421pt too wide) in paragraph at lines 318--319
+[]\OT1/cmr/m/n/12 Concretamente, los da-tos uti-li-za-dos en la pre-dic-cion s
+on aque-llos del cur-so 2016/2017.
+ []
+
+) (Referencias.tex (templateTFM.bbl
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [23]
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[36]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [37]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[24
+[38
 
-] [25]
-LaTeX Info: Redefining \. on input line 524.
-LaTeX Info: Redefining \% on input line 524.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[26] [27]))
-LaTeX Info: Redefining \. on input line 165.
-LaTeX Info: Redefining \% on input line 165.
+] [39]
+LaTeX Info: Redefining \. on input line 501.
+LaTeX Info: Redefining \% on input line 501.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[28] (templateTFM.aux
+[40] [41]
+Missing character: There is no Ã in font cmtt12!
+Missing character: There is no ¡ in font cmtt12!
+Missing character: There is no Ã in font cmtt12!
+Missing character: There is no © in font cmtt12!
+LaTeX Info: Redefining \. on input line 1045.
+LaTeX Info: Redefining \% on input line 1045.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[42])) (Anexos.tex [43] [44
+
+] [45
+
+]
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+ [46
+
+]
+<recursos/ImagenesR/estadisticos.png, id=227, 531.78674pt x 136.71075pt>
+File: recursos/ImagenesR/estadisticos.png Graphic file (type png)
+<use recursos/ImagenesR/estadisticos.png>
+Package pdftex.def Info: recursos/ImagenesR/estadisticos.png  used on input lin
+e 14.
+(pdftex.def)             Requested size: 512.14832pt x 131.67053pt.
+
+Overfull \hbox (85.35696pt too wide) in paragraph at lines 14--16
+ [][] 
+ []
+
+<recursos/ImagenesR/boxplot.png, id=228, 401.70074pt x 255.354pt>
+File: recursos/ImagenesR/boxplot.png Graphic file (type png)
+<use recursos/ImagenesR/boxplot.png>
+Package pdftex.def Info: recursos/ImagenesR/boxplot.png  used on input line 22.
+
+(pdftex.def)             Requested size: 341.43437pt x 217.04802pt.
+<recursos/ImagenesR/matrizcorrelacion.png, id=229, 322.20375pt x 264.99pt>
+File: recursos/ImagenesR/matrizcorrelacion.png Graphic file (type png)
+<use recursos/ImagenesR/matrizcorrelacion.png>
+Package pdftex.def Info: recursos/ImagenesR/matrizcorrelacion.png  used on inpu
+t line 31.
+(pdftex.def)             Requested size: 341.43437pt x 280.81528pt.
+[47 <./recursos/ImagenesR/estadisticos.png> <./recursos/ImagenesR/boxplot.png>]
+<recursos/ImagenesR/mayorescorrelaciones.png, id=235, 208.3785pt x 147.55125pt>
+
+File: recursos/ImagenesR/mayorescorrelaciones.png Graphic file (type png)
+<use recursos/ImagenesR/mayorescorrelaciones.png>
+Package pdftex.def Info: recursos/ImagenesR/mayorescorrelaciones.png  used on i
+nput line 40.
+(pdftex.def)             Requested size: 256.07741pt x 181.32709pt.
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
+[48 <./recursos/ImagenesR/matrizcorrelacion.png> <./recursos/ImagenesR/mayoresc
+orrelaciones.png>]
+<recursos/ImagenesR/mayorcorrelacion.png, id=242, 225.2415pt x 132.495pt>
+File: recursos/ImagenesR/mayorcorrelacion.png Graphic file (type png)
+<use recursos/ImagenesR/mayorcorrelacion.png>
+Package pdftex.def Info: recursos/ImagenesR/mayorcorrelacion.png  used on input
+ line 48.
+(pdftex.def)             Requested size: 256.07741pt x 150.64757pt.
+<recursos/ImagenesR/RelacionAlumnGrupos.png, id=243, 429.40425pt x 268.00125pt>
+
+File: recursos/ImagenesR/RelacionAlumnGrupos.png Graphic file (type png)
+<use recursos/ImagenesR/RelacionAlumnGrupos.png>
+Package pdftex.def Info: recursos/ImagenesR/RelacionAlumnGrupos.png  used on in
+put line 56.
+(pdftex.def)             Requested size: 256.07741pt x 159.8328pt.
+<recursos/ImagenesR/VarImpRF.png, id=244, 427.5975pt x 210.18526pt>
+File: recursos/ImagenesR/VarImpRF.png Graphic file (type png)
+<use recursos/ImagenesR/VarImpRF.png>
+Package pdftex.def Info: recursos/ImagenesR/VarImpRF.png  used on input line 65
+.
+(pdftex.def)             Requested size: 256.07741pt x 125.87479pt.
+ [49
+
+ <./recursos/ImagenesR/mayorcorrelacion.png> <./recursos/ImagenesR/RelacionAlum
+nGrupos.png>])
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
+ [50 <./recursos/ImagenesR/VarImpRF.png>]
+(templateTFM.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
@@ -899,30 +1129,30 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 7145 strings out of 492946
- 108217 string characters out of 3126266
- 200515 words of memory out of 3000000
- 10853 multiletter control sequences out of 15000+200000
- 13938 words of font info for 51 fonts, out of 3000000 for 9000
+ 7380 strings out of 492946
+ 113127 string characters out of 3126266
+ 203531 words of memory out of 3000000
+ 11063 multiletter control sequences out of 15000+200000
+ 15973 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,40p,1092b,510s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,8n,40p,1092b,584s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx8.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/abelt/AppData/Local/Programs
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/abelt/AppData/Lo
 cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/abel
-t/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:
+t/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:
 /Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mss10.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmss12.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/abelt/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/abelt/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/abelt
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on templateTFM.pdf (40 pages, 751202 bytes).
+mr8.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmss10.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmss12.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/abelt/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/abelt/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on templateTFM.pdf (63 pages, 1605213 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
+ 294 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

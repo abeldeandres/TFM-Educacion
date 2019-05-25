@@ -1,1 +1,28 @@
 \section{ANÁLISIS DE RESULTADOS}
+\subsection{Analisis exploratorio de datos}
+En primer lugar, se va a estudiar los estadísticos mas importantes de cada una de las variables. Estos estadísticos se pueden observar en la figura \ref{fig:estadisticos}. 
+
+Una vez observados los estadísticos, los vamos a representar utilizando los diagramas de caja (box-plot). Con estos diagramas vamos a observar ademas los datos atipicos (outliers).
+
+Como se puede observar en la figura \ref{fig:boxplot}, alguna de las variables contiene demasiados valores que son atípicos. Por ejemplo, la variable "NUM\_ALUMNOS", como se puede apreciar en los estadísticos de la figura \ref{fig:estadisticos} tiene una media de 74 alumnos. No obstante, hay niveles educativos que tiene hasta casi 700 alumnos. Esto se debe a que existen centros que tienen ese numero de alumnos por nivel educativo debido a que son centros modalidades a distancia. Ocurre exactamente lo mismo con el numero de grupos "NM\_GRUPOS".
+
+Una vez estudiado los estadísticos y los datos anómalos, se va a realizar un estudio sobre la normalidad de los datos.RELLENAR
+
+Uno de los aspectos mas importantes en el análisis exploratorio de datos es la correlación existentes entre las variables. En la figura \ref{fig:matrizcorrelaciones} se puede observar como existe una gran correlación entre las variables de numero de alumnos, numero de grupos y grupos a predecir y otra gran correlación entre la variable comedor, el carácter genérico y la naturaleza del centro. En la figura \ref{fig:mayorescorrelaciones} se pueden observar las mayores correlaciones entre variables ordenadas de mayor a menor.
+
+Uno de los fines es obtener las variables que mejor correlacionan con la variable a predecir, en este caso "GRUPOS\_PREDECIR". En la figura \ref{fig:mayorcorrelacionpredecir} se observa como las variables ``NM\_UNIDADES" y ``NM\_ALUMNOS" son las que mayor correlación tienen con la variable a predecir. No sorprende puesto que son variables determinantes en la predicción. Vemos en la figura \ref{fig:relacionAlumnGrup} que ambas variables tienen una relación positiva que implica que si una aumenta, la otra también.
+
+
+
+
+
+
+\subsection{Análisis predictivo}
+Una vez que se realiza el análisis descriptivo, se procede a realizar el análisis predictivo.
+
+En primer lugar, se debe tener en cuenta las variables que se van a utilizar en los modelos, para ello, se va a utilizar Random Forest como algoritmo para obtener la importancia de las variables. En la figura \ref{fig:VarImpRF} podemos observar que las vas importantes a la hora de mejorar la precisión en el modelo son: NM\_UNIDADES y NM\_ALUMNOS.
+
+
+
+
+
