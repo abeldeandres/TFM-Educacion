@@ -1,12 +1,15 @@
-\section{ANÁLISIS DE RESULTADOS}
-\subsection{Analisis exploratorio de datos}
-En primer lugar, se va a estudiar los estadísticos mas importantes de cada una de las variables. Estos estadísticos se pueden observar en la figura \ref{fig:estadisticos}. 
+\chapter{ANÁLISIS DE RESULTADOS}
+\section{Análisis exploratorio de datos}
 
-Una vez observados los estadísticos, los vamos a representar utilizando los diagramas de caja (box-plot). Con estos diagramas vamos a observar ademas los datos atipicos (outliers).
+Antes de comenzar con el análisis, el lector puede observar en la tabla \ref{tab:TablaVariables} del Apéndice \ref{appendix:A} las variables utilizadas en esta investigación. 
 
-Como se puede observar en la figura \ref{fig:boxplot}, alguna de las variables contiene demasiados valores que son atípicos. Por ejemplo, la variable "NUM\_ALUMNOS", como se puede apreciar en los estadísticos de la figura \ref{fig:estadisticos} tiene una media de 74 alumnos. No obstante, hay niveles educativos que tiene hasta casi 700 alumnos. Esto se debe a que existen centros que tienen ese numero de alumnos por nivel educativo debido a que son centros modalidades a distancia. Ocurre exactamente lo mismo con el numero de grupos "NM\_GRUPOS".
+Al comienzo de esta investigación, se va a estudiar los estadísticos mas importantes de cada una de las variables. Estos estadísticos se pueden observar en la figura \ref{fig:estadisticos} del Apéndice \ref{appendix:A}.
 
-Una vez estudiado los estadísticos y los datos anómalos, se va a realizar un estudio sobre la normalidad de los datos.RELLENAR
+Una vez observados los estadísticos, los vamos a representar utilizando los diagramas de caja (box-plot). Con estos diagramas vamos a observar ademas los datos atipicos (outliers). Un resumen de todos los diagramas de cajas se puede observar en la figura \ref{fig:boxplotNorm} del Apéndice \ref{appendix:A}. 
+
+Como se puede observar en la figura \ref{fig:boxplotNorm}, existen variables que contienen valores que son atípicos. Por ejemplo, la variable "NUM\_ALUMNOS", como se puede apreciar en los estadísticos de la figura \ref{fig:estadisticos} tiene una media de 74 alumnos. No obstante, hay niveles educativos que tiene hasta casi 700 alumnos. Esto se debe a que existen centros que tienen ese numero de alumnos por nivel educativo debido a que son centros modalidades a distancia. Ocurre exactamente lo mismo con el numero de grupos "NM\_GRUPOS".
+
+Una vez estudiado los estadísticos y los datos anómalos, se va a realizar un estudio sobre la normalidad de los datos. 
 
 Uno de los aspectos mas importantes en el análisis exploratorio de datos es la correlación existentes entre las variables. En la figura \ref{fig:matrizcorrelaciones} se puede observar como existe una gran correlación entre las variables de numero de alumnos, numero de grupos y grupos a predecir y otra gran correlación entre la variable comedor, el carácter genérico y la naturaleza del centro. En la figura \ref{fig:mayorescorrelaciones} se pueden observar las mayores correlaciones entre variables ordenadas de mayor a menor.
 
@@ -17,10 +20,10 @@ Uno de los fines es obtener las variables que mejor correlacionan con la variabl
 
 
 
-\subsection{Análisis predictivo}
+\section{Análisis predictivo}
 Una vez que se realiza el análisis descriptivo, se procede a realizar el análisis predictivo.
 
-En primer lugar, se debe tener en cuenta las variables que se van a utilizar en los modelos, para ello, se va a utilizar Random Forest como algoritmo para obtener la importancia de las variables. En la figura \ref{fig:VarImpRF} podemos observar que las vas importantes a la hora de mejorar la precisión en el modelo son: NM\_UNIDADES y NM\_ALUMNOS.
+En primer lugar, se debe tener en cuenta las variables que se van a utilizar en los modelos, para ello, se va a utilizar Random Forest como algoritmo para obtener la importancia de las variables. En la figura \ref{fig:VarImpRF} podemos del Sub-anexo \ref observar que las vas importantes a la hora de mejorar la precisión en el modelo son: NM\_UNIDADES y NM\_ALUMNOS.
 
 
 

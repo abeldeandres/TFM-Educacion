@@ -1,8 +1,8 @@
-\section{DISEÑO DE INVESTIGACIÓN}
+\chapter{Diseño de Investigación}
 %http://recipp.ipp.pt/bitstream/10400.22/136/3/KDD-CRISP-SEMMA.pdf
 %http://www.oldemarrodriguez.com/yahoo_site_admin/assets/docs/Documento_CRISP-DM.2385037
 
-\subsection{Introducción}
+\section{Introducción}
 En un principio el proyecto comienza como parte de una necesidad que surge a la CEI. Dicha necesidad se basa en realizar explotaciones (visualizando los datos según convenga) y reportes sobre la situación actual respecto a otros años, concretamente, los últimos 10 año. \footnote{Antes del curso 2007/2008 no existe un sistema de gestión centralizado y por lo tanto no se puede hacer explotaciones}
 
 La CEI dispone de un gran numero de bases de datos, por lo que obtener información sencilla a través de ellas resulta complejo. Por tanto, se requiere de un sistema de explotación que permita obtener el máximo valor de la información de dichas bases de datos.
@@ -17,8 +17,8 @@ A continuación se expone someramente la arquitectura inicial del proyecto.
 
 %Cuando se accedió a la informacion de la consejeria en los ultimos años, esta se remontaba a 2004. Desde este curso se comenzo a alamacenar de forma centralizada relacionada al sistema educativa y fue de forma progresiva mediante SICE, hasta 2007 no se implanto en todos los centros, por lo tanto son datos parciales (en cuanto al numero de centros). En 2007 sostenidos con fondos publicos. 
 
-\subsection{Arquitectura Inicial}
-Con el fin de entender conceptos posteriores, se procede a mostrar la arquitectura lógica del sistema con el que se parte inicialmente. Esta arquitectura ya está implementada y es la base del proyecto inicial y es la que se muestra en la figura \ref{fig:arquitecturaDWH2}
+\section{Arquitectura Inicial}
+Con el fin de entender conceptos posteriores, se procede a mostrar la arquitectura lógica del sistema con la que se parte inicialmente. Esta arquitectura ya está implementada y es la base del proyecto inicial y se puede observar en la figura \ref{fig:arquitecturaDWH2}
 \begin{figure*}[h]
 	\centering
 	\caption{Arquitectura lógica del proyecto. Recuperado de la Consejería de Educación e Investigación de la Comunidad de Madrid.}
@@ -28,7 +28,7 @@ Con el fin de entender conceptos posteriores, se procede a mostrar la arquitectu
 \FloatBarrier
 
 %En la figura \ref{fig:arquitecturaDWH2} se muestra cuales son las fuentes de información, como se crea el ``DataWareHouse'' (que para entenderse son simplemente bases de datos con una estructura especial) y los módulos principales que se encargaran de seleccionar la información de una determinada forma para que posteriormente el usuario pueda visualizarla.
-En primer lugar se tiene un gran numero de bases de datos de la CEI. A partir de los datos solicitados para realizar la explotación, se tiene que recurrir a las tablas de estas bases de datos.
+En primer lugar se tiene un gran numero de bases de datos de la CEI. A partir de los datos solicitados para realizar la explotación, se tiene que realizar la búsqueda en las tablas de estas bases de datos.
 
 En segundo lugar, se crea un almacén de datos (Datawarehouse -DWH-), que son tablas dispuestas de una determinada forma o diseño (en este caso forma de estrella), donde se encuentran las tablas de hechos y las tablas de dimensiones. Las tablas de hechos son el corazón de un esquema en estrella, almacenan campos claves que se unen a las tablas de dimensiones, ademas incluyen métricas del negocio, contienen millones de registros. Las tablas de dimensiones son las que ofrecen mas información sobre características de las tablas de hechos, normalmente contienen pocos registros.
 \begin{figure*}[h]
@@ -59,8 +59,8 @@ Una vez que se tienen los datos limpios y cargados en las tablas de hechos y dim
 
 En resumen, y a partir de los datos almacenados en el ``Datawarehouse''(DWH), la investigación que se lleva a cabo en este TFM se centra en analizar dichos datos. Pudiéndose recurrir a las fuentes de información originales para obtener nuevos datos en caso necesario. 
 
-\subsection{Diseño de la minería de datos}
-Una vez que se tiene claro la arquitectura principal del sistema, se va establece el camino a seguir a la hora de realizar la investigación. Para ello, se utiliza la metodologia CRISP-DM. \citeA{IBMCRISP2012}
+\section{Diseño de la minería de datos}
+Una vez que se tiene claro la arquitectura principal del sistema, se establece el camino a seguir a la hora de realizar la investigación. Para ello, se utiliza la metodologia CRISP-DM. \citeA{IBMCRISP2012}
 
 La metodología CRISP-DM tiene como objetivo orientar los proyectos de minería de datos. 
 \begin{itemize}
@@ -90,7 +90,7 @@ El ciclo de vida de CRISP-DM está compuesto de seis fases. La secuencia de esta
 
 En los próximos puntos se va a describir las actividades que se realizan en cada una de estas fases.
 
-\subsubsection{Comprensión del negocio}
+\subsection{Comprensión del negocio}
 La primera tarea a realizar en el ciclo de CRISP-DM es obtener la máxima información posible de los objetivos de esta investigación. Desde la CEI se ha comunicado la información disponible y las necesidades actuales.
 
 Una de las necesidades de la CEI es obtener la máxima información sobre la situación actual de la educación en la comunidad de Madrid. La CEI posee una gran cantidad de datos de alumnos y centros a lo largo del tiempo. 
@@ -101,12 +101,12 @@ Una de las actividades que se han realizado es obtener el número de grupos y al
 
 Otra de las actividades que se realizan es obtener gráficos sobre la evolución de alumnos con necesidades especiales, alumnos de minorías étnicas e incluso porcentaje y nacionalidad de alumnos extranjeros.
 
-\subsubsection{Comprensión de los datos}
+\subsection{Comprensión de los datos}
 Esta fase implica estudiar detalladamente los datos disponibles. Es esencial para evitar problemas inesperados durante la fase siguiente.
 
 Para realizar esta fase, debemos tener en cuenta dos consideraciones relacionadas. La primera consideración es la identificación de necesidades de información y la segunda es la identificación de fuentes internas y externas.
 
-\textbf{Identificación de necesidades de información}
+\subsubsection{Identificación de necesidades de información}
 
 Para realizar la identificación de las necesidades de información se va a partir de varios factores como son:
 \begin{itemize}
@@ -114,7 +114,7 @@ Para realizar la identificación de las necesidades de información se va a part
 	\item el análisis, la evolución de productos, procesos, materiales y tecnologías en el ámbito de la minería de datos educativa.
 \end{itemize}
 
-\textbf{Identificación de fuentes internas y externas de información}
+\subsubsection{Identificación de fuentes internas y externas de información}
 
 Teniendo en cuenta las principales necesidades de información, se debe identificar las fuentes de información y recursos disponibles ya sean internos o externos a la organización. En este caso, utilizan las siguientes fuentes:
 \begin{itemize}
@@ -135,7 +135,7 @@ El desconocimiento del estado de las bases de datos conlleva la inversión de un
 
 De esta fase se espera localizar todos los datos que posteriormente se prepararan y se utilizaran en el modelado.
 
-\subsubsection{Preparación de los datos}
+\subsection{Preparación de los datos}
 Una vez que se tienen claros los datos que se utilizan, se procede a realizar la preparación para poder utilizarlos en la fase de modelado.
 
 Algunas de las actividades que se realizan en esta fase son: la fusión de conjuntos y/o registros de datos, la selección de una muestra de un subconjunto, la agregación de registros, por contra la derivación de nuevos atributos a partir de anteriores, la eliminación o sustitución de valores en blanco o ausentes y por último la división de datos de prueba y entrenamiento.
@@ -144,7 +144,7 @@ Además, también se va a estudiar la existencia de datos perdidos y errores en 
 
 Para realizar este tratamiento de datos se utilizará la técnica de ETL (extracción, transformación y carga) que consiste básicamente en obtener los datos de la fuente de origen (bases de datos, ficheros Excel, ficheros JSON, etc.), seleccionar aquellos datos que convengan al estudio, transformarlos según las necesidades que se tenga y depurarlos (evitando así datos erróneos). \cite{prakash2017etl} \cite{matos2006metodologia},\cite{gour2010improve}.
 Para realizar este tratamiento, se ha va a utilizar Pentaho BI, que es un conjunto de programas libres para realizar entre otras muchas actividades, las técnicas de ETL. Concretamente, se ha utilizado la herramienta Spoon para desarrollar esta técnica. 
-Una vez que se tienen los datos limpios y estructurados, se puede realizar dos operaciones:
+Una vez que se tienen los datos limpios y estructurados, se pueden realizar dos operaciones:
 
 \begin{enumerate}
 	\item  En primer lugar, se pueden almacenar dichos datos en una base de datos y seguir utilizando Pentaho BI para poder crear cuadros de mandos e informes o análisis OLAP. 
@@ -152,11 +152,11 @@ Una vez que se tienen los datos limpios y estructurados, se puede realizar dos o
 	\item  En segundo lugar, se puede almacenar la información en un texto plano para poder trabajar con herramientas de análisis descriptivo y predictivo. Estos análisis se realizan a través del entorno y lenguaje de programación R, que es una referencia en el ámbito de la estadística.
 \end{enumerate}
 
-\textbf{Análisis Exploratorio}
+\subsubsection{Análisis Exploratorio}
 
 %El análisis predictivo (también conocido como estadísticas predictivas) se encarga de resumir los datos en bruto para que puedan ser interpretados. Estos análisis son útiles ya que permiten aprender sobre comportamientos o patrones pasados e entender cómo pueden influir en los resultados futuros. En este tipo de análisis se van a utilizar tanto métodos gráficos como medidas resumen.
 
-En primer lugar, se debe estudiar el tipo de datos de cada variable a investigar, se debe clasificar las variables según sean categóricas (dicotómicas o polinómicas) o numéricas (discretos o continuos). El tipo de datos permite decidir qué tipo de análisis estadístico utilizar.
+La primera actividad en un análisis exploratorio es estudiar el tipo de datos de cada variable a investigar, se debe clasificar las variables según sean categóricas (dicotómicas o polinómicas) o numéricas (discretos o continuos). El tipo de datos permite decidir qué tipo de análisis estadístico utilizar.
 Una vez que se tienen claro el tipo de datos utilizados, se utilizan los principales estadísticos como la media, la mediana, las desviaciones típicas, etc.
 Posteriormente se va a utilizar la matriz de varianzas y covarianzas, que indicaran la variabilidad de los datos y la información sobre las posibles relaciones lineales entre las variables. 
 
@@ -183,7 +183,7 @@ Las técnicas de aprendizaje tienen como resultado un modelo para resolver una t
 
 Los modelos predictivos son de dos tipos: regresión, que son capaces de predecir una respuesta cuantificable; y de clasificación, que son capaces de predecir respuesta categóricas.
 
-\textbf{Aprendizaje automático}
+\subsubsection{Aprendizaje automático}
 %https://www.fisterra.com/mbe/investiga/10descriptiva/10descriptiva.asp#top
 %http://www.uco.es/zootecniaygestion/img/pictorex/27_12_49_7.pdf
 %https://machinelearningmastery.com/descriptive-statistics-examples-with-r/
@@ -207,8 +207,9 @@ Algunos de los algoritmos que se utilizan son:
 		\label{fig:fun_arb_dec}
 	\end{figure*}
 	\FloatBarrier
+
 	
-	
+	\begin{comment}
 	\item \textbf{Clasificación de Naïve Bayes}
 	
 	Es un algoritmo que se basa en la técnica de clasificación utilizando el teorema de Bayes.
@@ -224,6 +225,7 @@ Algunos de los algoritmos que se utilizan son:
 		\label{fig:BayesFormula}
 	\end{figure*}
 	\FloatBarrier
+	\end{comment}
 	
 	\item \textbf{Regresión Logística}
 	
@@ -261,6 +263,19 @@ Algunos de los algoritmos que se utilizan son:
 	%http://randomforest2013.blogspot.com/2013/05/randomforest-definicion-random-forests.html
 	%https://bookdown.org/content/2031/ensambladores-random-forest-parte-i.html
 	
+	\item \textbf{Maquinas de Vectores Soporte (SVM)}
+	Constituyen un método basado en el aprendizaje para la resolución de problemas de clasificación y regresión. Para ello, recibe unas entradas y obtienen unas salidas. Busca por tanto la curva/linea que modele la tendencia de los datos.
+	
+	Por ejemplo, si tenemos un anuncio en una pagina web y queremos analizar la edad y la hora del día del usuario que hace clic o no en dicho anuncio, con SVN se obtiene la "superficie optima" que delimitara el comportamiento (clic-noclic) de un determinado usuario. \cite{JANA2016}
+	
+		\begin{figure*}[htb]
+		\centering
+		\caption{Ejemplo SVM. Recuperado de \protect\citeA{JANA2016}}
+		\includegraphics[width=0.6\textwidth]{recursos/SVM}
+		\label {fig:SVM}
+	\end{figure*}
+	\FloatBarrier
+	
 	\item \textbf{K-Vecinos-cercanos}
 	
 	K-vecinos-cercanos (conocido también como K-NN) es un algoritmo de aprendizaje supervisado en el que, a partir de unos datos iniciales, es capaz de clasificar todas las nuevas instancias.
@@ -278,7 +293,7 @@ Algunos de los algoritmos que se utilizan son:
 	
 \end{enumerate}
 
-\textbf{Criterio de selección}
+\subsubsection{Criterio de selección}
 
 Una vez que se han seleccionado las variables y los algoritmos a estudiar, es hora de realizar el propio modelado. Al realizar el modelado, debemos tener en cuenta que variables son mejores para este modelado. Es posible que existan variables que únicamente empeoren los resultados del modelado, por lo tanto, se deberán desestimar. Para ello se va a utilizar el criterio de Akaike (AIC). 
 
@@ -286,11 +301,32 @@ Este criterio indica el ajuste que tienen los datos experimentales con el modelo
 
 Cuanto menor sea el valor de este criterio, mejor se ajustan los datos al modelo. Por tanto, se deberá seleccionar el modelo que menor AIC tenga. \cite{martinez2009criterio}
 
-\subsubsection{Evaluación}
+\subsection{Evaluación}
 En esta fase de la metodologia, se diferencian varias partes. La primera parte es la evaluación del propio modelo respecto a otros, por lo que se utilizaran las métricas de precisión. La segunda parte va a ser la evaluación de la propia Unidad de Secundaria la que evalúe los resultados de predicción obtenidos para un determinado curso con los existentes en la realidad para dicho curso.
 
 \textbf{Métricas de precisión}
+El error absoluto medio (MAE) y el error cuadrático medio (RMSE) son dos de ls métricas mas comunes utilizadas para medir la precisión de las variables continuas en los modelos de regresión.
 
+\textbf{Error absoluto medio (MAE):} mide la magnitud promedio de los errores en un conjunto de predicciones, sin considerar su dirección. Es el promedio sobre la muestra de prueba de la diferencia absoluta entre la predicción y la observación real.
+\begin{figure*}[h]
+	\centering
+	\caption{Fórmula de MAE. Recuperado de https://medium.com/human-in-a-machine-world/mae-and-rmse-which-metric-is-better-e60ac3bde13d}
+	\includegraphics[width=0.4\textwidth]{recursos/mae}
+	\label{fig:MAE}
+\end{figure*}
+\FloatBarrier
+Error cuadrático medio (RMSE): es una regla de puntuación cuadrática que mide la magnitud promedio del error. Es la raíz cuadrada del promedio de las diferencias cuadradas entre la predicción y la observación real.
+\begin{figure*}[h]
+	\centering
+	\caption{Fórmula de RMSE. Recuperado de https://medium.com/human-in-a-machine-world/mae-and-rmse-which-metric-is-better-e60ac3bde13d}
+	\includegraphics[width=0.4\textwidth]{recursos/rmse}
+	\label{fig:MAE}
+\end{figure*}
+\FloatBarrier
+
+Se debe destacar que cuanto menos sea el error, más se acercan los datos predichos a la realidad.
+
+\begin{comment}
 Las métricas que se va a utilizar para obtener la precisión de los modelos son aquellas descritas en el artículo de  \citeA{COSTA2017247}, \citeA{Helal2018} y \citeA{ASHRAF20181021}. Estas métricas son frecuentes en ámbitos como la obtención de información, aprendizaje automático y otros dominios como la clasificación binaria. Dichas métricas son las siguientes:
 
 \begin{itemize}
@@ -310,17 +346,26 @@ Donde:
 
 Estas métricas se muestran utilizando un gráfico conocido como matriz de confusión.
 
+\end{comment}
+\subsection{Distribución}
+La fase de distribución considera la planificación y control de la distribución de los resultados. Debe tener en cuenta la realización de un informe final.
 
-\subsubsection{Distribución}
-Respecto a la fase de distribución, se van a utilizar los modelos generados para predecir datos de otros cursos. 
+Respecto a la fase de distribución, se utilizan los modelos generados para predecir datos de otros cursos. Concretamente se utiliza el modelo que mayor precisión obtiene con los datos aportados.
 
 Concretamente, los datos utilizados en la predicción son aquellos del curso 2016/2017. A partir de estos datos, se obtienen varios modelos. Una vez que se ha seleccionado el mejor modelo, ya se puede utilizar otro conjunto de datos. En este caso, el conjunto de datos a utilizar es el del curso 2017/2018.
+
+Esta fase, por tanto, aplicada a un entorno empresarial, debería indicar que modelos deben integrarse en el sistema. En este entorno académico, simplemente se debe indicar el mejor modelo y una comparativa de todos los modelos utilizados.
+
+
 
 
  %esta no podrá salir de la CEI. Aunque se trate de datos anonimizados y agregados, se trata de datos de carácter sensible y no pueden ser distribuidos. Por tanto, dichos datos se almacenan en un gestor de bases de datos MySQL. Este gestor se encontrará en un servidor de la Consejería de Educación e Investigación. Solo se va a poder acceder a dicho servidor desde la propia sede. Es posible que los datos también se almacenen en archivos de texto plano.
 
-\subsection{Herramientas utilizadas}
-\subsubsection{Lenguaje R y RStudio}
+\section{Herramientas utilizadas}
+\subsection{Suite de Pentaho BI}
+Para el desarrollo del proyecto, se tiene en cuenta la posibilidad de utilizar la herramienta de Pentaho Business Analytics, que es una suite de herramientas para la explotación de datos. Esta suite posee las herramientas que se usan y son las siguientes: Spoon, Pentaho SchemaWorkbench y Pentaho Metadata Editor.
+
+\subsection{Lenguaje R y RStudio}
 En esta línea de investigación se va a utilizar R como lenguaje de programación y RStudio como entorno de desarrollo para R.
 
 Como ya se ha comentado, R es un lenguaje de programación para el análisis estadístico. Al estar orientado a la estadística, proporciona un gran número de bibliotecas y herramientas. Destaca también por la generación de gráficos estadísticos de gran calidad. Posee muchos paquetes dedicados a la graficación. Además, es una herramienta que facilita el cálculo numérico y el uso en la minería de datos. \cite{emanuel2014}
@@ -329,6 +374,9 @@ Su potencia reside fundamentalmente en que es un software gratuito y de código 
 
 Por otro lado, RStudio es el entorno de desarrollo para R. Es también software libre y tiene la ventaja que se puede ejecutar sobre distintas plataformas (Windows, Mac y Linux).
 
-\subsubsection{Suite de Pentaho BI}
-Para el desarrollo del proyecto, se tiene en cuenta la posibilidad de utilizar la herramienta de Pentaho Business Analytics, que es una suite de herramientas para la explotación de datos. Esta suite posee las herramientas que se usan y son las siguientes: Spoon, Pentaho SchemaWorkbench y Pentaho Metadata Editor.
+\subsubsection{El Paquete \textit{Caret}}
+
+El paquete \textbf{caret} es un conjunto de funciones que intenta agilizar el proceso de creación de modelos predictivos. El paquete contiene herramientas para: división de datos, pre-procesamiento, selección de características, ajuste del modelo mediante re-muestreo, estimación de importancia variable así como otras funcionalidades. \cite{CARET2019}
+
+
 

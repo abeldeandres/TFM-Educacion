@@ -1,0 +1,343 @@
+%%% PLANTILLA DISEÑADA PARA LA REALIZACIÓN DE TESIS DE GRADO DE LA UNIVERSIDAD NACIONAL DEL CALLAO
+%% AUTOR DE LA PLANTILLA: RODOLFO ZEVALLOS SALAZAR
+
+\documentclass[spanish,12pt,a4paper,twoside,openright]{report}
+
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{longtable}
+\usepackage[refpages]{gloss}
+\usepackage{float}
+\usepackage{anysize}
+\usepackage{appendix}
+\usepackage{lscape} 
+\usepackage{pdflscape}
+\usepackage{multirow}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{setspace}
+\usepackage{enumerate} 
+\usepackage{placeins}
+\usepackage{graphics}
+\usepackage{enumitem}
+\usepackage{caption}
+
+\usepackage[textwidth=15cm, textheight=22.5cm, top=0.5cm, bottom=3.5cm,left= 3cm,right=3cm]{geometry}
+
+\usepackage{babel} 
+\usepackage{apalike}
+
+\usepackage{apacite}
+\usepackage[nottoc,numbib]{tocbibind} %Para la bibliografia
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+%\fancyhead[LE,RO]{Overleaf}
+\fancyhead[RE,LO]{\leftmark}
+\fancyfoot[CE,CO]{Abel de Andrés Gómez}
+\fancyfoot[LE,RO]{\thepage}
+
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+
+
+
+%para los chapter
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+\titlespacing*{\chapter}{0pt}{-50pt}{20pt}
+
+\usepackage[hyphens]{url} %Para las URL de la bibliografia
+\usepackage{verbatim} % comentarios
+
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{-1}%
+	\newpage}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CONFIGURACION
+%----------------------------------------------------------------------------------------
+
+
+\renewcommand*{\contentsname}{ÍNDICE}
+\renewcommand*{\listtablename}{Índice de tablas}
+\renewcommand*{\listfigurename}{Índice de figuras}
+\renewcommand{\baselinestretch}{1.5}
+\renewcommand{\appendixname}{Anexos}
+\renewcommand{\appendixtocname}{Anexos}
+\renewcommand{\appendixpagename}{Anexos}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+\renewcommand*{\tablename}{Tabla}
+\renewcommand*{\chaptername}{Capítulo}
+\renewcommand*{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+\renewcommand{\BOthers}[1]{et al.\hbox{}}%para poner el et.al
+
+%----------------------------------------------------------------------------------------
+%	PORTADA
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+	
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+	
+	%\renewcommand{\baselinestretch}{1.5}
+	
+	
+	%Separacion de los listados
+	%\setlist[itemize,2]{topsep=0mm}
+	%\setlist[itemize]{itemsep=0pt,topsep=0pt,partopsep=0pt}
+	%\setenumerate{itemsep=0pt,topsep=0pt}
+	%\SetEnumitemKey{midsep}{topsep=0pt, partopsep=0pt}
+	
+	
+	\center % Center everything on the page
+	\vspace*{0pt}
+	\textsc{\huge Universidad Rey Juan Carlos }
+	\\[1cm]
+	
+	% HEADING SECTIONS
+	%\includegraphics[width=2.25cm]{recursos/logoFi.png}
+	\includegraphics[width=6cm]{recursos/escudo_urjc}
+	\\[1cm]
+	
+	\textsc{\Large Trabajo Fin de Máster }\\[0.2cm]
+	% TITLE SECTION
+	\HRule \\[0.4cm]
+	{ \Huge \bfseries Explotación y modelos para predicción de datos en el Sistema Educativo de la Comunidad de Madrid}\\[0.2cm] % Title of your document
+	\HRule \\[1cm]
+	
+	\textsc{\Large Máster Universitario En Formación del Profesorado de Ed.Secundaria, Bachillerato, FP e Idiomas }\\[0.7cm]
+	\textsc{\Large Especialidad en Informática y Tecnología }\\[1cm]
+	\textsc{\Large Curso 2018-2019}\\[1cm]
+	
+	% AUTHOR SECTION
+	\begin{flushright}
+		\large
+		AUTOR: Abel de Andrés Gómez\\
+		DIRECTOR: Aurelio Berges García\linebreak
+	\end{flushright}
+	
+	%\vspace{1cm}
+	
+	\vfill % Fill the rest of the page with whitespace
+	
+\end{titlepage}
+\newgeometry{textwidth=15cm, textheight=22.5cm, top=3.5cm, bottom=3.5cm,left= 3cm,right=3cm}
+\blankpage
+
+%----------------------------------------------------------------------------------------
+%	Dedicatoria
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\begin{flushright}
+{\large \bf DEDICATORIA}
+\\
+\textit{}
+\\
+\textit{} % agregar tu dedicatoria
+\end{flushright}
+\end{titlepage}
+\blankpage
+
+%----------------------------------------------------------------------------------------
+%	Agradecimientos
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+
+\begin{flushright}
+{\large \bf AGRADECIMIENTO}
+\\
+\textit{}
+{} % agregar tu dedicatoria
+\end{flushright}
+\end{titlepage}
+\blankpage
+
+%----------------------------------------------------------------------------------------
+%	RESUMEN
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+	
+	\begin{flushright}
+		{\large \bf RESUMEN}
+		\\
+		\textit{}
+		{} % agregar tu dedicatoria
+	\end{flushright}
+\end{titlepage}
+\blankpage
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+	
+	\begin{flushright}
+		{\large \bf ABSTRACT}
+		\\
+		\textit{}
+		{} % agregar tu dedicatoria
+	\end{flushright}
+\end{titlepage}
+\blankpage
+
+%----------------------------------------------------------------------------------------
+%	TABLA DE CONTENIDOS
+%---------------------------------------------------------------------------------------
+\pagenumbering{roman} 
+
+\tableofcontents
+\cleardoublepage
+\listoftables
+\listoffigures 
+\makegloss
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%	Resumen
+%----------------------------------------------------------------------------------------
+
+%\chapter*{\centering \large RESUMEN} % si no queremos que añada la palabra "Capitulo"
+%\addcontentsline{toc}{section}{RESUMEN} % si queremos que aparezca en el índice
+%\markboth{RESUMEN}{RESUMEN} % encabezado
+%\doublespacing
+
+%----------------------------------------------------------------------------------------
+%	Abstract
+%----------------------------------------------------------------------------------------
+
+%\chapter*{\centering \large ABSTRACT}
+%\addcontentsline{toc}{section}{ABSTRACT}
+%\markboth{ABSTRACT}{ABSTRACT}
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCCIÓN
+%----------------------------------------------------------------------------------------
+
+\pagenumbering{arabic} 
+\onehalfspacing
+\setlist[itemize,2]{topsep=0mm}
+\setlist[itemize]{itemsep=-5pt,topsep=0pt,partopsep=0pt}
+\setenumerate{itemsep=0pt,topsep=5pt,partopsep=-5pt}
+%\marginsize{3.0cm}{3.0cm}{0.0cm}{3.0cm}
+
+
+%\chapter*{\centering \large INTRODUCCIÓN} % si no queremos que añada la palabra "Capitulo"
+%\addcontentsline{toc}{section}{INTRODUCCIÓN} % si queremos que aparezca en el índice
+%\markboth{INTRODUCCIÓN}{INTRODUCCIÓN} % encabezado
+
+\input{Introduccion.tex}
+
+%----------------------------------------------------------------------------------------
+%	PLANTEAMIENTO DE LA INVESTIGACIÓN
+%----------------------------------------------------------------------------------------
+
+
+\input{JustTeorica.tex}
+
+
+%----------------------------------------------------------------------------------------
+%	MARCO TEORICO
+%----------------------------------------------------------------------------------------
+
+
+\input{PropuestaIntervencion.tex}
+
+
+%----------------------------------------------------------------------------------------
+%	VARIABLES E HIPÓTESIS
+%----------------------------------------------------------------------------------------
+
+
+\input{Disenio.tex}
+
+%----------------------------------------------------------------------------------------
+%	METODOLOGÍA
+%----------------------------------------------------------------------------------------
+
+\input{Analisis.tex}
+
+%----------------------------------------------------------------------------------------
+%	RESULTADOS
+%----------------------------------------------------------------------------------------
+
+%\chapter{RESULTADOS}
+
+%----------------------------------------------------------------------------------------
+%	DISCUCIÓN DE RESULTADOS
+%----------------------------------------------------------------------------------------
+
+%\chapter{DISCUSIÓN DE RESULTADOS}
+
+%\section{Constratación de hipótesis con los resultados}
+
+%\section{Contrastación de resultados con otros estudios similares}
+
+%----------------------------------------------------------------------------------------
+%	CONCLUSIONES
+%----------------------------------------------------------------------------------------
+
+\chapter{CONCLUSIONES}
+\section{Conclusiones}
+
+
+%----------------------------------------------------------------------------------------
+%	RECOMENDACIONES
+%----------------------------------------------------------------------------------------
+
+%\chapter{\hspace{0.23cm}RECOMENDACIONES}
+
+%\section{Recomendaciones}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAFIA
+%----------------------------------------------------------------------------------------
+
+\bibliographystyle{apacite} % estilo de la bibliografia
+\renewcommand*{\bibname}{REFERENCIAS}
+\bibliography{referencias_prueba} % nombre del archivo .bib
+\addcontentsline{toc}{chapter}{REFERENCIAS}
+\newpage
+
+
+%----------------------------------------------------------------------------------------
+%	ANEXOS
+%----------------------------------------------------------------------------------------
+
+\appendix
+\clearpage
+\addappheadtotoc
+\appendixpage
+\setcounter{figure}{0} \renewcommand{\thefigure}{A.\arabic{figure}}
+\setcounter{table}{0} \renewcommand{\thetable}{A.\arabic{table}}
+
+\input{anexos.tex}
+
+
+\end{document} 

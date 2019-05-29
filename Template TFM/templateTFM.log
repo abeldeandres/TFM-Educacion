@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  24 MAY 2019 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  26 MAY 2019 16:12
 entering extended mode
 **./templateTFM.tex
 (templateTFM.tex
@@ -455,6 +455,10 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 ) (templateTFM.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
+
+
+LaTeX Warning: Label `fig:MAE' multiply defined.
+
 )
 \openout1 = `templateTFM.aux'.
 
@@ -701,183 +705,34 @@ Overfull \hbox (9.23256pt too wide) in paragraph at lines 12--12
 essintelligence.info []  
  []
 
-)
+
+LaTeX Warning: Citation `JANA2016' undefined on input line 16.
+
+[8
+
+])
 \tf@lof=\write4
 \openout4 = `templateTFM.lof'.
 
- [8
+LaTeX Info: Redefining \. on input line 142.
+LaTeX Info: Redefining \% on input line 142.
 
-] (templateTFM.lot
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[9] (templateTFM.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lot=\write5
 \openout5 = `templateTFM.lot'.
 
- [9
+ [10
 
 ] [0] (Introduccion.tex
-<recursos/processor_performance.jpg, id=52, 1145.78062pt x 686.565pt>
-File: recursos/processor_performance.jpg Graphic file (type jpg)
-<use recursos/processor_performance.jpg>
-Package pdftex.def Info: recursos/processor_performance.jpg  used on input line
- 11.
-(pdftex.def)             Requested size: 256.07741pt x 153.4438pt.
-<recursos/bandwidth-growth-nielsen-law.png, id=53, 1694.33pt x 1195.46625pt>
-File: recursos/bandwidth-growth-nielsen-law.png Graphic file (type png)
-<use recursos/bandwidth-growth-nielsen-law.png>
-Package pdftex.def Info: recursos/bandwidth-growth-nielsen-law.png  used on inp
-ut line 18.
-(pdftex.def)             Requested size: 213.39568pt x 150.56387pt.
- [1
-
- <./recursos/processor_performance.jpg> <./recursos/bandwidth-growth-nielsen-la
-w.png>]
-LaTeX Info: Redefining \. on input line 41.
-LaTeX Info: Redefining \% on input line 41.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[2]
-<recursos/artPublicados.png, id=62, 204.765pt x 148.75575pt>
-File: recursos/artPublicados.png Graphic file (type png)
-<use recursos/artPublicados.png>
-Package pdftex.def Info: recursos/artPublicados.png  used on input line 46.
-(pdftex.def)             Requested size: 256.07741pt x 186.04408pt.
-LaTeX Info: Redefining \. on input line 86.
-LaTeX Info: Redefining \% on input line 86.
- [3 <./recursos/artPublicados.png>]
-LaTeX Info: Redefining \. on input line 107.
-LaTeX Info: Redefining \% on input line 107.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[4]) (JustTeorica.tex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [5]
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[6
-
-] [7]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 50.
-LaTeX Info: Redefining \% on input line 50.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[8]
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
- [9]
-LaTeX Info: Redefining \. on input line 96.
-LaTeX Info: Redefining \% on input line 96.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[10]
-Underfull \vbox (badness 2922) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 112.
-LaTeX Info: Redefining \% on input line 112.
- [11]
-<recursos/ComparacionModelosDM.png, id=95, 334.24875pt x 272.81924pt>
-File: recursos/ComparacionModelosDM.png Graphic file (type png)
-<use recursos/ComparacionModelosDM.png>
-Package pdftex.def Info: recursos/ComparacionModelosDM.png  used on input line 
-120.
-(pdftex.def)             Requested size: 341.43437pt x 278.70488pt.
-LaTeX Info: Redefining \. on input line 127.
-LaTeX Info: Redefining \% on input line 127.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[12 <./recursos/ComparacionModelosDM.png>]
-<recursos/PrecisionMetodos.png, id=101, 412.54124pt x 214.401pt>
-File: recursos/PrecisionMetodos.png Graphic file (type png)
-<use recursos/PrecisionMetodos.png>
-Package pdftex.def Info: recursos/PrecisionMetodos.png  used on input line 140.
-
-(pdftex.def)             Requested size: 341.43437pt x 177.44896pt.
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
-
-Overfull \hbox (9.91647pt too wide) has occurred while \output is active
-\OT1/cmss/m/n/10.95 2.5 Modelos utilizados en el desarrollo de proyectos de min
-era de datos en el entorno educativo[] \OT1/cmr/m/n/10.95 13
- []
-
-[13]
-<recursos/ComparacionModelos.png, id=105, 454.69875pt x 222.23026pt>
-File: recursos/ComparacionModelos.png Graphic file (type png)
-<use recursos/ComparacionModelos.png>
-Package pdftex.def Info: recursos/ComparacionModelos.png  used on input line 15
-5.
-(pdftex.def)             Requested size: 341.43437pt x 166.87573pt.
-LaTeX Info: Redefining \. on input line 158.
-LaTeX Info: Redefining \% on input line 158.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[14 <./recursos/PrecisionMetodos.png>]
-LaTeX Info: Redefining \. on input line 173.
-LaTeX Info: Redefining \% on input line 173.
- [15 <./recursos/ComparacionModelos.png>]
-<recursos/top10tools.jpg, id=114, 451.6875pt x 319.94531pt>
-File: recursos/top10tools.jpg Graphic file (type jpg)
-<use recursos/top10tools.jpg>
-Package pdftex.def Info: recursos/top10tools.jpg  used on input line 182.
-(pdftex.def)             Requested size: 426.79135pt x 302.33038pt.
-LaTeX Info: Redefining \. on input line 190.
-LaTeX Info: Redefining \% on input line 190.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[16 <./recursos/top10tools.jpg>]
-<recursos/gartner.png, id=118, 386.6445pt x 423.38174pt>
-File: recursos/gartner.png Graphic file (type png)
-<use recursos/gartner.png>
-Package pdftex.def Info: recursos/gartner.png  used on input line 194.
-(pdftex.def)             Requested size: 256.07741pt x 280.42123pt.
-LaTeX Info: Redefining \. on input line 211.
-LaTeX Info: Redefining \% on input line 211.
- [17 <./recursos/gartner.png>])
-(PropuestaIntervencion.tex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[18] [19
-
-]
-LaTeX Info: Redefining \. on input line 37.
-LaTeX Info: Redefining \% on input line 37.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[20]
-LaTeX Info: Redefining \. on input line 51.
-LaTeX Info: Redefining \% on input line 51.
- [21]) (Disenio.tex
 ! Undefined control sequence.
 l.1 \chapter
-            {ADAS}
+            {Introducción}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -890,155 +745,329 @@ LaTeX Info: Redefining \% on input line 2.
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[22]
-<recursos/arquitecturaDWH2.png, id=139, 1081.79156pt x 603.75563pt>
-File: recursos/arquitecturaDWH2.png Graphic file (type png)
-<use recursos/arquitecturaDWH2.png>
-Package pdftex.def Info: recursos/arquitecturaDWH2.png  used on input line 26.
-(pdftex.def)             Requested size: 341.43437pt x 190.55252pt.
+[1]
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[2
+
+]
+<recursos/processor_performance.jpg, id=61, 1145.78062pt x 686.565pt>
+File: recursos/processor_performance.jpg Graphic file (type jpg)
+<use recursos/processor_performance.jpg>
+Package pdftex.def Info: recursos/processor_performance.jpg  used on input line
+ 10.
+(pdftex.def)             Requested size: 256.07741pt x 153.4438pt.
+<recursos/bandwidth-growth-nielsen-law.png, id=62, 1694.33pt x 1195.46625pt>
+File: recursos/bandwidth-growth-nielsen-law.png Graphic file (type png)
+<use recursos/bandwidth-growth-nielsen-law.png>
+Package pdftex.def Info: recursos/bandwidth-growth-nielsen-law.png  used on inp
+ut line 17.
+(pdftex.def)             Requested size: 213.39568pt x 150.56387pt.
+ [3 <./recursos/processor_performance.jpg> <./recursos/bandwidth-growth-nielsen
+-law.png>]
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+
+Overfull \vbox (2.37082pt too high) has occurred while \output is active []
+
+
+[4]
+<recursos/artPublicados.png, id=71, 204.765pt x 148.75575pt>
+File: recursos/artPublicados.png Graphic file (type png)
+<use recursos/artPublicados.png>
+Package pdftex.def Info: recursos/artPublicados.png  used on input line 45.
+(pdftex.def)             Requested size: 256.07741pt x 186.04408pt.
+ [5
+
+ <./recursos/artPublicados.png>]
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
+ [6] [7
+
+]
+LaTeX Info: Redefining \. on input line 89.
+LaTeX Info: Redefining \% on input line 89.
+ [8
+
+] [9]
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
+ [10
+
+]) (JustTeorica.tex
+! Undefined control sequence.
+l.1 \chapter
+            {Justificación Teórica}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[11]
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+ [12
+
+] [13]
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+ [14] [15
+
+]
+LaTeX Info: Redefining \. on input line 47.
+LaTeX Info: Redefining \% on input line 47.
+ [16
+
+] [17]
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [18] [19]
+LaTeX Info: Redefining \. on input line 110.
+LaTeX Info: Redefining \% on input line 110.
+ [20
+
+]
+<recursos/ComparacionModelosDM.png, id=127, 334.24875pt x 272.81924pt>
+File: recursos/ComparacionModelosDM.png Graphic file (type png)
+<use recursos/ComparacionModelosDM.png>
+Package pdftex.def Info: recursos/ComparacionModelosDM.png  used on input line 
+120.
+(pdftex.def)             Requested size: 341.43437pt x 278.70488pt.
+ [21 <./recursos/ComparacionModelosDM.png>]
+LaTeX Info: Redefining \. on input line 130.
+LaTeX Info: Redefining \% on input line 130.
+ [22]
+<recursos/PrecisionMetodos.png, id=135, 412.54124pt x 214.401pt>
+File: recursos/PrecisionMetodos.png Graphic file (type png)
+<use recursos/PrecisionMetodos.png>
+Package pdftex.def Info: recursos/PrecisionMetodos.png  used on input line 140.
+
+(pdftex.def)             Requested size: 341.43437pt x 177.44896pt.
  [23
 
- <./recursos/arquitecturaDWH2.png>]
-<recursos/Esquema_en_estrella.png, id=143, 534.99875pt x 439.6425pt>
+ <./recursos/PrecisionMetodos.png>]
+<recursos/ComparacionModelos.png, id=141, 454.69875pt x 222.23026pt>
+File: recursos/ComparacionModelos.png Graphic file (type png)
+<use recursos/ComparacionModelos.png>
+Package pdftex.def Info: recursos/ComparacionModelos.png  used on input line 15
+5.
+(pdftex.def)             Requested size: 341.43437pt x 166.87573pt.
+LaTeX Info: Redefining \. on input line 164.
+LaTeX Info: Redefining \% on input line 164.
+
+Overfull \hbox (6.8748pt too wide) has occurred while \output is active
+\OT1/cmr/m/n/10.95 24 \OT1/cmss/m/n/10.95 10 Modelos utilizados en el desarroll
+o de proyectos de minera de datos en el entorno educativo[]
+ []
+
+[24 <./recursos/ComparacionModelos.png>]
+<recursos/top10tools.jpg, id=146, 451.6875pt x 319.94531pt>
+File: recursos/top10tools.jpg Graphic file (type jpg)
+<use recursos/top10tools.jpg>
+Package pdftex.def Info: recursos/top10tools.jpg  used on input line 182.
+(pdftex.def)             Requested size: 426.79135pt x 302.33038pt.
+ [25
+
+]
+<recursos/gartner.png, id=150, 386.6445pt x 423.38174pt>
+File: recursos/gartner.png Graphic file (type png)
+<use recursos/gartner.png>
+Package pdftex.def Info: recursos/gartner.png  used on input line 194.
+(pdftex.def)             Requested size: 256.07741pt x 280.42123pt.
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
+ [26 <./recursos/top10tools.jpg>]
+[27 <./recursos/gartner.png>]
+LaTeX Info: Redefining \. on input line 203.
+LaTeX Info: Redefining \% on input line 203.
+ [28
+
+]) (PropuestaIntervencion.tex
+! Undefined control sequence.
+l.1 \chapter
+            {Propuesta de Intervención}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[29]
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+ [30
+
+] [31]
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+ [32] [33]) (Disenio.tex
+! Undefined control sequence.
+l.1 \chapter
+            {Diseño de Investigación}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
+[34] [35
+
+]
+LaTeX Info: Redefining \. on input line 20.
+LaTeX Info: Redefining \% on input line 20.
+ [36
+
+]
+<recursos/arquitecturaDWH2.png, id=187, 1081.79156pt x 603.75563pt>
+File: recursos/arquitecturaDWH2.png Graphic file (type png)
+<use recursos/arquitecturaDWH2.png>
+Package pdftex.def Info: recursos/arquitecturaDWH2.png  used on input line 25.
+(pdftex.def)             Requested size: 341.43437pt x 190.55252pt.
+<recursos/Esquema_en_estrella.png, id=188, 534.99875pt x 439.6425pt>
 File: recursos/Esquema_en_estrella.png Graphic file (type png)
 <use recursos/Esquema_en_estrella.png>
 Package pdftex.def Info: recursos/Esquema_en_estrella.png  used on input line 3
-8.
+7.
 (pdftex.def)             Requested size: 341.43437pt x 280.59206pt.
-<recursos/modelo-dimensional-cubo.png, id=144, 357.58594pt x 234.1247pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[37 <./recursos/arquitecturaDWH2.png>]
+<recursos/modelo-dimensional-cubo.png, id=192, 357.58594pt x 234.1247pt>
 File: recursos/modelo-dimensional-cubo.png Graphic file (type png)
 <use recursos/modelo-dimensional-cubo.png>
 Package pdftex.def Info: recursos/modelo-dimensional-cubo.png  used on input li
-ne 48.
+ne 47.
 (pdftex.def)             Requested size: 341.43437pt x 223.56036pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 51.
-LaTeX Info: Redefining \% on input line 51.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[24 <./recursos/Esquema_en_estrella.png (PNG copy)>]
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
- [25 <./recursos/modelo-dimensional-cubo.png>]
-<recursos/CRISPCicloIBM.png, id=153, 378.81525pt x 348.70274pt>
+LaTeX Info: Redefining \. on input line 50.
+LaTeX Info: Redefining \% on input line 50.
+[38 <./recursos/Esquema_en_estrella.png (PNG copy)>] [39 <./recursos/modelo-dim
+ensional-cubo.png>]
+LaTeX Info: Redefining \. on input line 62.
+LaTeX Info: Redefining \% on input line 62.
+ [40]
+<recursos/CRISPCicloIBM.png, id=203, 378.81525pt x 348.70274pt>
 File: recursos/CRISPCicloIBM.png Graphic file (type png)
 <use recursos/CRISPCicloIBM.png>
-Package pdftex.def Info: recursos/CRISPCicloIBM.png  used on input line 77.
+Package pdftex.def Info: recursos/CRISPCicloIBM.png  used on input line 76.
 (pdftex.def)             Requested size: 256.07741pt x 235.72067pt.
+ [41
 
+ <./recursos/CRISPCicloIBM.png>]
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
+ [42]
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+ [43]
+LaTeX Info: Redefining \. on input line 163.
+LaTeX Info: Redefining \% on input line 163.
+ [44]
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-LaTeX Info: Redefining \. on input line 80.
-LaTeX Info: Redefining \% on input line 80.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[26]
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
- [27 <./recursos/CRISPCicloIBM.png>]
-LaTeX Info: Redefining \. on input line 123.
-LaTeX Info: Redefining \% on input line 123.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[28]
-LaTeX Info: Redefining \. on input line 149.
-LaTeX Info: Redefining \% on input line 149.
- [29]
-LaTeX Info: Redefining \. on input line 175.
-LaTeX Info: Redefining \% on input line 175.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[30]
-<recursos/arbol_decision_img1.jpg, id=171, 650.43pt x 243.91125pt>
+[45]
+<recursos/arbol_decision_img1.jpg, id=221, 650.43pt x 243.91125pt>
 File: recursos/arbol_decision_img1.jpg Graphic file (type jpg)
 <use recursos/arbol_decision_img1.jpg>
 Package pdftex.def Info: recursos/arbol_decision_img1.jpg  used on input line 2
-07.
+06.
 (pdftex.def)             Requested size: 341.43437pt x 128.04042pt.
-LaTeX Info: Redefining \. on input line 209.
-LaTeX Info: Redefining \% on input line 209.
- [31]
-<recursos/BayesFormula.png, id=175, 301.125pt x 172.645pt>
-File: recursos/BayesFormula.png Graphic file (type png)
-<use recursos/BayesFormula.png>
-Package pdftex.def Info: recursos/BayesFormula.png  used on input line 224.
-(pdftex.def)             Requested size: 256.07741pt x 146.83058pt.
-LaTeX Info: Redefining \. on input line 236.
-LaTeX Info: Redefining \% on input line 236.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[32 <./recursos/arbol_decision_img1.jpg> <./recursos/BayesFormula.png (PNG copy
-)>]
-<recursos/RedNeuronalArtificial.png, id=179, 144.54pt x 80.58105pt>
+LaTeX Info: Redefining \. on input line 238.
+LaTeX Info: Redefining \% on input line 238.
+ [46 <./recursos/arbol_decision_img1.jpg>]
+<recursos/RedNeuronalArtificial.png, id=225, 144.54pt x 80.58105pt>
 File: recursos/RedNeuronalArtificial.png Graphic file (type png)
 <use recursos/RedNeuronalArtificial.png>
 Package pdftex.def Info: recursos/RedNeuronalArtificial.png  used on input line
- 241.
+ 242.
 (pdftex.def)             Requested size: 256.07741pt x 142.77106pt.
-LaTeX Info: Redefining \. on input line 257.
-LaTeX Info: Redefining \% on input line 257.
- [33 <./recursos/RedNeuronalArtificial.png>]
-<recursos/k_NN.png, id=184, 588.69937pt x 408.02437pt>
+LaTeX Info: Redefining \. on input line 261.
+LaTeX Info: Redefining \% on input line 261.
+ [47 <./recursos/RedNeuronalArtificial.png>]
+
+LaTeX Warning: Citation `JANA2016' undefined on input line 269.
+
+<recursos/SVM.png, id=231, 428.19975pt x 248.72925pt>
+File: recursos/SVM.png Graphic file (type png)
+<use recursos/SVM.png>
+Package pdftex.def Info: recursos/SVM.png  used on input line 274.
+(pdftex.def)             Requested size: 256.07741pt x 148.7491pt.
+<recursos/k_NN.png, id=232, 588.69937pt x 408.02437pt>
 File: recursos/k_NN.png Graphic file (type png)
 <use recursos/k_NN.png>
-Package pdftex.def Info: recursos/k_NN.png  used on input line 274.
+Package pdftex.def Info: recursos/k_NN.png  used on input line 288.
 (pdftex.def)             Requested size: 256.07741pt x 177.48294pt.
-LaTeX Info: Redefining \. on input line 288.
-LaTeX Info: Redefining \% on input line 288.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[34 <./recursos/k_NN.png>]
+LaTeX Info: Redefining \. on input line 291.
+LaTeX Info: Redefining \% on input line 291.
+[48 <./recursos/SVM.png>]
 LaTeX Info: Redefining \. on input line 310.
 LaTeX Info: Redefining \% on input line 310.
- [35]
-Overfull \hbox (19.44421pt too wide) in paragraph at lines 318--319
+ [49 <./recursos/k_NN.png>]
+Underfull \hbox (badness 3701) in paragraph at lines 313--313
+[][]|\OT1/cmr/m/n/12 Formu-la de MAE. Re-cu-pe-ra-do de https://medium.com/hum
+an-in-a-
+ []
+
+<recursos/mae.png, id=240, 264.38776pt x 95.1555pt>
+File: recursos/mae.png Graphic file (type png)
+<use recursos/mae.png>
+Package pdftex.def Info: recursos/mae.png  used on input line 314.
+(pdftex.def)             Requested size: 170.71393pt x 61.44377pt.
+
+Underfull \hbox (badness 1931) in paragraph at lines 321--321
+[][]|\OT1/cmr/m/n/12 Formu-la de RM-SE. Re-cu-pe-ra-do de https://medium.com/h
+uman-in-a-
+ []
+
+<recursos/rmse.png, id=241, 276.43275pt x 94.55325pt>
+File: recursos/rmse.png Graphic file (type png)
+<use recursos/rmse.png>
+Package pdftex.def Info: recursos/rmse.png  used on input line 322.
+(pdftex.def)             Requested size: 170.71393pt x 58.39444pt.
+
+Overfull \hbox (19.44421pt too wide) in paragraph at lines 353--354
 []\OT1/cmr/m/n/12 Concretamente, los da-tos uti-li-za-dos en la pre-dic-cion s
 on aque-llos del cur-so 2016/2017.
  []
 
-) (Referencias.tex (templateTFM.bbl
+LaTeX Info: Redefining \. on input line 358.
+LaTeX Info: Redefining \% on input line 358.
+[50 <./recursos/mae.png> <./recursos/rmse.png>]
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/bx/n' instead on input line 371.
+
+
+LaTeX Warning: Citation `CARET2019' undefined on input line 373.
+
+) (Referencias.tex (templateTFM.bbl [51
+
+]
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
+ [52
 
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[36]
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [37]
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-
-Overfull \vbox (2.37082pt too high) has occurred while \output is active []
-
-
-[38
-
-] [39]
+] [53]
 LaTeX Info: Redefining \. on input line 501.
 LaTeX Info: Redefining \% on input line 501.
 
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[40] [41]
+[54] [55]
 Missing character: There is no � in font cmtt12!
 Missing character: There is no � in font cmtt12!
 Missing character: There is no � in font cmtt12!
@@ -1049,17 +1078,17 @@ LaTeX Info: Redefining \% on input line 1045.
 Overfull \vbox (2.37082pt too high) has occurred while \output is active []
 
 
-[42])) (Anexos.tex [43] [44
+[56])) (Anexos.tex [57] [58
 
-] [45
+] [59
 
 ]
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
- [46
+ [60
 
 ]
-<recursos/ImagenesR/estadisticos.png, id=227, 531.78674pt x 136.71075pt>
+<recursos/ImagenesR/estadisticos.png, id=280, 531.78674pt x 136.71075pt>
 File: recursos/ImagenesR/estadisticos.png Graphic file (type png)
 <use recursos/ImagenesR/estadisticos.png>
 Package pdftex.def Info: recursos/ImagenesR/estadisticos.png  used on input lin
@@ -1070,20 +1099,20 @@ Overfull \hbox (85.35696pt too wide) in paragraph at lines 14--16
  [][] 
  []
 
-<recursos/ImagenesR/boxplot.png, id=228, 401.70074pt x 255.354pt>
+<recursos/ImagenesR/boxplot.png, id=281, 401.70074pt x 255.354pt>
 File: recursos/ImagenesR/boxplot.png Graphic file (type png)
 <use recursos/ImagenesR/boxplot.png>
 Package pdftex.def Info: recursos/ImagenesR/boxplot.png  used on input line 22.
 
 (pdftex.def)             Requested size: 341.43437pt x 217.04802pt.
-<recursos/ImagenesR/matrizcorrelacion.png, id=229, 322.20375pt x 264.99pt>
+<recursos/ImagenesR/matrizcorrelacion.png, id=282, 322.20375pt x 264.99pt>
 File: recursos/ImagenesR/matrizcorrelacion.png Graphic file (type png)
 <use recursos/ImagenesR/matrizcorrelacion.png>
 Package pdftex.def Info: recursos/ImagenesR/matrizcorrelacion.png  used on inpu
 t line 31.
 (pdftex.def)             Requested size: 341.43437pt x 280.81528pt.
-[47 <./recursos/ImagenesR/estadisticos.png> <./recursos/ImagenesR/boxplot.png>]
-<recursos/ImagenesR/mayorescorrelaciones.png, id=235, 208.3785pt x 147.55125pt>
+[61 <./recursos/ImagenesR/estadisticos.png> <./recursos/ImagenesR/boxplot.png>]
+<recursos/ImagenesR/mayorescorrelaciones.png, id=288, 208.3785pt x 147.55125pt>
 
 File: recursos/ImagenesR/mayorescorrelaciones.png Graphic file (type png)
 <use recursos/ImagenesR/mayorescorrelaciones.png>
@@ -1092,34 +1121,34 @@ nput line 40.
 (pdftex.def)             Requested size: 256.07741pt x 181.32709pt.
 LaTeX Info: Redefining \. on input line 43.
 LaTeX Info: Redefining \% on input line 43.
-[48 <./recursos/ImagenesR/matrizcorrelacion.png> <./recursos/ImagenesR/mayoresc
+[62 <./recursos/ImagenesR/matrizcorrelacion.png> <./recursos/ImagenesR/mayoresc
 orrelaciones.png>]
-<recursos/ImagenesR/mayorcorrelacion.png, id=242, 225.2415pt x 132.495pt>
+<recursos/ImagenesR/mayorcorrelacion.png, id=294, 225.2415pt x 132.495pt>
 File: recursos/ImagenesR/mayorcorrelacion.png Graphic file (type png)
 <use recursos/ImagenesR/mayorcorrelacion.png>
 Package pdftex.def Info: recursos/ImagenesR/mayorcorrelacion.png  used on input
  line 48.
 (pdftex.def)             Requested size: 256.07741pt x 150.64757pt.
-<recursos/ImagenesR/RelacionAlumnGrupos.png, id=243, 429.40425pt x 268.00125pt>
+<recursos/ImagenesR/RelacionAlumnGrupos.png, id=295, 429.40425pt x 268.00125pt>
 
 File: recursos/ImagenesR/RelacionAlumnGrupos.png Graphic file (type png)
 <use recursos/ImagenesR/RelacionAlumnGrupos.png>
 Package pdftex.def Info: recursos/ImagenesR/RelacionAlumnGrupos.png  used on in
 put line 56.
 (pdftex.def)             Requested size: 256.07741pt x 159.8328pt.
-<recursos/ImagenesR/VarImpRF.png, id=244, 427.5975pt x 210.18526pt>
+<recursos/ImagenesR/VarImpRF.png, id=296, 427.5975pt x 210.18526pt>
 File: recursos/ImagenesR/VarImpRF.png Graphic file (type png)
 <use recursos/ImagenesR/VarImpRF.png>
 Package pdftex.def Info: recursos/ImagenesR/VarImpRF.png  used on input line 65
 .
 (pdftex.def)             Requested size: 256.07741pt x 125.87479pt.
- [49
+ [63
 
  <./recursos/ImagenesR/mayorcorrelacion.png> <./recursos/ImagenesR/RelacionAlum
 nGrupos.png>])
 LaTeX Info: Redefining \. on input line 172.
 LaTeX Info: Redefining \% on input line 172.
- [50 <./recursos/ImagenesR/VarImpRF.png>]
+ [64 <./recursos/ImagenesR/VarImpRF.png>]
 (templateTFM.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
@@ -1127,15 +1156,21 @@ LaTeX Info: Redefining \% on input line 6.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 7380 strings out of 492946
- 113127 string characters out of 3126266
- 203531 words of memory out of 3000000
- 11063 multiletter control sequences out of 15000+200000
+ 7397 strings out of 492946
+ 113332 string characters out of 3126266
+ 203580 words of memory out of 3000000
+ 11078 multiletter control sequences out of 15000+200000
  15973 words of font info for 61 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,8n,40p,1092b,584s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,8n,40p,1092b,570s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx8.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fo
@@ -1150,9 +1185,9 @@ pe1/public/amsfonts/cm/cmss12.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/abelt/AppData/Local/
 Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/abelt/A
 ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on templateTFM.pdf (63 pages, 1605213 bytes).
+Output written on templateTFM.pdf (78 pages, 1661619 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
+ 347 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,53 @@
+\babel@toc {spanish}{}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Velocidad Procesador (MIPS) a lo largo del tiempo. (Fuente: Kurzweil http://www.kurzweilai.net)\relax }}{1}% 
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Velocidad de transferencia a lo largo del tiempo. (Fuente: Nielsen Norman Group)\relax }}{1}% 
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Art\IeC {\'\i }culos aceptados y publicados desde 2011. Recuperado de \citeA {sin2015application}\relax }}{3}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Comparaci\IeC {\'o}n metodolog\IeC {\'\i }as de Miner\IeC {\'\i }a de Datos. Recuperado de \citeA {moine2011analisis} \relax }}{12}% 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Predicci\IeC {\'o}n en la precisi\IeC {\'o}n agrupada por algoritmos desde 2002 a 2015. Recuperado de \citeA {SHAHIRI2015414}\relax }}{13}% 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Comparaci\IeC {\'o}n de los resultados obtenidos. Recuperado de \citeA {ADEKITAN2019e01250}\relax }}{14}% 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Herramientas m\IeC {\'a}s usadas. Recuperado de \cite {rexer2013}\relax }}{16}% 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Plataformas de ciencia de datos y aprendizaje de m\IeC {\'a}quina. Recuperado de Gartner (https://www.gartner.com)\relax }}{17}% 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Arquitectura l\IeC {\'o}gica del proyecto. Recuperado de la Consejer\IeC {\'\i }a de Educaci\IeC {\'o}n e Investigaci\IeC {\'o}n de la Comunidad de Madrid.\relax }}{23}% 
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Esquema en estrella. Recuperado de http://carlospesquera.com\relax }}{24}% 
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Cubo de Mondrian. Recuperado de: https://www.businessintelligence.info\relax }}{25}% 
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Fases del ciclo de vida de CRISP-DM. Recuperado de \citeA {IBMCRISP2012}.\relax }}{26}% 
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Funcionamiento \IeC {\'A}rboles Decisi\IeC {\'o}n. Recuperado de \citeA {sayad2019}\relax }}{31}% 
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Red Neuronal. Recuperado de \citeA {yepes2017}\relax }}{32}% 
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Ejemplo SVM. Recuperado de \citeA {JANA2016}\relax }}{33}% 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces KNN. Recuperado de \citeA {klein2018}\relax }}{34}% 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces F\IeC {\'o}rmula de MAE. Recuperado de https://medium.com/human-in-a-machine-world/mae-and-rmse-which-metric-is-better-e60ac3bde13d\relax }}{35}% 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces F\IeC {\'o}rmula de RMSE. Recuperado de https://medium.com/human-in-a-machine-world/mae-and-rmse-which-metric-is-better-e60ac3bde13d\relax }}{35}% 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Estadisticos de las variables. Elaboraci\IeC {\'o}n propia\relax }}{50}% 
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Diagrama de cajas normalizado. Elaboraci\IeC {\'o}n propia\relax }}{50}% 
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Distribuci\IeC {\'o}n 1. Elaboraci\IeC {\'o}n propia\relax }}{51}% 
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Distribuci\IeC {\'o}n 2. Elaboraci\IeC {\'o}n propia\relax }}{51}% 
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Distribuci\IeC {\'o}n 3. Elaboraci\IeC {\'o}n propia\relax }}{52}% 
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Diagrama de barras 1. Elaboraci\IeC {\'o}n propia\relax }}{53}% 
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Diagrama de barras 2. Elaboraci\IeC {\'o}n propia\relax }}{53}% 
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Matriz de correlaciones. Elaboraci\IeC {\'o}n propia\relax }}{54}% 
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Variables m\IeC {\'a}s correladas. Elaboraci\IeC {\'o}n propia\relax }}{54}% 
+\contentsline {figure}{\numberline {A.10}{\ignorespaces Mayor correlaci\IeC {\'o}n con variable a predecir. Elaboraci\IeC {\'o}n propia\relax }}{55}% 
+\contentsline {figure}{\numberline {A.11}{\ignorespaces Correlaci\IeC {\'o}n entre variables NM\_ALUMNOS y NM\_GRUPOS. Elaboraci\IeC {\'o}n propia\relax }}{56}% 
+\contentsline {figure}{\numberline {A.12}{\ignorespaces Correlaci\IeC {\'o}n entre variables NM\_UNIDADES y GRUPOS\_PREDECIR. Elaboraci\IeC {\'o}n propia\relax }}{56}% 
+\contentsline {figure}{\numberline {A.13}{\ignorespaces Variables m\IeC {\'a}s importantes usando Random Forest. Elaboraci\IeC {\'o}n propia\relax }}{57}% 
+\contentsline {figure}{\numberline {A.14}{\ignorespaces Resultado Backward Selection. Elaboraci\IeC {\'o}n propia\relax }}{58}% 
+\contentsline {figure}{\numberline {A.15}{\ignorespaces Gr\IeC {\'a}fico Backward Selection. Elaboraci\IeC {\'o}n propia\relax }}{58}% 
+\contentsline {figure}{\numberline {A.16}{\ignorespaces Resultado Stepwise Selection. Elaboraci\IeC {\'o}n propia\relax }}{58}% 
+\contentsline {figure}{\numberline {A.17}{\ignorespaces Gr\IeC {\'a}fico Stepwise Selection. Elaboraci\IeC {\'o}n propia\relax }}{59}% 
+\contentsline {figure}{\numberline {A.18}{\ignorespaces Resultado Forward Selection. Elaboraci\IeC {\'o}n propia\relax }}{59}% 
+\contentsline {figure}{\numberline {A.19}{\ignorespaces Gr\IeC {\'a}fico Forward Selection. Elaboraci\IeC {\'o}n propia\relax }}{60}% 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces K-Vecinos Cercanos. Elaboraci\IeC {\'o}n propia\relax }}{61}% 
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Redes Neuronales. Elaboraci\IeC {\'o}n propia\relax }}{61}% 
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Regresi\IeC {\'o}n Log\IeC {\'\i }stica. Elaboraci\IeC {\'o}n propia\relax }}{62}% 
+\contentsline {figure}{\numberline {A.4}{\ignorespaces SVM. Elaboraci\IeC {\'o}n propia\relax }}{62}% 
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Arbol de Decisi\IeC {\'o}n. Elaboraci\IeC {\'o}n propia\relax }}{63}% 
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Comparaci\IeC {\'o}n de Modelos. Elaboraci\IeC {\'o}n propia\relax }}{64}% 
