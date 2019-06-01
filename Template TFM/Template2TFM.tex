@@ -3,6 +3,7 @@
 
 \documentclass[spanish,12pt,a4paper,twoside,openright]{report}
 
+
 \usepackage[T1]{fontenc}
 \usepackage{times}
 \usepackage[utf8]{inputenc}
@@ -46,8 +47,8 @@
 \renewcommand{\headrulewidth}{2pt}
 \renewcommand{\footrulewidth}{1pt}
 
-
-
+\usepackage{tocloft}
+\setlength{\cftchapnumwidth}{20pt}  % Width of section No
 
 %para los chapter
 \usepackage{titlesec, blindtext, color}
@@ -91,6 +92,8 @@
 \renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
 \renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
 \renewcommand{\BOthers}[1]{et al.\hbox{}}%para poner el et.al
+
+
 
 %----------------------------------------------------------------------------------------
 %	PORTADA
@@ -303,8 +306,7 @@
 %	CONCLUSIONES
 %----------------------------------------------------------------------------------------
 
-\chapter{CONCLUSIONES}
-\section{Conclusiones}
+\input{Conclusiones.tex}
 
 
 %----------------------------------------------------------------------------------------
@@ -322,7 +324,7 @@
 \bibliographystyle{apacite} % estilo de la bibliografia
 \renewcommand*{\bibname}{REFERENCIAS}
 \bibliography{referencias_prueba} % nombre del archivo .bib
-\addcontentsline{toc}{chapter}{REFERENCIAS}
+%\addcontentsline{toc}{chapter}{REFERENCIAS}
 \newpage
 
 
@@ -334,8 +336,7 @@
 \clearpage
 \addappheadtotoc
 \appendixpage
-\setcounter{figure}{0} \renewcommand{\thefigure}{A.\arabic{figure}}
-\setcounter{table}{0} \renewcommand{\thetable}{A.\arabic{table}}
+
 
 \input{anexos.tex}
 
