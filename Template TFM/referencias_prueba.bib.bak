@@ -542,4 +542,27 @@
   url    = {https://www.analiticaweb.es/machine-learning-y-support-vector-machines-porque-el-tiempo-es-dinero-2/},
 }
 
+@WWW{kassambara2018,
+  author = {kassambara},
+  title  = {Stepwise Regression Essentials in R},
+  year   = {2018},
+  date   = {2019-05-28},
+  url    = {http://www.sthda.com/english/articles/37-model-selection-essentials-in-r/154-stepwise-regression-essentials-in-r/},
+}
+
+@WWW{DELGADO2019,
+  author = {Ronald Delgado},
+  title  = {Introducción a los Modelos de Regresión en R},
+  year   = {2019},
+  date   = {2019-05-30},
+}
+
+@WWW{PauUrquizu2019,
+  author = {Pau Urquizu},
+  title  = {Business Intelligence Facil},
+  year   = {2019},
+  date   = {2019-05-22},
+  url    = {https://www.businessintelligence.info},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}

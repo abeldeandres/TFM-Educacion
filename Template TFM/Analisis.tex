@@ -1,29 +1,39 @@
 \chapter{ANÁLISIS DE RESULTADOS}
+Una vez que se establece el diseño a seguir en este TFM, se pasa a realizar el análisis de resultados.
+
+Este análisis de resultados se va a diferenciar entre aquellos resultados obtenidos en el análisis exploratorio y los obtenidos en la aplicación de modelos predictivos.
+
 \section{Análisis exploratorio de datos}
 
-Antes de comenzar con el análisis, el lector puede observar en la tabla \ref{tab:TablaVariables} del Apéndice \ref{appendix:A} las variables utilizadas en esta investigación. 
+Antes de comenzar con el análisis, el lector puede observar en la tabla \ref{tab:TablaVariables} del Apéndice \ref{appendix:A} las variables utilizadas en esta investigación. En este mismo Anexo nos encontramos también los estadísticos, que se pueden observar en la figura \ref{fig:estadisticos} del Apéndice \ref{appendix:A}.
+ 
+Una vez observados los estadísticos, los vamos a representar utilizando los diagramas de caja (box-plot). Con estos diagramas vamos a observar además los datos atípicos (outliers). Un resumen de todos los diagramas de cajas se puede observar en la figura \ref{fig:boxplotNorm} del Apéndice \ref{appendix:A}. 
 
-Al comienzo de esta investigación, se va a estudiar los estadísticos mas importantes de cada una de las variables. Estos estadísticos se pueden observar en la figura \ref{fig:estadisticos} del Apéndice \ref{appendix:A}.
+Como se puede observar en la figura \ref{fig:boxplotNorm}, las variables de números de alumnos, número de unidades y ratio contienen datos anómalos. Por ejemplo, la variable "número de alumnos", como se puede apreciar en los estadísticos de la figura \ref{fig:estadisticos} tiene una media de 74 alumnos. No obstante, hay niveles educativos que tiene hasta casi 700 alumnos. Esto se debe a que los centros relativos a estos alumnos tienen la modalidad de distancia para esos niveles educativos, esto implica que pueden tener un gran número de unidades debido al gran número de alumnos que se matriculan para esta modalidad. Ocurre, por tanto, exactamente lo mismo con el número de grupos y la ratio. Estos datos anómalos no se van a eliminar puesto que tienen sentido en esta investigación.
 
-Una vez observados los estadísticos, los vamos a representar utilizando los diagramas de caja (box-plot). Con estos diagramas vamos a observar ademas los datos atipicos (outliers). Un resumen de todos los diagramas de cajas se puede observar en la figura \ref{fig:boxplotNorm} del Apéndice \ref{appendix:A}. 
+Una vez estudiado los estadísticos y los datos anómalos, se va a realizar un estudio sobre la normalidad de los datos. En este aspecto es importante destacar que después de realizar el test de Mardia se observa que los datos utilizados rechazan la hipótesis de normalidad. Este rechazo implica una mayor cota de error a la hora de predecir los datos. Además, existen determinados modelos predictivos que no asumen que sus datos provengan de determinadas distribuciones.
 
-Como se puede observar en la figura \ref{fig:boxplotNorm}, existen variables que contienen valores que son atípicos. Por ejemplo, la variable "NUM\_ALUMNOS", como se puede apreciar en los estadísticos de la figura \ref{fig:estadisticos} tiene una media de 74 alumnos. No obstante, hay niveles educativos que tiene hasta casi 700 alumnos. Esto se debe a que existen centros que tienen ese numero de alumnos por nivel educativo debido a que son centros modalidades a distancia. Ocurre exactamente lo mismo con el numero de grupos "NM\_GRUPOS".
+Uno de los aspectos más importantes en el análisis exploratorio de datos es la correlación existente entre las variables. En la figura \ref{fig:matrizcorrelaciones} del Anexo \ref{appendix:AB3} se puede observar como existe una gran correlación entre las variables de número de alumnos, número de grupos y grupos a predecir y otra gran correlación entre la variable comedor, el carácter genérico y la naturaleza del centro. En la figura \ref{fig:mayorescorrelaciones} se pueden observar las mayores correlaciones entre variables ordenadas de mayor a menor.
 
-Una vez estudiado los estadísticos y los datos anómalos, se va a realizar un estudio sobre la normalidad de los datos. 
-
-Uno de los aspectos mas importantes en el análisis exploratorio de datos es la correlación existentes entre las variables. En la figura \ref{fig:matrizcorrelaciones} se puede observar como existe una gran correlación entre las variables de numero de alumnos, numero de grupos y grupos a predecir y otra gran correlación entre la variable comedor, el carácter genérico y la naturaleza del centro. En la figura \ref{fig:mayorescorrelaciones} se pueden observar las mayores correlaciones entre variables ordenadas de mayor a menor.
-
-Uno de los fines es obtener las variables que mejor correlacionan con la variable a predecir, en este caso "GRUPOS\_PREDECIR". En la figura \ref{fig:mayorcorrelacionpredecir} se observa como las variables ``NM\_UNIDADES" y ``NM\_ALUMNOS" son las que mayor correlación tienen con la variable a predecir. No sorprende puesto que son variables determinantes en la predicción. Vemos en la figura \ref{fig:relacionAlumnGrup} que ambas variables tienen una relación positiva que implica que si una aumenta, la otra también.
-
-
-
-
+Uno de los fines es obtener las variables que mejor correlacionan con la variable a predecir (número de grupos). En la figura \ref{fig:mayorcorrelacionpredecir} se observa como las variables número de alumnos y número de grupos son las que mayor correlación tienen con la variable a predecir. No sorprende puesto que son variables determinantes en la predicción. Vemos en la figura \ref{fig:relacionAlumnGrup} que ambas variables tienen una relación positiva que implica que si una aumenta, la otra también.
 
 
 \section{Análisis predictivo}
 Una vez que se realiza el análisis descriptivo, se procede a realizar el análisis predictivo.
 
-En primer lugar, se debe tener en cuenta las variables que se van a utilizar en los modelos, para ello, se va a utilizar Random Forest como algoritmo para obtener la importancia de las variables. En la figura \ref{fig:VarImpRF} podemos del Sub-anexo \ref observar que las vas importantes a la hora de mejorar la precisión en el modelo son: NM\_UNIDADES y NM\_ALUMNOS.
+En primer lugar, se debe tener en cuenta las variables que se van a utilizar en los modelos, para ello, se va a utilizar Random Forest como algoritmo para obtener la importancia de las variables. En la figura \ref{fig:VarImpRF} podemos observar que las vas importantes a la hora de mejorar la precisión en el modelo son: número de unidades y alumnos.
+
+Se utiliza también otro algoritmo que es el conocido como Regresión Paso a Paso. Para este algoritmo se utilizan 3 estrategias en este TFM. En las estrategias descritas en el Apéndice \ref{appendix:A.C.2} resultando que dos de estas estrategias utilizan como máximo 5 variables (naturaleza del centro, numero de curso, número de unidades, nivel de enseñanza y ratio). Estas variables se tienen en cuenta para la realización y comparación de modelos. Utilizando estas variables es cuando el modelo obtiene la mayor precisión. Debe destacarse que la mayoría de estas variables son las que mayor correlación tienen con la variable a predecir.
+
+En esta investigación, además de realizar la comparación de los modelos, también se va a realizar una comparación teniendo en cuenta todas las variables y únicamente las 5 variables seleccionadas utilizando los algoritmos, ya comentados, de eliminación de variables.
+
+Los resultados obtenidos, que pueden observarse en la tabla \ref{tab:ComparacionModelos} en el Apéndice \ref{appendix:B} puede observarse como el algoritmo que mayor precisión ha obtenido ha sido el Árbol de decisión utilizando todas las variables. No obstante, este algoritmo requiere de un gran tiempo de entrenamiento, por lo que la regresión lineal puede ser una gran opción. Como puede observarse en el figura \ref{fig:ComparacionModelosII} del Apéndice \ref{appendix:B} existen varios modelos que obtienen precisiones similares (Redes neuronales, Árbol de Decisión y Regresión Linear) por tanto es conveniente tener en cuenta los tiempo de entrenamiento que se pueden ver en la figura \ref{fig:ComparacionModelosTiempo}.
+
+En una nueva investigación se debe tener en cuenta el tiempo de entrenamiento, sin embargo, como ya se ha realizado el entrenamiento, se va a obtener la predicción utilizando el algoritmo de Árbol de decisión (xgbTree). 
+
+Una vez seleccionado el algoritmo a usar en la predicción, se puede observar una situación que realmente ocurre, y es que pocos centros son los que aumentan o disminuyen de unidades. Concretamente, de 4436 datos con los que se trabajan, únicamente 52 han cambiado. Algunos de estos grupos se observan en la figura \ref{fig:UnidadesDistintasPrediccion} del Anexo \ref{appendix:B}.
+
+De estos 52 grupos que cambian: 30 de ellos son grupos que van a disminuir su número y el restante 22, son grupos que van a aumentar su número. Esto podría deberse a una posible despoblación, no obstante, debería investigarse dichos datos a fondo.
 
 
 

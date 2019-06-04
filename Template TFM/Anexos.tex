@@ -1,8 +1,10 @@
 \chapter{Gráficas del Análisis Exploratorio de datos}
+\setcounter{figure}{0} \renewcommand{\thefigure}{A.\arabic{figure}}
+\setcounter{table}{0} \renewcommand{\thetable}{A.\arabic{table}}
 \begin{subappendices}
-
 \section{Definición de Variables}
 	\label{appendix:A}
+En este apartado se definen las variables y sus valores que se van a utilizar en este TFM.
 \begin{table}[!ht]
 	\caption{Nomenclatura de las Variables}
 	\centering
@@ -80,7 +82,7 @@
 				\end{itemize}
 			\end{minipage}\\ 
 			\hline 
-			NM\_UNIDADES & Número de grupos para un determinado nivel y un numero de curso &  \\ 
+			NM\_UNIDADES & Número de grupos para un determinado nivel y un número de curso &  \\ 
 			\hline 
 			NM\_ALUMNOS & Número de alumnos para un determinado nivel y numero de curso &  \\ 
 			\hline 
@@ -93,11 +95,15 @@
 	\label{tab:TablaVariables}
 \end{table}
 
+Las variables existentes en las bases de datos originales son: CDGENERICO, CDNATURALEZA, CDPOSTAL, ITCOMEDOR, ITTRANSPORTE, ITBILINGUE, CD\_NIVEL y NM\_CURSO.
+
+El resto de variables se obtienen a partir de las transformaciones correspondientes. Por ejemplo, las variables NM\_UNIDADES NM\_ALUMNOS y GRUPO\_PREDECIR se obtienen de realizar consultas que agrupan por determinados aspectos. Sin embargo, la variable RATIO, que indica la ratio de alumnos para un determinado grupo, se ha obtenido dividiendo la variable de NM\_ALUMNOS entre 30 o 35 (dependiendo del nivel educativo), y este resultado se ha divido entre el número de grupos NM\_GRUPOS para ese nivel educativo. Estos ratios se regulan mediante el \textit{Real Decreto 132/2010, de 12 de febrero, por el que se establecen los requisitos mínimos de los centros que impartan las enseñanzas del segundo ciclo de la educación infantil, la educación primaria y la educación secundaria.} para los niveles de enseñanza de Educación Infantil, Educación Primaria, Educación Secundaria Obligatoria y Bachillerato y el \textit{Real Decreto 1147/2011, de 29 de julio, por el que se establece la ordenación general de la formación profesional del sistema educativo} para los niveles de Formación Profesional. Siendo las ratios los siguientes: 30 para Educación Secundaria Obligatoria y Formación profesional y 35 para Bachillerato.
+
 \section{Análisis exploratorio}
-\subsection{Estadísticos mas relevantes}
+\subsection{Estadísticos más relevantes}
 \begin{figure*}[htb]
 	\centering
-	\caption{Estadisticos de las variables. Elaboración propia}
+	\caption{Estadísticos de las variables. Elaboración propia}
 	\includegraphics[width=1\textwidth]{recursos/ImagenesR/estadisticos}
 	\label{fig:estadisticos}
 \end{figure*}
@@ -111,10 +117,35 @@
 \end{figure*}
 \FloatBarrier
 
-Como se puede observar en la figura \ref{fig:boxplotNorm}, las variables de NMALUMNOS, NMUNIDADES y RATIO contienen datos anómalos. En el caso de la variable NM\_ALUMNOS, existen centros que tienen números demasiado elevados de alumnos para un determinado nivel educativo, esto se debe a que dichos centros tienen la modalidad de distancia para esos niveles educativos. Relacionado con el caso anterior es el NM\_UNIDADES que, al igual que los alumnos, se dispara a números elevados. Se debe de la misma forma a la modalidad de distancia.
 
 \subsection{Análisis de normalidad}
-En primer lugar, se pueden ver la densidad de las variables individualmente de observar a simple vista si cumplen o no con una distribución normal.
+En primer lugar, se pueden ver la densidad de las variables individualmente de observar a simple vista si cumplen o no con una distribución normal. 
+
+El análisis de normalidad es importante, ya que la falta de normalidad afecta a los modelos que se vayan a utilizar, por ejemplo, a su intervalo de confianza. Dicha falta de normalidad no suele afectar a las predicciones puntuales, pero si a los intervalos o ``errores'' en la predicción.
+
+Para comprobar la normalidad en los datos se utiliza el test de Mardia que es una de las muchas pruebas que se utilizan para dicha comprobación. Existen otras pruebas como el test de Zirkler Henze, Shapiro-Wilk, etc.
+
+Los resultados obtenidos utilizando la prueba de Mardia en el conjunto de datos son los que se pueden observar en la figura \ref{fig:normalidadSUM}
+
+\begin{figure*}[htb]
+	\centering
+	\caption{Resumen de normalidad de variables. Elaboración propia}
+	\includegraphics[width=0.8\textwidth]{recursos/ImagenesR/normalidadSUM}
+	\label{fig:normalidadSUM}
+\end{figure*}
+\FloatBarrier
+
+
+\begin{figure*}[htb]
+	\centering
+	\caption{Resumen de normalidad de variables. Elaboración propia}
+	\includegraphics[width=0.8\textwidth]{recursos/ImagenesR/normalidadGRAF}
+	\label{fig:normalidadGRAF}
+\end{figure*}
+\FloatBarrier
+
+Como se puede observar en la figura \ref{fig:normalidadGRAF}, las variables continuas (NM\_ALUMNOS, NM\_UNIDADES, RATIO y GRUPOS\_PREDECIR) son las que más se acercan a la normalidad ya que son cuantitativas, sin embargo no se ajustan a la línea recta teórica que indica el ajuste a la normal.
+
 
 \begin{figure*}[htb]
 	\centering
@@ -131,6 +162,8 @@ En primer lugar, se pueden ver la densidad de las variables individualmente de o
 	\label{fig:norm2}
 \end{figure*}
 \FloatBarrier
+
+Las figuras \ref{fig:norm1} y \ref{fig:norm2}, muestran de forma general los valores en los que destacan cada una de las variables. Por ejemplo, viendo la gráfica de densidad de NM\_UNIDADES se puede observar que la media de los grupos por nivel de enseñanza es de 3. Por otro lado la media de alumnos por nivel educativo es de 74.
 
 \begin{figure*}[htb]
 	\centering
@@ -156,9 +189,10 @@ En primer lugar, se pueden ver la densidad de las variables individualmente de o
 \end{figure*}
 \FloatBarrier
 
-Tanto en la figuras \ref{fig:barplot1} y \ref{fig:barplot2} se puede hacer una comparativa sobre los servicios que ofrecen los centros. Se puede observar como la mayoria de centros no tienen transporte. Existe un ligero numero de centros que tiene comedor sobre centros que no tienen, de la misma manera ocurre con el bilingüismo. La mayoría de los datos que se tiene son del nivel 13, que corresponde con la Educación Secundaria Obligatoria y la mayoría de estos datos corresponden a centros con el codigo generico 42 y 72 (IES y CPR INF-PRI-SEC, respectivamente).
+Tanto en la figuras \ref{fig:barplot1} y \ref{fig:barplot2} se puede hacer una comparativa sobre los servicios que ofrecen los centros. Se puede observar como la mayoría de centros no tienen transporte. Existe un ligero número de centros que tiene comedor sobre centros que no tienen, de la misma manera ocurre con el bilingüismo. La mayoría de los datos que se tiene son del nivel 13, que corresponde con la Educación Secundaria Obligatoria y la mayoría de estos datos corresponden a centros con el código genérico 42 y 72 (IES y CPR INF-PRI-SEC, respectivamente).
 
 \subsection{Relaciones entre variables}
+	\label{appendix:AB3}
 Para el estudio de la correlación se utiliza el Coeficiente de Correlación de Pearson (R).
 \begin{figure*}[htb]
 	\centering
@@ -186,7 +220,7 @@ Para el estudio de la correlación se utiliza el Coeficiente de Correlación de 
 \FloatBarrier
 En las figuras \ref{fig:matrizcorrelaciones}, \ref{fig:mayorescorrelaciones} y \ref{fig:mayorcorrelacionpredecir} se muestra prácticamente la misma información, la correlación entre variables. En la figura \ref{fig:mayorescorrelaciones} se muestran aquellos pares de variables que poseen la mayor correlación. Se puede apreciar en esta figura que la variable NMUNIDADES y GRUPOSPREDECIR tienen una correlación casi perfecta, lo que implica que aportarían la misma información al conjunto de datos.
 
-En la figura \ref{fig:mayorcorrelacionpredecir} se muestran aquellas variables que tienen mayor correlación con la variable a predecir. Podemos observar que las variables de NMUNIDADES y NMALUMNOS tienen una enorme correlación con la variable a predecir. Esta relación es lógica, ya que a mayor numero de alumnos o grupos, la variable a predecir aumenta. También se puede destacar que la naturaleza (publica o privada) de un centro esta relacionada con el numero de grupos a predecir. Al aumentar el valor de la naturaleza, disminuye el numero de unidades. De esta premisa se puede deducir que los padres suelen matricular a sus hijos en centros públicos, y por lo tanto, el numero de grupos tiende a aumentar. El servicio de comedor también es un factor con relación con el numero de grupos, lo que implica que los padres suelen matricular a los alumnos en centros que dispongan del servicio de comedor.
+En la figura \ref{fig:mayorcorrelacionpredecir} se muestran aquellas variables que tienen mayor correlación con la variable a predecir. Podemos observar que las variables de NMUNIDADES y NMALUMNOS tienen una enorme correlación con la variable a predecir. Esta relación es lógica, ya que, a mayor número de alumnos o grupos, la variable a predecir aumenta. También se puede destacar que la naturaleza (pública o privada) de un centro está relacionada con el número de grupos a predecir. Al aumentar el valor de la naturaleza, disminuye el número de unidades. De esta premisa se puede deducir que los padres suelen matricular a sus hijos en centros públicos, y por lo tanto, el número de grupos tiende a aumentar. El servicio de comedor también es un factor con relación con el número de grupos, lo que implica que los padres suelen matricular a los alumnos en centros que dispongan del servicio de comedor.
 
 \begin{figure*}[htb]
 	\centering
@@ -206,6 +240,8 @@ En la figura \ref{fig:mayorcorrelacionpredecir} se muestran aquellas variables q
 \end{figure*}
 \FloatBarrier
 
+En la figura \ref{fig:RelacionGruposYUnidades} se observa la gran relación (prácticamente lineal) entre las variables NM\_UNIDADES y GRUPOS\_PREDECIR. Esto significa que, si aumenta el valor de una variable, linealmente aumenta el valor de la otra. En la figura \ref{fig:relacionAlumnGrup} existe también una relación lineal, pero no es tan pronunciada.
+
 \section{Selección de Variables}
 \subsection{Usando Random Forest}
 \begin{figure*}[htb]
@@ -220,6 +256,7 @@ La variable \textbf{IncNodePurity} se la conoce también como la media de decrec
 
 Por otro lado, la variable \textbf{IncMSE} es la media de decrecimiento en la precisión, y es también un indicador sobre la importancia de las variables en el modelo.
 \subsection{Regresión Paso a Paso}
+\label{appendix:A.C.2}
 La regresión por pasos (Stepwise Regression) consiste en añadir o eliminar iterativamente predicadores en el modelo predictivo, con el objetivo de encontrar el subconjunto de los datos que obtengan mayor precisión en el modelo o, dicho de otra forma, reducir el error en la predicción. \cite{kassambara2018}
 
 Existen 3 estrategias para realizar la regresión paso a paso: backward, forward y stepwise.
@@ -290,80 +327,156 @@ En los resultados de la figura \ref{fig:fordwardSum} se puede observar como nuev
 \FloatBarrier
 
 Al igual que en la estrategia de ``Stepwise'', se ha obtenido el mejor resultado de RMSE utilizando 4 variables. Estas variables son las obtenidas en el resultado de la figura \ref{fig:fordwardSum}.	
+
+Como conclusión se puede obtener que tanto usando el algoritmo de Random Forest como las varias estrategias del algoritmo de Regresión paso a paso, se han seleccionado mayoritariamente 4 variables a destacar en la utilización de un modelo y son las siguientes ordenadas por importancia: NM\_UNIDADES, NM\_ALUMNOS, RATIO, CD\_NIVEL y CD\_NATURALEZA. 
 \end{subappendices}
 
 
 
 \chapter{Análisis Predictivo}
+\setcounter{figure}{0} \renewcommand{\thefigure}{B.\arabic{figure}}
+\setcounter{table}{0} \renewcommand{\thetable}{B.\arabic{table}}
+
+Como ya se ha comentado en el diseño, a la hora de realizar un análisis predictivo utilizando técnicas de aprendizaje supervisado, es necesario dividir los datos en un 70\% para entrenar el modelo y el otro 30\% para probarlo.
+
+Una vez que se han dividido los datos, se realiza una comparación con los modelos seleccionados. Se recuerda que los modelos utilizados a grandes rasgos han sido las redes neuronales, los k-vecinos más cercanos, los bosques aleatorios (Random Forest), la regresión logística, el soporte de vectores de máquinas y los arboles de decisión.
+
+Estos modelos comentados a su vez tienen una serie de algoritmos distintos tanto para crear modelos de clasificación como para crear modelos de regresión. En este caso, debido a que es la predicción de datos continuos, se va a utilizar la regresión.
+
+Los algoritmos que se han utilizado para cada modelo seleccionado son los siguientes: K-Vecinos Cercanos (kknn), Redes neuronales bayesianas regularizadas (brnn), bosques aleatorios (rf), Máquinas de soporte de vectores con núcleo lineal (svmLinear), Árbol Modelo (M5) y el Elasticnet (enet) en la Regresión Lineal.
+
 \begin{subappendices}
-	\label{appendix:A}
+	\label{appendix:B}
 \section{Comparación de Modelos}
 
-K-VECINOS CERCANOS
-\begin{figure*}[htb]
-	\centering
-	\caption{K-Vecinos Cercanos. Elaboración propia}
-		\label{fig:knnSUM}
-	\includegraphics[width=0.6\textwidth]{recursos/ImagenesR/knnSUM}
-\end{figure*}
-\FloatBarrier
-REDES NEURONALES
-\begin{figure*}[htb]
-	\centering
-	\caption{Redes Neuronales. Elaboración propia}
-		\label{fig:nnSUM}
-	\includegraphics[width=0.6\textwidth]{recursos/ImagenesR/nnSUM}
-\end{figure*}
-\FloatBarrier
+Para realizar la comparación de modelos se utiliza una técnica del paquete Caret, donde se realiza un entrenamiento con los datos usando todos los modelos comentados en el apartado 4.3.4 del capítulo de Diseño de la Investigación. 
 
-\begin{figure*}[htb]
-	\centering
-	\caption{Regresión Logística. Elaboración propia}
-		\label{fig:regSUM}
-	\includegraphics[width=0.6\textwidth]{recursos/ImagenesR/regSUM}
-\end{figure*}
-\FloatBarrier
-SVM
-\begin{figure*}[htb]
-	\centering
-	\caption{SVM. Elaboración propia}
-		\label{fig:svmSUM}
-	\includegraphics[width=0.6\textwidth]{recursos/ImagenesR/svmSUM}
-\end{figure*}
-\FloatBarrier
+Para realizar la comparación de modelos se realiza una medición no solo en la precisión de estos sino también el tiempo transcurrido en entrenar el propio modelo.
 
-\begin{figure*}[htb]
-	\centering
-	\caption{Arbol de Decisión. Elaboración propia}
-		\label{fig:treeSUM}
-	\includegraphics[width=0.6\textwidth]{recursos/ImagenesR/treeSUM}
+Todos los modelos se entrenan usando los mismos parámetros, de esta forma ninguno de ellos resulta favorecido. Obviamente los resultados de los modelos dependen de dichos parámetros. Realizando combinaciones de estos parámetros se obtienen una serie de resultados para cada modelo al final se selecciona el mejor resultado para cada modelo y estos resultados son los que se compararan con el resto de modelos.
 
-\end{figure*}
-\FloatBarrier
+Ademas de los modelos comentados, se han entrenado dichos modelos, pero teniendo en cuenta las 5 variables seleccionadas por los algoritmos de selección de variables. A continuación se muestran en la siguiente tabla \ref{tab:ComparacionModelos} los modelos, su predicción y sus tiempos.
 
 \begin{table}[!ht]
-	\caption{Precisión de Modelos}
-		\label{fig:ComparacionModelos}
-\centering
-\begin{tabular}{|c|c|c|c|c|c|}
+	\caption{Tabla comparación modelos (precisión y tiempo)}
+	\label{tab:ComparacionModelos}
+	\centering
+\begin{tabular}{|c|c|c|}
 	\hline 
-	kknn & brnn & rf & svmLinear     & M5  & bayesglm \\ 
+	Modelos & Precisión & Tiempo Entrenamiento \\ 
 	\hline 
-	0.681 & 0.515 & 0.576 & 0.528 & 0.516 & 0.518 \\ 
+	Redes neuronales (NN) & 0.5236718 & 52.10 \\ 
+	\hline 
+	Redes neuronales - 5 variables (NN2) & 0.5242227 & 29.38 \\ 
+	\hline 
+	K-Vecinos Cercanos (KKNN) & 0.6468044 & 16.69 \\ 
+	\hline 
+	K-Vecinos Cercanos - 5 variables (KKNN2) & 0.5982330 & 14.86 \\ 
+	\hline 
+	Random Forest (RF) & 0.5264411 & 947.03 \\ 
+	\hline 
+	Random Forest - 5 variables (RF2) & 0.5577621 & 515.49 \\ 
+	\hline 
+	Vector de Máquinas Soporte (SVM) & 0.5336122 & 37.93 \\ 
+	\hline 
+	Vector de Máquinas Soporte - 5 variables (SVM2) & 0.5409171 & 21.22 \\ 
+	\hline 
+	Regresión Linear (enet) & 0.5256446 & 2.78 \\ 
+	\hline 
+	Regresión Linear - 5 variables (enet2) & 0.5245138 & 2.13 \\ 
+	\hline 
+	Árbol de decisión (xgbTree) & 0.5146266 & 247.83 \\ 
+	\hline 
+	Árbol de decisión -5 variables (xgbTree2) & 0.5311688 & 228.45 \\ 
 	\hline 
 \end{tabular} 
 \end{table}
+\FloatBarrier
+
+A continuación, se muestra gráficamente los resultados de la tabla anterior.
 
 \begin{figure*}[htb]
 	\centering
-	\caption{Comparación de Modelos. Elaboración propia}
-	\includegraphics[width=0.6\textwidth]{recursos/ImagenesR/ComparacionModelos}
-
+	\caption{Comparación Modelos y Precisión. Elaboración propia}
+	\label{fig:ComparacionModelosII}
+	\includegraphics[width=0.8\textwidth]{recursos/ImagenesR/ComparacionModelos2}
 \end{figure*}
 \FloatBarrier
 
-Como se puede observar, las redes neuronales es el modelo que mejor precisión aportan utilizando los datos actuales. Este modelo es el que se usa para realizar la predicción de datos futuros.
-\end{subappendices}
+\begin{figure*}[htb]
+	\centering
+	\caption{Comparación Modelos y Tiempo en Entrenar. Elaboración propia}
+	\label{fig:ComparacionModelosTiempo}
+	\includegraphics[width=0.8\textwidth]{recursos/ImagenesR/ComparacionModelosTiempo}
+\end{figure*}
+\FloatBarrier
 
+\section{Predicción utilizando el modelo de árbol de decisión}
+
+\begin{figure*}[htb]
+	\centering
+	\caption{Aumento o disminución de grupos en la predicción. Elaboración propia}
+	\label{fig:UnidadesDistintasPrediccion}
+	\includegraphics[width=0.6\textwidth]{recursos/ImagenesR/UnidadesDistintasPrediccion}
+\end{figure*}
+\FloatBarrier
+
+\section{Sistema de Explotación de la Consejería de Educación e Investigación}
+	\label{appendix:BC}
+En este apartado se van a mostrar una serie de imágenes de la aplicación de explotación de datos de la Consejería de Educación e Investigación. Concretamente se van a mostrar dos Cuadros de Mandos.
+
+En primer lugar, se ha realizado un Cuadro de Mando relativo a los centros sostenidos con fondos públicos. En este cuadro de mando se muestran aspectos como el número de alumnos matriculados, el numero de unidades, el porcentaje de centros públicos y concertados, la nacionalidad de los alumnos, el sexo, etc. Véase la figura \ref{fig:CentrosResumenI}
+
+Existe un filtro, donde se puede seleccionar los parámetros de la búsqueda. Entre estos filtros se encuentran los siguientes: año, área territorial, municipio, distrito, centro educativo y nivel educativo.
+
+\begin{figure*}[htb]
+	\centering
+	\caption{Cuadro de Mandos de Centros I. Elaboración propia}
+	\label{fig:CentrosResumenI}
+	\includegraphics[width=1\textwidth]{recursos/CentrosResumenI}
+\end{figure*}
+
+En la figura \ref{fig:UnidadesDistintasPrediccion} se ha realizado una búsqueda sobre el nivel educativo de E.S.O. en el centro educativo de ``Jose Luis Sampedro'', que se encuentra en Tres Cantos (DAT-Norte).
+\begin{figure*}[htb]
+	\centering
+	\caption{Cuadro de Mandos de Centros II. Elaboración propia}
+	\label{fig:UnidadesDistintasPrediccion}
+	\includegraphics[width=1\textwidth]{recursos/CentrosResumenII}
+\end{figure*}
+\FloatBarrier
+
+Otro cuadro de mandos realizado ha sido el de ausencias de alumnados en centros de Secundaria, Bachillerato y FP.
+
+En este cuadro de mando aparecen las faltas de asistencias totales, el número de retrasos, el porcentaje sobre el total entre faltas y retrasos, el porcentaje de faltas y retrasos justificados. Se muestra un histograma también sobre el número de faltas y retrasos y los días de la semana.
+
+\begin{figure*}[htb]
+	\centering
+	\caption{Cuadro de Mandos de Ausencias de Alumnado I. Elaboración propia}
+	\label{fig:FaltasAsistenciaI}
+	\includegraphics[width=1\textwidth]{recursos/FaltasAsistenciaI}
+\end{figure*}
+\FloatBarrier
+
+En la figura \ref{fig:FaltasAsistenciaII} se filtra la búsqueda por el municipio de Parla (DAT-Sur), para el año 2017.
+
+\begin{figure*}[htb]
+	\centering
+	\caption{Cuadro de Mandos de Ausencias de Alumnado II. Elaboración propia}
+	\label{fig:FaltasAsistenciaII}
+	\includegraphics[width=1\textwidth]{recursos/FaltasAsistenciaII}
+\end{figure*}
+\FloatBarrier
+
+Además, aunque no se haya creado cuadro de mandos, se ha realizado cubos OLAP de las unidades, los centros, las faltas de asistencia, las minorías étnicas, etc. En este caso se va a mostrar en la siguiente ilustración \ref{fig:STPivotUnidades} el cubo OLAP relativo a las unidades.
+
+\begin{figure*}[htb]
+	\centering
+	\caption{Cubo OLAP de Unidades. Elaboración propia}
+	\label{fig:STPivotUnidades}
+	\includegraphics[width=1\textwidth]{recursos/STPivotUnidades}
+\end{figure*}
+\FloatBarrier
+
+\end{subappendices}
 
 

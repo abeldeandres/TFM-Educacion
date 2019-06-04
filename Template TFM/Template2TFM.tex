@@ -27,6 +27,16 @@
 \usepackage{enumitem}
 \usepackage{caption}
 
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
 \usepackage[textwidth=15cm, textheight=22.5cm, top=0.5cm, bottom=3.5cm,left= 3cm,right=3cm]{geometry}
 
 \usepackage{babel} 
@@ -58,7 +68,7 @@
 
 \titlespacing*{\chapter}{0pt}{-50pt}{20pt}
 
-\usepackage[hyphens]{url} %Para las URL de la bibliografia
+%\usepackage[hyphens]{url} %Para las URL de la bibliografia
 \usepackage{verbatim} % comentarios
 
 \newcommand\blankpage{%
@@ -80,13 +90,13 @@
 \renewcommand*{\listtablename}{Índice de tablas}
 \renewcommand*{\listfigurename}{Índice de figuras}
 \renewcommand{\baselinestretch}{1.5}
-\renewcommand{\appendixname}{Anexos}
-\renewcommand{\appendixtocname}{Anexos}
-\renewcommand{\appendixpagename}{Anexos}
+\renewcommand{\appendixname}{ANEXOS}
+\renewcommand{\appendixtocname}{ANEXOS}
+\renewcommand{\appendixpagename}{ANEXOS}
 \renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
 \renewcommand*{\tablename}{Tabla}
 \renewcommand*{\chaptername}{Capítulo}
-\renewcommand*{\thechapter}{\Roman{chapter}}
+\renewcommand*{\thechapter}{\arabic{chapter}}
 \renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
 \renewcommand{\figurename}{Figura}
 \renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
@@ -151,7 +161,7 @@
 %----------------------------------------------------------------------------------------
 %	Dedicatoria
 %----------------------------------------------------------------------------------------
-
+\begin{comment}
 \begin{titlepage}
 
 \begin{flushright}
@@ -163,6 +173,7 @@
 \end{flushright}
 \end{titlepage}
 \blankpage
+\end{comment}
 
 %----------------------------------------------------------------------------------------
 %	Agradecimientos
@@ -171,10 +182,37 @@
 \begin{titlepage}
 
 \begin{flushright}
-{\large \bf AGRADECIMIENTO}
-\\
-\textit{}
-{} % agregar tu dedicatoria
+{\large \bf AGRADECIMIENTOS}
+\vspace{10pt}
+
+{\normalsize Desde estas lineas me gustaría expresar mi mas sincero agradecimiento: \newline
+	
+A mi tutor Aurelio Berges, por ayudarme y guiarme durante todo el proyecto.
+\newline
+
+A Felipe Retortillo, por ayudarme con toda la información necesaria para realizar este TFM.
+\newline
+
+A mis padres, por haberme proporcionado la mejor educación y lecciones de vida.
+\newline
+
+En especial a mi padre, por haberme enseñado que, con esfuerzo, trabajo y constancia todo se consigue, y que en esta vida nadie regala nada.
+\newline
+
+En especial a mi madre, por hacerme ver cada dia la vida de una forma diferente y confiar en mis decisiones. Sin olvidar su infinita ayuda durante estos últimos años.
+\newline
+
+A todos mis familiares por haberme apoyado y animado.
+\newline
+
+A mis compañeros del máster, con los que he compartido buenos momentos a lo largo de las intensas tardes del máster.
+\newline
+
+A mis amigos, por estar siempre a mi lado.
+\newline
+
+A todos aquellos que siguen estando cerca de mi y que le regalan a mi vida algo de ellos.}
+% agregar tu dedicatoria
 \end{flushright}
 \end{titlepage}
 \blankpage
@@ -188,8 +226,18 @@
 	\begin{flushright}
 		{\large \bf RESUMEN}
 		\\
+		\vspace{10pt}
 		\textit{}
-		{} % agregar tu dedicatoria
+		{La planificación de grupos escolares es una tarea complicada que debe realizar la Consejería de Educación e Investigación de la Comunidad de Madrid. Gestionar los recursos de la mejor forma es vital para mejorar la calidad educativa. Por tanto, se hace necesario el estudio de las variables más importante que permitan un mejor reparto de los medios disponibles.
+	%Las lesiones traumáticas cerebrales son un problema de salud mundial. Por tanto, se hace necesario el estudio de los predictivos considerados medicinalmente más importantes. El motivo es establecer estrategias, decisiones clínicas y protocolos para el tratamiento de estas lesiones de forma óptima y tratando siempre de obtener el mejor resultado en el paciente.
+	
+	En los estudios que se realizan se utilizan datos de los grupos actuales de distintos centros, entre otras variables. Con esta información se han construido varios modelos que permitan predecir el número de grupos que deben planificarse para el curso siguiente y poder así repartir los recursos disponibles (profesores, suministros, etc.).
+	
+	En este estudio se realiza una clasificación sobre la importancia de las variables existentes, además se realizan estudios estadísticos para obtener la relación que existen entre estas variables para posteriormente utilizar distintos modelos con el objeto de conseguir la mayor predicción posible.
+	
+	Para obtener el mejor modelo se utilizan distintas métricas con el objetivo de poder compararlos entre sí en función de las necesidades que se requieran.
+
+		} % agregar tu dedicatoria
 	\end{flushright}
 \end{titlepage}
 \blankpage

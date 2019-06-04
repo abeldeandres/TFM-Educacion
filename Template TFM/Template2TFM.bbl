@@ -235,6 +235,27 @@ Delen, D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Delgado%
+}{%
+Delgado%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+DELGADO2019}
+\APACinsertmetastar {%
+DELGADO2019}%
+\begin{APACrefauthors}%
+Delgado, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {Introducción a los Modelos de Regresión en R.} {Introducción
+  a los modelos de regresión en r.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Diazaraque%
 }{%
 Diazaraque%
@@ -936,6 +957,29 @@ Peña-Ayala, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Pesquera%
+}{%
+Pesquera%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+carlospesquera2019}
+\APACinsertmetastar {%
+carlospesquera2019}%
+\begin{APACrefauthors}%
+Pesquera, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {Qué son las tablas de hechos y de dimensión.} {Qué son las
+  tablas de hechos y de dimensión.}
+\newblock
+\begin{APACrefURL} \url{http://carlospesquera.com} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Páez%
 }{%
 Páez%
@@ -1234,6 +1278,28 @@ Sin, K.%
   education data mining and learning analytics--a literature review.}{\BBCQ}
 \newblock
 \APACjournalVolNumPages{ICTACT journal on soft computing}{5}{4}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Urquizu%
+}{%
+Urquizu%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+PauUrquizu2019}
+\APACinsertmetastar {%
+PauUrquizu2019}%
+\begin{APACrefauthors}%
+Urquizu, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {Business Intelligence Facil.} {Business intelligence facil.}
+\newblock
+\begin{APACrefURL} \url{https://www.businessintelligence.info} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

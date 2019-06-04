@@ -3,19 +3,19 @@
 %http://www.oldemarrodriguez.com/yahoo_site_admin/assets/docs/Documento_CRISP-DM.2385037
 
 \section{Introducción}
-En un principio el proyecto comienza como parte de una necesidad que surge a la CEI. Dicha necesidad se basa en realizar explotaciones (visualizando los datos según convenga) y reportes sobre la situación actual respecto a otros años, concretamente, los últimos 10 año. \footnote{Antes del curso 2007/2008 no existe un sistema de gestión centralizado y por lo tanto no se puede hacer explotaciones}
+En un principio el proyecto comienza como parte de una necesidad que surge a la CEI. Dicha necesidad se basa en realizar explotaciones (visualizando los datos según convenga) y reportes sobre la situación actual respecto a otros años, concretamente, los últimos 10 años \footnote{Antes del curso 2007/2008 no existe un sistema de gestión centralizado y por lo tanto no se puede hacer explotaciones}. Véase el Anexo \ref{appendix:BC} para más información.
 
-La CEI dispone de un gran numero de bases de datos, por lo que obtener información sencilla a través de ellas resulta complejo. Por tanto, se requiere de un sistema de explotación que permita obtener el máximo valor de la información de dichas bases de datos.
+La CEI dispone de un gran número de bases de datos, por lo que obtener información sencilla a través de ellas resulta complejo. Por tanto, se requiere de un sistema de explotación que permita obtener el máximo valor de la información de dichas bases de datos.
 
- %Sin embargo, es necesario tener presente el gran numero de bases de datos que posee la Consejería de Educación e Investigación, por tanto, debido a estas demandas de explotación y al gran numero de bases de datos, es conveniente el uso de arquitecturas que nos permitan satisfacer dichas demandas.
+ %Sin embargo, es necesario tener presente el gran número de bases de datos que posee la Consejería de Educación e Investigación, por tanto, debido a estas demandas de explotación y al gran número de bases de datos, es conveniente el uso de arquitecturas que nos permitan satisfacer dichas demandas.
 
-A continuación se expone someramente la arquitectura inicial del proyecto.
+A continuación, se expone someramente la arquitectura inicial de este sistema de explotación.
 
 	%Una de las necesidades de la Consejería de Educación e Investigación es poder visualizar los datos según convenga. Como se puede imaginar, los datos se encuentran distribuidos en diferentes tablas. Por tanto, ha sido necesario la utilización de herramientas de inteligencia de negocio para poder obtener la máxima información de los datos. 
 
 %Para realizar esta tarea, se ha tenido que utilizar los llamados cubos OLAP, utilizando así bases de datos multidimensionales. Para ello, se ha tenido que realizar un diseño de tablas en SQL que permita modelar dichos cubos OLAP. Para ello se ha utilizado la herramienta \textit{Pentaho Schema Workbench}.
 
-%Cuando se accedió a la informacion de la consejeria en los ultimos años, esta se remontaba a 2004. Desde este curso se comenzo a alamacenar de forma centralizada relacionada al sistema educativa y fue de forma progresiva mediante SICE, hasta 2007 no se implanto en todos los centros, por lo tanto son datos parciales (en cuanto al numero de centros). En 2007 sostenidos con fondos publicos. 
+%Cuando se accedió a la información de la consejería en los últimos años, esta se remontaba a 2004. Desde este curso se comenzó a almacenar de forma centralizada relacionada al sistema educativa y fue de forma progresiva mediante SICE, hasta 2007 no se implanto en todos los centros, por lo tanto, son datos parciales (en cuanto al número de centros). En 2007 sostenidos con fondos públicos. 
 
 \section{Arquitectura Inicial}
 Con el fin de entender conceptos posteriores, se procede a mostrar la arquitectura lógica del sistema con la que se parte inicialmente. Esta arquitectura ya está implementada y es la base del proyecto inicial y se puede observar en la figura \ref{fig:arquitecturaDWH2}
@@ -27,40 +27,40 @@ Con el fin de entender conceptos posteriores, se procede a mostrar la arquitectu
 \end{figure*}
 \FloatBarrier
 
-%En la figura \ref{fig:arquitecturaDWH2} se muestra cuales son las fuentes de información, como se crea el ``DataWareHouse'' (que para entenderse son simplemente bases de datos con una estructura especial) y los módulos principales que se encargaran de seleccionar la información de una determinada forma para que posteriormente el usuario pueda visualizarla.
-En primer lugar se tiene un gran numero de bases de datos de la CEI. A partir de los datos solicitados para realizar la explotación, se tiene que realizar la búsqueda en las tablas de estas bases de datos.
+%En la figura \ref{fig:arquitecturaDWH2} se muestra cuáles son las fuentes de información, como se crea el ``DataWareHouse'' (que para entenderse son simplemente bases de datos con una estructura especial) y los módulos principales que se encargaran de seleccionar la información de una determinada forma para que posteriormente el usuario pueda visualizarla.
+En primer lugar, se tiene un gran número de bases de datos de la CEI. A partir de los datos solicitados para realizar la explotación, se tiene que realizar la búsqueda en las tablas de estas bases de datos.
 
-En segundo lugar, se crea un almacén de datos (Datawarehouse -DWH-), que son tablas dispuestas de una determinada forma o diseño (en este caso forma de estrella), donde se encuentran las tablas de hechos y las tablas de dimensiones. Las tablas de hechos son el corazón de un esquema en estrella, almacenan campos claves que se unen a las tablas de dimensiones, ademas incluyen métricas del negocio, contienen millones de registros. Las tablas de dimensiones son las que ofrecen mas información sobre características de las tablas de hechos, normalmente contienen pocos registros.
+En segundo lugar, se crea un almacén de datos (Datawarehouse -DWH-), que son tablas dispuestas de una determinada forma o diseño (en este caso forma de estrella), donde se encuentran las tablas de hechos y las tablas de dimensiones. Las tablas de hechos son el corazón de un esquema en estrella, almacenan campos claves con los que se unen a las tablas de dimensiones, además incluyen métricas del negocio; contienen millones de registros. Las tablas de dimensiones son las que ofrecen más información sobre características de las tablas de hechos, normalmente contienen pocos registros.
 \begin{figure*}[h]
 	\centering
-	\caption{Esquema en estrella. Recuperado de http://carlospesquera.com}
+	\caption{Esquema en estrella. Recuperado de \protect\citeA{carlospesquera2019}}
 	\includegraphics[width=0.8\textwidth]{recursos/Esquema_en_estrella}
 	\label{fig:esquemaestrella}
 \end{figure*}
 \FloatBarrier
 
-Cada tipo de diseño (en estrella o en copo de nieve), que permite realizar consultas multidimensionales, debe seleccionarse según las necesidades de los datos. Esta estructura en la base de datos es la clave para realizar los esquemas de Mondrian OLAP, conocidos como cubos de Mondrian. \cite{MONDRIAN}
+Cada tipo de diseño (en estrella o en copo de nieve), que permite realizar consultas multidimensionales, debe seleccionarse según las necesidades de los datos y del negocio. Esta estructura en la base de datos es la clave para realizar los esquemas de Mondrian OLAP, conocidos como cubos de Mondrian. \cite{MONDRIAN}
 
 \begin{figure*}[h]
 	\centering
-	\caption{Cubo de Mondrian. Recuperado de: https://www.businessintelligence.info}
+	\caption{Cubo de Mondrian. Recuperado de \protect\citeA{PauUrquizu2019}}
 	\includegraphics[width=0.8\textwidth]{recursos/modelo-dimensional-cubo}
 	\label{fig:modelo-dimensional-cubo}
 \end{figure*}
 \FloatBarrier
 
-Estos esquemas (que son archivos .XML) lo que hacen es ``traducir'' el diseño unidimensional de las tablas relacionales a un diseño multidimensional de forma que puedan ser entendidos por los servidores de Business Intelligence (BI). 
+Estos esquemas (que son archivos .XML) lo que hacen es ``traducir'' el diseño unidimensional de las tablas relacionales a un diseño multidimensional de forma que puedan ser entendidos por los servidores de Business Intelligence (BI) para la explotación de los datos. 
 
-Para crear el esquema de Mondrian, primero se tiene que decidir cuales son las tablas de hechos y las tablas de dimensiones. Un ejemplo concreto sobre un diseño realizado en la CEI ha sido una tabla de hechos que contiene el identificador de centros, el numero de alumnos, el número de grupos, el nivel escolar, la naturaleza del centro (publico, privado o concertado), etc. La tabla de dimensiones contiene los propios valores de la tabla anterior, por ejemplo, para la columna naturaleza del centro de la tabla de hechos, existe una dimensión que contenga los valores público, privado o concertado.
+Para crear el esquema de Mondrian, primero se tiene que decidir cuáles son las tablas de hechos y las tablas de dimensiones. Un ejemplo concreto sobre un diseño realizado en la CEI ha sido una tabla de hechos que contiene el identificador de centros, el número de alumnos, el número de grupos, el nivel escolar, la naturaleza del centro (público, privado o concertado), etc. La tabla de dimensiones contiene los propios valores de la tabla anterior, por ejemplo, para la columna naturaleza del centro de la tabla de hechos, existe una dimensión que contenga los valores público, privado o concertado.
 
-Una vez que se tiene el diseño de tablas creado, ya se puede realizar la fase de extracción, transformación y carga (ETL); con la que se extraen los datos de la fuente de información, se producen las transformaciones oportunas y posteriormente dichos datos se almacenan en las tablas de hechos o dimensiones. A través de esta fase es donde se limpia los datos, eliminando las filas que no contengan todos los campos o rellenando los campos con algún valor en caso que fuera necesario.
+Una vez que se tiene el diseño de tablas creadas, ya se puede realizar la fase de extracción, transformación y carga (ETL); con la que se extraen los datos de la fuente de información, se producen las transformaciones oportunas y posteriormente dichos datos se almacenan en las tablas de hechos y/o dimensiones. En esta fase es donde se limpian los datos, eliminando las filas que no contengan todos los campos o rellenando los campos con algún valor en caso que fuera necesario.
 
-Una vez que se tienen los datos limpios y cargados en las tablas de hechos y dimensiones, se tiene que subir el esquema al servidor y establecer una conexión con la base de datos, a partir de aquí, el trabajo es del motor OLAP del servidor, quien se encarga de traducir las opciones introducidas por el usuario en los cuadros de mandos a complejas consultas en la base de datos. 
+Posteriormente, con los datos limpios y cargados en las tablas de hechos y dimensiones, se tiene que subir el esquema creado al servidor y establecer una conexión con la base de datos, a partir de aquí, el trabajo es del motor OLAP del servidor, quien se encarga de traducir las opciones introducidas por el usuario en los cuadros de mandos a complejas consultas en la base de datos. Esta información se va a mostrar en las herramientas de acceso disponibles.
 
 En resumen, y a partir de los datos almacenados en el ``Datawarehouse''(DWH), la investigación que se lleva a cabo en este TFM se centra en analizar dichos datos. Pudiéndose recurrir a las fuentes de información originales para obtener nuevos datos en caso necesario. 
 
 \section{Diseño de la minería de datos}
-Una vez que se tiene claro la arquitectura principal del sistema, se establece el camino a seguir a la hora de realizar la investigación. Para ello, se utiliza la metodologia CRISP-DM. \citeA{IBMCRISP2012}
+Una vez que se tiene claro la arquitectura principal del sistema, se establece el camino a seguir a la hora de realizar la investigación. Para ello, se utiliza la metodología CRISP-DM. \citeA{IBMCRISP2012}
 
 La metodología CRISP-DM tiene como objetivo orientar los proyectos de minería de datos. 
 \begin{itemize}
@@ -91,15 +91,15 @@ El ciclo de vida de CRISP-DM está compuesto de seis fases. La secuencia de esta
 En los próximos puntos se va a describir las actividades que se realizan en cada una de estas fases.
 
 \subsection{Comprensión del negocio}
-La primera tarea a realizar en el ciclo de CRISP-DM es obtener la máxima información posible de los objetivos de esta investigación. Desde la CEI se ha comunicado la información disponible y las necesidades actuales.
+La primera tarea a realizar en el ciclo de CRISP-DM es obtener la máxima información posible de los objetivos de esta investigación. Desde la CEI se comunica, mediante reuniones, la información disponible y las necesidades actuales.
 
 Una de las necesidades de la CEI es obtener la máxima información sobre la situación actual de la educación en la comunidad de Madrid. La CEI posee una gran cantidad de datos de alumnos y centros a lo largo del tiempo. 
 
-Por tanto, para sacar el mayor beneficio de los datos, se ha planteado el uso de herramientas y técnicas que posibiliten obtener información no solo del momento actual, sino también de la evolución a lo largo de los últimos años.
+Por tanto, para sacar el mayor beneficio de los datos, se plantea el uso de herramientas y técnicas que posibiliten la obtención información no solo del momento actual, sino también de la evolución a lo largo de los últimos años.
 
-Una de las actividades que se han realizado es obtener el número de grupos y alumnos por centro, año, DAT, nivel educativo, etc.
+Una de las actividades que se realizan es obtener el número de grupos y alumnos por centro, año, DAT, nivel educativo, etc.
 
-Otra de las actividades que se realizan es obtener gráficos sobre la evolución de alumnos con necesidades especiales, alumnos de minorías étnicas e incluso porcentaje y nacionalidad de alumnos extranjeros.
+Otra de las actividades que se realizan es obtener gráficos sobre la evolución de alumnos con necesidades especiales, alumnos de minorías étnicas e incluso porcentaje y nacionalidad de alumnos extranjeros. Véase Anexo \ref{appendix:BC}.
 
 \subsection{Comprensión de los datos}
 Esta fase implica estudiar detalladamente los datos disponibles. Es esencial para evitar problemas inesperados durante la fase siguiente.
@@ -110,13 +110,13 @@ Para realizar esta fase, debemos tener en cuenta dos consideraciones relacionada
 
 Para realizar la identificación de las necesidades de información se va a partir de varios factores como son:
 \begin{itemize}
-	\item las demandas esperadas o manifestadas por (en este caso) una unidad de la consejería de educación.
+	\item las demandas esperadas o manifestadas por (en este caso) una unidad de la CEI.
 	\item el análisis, la evolución de productos, procesos, materiales y tecnologías en el ámbito de la minería de datos educativa.
 \end{itemize}
 
 \subsubsection{Identificación de fuentes internas y externas de información}
 
-Teniendo en cuenta las principales necesidades de información, se debe identificar las fuentes de información y recursos disponibles ya sean internos o externos a la organización. En este caso, utilizan las siguientes fuentes:
+Teniendo en cuenta las principales necesidades de información, se debe identificar las fuentes de información y recursos disponibles ya sean internos o externos a la organización. En este caso, se utilizan las siguientes fuentes:
 \begin{itemize}
 	\item Fundamentalmente se utilizan documentos y recursos internos de la organización como: repositorios documentales, carpetas locales, bases de datos, etc.
 	\item Personas con conocimientos o experiencias relacionadas con la necesidad de información. En este aspecto se realizan distintas reuniones con las personas encargadas de esta unidad de la consejería de educación. Para ello se realizarán reuniones con estos responsables. A partir de estas reuniones se obtendrán las fuentes de información.
@@ -129,11 +129,11 @@ Teniendo en cuenta las principales necesidades de información, se debe identifi
 
 La información fundamentalmente se encuentra en bases de datos internas, no obstante, se va a acceder a bases de datos externas en caso de necesidad para cumplimentar la información. 
 
-En este aspecto, se debe recurrir a la ayuda de personas con conocimientos sobre el estado de las bases de datos. Como cualquier organización, la consejería de educación maneja grandes volúmenes de datos, por tanto, se debe tener conocimiento sobre donde se puede encontrar la información que satisfaga con las necesidades. 
+En este aspecto, se debe recurrir a la ayuda de personas con conocimientos sobre el estado de las bases de datos. Como cualquier organización, la CEI maneja grandes volúmenes de datos, por tanto, se debe tener conocimiento sobre donde se puede encontrar la información que satisfaga las necesidades. 
 
-El desconocimiento del estado de las bases de datos conlleva la inversión de una gran cantidad de tiempo en la búsqueda de los datos relevantes. 
+El desconocimiento del estado de las bases de datos conlleva la inversión de una gran cantidad de tiempo en la búsqueda de los datos relevantes, por ello, el conocimiento de la situación actual es de gran importancia.
 
-De esta fase se espera localizar todos los datos que posteriormente se prepararan y se utilizaran en el modelado.
+De esta fase se espera localizar todos los datos que posteriormente se preparan y se utilizan en el modelado.
 
 \subsection{Preparación de los datos}
 Una vez que se tienen claros los datos que se utilizan, se procede a realizar la preparación para poder utilizarlos en la fase de modelado.
@@ -143,7 +143,7 @@ Algunas de las actividades que se realizan en esta fase son: la fusión de conju
 Además, también se va a estudiar la existencia de datos perdidos y errores en estos.
 
 Para realizar este tratamiento de datos se utilizará la técnica de ETL (extracción, transformación y carga) que consiste básicamente en obtener los datos de la fuente de origen (bases de datos, ficheros Excel, ficheros JSON, etc.), seleccionar aquellos datos que convengan al estudio, transformarlos según las necesidades que se tenga y depurarlos (evitando así datos erróneos). \cite{prakash2017etl} \cite{matos2006metodologia},\cite{gour2010improve}.
-Para realizar este tratamiento, se ha va a utilizar Pentaho BI, que es un conjunto de programas libres para realizar entre otras muchas actividades, las técnicas de ETL. Concretamente, se ha utilizado la herramienta Spoon para desarrollar esta técnica. 
+Para realizar este tratamiento, se utiliza Pentaho BI, que es un conjunto de programas libres para realizar entre otras muchas actividades, las técnicas de ETL. Concretamente, se utiliza la herramienta Spoon para desarrollar esta técnica. 
 Una vez que se tienen los datos limpios y estructurados, se pueden realizar dos operaciones:
 
 \begin{enumerate}
@@ -182,6 +182,8 @@ Una vez terminado el análisis descriptivo, se va a realizar un análisis predic
 Las técnicas de aprendizaje tienen como resultado un modelo para resolver una tarea dada. Los modelos son una representación de la realidad basado en un intento descriptivo de relacionar un conjunto de variables con otro.
 
 Los modelos predictivos son de dos tipos: regresión, que son capaces de predecir una respuesta cuantificable; y de clasificación, que son capaces de predecir respuesta categóricas.
+
+En este TFM se utilizan modelos de regresión, puesto que la variable que se predice es del tipo cuantitativo.
 
 \subsubsection{Aprendizaje automático}
 %https://www.fisterra.com/mbe/investiga/10descriptiva/10descriptiva.asp#top
@@ -227,9 +229,10 @@ Algunos de los algoritmos que se utilizan son:
 	\FloatBarrier
 	\end{comment}
 	
-	\item \textbf{Regresión Logística}
+	\item \textbf{Regresión Lineal Simple}
 	
-	Es un algoritmo de regresión que se utiliza para predecir el resultado de una variable categórica en función de las variables independientes o predictores. Para predecir el resultado, se establecen pesos en función de la puntuación dada a cada variable independiente.
+	Es un modelo de regresión en donde una función lineal representa la relación existente entre una variable dependiente y su respectiva variable independiente. El modelo adopta la forma de y = ax+b, donde y es la variable dependiente, x es la variable independiente, y a, b son los coeficientes de la recta. Estos coeficientes, bajo los criterios de minimizacion como el de mínimos cuadrados, ofrecen el mejor ajuste de los datos de entrada. \cite{DELGADO2019}
+	%Es un algoritmo de regresión que se utiliza para predecir el resultado de una variable categórica en función de las variables independientes o predictores. Para predecir el resultado, se establecen pesos en función de la puntuación dada a cada variable independiente.
 	
 	\item \textbf{Redes Neuronales}
 	%https://www.tuinteligenciaartificial.es/las-redes-neuronales-en-la-inteligencia-artificial-explicacion-clara-y-sencilla/
@@ -295,7 +298,7 @@ Algunos de los algoritmos que se utilizan son:
 
 \subsubsection{Criterio de selección}
 
-Una vez que se han seleccionado las variables y los algoritmos a estudiar, es hora de realizar el propio modelado. Al realizar el modelado, debemos tener en cuenta que variables son mejores para este modelado. Es posible que existan variables que únicamente empeoren los resultados del modelado, por lo tanto, se deberán desestimar. Para ello se va a utilizar el criterio de Akaike (AIC). 
+Una vez que se seleccionan las variables y los algoritmos a estudiar, es hora de realizar el propio modelado. Al realizar el modelado, debemos tener en cuenta que variables son mejores para este modelado. Es posible que existan variables que únicamente empeoren los resultados del modelado, por lo tanto, se deberán desestimar. Para ello se va a utilizar el criterio de Akaike (AIC). 
 
 Este criterio indica el ajuste que tienen los datos experimentales con el modelo utilizado. Obviamente, el criterio de AIC solo tiene sentido cuando se realizan comparaciones con otros modelos (utilizando el mismo conjunto de datos). \cite{martinez2009criterio}
 
@@ -324,7 +327,7 @@ Error cuadrático medio (RMSE): es una regla de puntuación cuadrática que mide
 \end{figure*}
 \FloatBarrier
 
-Se debe destacar que cuanto menos sea el error, más se acercan los datos predichos a la realidad.
+Se debe destacar que cuanto menor sea el error, más se acercan los datos predichos a la realidad.
 
 \begin{comment}
 Las métricas que se va a utilizar para obtener la precisión de los modelos son aquellas descritas en el artículo de  \citeA{COSTA2017247}, \citeA{Helal2018} y \citeA{ASHRAF20181021}. Estas métricas son frecuentes en ámbitos como la obtención de información, aprendizaje automático y otros dominios como la clasificación binaria. Dichas métricas son las siguientes:
@@ -352,7 +355,7 @@ La fase de distribución considera la planificación y control de la distribuci�
 
 Respecto a la fase de distribución, se utilizan los modelos generados para predecir datos de otros cursos. Concretamente se utiliza el modelo que mayor precisión obtiene con los datos aportados.
 
-Concretamente, los datos utilizados en la predicción son aquellos del curso 2016/2017. A partir de estos datos, se obtienen varios modelos. Una vez que se ha seleccionado el mejor modelo, ya se puede utilizar otro conjunto de datos. En este caso, el conjunto de datos a utilizar es el del curso 2017/2018.
+Concretamente, los datos utilizados en la predicción son aquellos del curso 2016/2017. A partir de estos datos, se obtienen varios modelos. Una vez que se selecciona el mejor modelo, ya se puede utilizar otro conjunto de datos. En este caso, el conjunto de datos a utilizar es el del curso 2017/2018.
 
 Esta fase, por tanto, aplicada a un entorno empresarial, debería indicar que modelos deben integrarse en el sistema. En este entorno académico, simplemente se debe indicar el mejor modelo y una comparativa de todos los modelos utilizados.
 
@@ -375,8 +378,9 @@ Su potencia reside fundamentalmente en que es un software gratuito y de código 
 Por otro lado, RStudio es el entorno de desarrollo para R. Es también software libre y tiene la ventaja que se puede ejecutar sobre distintas plataformas (Windows, Mac y Linux).
 
 \subsubsection{El Paquete \textit{Caret}}
+A la hora de realizar esta investigación se utilizan distintos paquetes que proporciona R, sin embargo, el paquete fundamental y de mayor relevancia es el paquete \textit{caret}.
 
-El paquete \textbf{caret} es un conjunto de funciones que intenta agilizar el proceso de creación de modelos predictivos. El paquete contiene herramientas para: división de datos, pre-procesamiento, selección de características, ajuste del modelo mediante re-muestreo, estimación de importancia variable así como otras funcionalidades. \cite{CARET2019}
+El paquete \textbf{caret} es un conjunto de funciones que intenta agilizar el proceso de creación de modelos predictivos. El paquete contiene herramientas para: división de datos, pre-procesamiento, selección de características, ajuste del modelo mediante re-muestreo, estimación de importancia variable, así como otras funcionalidades. \cite{CARET2019}
 
 
 

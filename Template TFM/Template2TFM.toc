@@ -1,60 +1,62 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\IeC {\'I}ndice de tablas}{\es@scroman {iii}}% 
-\contentsline {chapter}{\IeC {\'I}ndice de figuras}{\es@scroman {v}}% 
-\contentsline {chapter}{\numberline {I}Introducci\IeC {\'o}n}{1}% 
-\contentsline {section}{\numberline {1.1}INTRODUCCI\IeC {\'O}N}{1}% 
-\contentsline {section}{\numberline {1.2}Contexto}{2}% 
-\contentsline {section}{\numberline {1.3}Objetivos}{3}% 
-\contentsline {section}{\numberline {1.4}Metodolog\IeC {\'\i }a}{4}% 
-\contentsline {section}{\numberline {1.5}Organizaci\IeC {\'o}n del TFM}{4}% 
-\contentsline {chapter}{\numberline {II}Justificaci\IeC {\'o}n Te\IeC {\'o}rica}{7}% 
-\contentsline {section}{\numberline {2.1}Introducci\IeC {\'o}n}{7}% 
-\contentsline {section}{\numberline {2.2}An\IeC {\'a}lisis trabajos previos relevantes}{8}% 
-\contentsline {section}{\numberline {2.3}Estudios m\IeC {\'a}s relacionados con la miner\IeC {\'\i }a de datos en educaci\IeC {\'o}n}{8}% 
-\contentsline {section}{\numberline {2.4}Metodolog\IeC {\'\i }a de trabajo en el desarrollo de proyectos de miner\IeC {\'\i }a de datos}{11}% 
-\contentsline {section}{\numberline {2.5}Modelos utilizados en el desarrollo de proyectos de miner\IeC {\'\i }a de datos en el entorno educativo}{13}% 
-\contentsline {section}{\numberline {2.6}Herramientas analizadas para la miner\IeC {\'\i }a de datos}{15}% 
-\contentsline {section}{\numberline {2.7}Conclusiones}{17}% 
-\contentsline {chapter}{\numberline {III}Propuesta de Intervenci\IeC {\'o}n}{19}% 
-\contentsline {section}{\numberline {3.1}Justificaci\IeC {\'o}n}{19}% 
-\contentsline {chapter}{\numberline {IV}Dise\IeC {\~n}o de Investigaci\IeC {\'o}n}{23}% 
-\contentsline {section}{\numberline {4.1}Introducci\IeC {\'o}n}{23}% 
-\contentsline {section}{\numberline {4.2}Arquitectura Inicial}{23}% 
-\contentsline {section}{\numberline {4.3}Dise\IeC {\~n}o de la miner\IeC {\'\i }a de datos}{26}% 
-\contentsline {subsection}{\numberline {4.3.1}Comprensi\IeC {\'o}n del negocio}{27}% 
-\contentsline {subsection}{\numberline {4.3.2}Comprensi\IeC {\'o}n de los datos}{28}% 
-\contentsline {subsubsection}{Identificaci\IeC {\'o}n de necesidades de informaci\IeC {\'o}n}{28}% 
-\contentsline {subsubsection}{Identificaci\IeC {\'o}n de fuentes internas y externas de informaci\IeC {\'o}n}{28}% 
-\contentsline {subsection}{\numberline {4.3.3}Preparaci\IeC {\'o}n de los datos}{29}% 
-\contentsline {subsubsection}{An\IeC {\'a}lisis Exploratorio}{30}% 
-\contentsline {subsection}{\numberline {4.3.4}Modelado}{30}% 
-\contentsline {subsubsection}{Aprendizaje autom\IeC {\'a}tico}{31}% 
-\contentsline {subsubsection}{Criterio de selecci\IeC {\'o}n}{34}% 
-\contentsline {subsection}{\numberline {4.3.5}Evaluaci\IeC {\'o}n}{34}% 
-\contentsline {subsection}{\numberline {4.3.6}Distribuci\IeC {\'o}n}{35}% 
-\contentsline {section}{\numberline {4.4}Herramientas utilizadas}{36}% 
-\contentsline {subsection}{\numberline {4.4.1}Suite de Pentaho BI}{36}% 
-\contentsline {subsection}{\numberline {4.4.2}Lenguaje R y RStudio}{36}% 
-\contentsline {subsubsection}{El Paquete \textit {Caret}}{36}% 
-\contentsline {chapter}{\numberline {V}AN\IeC {\'A}LISIS DE RESULTADOS}{37}% 
-\contentsline {section}{\numberline {5.1}An\IeC {\'a}lisis exploratorio de datos}{37}% 
-\contentsline {section}{\numberline {5.2}An\IeC {\'a}lisis predictivo}{38}% 
-\contentsline {chapter}{\numberline {VI}CONCLUSIONES}{39}% 
-\contentsline {section}{\numberline {6.1}Conclusiones}{39}% 
-\contentsline {chapter}{\numberline {VII}REFERENCIAS}{41}% 
-\contentsline {chapter}{REFERENCIAS}{45}% 
-\contentsline {chapter}{Anexos}{46}% 
-\contentsline {chapter}{\numberline {A}Gr\IeC {\'a}ficas del An\IeC {\'a}lisis Exploratorio de datos}{49}% 
-\contentsline {section}{\numberline {A.A}Definici\IeC {\'o}n de Variables}{49}% 
-\contentsline {section}{\numberline {A.B}An\IeC {\'a}lisis exploratorio}{49}% 
-\contentsline {subsection}{\numberline {A.B.1}Estad\IeC {\'\i }sticos mas relevantes}{49}% 
-\contentsline {subsection}{\numberline {A.B.2}An\IeC {\'a}lisis de normalidad}{50}% 
-\contentsline {subsection}{\numberline {A.B.3}Relaciones entre variables}{53}% 
-\contentsline {section}{\numberline {A.C}Selecci\IeC {\'o}n de Variables}{56}% 
-\contentsline {subsection}{\numberline {A.C.1}Usando Random Forest}{56}% 
-\contentsline {subsection}{\numberline {A.C.2}Regresi\IeC {\'o}n Paso a Paso}{57}% 
-\contentsline {subsubsection}{Usando Backward Selection}{57}% 
-\contentsline {subsubsection}{Usando Stepwise Selection}{58}% 
-\contentsline {subsubsection}{Usando Forward Selection}{59}% 
-\contentsline {chapter}{\numberline {B}An\IeC {\'a}lisis Predictivo}{61}% 
-\contentsline {section}{\numberline {B.A}Comparaci\IeC {\'o}n de Modelos}{61}% 
+\contentsline {chapter}{\IeC {\'I}ndice de tablas}{\es@scroman {iii}}{section*.1}% 
+\contentsline {chapter}{\IeC {\'I}ndice de figuras}{\es@scroman {iii}}{section*.2}% 
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}INTRODUCCI\IeC {\'O}N}{1}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}Contexto}{2}{section.1.2}% 
+\contentsline {section}{\numberline {1.3}Objetivos}{3}{section.1.3}% 
+\contentsline {section}{\numberline {1.4}Metodolog\IeC {\'\i }a}{4}{section.1.4}% 
+\contentsline {section}{\numberline {1.5}Organizaci\IeC {\'o}n del TFM}{4}{section.1.5}% 
+\contentsline {chapter}{\numberline {2}Justificaci\IeC {\'o}n Te\IeC {\'o}rica}{7}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Introducci\IeC {\'o}n}{7}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}An\IeC {\'a}lisis trabajos previos relevantes}{8}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Estudios m\IeC {\'a}s relacionados con la miner\IeC {\'\i }a de datos en educaci\IeC {\'o}n}{8}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}Metodolog\IeC {\'\i }a de trabajo en el desarrollo de proyectos de miner\IeC {\'\i }a de datos}{11}{section.2.4}% 
+\contentsline {section}{\numberline {2.5}Modelos utilizados en el desarrollo de proyectos de miner\IeC {\'\i }a de datos en el entorno educativo}{13}{section.2.5}% 
+\contentsline {section}{\numberline {2.6}Herramientas analizadas para la miner\IeC {\'\i }a de datos}{15}{section.2.6}% 
+\contentsline {section}{\numberline {2.7}Conclusiones}{17}{section.2.7}% 
+\contentsline {chapter}{\numberline {3}Propuesta de Intervenci\IeC {\'o}n}{19}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Justificaci\IeC {\'o}n}{19}{section.3.1}% 
+\contentsline {chapter}{\numberline {4}Dise\IeC {\~n}o de Investigaci\IeC {\'o}n}{23}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Introducci\IeC {\'o}n}{23}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Arquitectura Inicial}{23}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Dise\IeC {\~n}o de la miner\IeC {\'\i }a de datos}{26}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}Comprensi\IeC {\'o}n del negocio}{28}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}Comprensi\IeC {\'o}n de los datos}{28}{subsection.4.3.2}% 
+\contentsline {subsubsection}{Identificaci\IeC {\'o}n de necesidades de informaci\IeC {\'o}n}{28}{subsection.4.3.2}% 
+\contentsline {subsubsection}{Identificaci\IeC {\'o}n de fuentes internas y externas de informaci\IeC {\'o}n}{28}{subsection.4.3.2}% 
+\contentsline {subsection}{\numberline {4.3.3}Preparaci\IeC {\'o}n de los datos}{29}{subsection.4.3.3}% 
+\contentsline {subsubsection}{An\IeC {\'a}lisis Exploratorio}{30}{Item.27}% 
+\contentsline {subsection}{\numberline {4.3.4}Modelado}{31}{subsection.4.3.4}% 
+\contentsline {subsubsection}{Aprendizaje autom\IeC {\'a}tico}{31}{subsection.4.3.4}% 
+\contentsline {subsubsection}{Criterio de selecci\IeC {\'o}n}{35}{figure.caption.18}% 
+\contentsline {subsection}{\numberline {4.3.5}Evaluaci\IeC {\'o}n}{35}{subsection.4.3.5}% 
+\contentsline {subsection}{\numberline {4.3.6}Distribuci\IeC {\'o}n}{36}{subsection.4.3.6}% 
+\contentsline {section}{\numberline {4.4}Herramientas utilizadas}{36}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.4.1}Suite de Pentaho BI}{36}{subsection.4.4.1}% 
+\contentsline {subsection}{\numberline {4.4.2}Lenguaje R y RStudio}{37}{subsection.4.4.2}% 
+\contentsline {subsubsection}{El Paquete \textit {Caret}}{37}{subsection.4.4.2}% 
+\contentsline {chapter}{\numberline {5}AN\IeC {\'A}LISIS DE RESULTADOS}{39}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}An\IeC {\'a}lisis exploratorio de datos}{39}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}An\IeC {\'a}lisis predictivo}{40}{section.5.2}% 
+\contentsline {chapter}{\numberline {6}CONCLUSIONES}{43}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}Conclusiones}{43}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}Lineas Futuras}{43}{section.6.2}% 
+\contentsline {chapter}{\numberline {7}REFERENCIAS}{45}{chapter.7}% 
+\contentsline {chapter}{ANEXOS}{50}{section*.21}% 
+\contentsline {chapter}{\numberline {A}Gr\IeC {\'a}ficas del An\IeC {\'a}lisis Exploratorio de datos}{53}{appendix.Alph1}% 
+\contentsline {section}{\numberline {A.A}Definici\IeC {\'o}n de Variables}{53}{section.alph1.Alph1.Alph1}% 
+\contentsline {section}{\numberline {A.B}An\IeC {\'a}lisis exploratorio}{54}{section.alph1.Alph1.Alph2}% 
+\contentsline {subsection}{\numberline {A.B.1}Estad\IeC {\'\i }sticos m\IeC {\'a}s relevantes}{54}{subsection.alph1.Alph1.Alph2.1}% 
+\contentsline {subsection}{\numberline {A.B.2}An\IeC {\'a}lisis de normalidad}{55}{subsection.alph1.Alph1.Alph2.2}% 
+\contentsline {subsection}{\numberline {A.B.3}Relaciones entre variables}{59}{subsection.alph1.Alph1.Alph2.3}% 
+\contentsline {section}{\numberline {A.C}Selecci\IeC {\'o}n de Variables}{62}{section.alph1.Alph1.Alph3}% 
+\contentsline {subsection}{\numberline {A.C.1}Usando Random Forest}{62}{subsection.alph1.Alph1.Alph3.1}% 
+\contentsline {subsection}{\numberline {A.C.2}Regresi\IeC {\'o}n Paso a Paso}{63}{subsection.alph1.Alph1.Alph3.2}% 
+\contentsline {subsubsection}{Usando Backward Selection}{63}{subsection.alph1.Alph1.Alph3.2}% 
+\contentsline {subsubsection}{Usando Stepwise Selection}{64}{figure.caption.39}% 
+\contentsline {subsubsection}{Usando Forward Selection}{65}{figure.caption.41}% 
+\contentsline {chapter}{\numberline {B}An\IeC {\'a}lisis Predictivo}{67}{appendix.Alph2}% 
+\contentsline {section}{\numberline {B.A}Comparaci\IeC {\'o}n de Modelos}{67}{section.alph2.Alph2.Alph1}% 
+\contentsline {section}{\numberline {B.B}Predicci\IeC {\'o}n utilizando el modelo de \IeC {\'a}rbol de decisi\IeC {\'o}n}{69}{section.alph2.Alph2.Alph2}% 
+\contentsline {section}{\numberline {B.C}Sistema de Explotaci\IeC {\'o}n de la Consejer\IeC {\'\i }a de Educaci\IeC {\'o}n e Investigaci\IeC {\'o}n}{70}{section.alph2.Alph2.Alph3}% 

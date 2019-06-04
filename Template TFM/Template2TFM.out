@@ -1,0 +1,52 @@
+\BOOKMARK [0][-]{section*.1}{\315ndice de tablas}{}% 1
+\BOOKMARK [0][-]{section*.2}{\315ndice de figuras}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 3
+\BOOKMARK [1][-]{section.1.1}{INTRODUCCI\323N}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Contexto}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{Objetivos}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.4}{Metodolog\355a}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.5}{Organizaci\363n del TFM}{chapter.1}% 8
+\BOOKMARK [0][-]{chapter.2}{Justificaci\363n Te\363rica}{}% 9
+\BOOKMARK [1][-]{section.2.1}{Introducci\363n}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.2}{An\341lisis trabajos previos relevantes}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.3}{Estudios m\341s relacionados con la miner\355a de datos en educaci\363n}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.4}{Metodolog\355a de trabajo en el desarrollo de proyectos de miner\355a de datos}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.5}{Modelos utilizados en el desarrollo de proyectos de miner\355a de datos en el entorno educativo}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.6}{Herramientas analizadas para la miner\355a de datos}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.7}{Conclusiones}{chapter.2}% 16
+\BOOKMARK [0][-]{chapter.3}{Propuesta de Intervenci\363n}{}% 17
+\BOOKMARK [1][-]{section.3.1}{Justificaci\363n}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{Dise\361o de Investigaci\363n}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Introducci\363n}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.2}{Arquitectura Inicial}{chapter.4}% 21
+\BOOKMARK [1][-]{section.4.3}{Dise\361o de la miner\355a de datos}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.3.1}{Comprensi\363n del negocio}{section.4.3}% 23
+\BOOKMARK [2][-]{subsection.4.3.2}{Comprensi\363n de los datos}{section.4.3}% 24
+\BOOKMARK [2][-]{subsection.4.3.3}{Preparaci\363n de los datos}{section.4.3}% 25
+\BOOKMARK [2][-]{subsection.4.3.4}{Modelado}{section.4.3}% 26
+\BOOKMARK [2][-]{subsection.4.3.5}{Evaluaci\363n}{section.4.3}% 27
+\BOOKMARK [2][-]{subsection.4.3.6}{Distribuci\363n}{section.4.3}% 28
+\BOOKMARK [1][-]{section.4.4}{Herramientas utilizadas}{chapter.4}% 29
+\BOOKMARK [2][-]{subsection.4.4.1}{Suite de Pentaho BI}{section.4.4}% 30
+\BOOKMARK [2][-]{subsection.4.4.2}{Lenguaje R y RStudio}{section.4.4}% 31
+\BOOKMARK [0][-]{chapter.5}{AN\301LISIS DE RESULTADOS}{}% 32
+\BOOKMARK [1][-]{section.5.1}{An\341lisis exploratorio de datos}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.2}{An\341lisis predictivo}{chapter.5}% 34
+\BOOKMARK [0][-]{chapter.6}{CONCLUSIONES}{}% 35
+\BOOKMARK [1][-]{section.6.1}{Conclusiones}{chapter.6}% 36
+\BOOKMARK [1][-]{section.6.2}{Lineas Futuras}{chapter.6}% 37
+\BOOKMARK [0][-]{chapter.7}{REFERENCIAS}{}% 38
+\BOOKMARK [0][-]{section*.21}{ANEXOS}{}% 39
+\BOOKMARK [0][-]{appendix.Alph1}{Gr\341ficas del An\341lisis Exploratorio de datos}{}% 40
+\BOOKMARK [1][-]{section.alph1.Alph1.Alph1}{Definici\363n de Variables}{appendix.Alph1}% 41
+\BOOKMARK [1][-]{section.alph1.Alph1.Alph2}{An\341lisis exploratorio}{appendix.Alph1}% 42
+\BOOKMARK [2][-]{subsection.alph1.Alph1.Alph2.1}{Estad\355sticos m\341s relevantes}{section.alph1.Alph1.Alph2}% 43
+\BOOKMARK [2][-]{subsection.alph1.Alph1.Alph2.2}{An\341lisis de normalidad}{section.alph1.Alph1.Alph2}% 44
+\BOOKMARK [2][-]{subsection.alph1.Alph1.Alph2.3}{Relaciones entre variables}{section.alph1.Alph1.Alph2}% 45
+\BOOKMARK [1][-]{section.alph1.Alph1.Alph3}{Selecci\363n de Variables}{appendix.Alph1}% 46
+\BOOKMARK [2][-]{subsection.alph1.Alph1.Alph3.1}{Usando Random Forest}{section.alph1.Alph1.Alph3}% 47
+\BOOKMARK [2][-]{subsection.alph1.Alph1.Alph3.2}{Regresi\363n Paso a Paso}{section.alph1.Alph1.Alph3}% 48
+\BOOKMARK [0][-]{appendix.Alph2}{An\341lisis Predictivo}{}% 49
+\BOOKMARK [1][-]{section.alph2.Alph2.Alph1}{Comparaci\363n de Modelos}{appendix.Alph2}% 50
+\BOOKMARK [1][-]{section.alph2.Alph2.Alph2}{Predicci\363n utilizando el modelo de \341rbol de decisi\363n}{appendix.Alph2}% 51
+\BOOKMARK [1][-]{section.alph2.Alph2.Alph3}{Sistema de Explotaci\363n de la Consejer\355a de Educaci\363n e Investigaci\363n}{appendix.Alph2}% 52
