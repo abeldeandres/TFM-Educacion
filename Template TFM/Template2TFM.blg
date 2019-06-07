@@ -13,28 +13,17 @@ Warning--entry type for "Orellana2001" isn't style-file defined
 --line 330 of file referencias_prueba.bib
 Warning--entry type for "Manguart2017" isn't style-file defined
 --line 346 of file referencias_prueba.bib
-Warning--entry type for "klein2018" isn't style-file defined
---line 354 of file referencias_prueba.bib
-Warning--entry type for "yepes2017" isn't style-file defined
---line 362 of file referencias_prueba.bib
-Warning--entry type for "Sayad2019" isn't style-file defined
---line 370 of file referencias_prueba.bib
-Warning--entry type for "Nielsen2018" isn't style-file defined
---line 385 of file referencias_prueba.bib
-Warning--entry type for "MONDRIAN" isn't style-file defined
---line 521 of file referencias_prueba.bib
 Warning--entry type for "CARET2019" isn't style-file defined
 --line 529 of file referencias_prueba.bib
-Warning--entry type for "JANA2016" isn't style-file defined
---line 537 of file referencias_prueba.bib
 Warning--entry type for "kassambara2018" isn't style-file defined
 --line 545 of file referencias_prueba.bib
-Warning--entry type for "DELGADO2019" isn't style-file defined
---line 553 of file referencias_prueba.bib
-Warning--entry type for "PauUrquizu2019" isn't style-file defined
---line 560 of file referencias_prueba.bib
-Warning--entry type for "carlospesquera2019" isn't style-file defined
---line 568 of file referencias_prueba.bib
+Warning--entry type for "HILDA2014" isn't style-file defined
+--line 576 of file referencias_prueba.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 Warning--No journal in jose2016explotacion
-(There were 18 warnings)
+You can't pop an empty literal stack for entry LILIA2013
+while executing---line 5079 of file apacite.bst
+You can't pop an empty literal stack for entry LILIA2013
+while executing---line 5079 of file apacite.bst
+Warning--No school in LILIA2013
+(There were 2 error messages)

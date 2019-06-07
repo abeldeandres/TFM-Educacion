@@ -1,0 +1,109 @@
+---
+title: "ModelosFinal"
+author: "Abel"
+date: "24 de mayo de 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r , echo=FALSE, include=FALSE}
+library(caTools)
+library(caret)
+library(caretEnsemble)
+library(e1071)
+library(randomForest)
+library(nnet)
+library(neuralnet)
+library(party) #ctree
+library(gbm)
+library(rfUtilities)
+library(NeuralNetTools)
+library(e1071)
+library(ada) #adaboost
+library(corrplot)
+library(pROC)
+library(ROCR) 
+library(mlbench)
+gc(reset=TRUE)
+rm(list = ls())
+datos <- read.csv("C:/Users/abelt/Dropbox/TFM Educacion/Codigo/datos.csv")
+arrayTiemposTrain<-c()
+arrayTiemposPredict<-c()
+```
+
+```{r cars}
+
+datos <- datos[,c("CDGENERICO","CDNATURALEZA","CDPOSTAL","ITCOMEDOR","ITTRANSPORTE","ITBILINGUE","CD_NIVEL","NM_CURSO","NM_ALUMNOS","NM_UNIDADES","RATIO","GRUPOS_PREDECIR")]
+
+datos <- na.omit(datos)
+
+```
+
+## Convertimos variables character a numeric
+```{r}
+#datos$ITCONCIERTO <- as.numeric(datos$ITCONCIERTO)
+datos$ITCOMEDOR <- as.numeric(datos$ITCOMEDOR)
+datos$ITBILINGUE <- as.numeric(datos$ITBILINGUE)
+datos$ITTRANSPORTE <- as.numeric(datos$ITTRANSPORTE)
+datos$NM_CURSO <- as.numeric(datos$NM_CURSO)
+
+```
+
+```{r}
+#Max-Min Normalization
+normalize <- function(x) {
+  return ((x - min(x)) / (max(x) - min(x)))
+}
+datos<-as.data.frame(lapply(datos, normalize))
+```
+
+
+```{r}
+gobinary <- function(x){
+  out <- apply(x, 2, function(x) ifelse(x > mean(x), 1, 0))
+  colnames(out) <- colnames(x)
+  out
+}
+```
+```{r}
+datos[,1:11] <- gobinary(datos[,1:11])
+datos <- as.data.frame(datos)
+```
+
+```{r , echo=FALSE}
+X = datos[, -12]
+Y = datos[, 12]
+set.seed(123)
+part.index <- createDataPartition(datos$GRUPOS_PREDECIR, 
+                                  p = 0.70,                         
+                                  list = FALSE)
+X_train <- X[part.index, ]
+X_test <- X[-part.index, ]
+y_train <- Y[part.index]
+y_test <- Y[-part.index]
+```
+
+#REGRESION LOGISTICA
+```{r}
+fitControl <- trainControl(## 10-fold CV
+                           method = "repeatedcv",
+                           number = 10,
+                           search = "random"
+                           ## repeated ten times
+                           #repeats = 10
+                           )
+nnetGrid <-  expand.grid(ntrees = 1:2,
+                         nleaves = 1:2)
+
+time <- system.time(model.LR <- train(X_train,y_train, method="bayesglm", family="binomial", trControl = fitControl,tuneLength = 5))
+arrayTiemposTrain<-c(arrayTiemposTrain, as.numeric(time[3]))
+summary(model.LR)
+```
+```{r}
+pred.RF<-predict(model.LR,X_test)
+RMSE(pred.RF, y_test)
+```
+

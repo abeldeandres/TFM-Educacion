@@ -235,27 +235,6 @@ Delen, D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Delgado%
-}{%
-Delgado%
-}{%
-{\protect \APACyear {2019}}%
-}]{%
-DELGADO2019}
-\APACinsertmetastar {%
-DELGADO2019}%
-\begin{APACrefauthors}%
-Delgado, R.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2019}{}{}.
-\newblock
-\APACrefbtitle {Introducción a los Modelos de Regresión en R.} {Introducción
-  a los modelos de regresión en r.}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Diazaraque%
 }{%
 Diazaraque%
@@ -353,6 +332,30 @@ Fernandes, E.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Fingermann%
+}{%
+Fingermann%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+HILDA2014}
+\APACinsertmetastar {%
+HILDA2014}%
+\begin{APACrefauthors}%
+Fingermann, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+\APACrefbtitle {Aulas Superpobladas.} {Aulas superpobladas.}
+\newblock
+\begin{APACrefURL}
+  \url{https://educacion.laguia2000.com/general/aulas-superpobladas}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Goette%
 }{%
 Goette%
@@ -407,29 +410,6 @@ Gour, V.%
 \newblock
 \APACjournalVolNumPages{International Journal on Computer Science and
   Engineering}{2}{3}{786--789}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Hyde%
-}{%
-Hyde%
-}{%
-{\protect \APACyear {2011}}%
-}]{%
-MONDRIAN}
-\APACinsertmetastar {%
-MONDRIAN}%
-\begin{APACrefauthors}%
-Hyde, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2011}{}{}.
-\newblock
-\APACrefbtitle {Mondrian Documentation.} {Mondrian documentation.}
-\newblock
-\begin{APACrefURL} \url{https://mondrian.pentaho.com/documentation/schema.php}
-  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -540,31 +520,6 @@ Kaur, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Klein%
-}{%
-Klein%
-}{%
-{\protect \APACyear {2018}}%
-}]{%
-klein2018}
-\APACinsertmetastar {%
-klein2018}%
-\begin{APACrefauthors}%
-Klein, B.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2018}{}{}.
-\newblock
-\APACrefbtitle {k-Nearest-Neighbor Classifier.} {k-nearest-neighbor
-  classifier.}
-\newblock
-\begin{APACrefURL}
-  \url{https://www.python-course.eu/k_nearest_neighbor_classifier.php}
-  \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Kuhn%
 }{%
 Kuhn%
@@ -619,29 +574,27 @@ Lehr, S.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Álvarez%
+Lera~Rodr{\'\i}guez%
 }{%
-Álvarez%
+Lera~Rodr{\'\i}guez%
 }{%
-{\protect \APACyear {2016}}%
+{\protect \APACyear {2007}}%
 }]{%
-JANA2016}
+lera2007calidad}
 \APACinsertmetastar {%
-JANA2016}%
+lera2007calidad}%
 \begin{APACrefauthors}%
-Álvarez, J.%
+Lera~Rodr{\'\i}guez, M\BPBI J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2016}{}{}.
+\APACrefYearMonthDay{2007}{}{}.
 \newblock
-\APACrefbtitle {Machine Learning y Support Vector Machines: porque el tiempo es
-  dinero.} {Machine learning y support vector machines: porque el tiempo es
-  dinero.}
+{\BBOQ}\APACrefatitle {Calidad de la Educaci{\'o}n Infantil: instrumentos de
+  evaluaci{\'o}n} {Calidad de la educaci{\'o}n infantil: instrumentos de
+  evaluaci{\'o}n}.{\BBCQ}
 \newblock
-\begin{APACrefURL}
-  \url{https://www.analiticaweb.es/machine-learning-y-support-vector-machines-porque-el-tiempo-es-dinero-2/}
-  \end{APACrefURL}
+\APACjournalVolNumPages{Revista de Educaci{\'o}n, 343, 301-323.}{}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -716,29 +669,6 @@ Mart{\i}nez, D\BPBI R.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Mart{\'\i}nez%
-}{%
-Mart{\'\i}nez%
-}{%
-{\protect \APACyear {2016}}%
-}]{%
-martinez2016mineria}
-\APACinsertmetastar {%
-martinez2016mineria}%
-\begin{APACrefauthors}%
-Mart{\'\i}nez, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2016}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Miner{\'\i}a de datos} {Miner{\'\i}a de datos}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Universidad Nacional del Noroeste Facultad de Ciencias
-  Exactas, Naturales y Agrimensura, Argentina}{}{}{}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Matos%
 , Chalmeta%
 \BCBL {}\ \BBA {} Coltell%
@@ -767,39 +697,24 @@ Matos, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Mohamad%
-\ \BBA {} Tasir%
+{Ministerio de Educación y Formacion Profesional}%
 }{%
-Mohamad%
-\ \BBA {} Tasir%
+{Ministerio de Educación y Formacion Profesional}%
 }{%
-{\protect \APACyear {2013}}%
+{\protect \APACyear {2018}}%
 }]{%
-MOHAMAD2013320}
+PANORAMA2018}
 \APACinsertmetastar {%
-MOHAMAD2013320}%
+PANORAMA2018}%
 \begin{APACrefauthors}%
-Mohamad, S\BPBI K.%
-\BCBT {}\ \BBA {} Tasir, Z.%
+{Ministerio de Educación y Formacion Profesional}.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2013}{}{}.
+\APACrefYear{2018}.
 \newblock
-{\BBOQ}\APACrefatitle {Educational Data Mining: A Review} {Educational data
-  mining: A review}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Procedia - Social and Behavioral Sciences}{97}{}{320 -
-  324}.
-\newblock
-\begin{APACrefURL}
-  \url{http://www.sciencedirect.com/science/article/pii/S1877042813036859}
-  \end{APACrefURL}
-\newblock
-\APACrefnote{The 9th International Conference on Cognitive Science}
-\newblock
-\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.sbspro.2013.10.240}
-  \end{APACrefDOI}
+\APACrefbtitle {Panorama de la educación Indicadores de la OCDE 2018}
+  {Panorama de la educación indicadores de la ocde 2018}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -830,30 +745,6 @@ Moine, J\BPBI M.%
 \newblock
 \BIn{} \APACrefbtitle {Congreso Argentino de Ciencias de la Computaci{\'o}n}
   {Congreso argentino de ciencias de la computaci{\'o}n}\ (\BVOL~17).
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Nielsen%
-}{%
-Nielsen%
-}{%
-{\protect \APACyear {2018}}%
-}]{%
-Nielsen2018}
-\APACinsertmetastar {%
-Nielsen2018}%
-\begin{APACrefauthors}%
-Nielsen, J.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2018}{}{}.
-\newblock
-\APACrefbtitle {Nielsen's Law of Internet Bandwidth.} {Nielsen's law of
-  internet bandwidth.}
-\newblock
-\begin{APACrefURL} \url{https://www.nngroup.com/articles/law-of-bandwidth/}
-  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -957,29 +848,6 @@ Peña-Ayala, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Pesquera%
-}{%
-Pesquera%
-}{%
-{\protect \APACyear {2019}}%
-}]{%
-carlospesquera2019}
-\APACinsertmetastar {%
-carlospesquera2019}%
-\begin{APACrefauthors}%
-Pesquera, C.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2019}{}{}.
-\newblock
-\APACrefbtitle {Qué son las tablas de hechos y de dimensión.} {Qué son las
-  tablas de hechos y de dimensión.}
-\newblock
-\begin{APACrefURL} \url{http://carlospesquera.com} \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Páez%
 }{%
 Páez%
@@ -1031,31 +899,6 @@ Piatetsky, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Piqueras%
-}{%
-Piqueras%
-}{%
-{\protect \APACyear {2017}}%
-}]{%
-yepes2017}
-\APACinsertmetastar {%
-yepes2017}%
-\begin{APACrefauthors}%
-Piqueras, V\BPBI Y.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2017}{}{}.
-\newblock
-\APACrefbtitle {¿Qué es y para qué sirve una red neuronal artificial?}
-  {¿qué es y para qué sirve una red neuronal artificial?}
-\newblock
-\begin{APACrefURL}
-  \url{https://victoryepes.blogs.upv.es/2017/01/07/que-es-y-para-que-sirve-una-red-neuronal-artificial/}
-  \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Prakash%
 \ \BBA {} Rangdale%
 }{%
@@ -1084,31 +927,26 @@ Prakash, G\BPBI H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Riquelme~Santos%
-, Ruiz%
-\BCBL {}\ \BBA {} Gilbert%
+Racancoj%
 }{%
-Riquelme~Santos%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2006}}%
+Racancoj%
+}{%
+{\protect \APACyear {2013}}%
 }]{%
-riquelme2006mineria}
+LILIA2013}
 \APACinsertmetastar {%
-riquelme2006mineria}%
+LILIA2013}%
 \begin{APACrefauthors}%
-Riquelme~Santos, J\BPBI C.%
-, Ruiz, R.%
-\BCBL {}\ \BBA {} Gilbert, K.%
+Racancoj, L\BPBI V\BPBI M.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2006}{}{}.
+\APACrefYear{2013}.
+\unskip\
 \newblock
-{\BBOQ}\APACrefatitle {Miner{\'\i}a de datos: Conceptos y tendencias}
-  {Miner{\'\i}a de datos: Conceptos y tendencias}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Inteligencia Artificial: Revista Iberoamericana de
-  Inteligencia Artificial, 10 (29), 11-18.}{}{}{}.
+\APACrefbtitle {Sobrepoblación estudiantil y desempeño docente en el aula}
+  {Sobrepoblación estudiantil y desempeño docente en el aula}\
+  \APACtypeAddressSchool {Thesis}{}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1162,30 +1000,6 @@ Romero, C.%
 \newblock
 \APACjournalVolNumPages{IEEE Transactions on Systems, Man, and Cybernetics,
   Part C (Applications and Reviews)}{40}{6}{601--618}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Sayad%
-}{%
-Sayad%
-}{%
-{\protect \APACyear {2019}}%
-}]{%
-sayad2019}
-\APACinsertmetastar {%
-sayad2019}%
-\begin{APACrefauthors}%
-Sayad, S.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2019}{}{}.
-\newblock
-\APACrefbtitle {An Introduction to Data Science.} {An introduction to data
-  science.}
-\newblock
-\begin{APACrefURL} \url{https://www.saedsayad.com/data_mining_map.htm}
-  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1251,55 +1065,6 @@ Silva, C.%
 \BIn{} (\BPG~87-94).
 \newblock
 \begin{APACrefDOI} \doi{10.1007/978-3-319-46568-5_9} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Sin%
-\ \BBA {} Muthu%
-}{%
-Sin%
-\ \BBA {} Muthu%
-}{%
-{\protect \APACyear {2015}}%
-}]{%
-sin2015application}
-\APACinsertmetastar {%
-sin2015application}%
-\begin{APACrefauthors}%
-Sin, K.%
-\BCBT {}\ \BBA {} Muthu, L.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2015}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {APPLICATION OF BIG DATA IN EDUCATION DATA MINING AND
-  LEARNING ANALYTICS--A LITERATURE REVIEW.} {Application of big data in
-  education data mining and learning analytics--a literature review.}{\BBCQ}
-\newblock
-\APACjournalVolNumPages{ICTACT journal on soft computing}{5}{4}{}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Urquizu%
-}{%
-Urquizu%
-}{%
-{\protect \APACyear {2019}}%
-}]{%
-PauUrquizu2019}
-\APACinsertmetastar {%
-PauUrquizu2019}%
-\begin{APACrefauthors}%
-Urquizu, P.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2019}{}{}.
-\newblock
-\APACrefbtitle {Business Intelligence Facil.} {Business intelligence facil.}
-\newblock
-\begin{APACrefURL} \url{https://www.businessintelligence.info} \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

@@ -1,23 +1,44 @@
 \chapter{Introducción}
-\section{INTRODUCCIÓN}
-En los últimos años, gracias al gran desarrollo tecnológico que se ha vivido tanto a nivel de computo (mejorando la eficiencia y el uso de los recursos disponibles) como a nivel de transmisión de datos (mejorando las comunicaciones), ha permitido a las organizaciones el almacenamiento de una gran cantidad de información.
+\section{Introducción}
+Uno de los problemas que se plantea en la actualidad en el proceso de enseñanza-aprendizaje es la cantidad de alumnos que están en una misma aula a cargo de un solo docente. Este aspecto es uno de los más debatidos en la educación. \cite{PANORAMA2018}
 
-Un ejemplo de esta evolución se puede observar en las figuras (\ref{fig:procPerformance} y \ref{fig:bandwidth-growth}), las millones de instrucciones por segundo (MIPS) que realiza un procesador (relacionado con el tiempo de cómputo) y la velocidad de transmisión de datos en bits por segundo (BPS) han crecido a lo largo de los últimos años \cite{Nielsen2018}. 
+Según \citeA{LILIA2013}, la superpoblación estudiantil es el exceso del número de estudiantes que se encuentran en un espacio determinado cuya capacidad no es adecuada para acogerlos ni cuenta con las condiciones adecuadas para el buen desenvolvimiento de los mismos.
+
+En el caso particular de España, el tamaño de clase medio en Educación Secundaria en las instituciones públicas es superior al promedio de la OCDE y de la UE22. \cite{PANORAMA2018}
+
+Esto no implica que en todos los casos en el que la ratio sea superior exista una sobrepoblación, sin embargo, la calidad educativa se ve mermada por esta situación.
 
 \begin{figure*}[htb]
 	\centering
-	\caption{Velocidad Procesador (MIPS) a lo largo del tiempo. (Fuente: Kurzweil http://www.kurzweilai.net)}
-	\includegraphics[width=0.6\textwidth]{recursos/processor_performance}
+	\caption{Número medio de alumnos por clase en instituciones públicas (2016). Recuperado del \protect\citeA{PANORAMA2018}}
+	\includegraphics[width=0.8\textwidth]{recursos/NumeroAlumnosClase}
+	\label{fig:NumeroAlumnosClase}
+\end{figure*}
+\FloatBarrier
+
+En la figura \ref{fig:NumeroAlumnosClase} se puede observar como la media del número de alumnos por clase de la Unión Europea está en 21 alumnos para la etapa de Secundaria, mientras que en España la media asciende a 25 alumnos.
+
+Si bien es cierto, que es bueno que se deba atender a la diversidad y a la inclusión (sobre el número de alumnos) en el aula, esto debe hacerse de forma responsable y conociendo las limitaciones que tiene el docente, que por más voluntad o capacitación que posea, tiene que atender a las necesidades personalizadas de cada alumno. \cite{HILDA2014}
+
+\citeA{lera2007calidad} en su articulo se plantea la reducción del numero de alumnos o el aumento de asistentes en el aula con el objetivo de mejorar la calidad educativa. 
+
+La ratio, que es la relación entre el número de alumnos y profesores, es un factor importante a la hora de realizar la planificación de los recursos. En el año 2012, dicho ratio, en España aumentó un 20\%, lo que implica un ahorro en torno a 464 millones de euros. Aprobado por el Real Decreto-ley 14/2012 en el artículo 2.
+
+Debido a que los recursos de una administración no son infinitos, es necesario tener en cuenta los recursos disponibles para la educación; concretamente, durante 2015 España presenta un gasto total por alumno inferior al promedio de los países de la OCDE y la UE22. Véase la figura \ref{fig:procPerformance}. Esto implica que se dispone de menos recursos en la educación y por lo tanto se tiende a agrupar a los alumnos en grupos de mayor tamaño.
+
+\begin{figure*}[htb]
+	\centering
+	\caption{Gasto total anual (2015). Recuperado del \protect\citeA{PANORAMA2018}}
+	\includegraphics[width=0.8\textwidth]{recursos/GastoEducacion}
 	\label{fig:procPerformance}
 \end{figure*}
 \FloatBarrier
-\begin{figure*}[htb]
-	\centering
-\caption{Velocidad de transferencia a lo largo del tiempo. (Fuente: Nielsen Norman Group)}
-\includegraphics[width=0.5\textwidth]{recursos/bandwidth-growth-nielsen-law}
-\label{fig:bandwidth-growth}
-\end{figure*}
-\FloatBarrier
+
+Por las razones anteriormente comentadas, es importante establecer una buena gestión sobre los recursos disponibles, realizando una óptima distribución tanto de los docentes como de los recursos asignados a estos.
+
+\begin{comment}
+En los últimos años, gracias al gran desarrollo tecnológico que se ha vivido tanto a nivel de computo (mejorando la eficiencia y el uso de los recursos disponibles) como a nivel de transmisión de datos (mejorando las comunicaciones), ha permitido a las organizaciones el almacenamiento de una gran cantidad de información.
+
 Para comprender mejor este gran volumen de información que disponen las organizaciones, es necesario utilizar métodos, técnicas, herramientas además de personas con conocimientos (formando todas esta un vínculo estrecho) que permita y ayude a explotar, investigar, predecir y obtener información relevante para tomar decisiones de forma adecuada.
 
 Para descubrir la información en estos grandes volúmenes de datos, es necesario abordar el concepto de minería de datos.  Según \citeA{martinez2016mineria}, la minería de datos es el ``proceso que permite transformar información en conocimiento útil para el
@@ -32,10 +53,9 @@ Las organizaciones de ámbito educativo no han quedado ajenas a estas necesidade
 
 Por un lado, tanto el software educativo como las bases de datos institucionales, han generado una gran cantidad de datos acerca de alumnos, reflejando el aprendizaje de estos a lo largo del tiempo. Por otro, el uso pedagógico de Internet (eLearning), ha generado también grandes cantidades de datos acerca de la enseñanza-aprendizaje (técnicas, herramientas, etc). "Toda esta información es una mina de oro, en el contexto educativo". \cite{romero2010educational}.
 
-\citeA{MOHAMAD2013320} define EDM como una disciplina emergente, relacionada con el desarrollo de métodos para la exploración  de datos que proceden del entorno educativo, para entender mejor a los estudiantes y las herramientas que estos utilizan para aprender. Coincide con el articulo de \citeA{inbook} en el que se indica que la EDM se ha desarrollado mas lentamente que en el resto de ámbitos.
-%\citeA{romero2010educational} afirma que el proceso de EDM convierte los datos en bruto, obtenidos de sistemas educativos, en información útil que puede tener un gran impacto en las investigaciones y practicas educativas. No obstante, como se indica en el libro de \cite{inbook} la EDM se ha desarrollado mas lentamente que en el resto de ámbitos.
+\citeA{MOHAMAD2013320} define EDM como una disciplina emergente, relacionada con el desarrollo de métodos para la explotación de datos que proceden del entorno educativo, para entender mejor a los estudiantes y las herramientas que estos utilizan para aprender. Coincide con el artículo de \citeA{inbook} en el que se indica que la EDM se ha desarrollado más lentamente que en el resto de ámbitos.
 
-Como se puede observar en el articulo de \citeA{sin2015application} y en la figura \ref{fig:artPublicados}, el numero de artículos publicados en la conferencia internacional sobre la minería de datos ha crecido desde 2011 casi exponencialmente.
+Como se puede observar en el artículo de \citeA{sin2015application} y en la figura \ref{fig:artPublicados}, el número de artículos publicados en la conferencia internacional sobre la minería de datos ha crecido desde 2011 casi exponencialmente.
 
 Este aumento de artículos publicados muestra como existe un aumento en el uso de la minería de datos en la educación.
 
@@ -48,64 +68,43 @@ Este aumento de artículos publicados muestra como existe un aumento en el uso d
 \FloatBarrier
 
 A su vez, \citeA{sin2015application}, ha categorizado los artículos publicados según su contenido en categorías que definen las distintas aplicaciones de la minería de datos en la educación. Algunas de estas categorías son: detección de comportamiento, estimación de habilidades, predicción de mejora académica, etc. Por tanto, como se puede observar, dentro de la minería de datos en el entorno educativo, existen distintos campos estudiados y distintos ámbitos de aplicación.
-
-
-\begin{comment}
-Desde la Consejería de Educación de Madrid se están realizando proyectos para conseguir sacar la máxima información del gran número de datos que se poseen.
-
-
-Obviamente, debido a este gran tamaño de datos, es necesario utilizar métodos, herramientas y personas con conocimientos para obtener información concreta en un tiempo legible. Desde la Consejería de Educación se quiere tener conocimientos actuales sobre la situación educativa. Un ejemplo podría ser el número de alumnos matriculados con necesidades educativas para un determinado centro de la Dirección de Área Territorial Sur. No solo eso, también podrían obtenerse alumnos de un determinado nivel educativo o incluso grupos.
-
-
-%http://www.superiorinfotech.com/bidw.html
-\begin{figure*}[htb]
-	\centering
-	\caption{
-		Arquitectura de un almacén de datos. Recuperado de: Superior Information Technology.
-	}
-	\includegraphics[width=0.6\textwidth]{recursos/arquitecturaDatawarehouse}
-	\label{fig:ArqDWH}
-\end{figure*}
-
-En la figura \ref{fig:ArqDWH} se pude observar la arquitectura de un almacén de datos. Mediante esta arquitectura, los usuarios finales pueden obtener mucha información sin necesidad de realizar consultas complejas a bases de datos.
-
-No obstante, mostrar la información actual o pasada no es suficiente. La Consejería de Educación también requiere obtener datos futuros. En este aspecto, la Consejería necesita saber cuántos alumnos podrán matricularse en el futuro, con el objetivo de destinar recursos a los centros.
-Por tanto, será necesario utilizar técnicas predictivas. Estas técnicas se pueden usar perfectamente en la Consejería puesto que requieren una gran cantidad de datos para realizar pronósticos ajustados, en este sentido, la Consejería tiene un gran histórico de años anteriores.
 \end{comment}
 
-\section{Objetivos}
-En este trabajo fin de máster se plantea una solución a la necesidad que tiene la Consejería de Educación e Investigación de la Comunidad de Madrid (CEI) para dar respuesta a las necesidades de la demanda concreta de plazas escolares del nuevo período escolar. Para ello, se plantea el uso de herramientas y métodos flexibles que automaticen dichas tareas y proponga, además, nuevas variables o factores que puedan influir en la toma de decisiones. 
+\section{Objetivos} 
+\label{objetivos}
+En este trabajo fin de máster (TFM) se expone una solución a la necesidad que tiene la Consejería de Educación e Investigación de la Comunidad de Madrid (CEI) para dar respuesta a las necesidades de la demanda concreta de plazas escolares de un nuevo período escolar. Para ello, se plantea el uso de herramientas y métodos flexibles que automaticen las tareas de planificación y proponga, además, nuevas variables o factores que puedan influir en la toma de decisiones. 
 
-Dicho objetivo global se pretende alcanzar mediante los siguientes sub-objetivos:
+El interés que justifica este TFM es avanzar en el conocimiento sobre los factores del entorno educativo que implican el aumento de la superpoblación de un aula. De esta manera, se consigue que las Unidades (que tienen la competencia de gestionar la demanda de plazas escolares de un nuevo periodo escolar) tengan mayor facilidad a la hora de implantar un Sistema que sea capaz de predecir el número de grupos, a partir de los factores disponibles en cursos previos.
+
+Las consideraciones que se han realizado en los párrafos anteriores justifican que el objetivo general de este TFM es: proponer un modelo para contribuir a la óptima planificación de los grupos escolares para los nuevos cursos, evitando así el gasto innecesario de recursos y controlando la sobrepoblación en el aula.
+
+Dicho objetivo global se pretende alcanzar mediante los siguientes sub objetivos:
 \begin{itemize}
-	\item Seleccionar variables de interés, relativas a la resolución de las necesidades anteriormente expuesta, para estudiar y que aporten valor en el desarrollo de este TFM.
-	\item Obtener modelos que se ajusten correctamente a los datos.
-	\item Probar distintos modelos y seleccionar aquellos que aporten mayor precisión en la predicción. 
-	\item Utilizar los modelos seleccionados para realizar predicciones con los datos existentes. 
+	\item Seleccionar variables de interés, relativas a la resolución de la necesidad anteriormente expuesta por Unidad de Planificación, que aporten valor en el desarrollo de este TFM. %MODIFICAR
+	\item Estudiar la relación entre dichas variables con el propósito de comprender el contexto de la sobrepoblación en el aula y la planificación de grupos.
+	\item Probar distintos modelos predictivos y seleccionar aquellos que aporten mayor precisión en la predicción de los grupos. 
+	\item Obtener y utilizar el modelo de mayor precisión para realizar predicciones con los datos existentes en el entorno educativo de la Comunidad de Madrid en los últimos 10 años y que este modelo ayude a las Unidades de la CEI a planificar grupos en los nuevos cursos. 
 \end{itemize}
 
 \section{Metodología}
 El proceso o metodologia llevado a cabo en este TFM sigue las siguientes fases:
 \begin{enumerate}
-	\item En primer lugar, se ha detectado una determinada necesidad en una unidad de la Consejería de Educación e Investigación de la Comunidad de Madrid. \footnote{El autor de este TFM ha colaborado con la Consejería de Educación e Investigación de la Comunidad de Madrid en el desarrollo del proyecto inicial} 
-	\item Una vez detectada la necesidad, se realizan reuniones con dicha unidad para obtener la mayor información posible acerca de sus necesidades y la forma en la que satisfacerlas. Antes de comenzar la investigación, se debe tener un claro conocimiento sobre las necesidades existentes y establecer un plan de acción.
-	\item A partir del conocimiento sobre cuales son las necesidades, se realiza una propuesta para poder satisfacer dichas necesidades
-	\item La propuesta establecida debe ser validada por la propia unidad.
-	\item Una vez validada la propuesta, se estudian distintos modelos. Se debe analizar cual de estos es el que mayor precisión obtiene.
-	\item Por ultimo, se valida el modelo seleccionado y realizar las predicciones correspondientes con los datos de la unidad.
+	\item En primer lugar, se detecta la necesidad ya expuesta por la Unidad de la Consejería de Educación e Investigación de la Comunidad de Madrid\footnote{El autor de este TFM ha colaborado con la Consejería de Educación e Investigación de la Comunidad de Madrid en el desarrollo de un proyecto (ALAS) sobre explotación de datos educativos coordinado por la Universidad Politécnica de Madrid, a lo largo del año 2018.}.
+	\item Una vez detectada la necesidad, se realizan reuniones con dicha Unidad para obtener la máxima información posible acerca de las necesidades concretas y la forma de satisfacerlas. \footnote{Antes de comenzar la investigación, se debe tener un claro conocimiento sobre las necesidades existentes y se debe establecer un plan de acción.}
+	\item Teniendo en cuenta el conocimiento sobre cuáles son las necesidades, se realiza una propuesta\footnote{Esta propuesta es un documento técnico donde se indica qué metodologías se van a emplear para llevar a cabo la investigación, qué modelos predictivos se van a considerar y fundamentalmente cuales son las variables que se van a usar en la predicción (teniendo en cuenta las necesidad de la Unidad de Planificación).} que incluya modelos, variables, y herramientas a la Unidad de Planificación para poder satisfacerlas.% una propuesta que incluya ...
+	\item Después de varias reuniones con la Unidad de Planificación, esta Unidad valida la propuesta.
+	\item Una vez validada la propuesta, se estudian distintos modelos de predicción a partir de los datos seleccionados en dicha propuesta. Se debe analizar cuál de estos modelos es el que mayor precisión obtiene.
+	\item Se decide, en una reunión con la Unidad de Planificación de Centros, cual es el modelo óptimo (teniendo en cuenta la precisión y el tiempo de entrenamiento de los modelos). 
+	\item A partir del modelo acordado, se realizan predicciones con los datos de la Unidad.
 \end{enumerate}
 
 \section{Organización del TFM}
 La estructura que se va a seguir en el TFM es la siguiente:
 \begin{itemize}
-	\item \textbf{Capítulo 1. Introducción:} En el primer capítulo se definen las necesidades existentes que justifican el desarrollo de este trabajo. También se definen los objetivos que se persiguen con la realización de este. Por último, se presenta la estructura que tiene el presente documento.
+	\item \textbf{Capítulo 1. Introducción:} En el primer capítulo se definen las necesidades existentes que justifican el desarrollo de este trabajo. También se definen los objetivos que se persiguen con el desarrollo de este. Por último, se presenta la estructura que tiene el presente documento.
 	\item \textbf{Capítulo 2. Justificación teórica:} En este segundo capítulo se realiza una investigación sobre el estado de la cuestión, estudiando los métodos, modelos y usos de la minería de datos en el ámbito educativo. 
-	\item \textbf{Capítulo 3. Propuesta de intervención:} En este tercer capítulo se define el problema existente.
-	\item \textbf{Capítulo 4. Diseño de la investigación:} Este capítulo define los pasos que se siguen en la realización de un proyecto de minería de datos. Se detallan también las tareas que se van a desempeñar en cada uno de los pasos.
-	\item \textbf{Capítulo 5. Analisis de los resultados:} Una vez realizado el analisis exploratorio y predictivo, se mostraran los resultados obtenidos en este capitulo.
-	\item \textbf{Capítulo 6. Conclusiones:} En este capítulo se detallan las conclusiones obtenidas a partir de los resultados alcanzados.
+	\item \textbf{Capítulo 3. Propuesta de intervención:} En este capítulo se define el problema existente.
+	\item \textbf{Capítulo 4. Diseño de la investigación:} Este capítulo establece los pasos que se siguen en la realización de un proyecto de minería de datos. Se detallan también las tareas que se van a desempeñar en cada uno de los pasos.
+	\item \textbf{Capítulo 5. Análisis de los resultados:} Una vez realizado el análisis exploratorio y predictivo, se mostrarán los resultados obtenidos en este capítulo.
+	\item \textbf{Capítulo 6. Conclusiones:} En este capítulo se detallan las conclusiones obtenidas a partir de los resultados alcanzados y los objetivos establecidos.
 \end{itemize}
-
-
-
-

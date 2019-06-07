@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  3 JUN 2019 22:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  7 JUN 2019 11:13
 entering extended mode
 **./Template2TFM.tex
 (Template2TFM.tex
@@ -339,6 +339,25 @@ Package caption Info: longtable package is loaded.
 sty"
 Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
 ))
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/acronym\acronym.st
+y"
+Package: acronym 2015/03/21 v1.41 Support for acronyms (Tobias Oetiker)
+
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/bigfoot\suffix.sty
+"
+Package: suffix 2006/07/15 1.5a Variant command support
+)
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xstring\xstring.st
+y"
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xstring\xstring.
+tex"
+\integerpart=\count132
+\decimalpart=\count133
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+\AC@clearlist=\toks28
+)
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref.
 sty"
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
@@ -394,8 +413,8 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen141
-\Hy@linkcounter=\count132
-\Hy@pagecounter=\count133
+\Hy@linkcounter=\count134
+\Hy@pagecounter=\count135
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.de
 f"
@@ -403,7 +422,7 @@ File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count134
+\Hy@SavedSpaceFactor=\count136
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperref.
 cfg"
@@ -416,14 +435,14 @@ Package hyperref Info: Plain pages OFF on input line 4534.
 Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count135
+\c@Hy@tempcnt=\count137
  ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5125.
 \XeTeXLinkMargin=\dimen142
-\Fld@menulength=\count136
+\Fld@menulength=\count138
 \Field@Width=\dimen143
 \Fld@charsize=\dimen144
 Package hyperref Info: Hyper figures OFF on input line 6380.
@@ -435,17 +454,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6405.
 Package hyperref Info: PDF/A mode OFF on input line 6410.
 LaTeX Info: Redefining \ref on input line 6450.
 LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count137
-\c@Item=\count138
-\c@Hfootnote=\count139
+\Hy@abspage=\count139
+\c@Item=\count140
+\c@Hfootnote=\count141
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.d
 ef"
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
-\Fld@listcount=\count140
-\c@bookmark@seq@number=\count141
+\Fld@listcount=\count142
+\c@bookmark@seq@number=\count143
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfile
 check.sty"
@@ -460,9 +479,9 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 38.
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
 sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
-\Gm@cnth=\count142
-\Gm@cntv=\count143
-\c@Gm@tempcnt=\count144
+\Gm@cnth=\count144
+\Gm@cntv=\count145
+\c@Gm@tempcnt=\count146
 \Gm@bindingoffset=\dimen145
 \Gm@wd@mp=\dimen146
 \Gm@odd@mp=\dimen147
@@ -471,7 +490,7 @@ Package: geometry 2018/04/16 v5.8 Page Geometry
 \Gm@layoutheight=\dimen150
 \Gm@layouthoffset=\dimen151
 \Gm@layoutvoffset=\dimen152
-\Gm@dimlist=\toks28
+\Gm@dimlist=\toks29
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry.
 cfg")
@@ -504,15 +523,15 @@ Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\babel.def"
 File: babel.def 2018/11/13 3.27 Babel common definitions
-\babel@savecnt=\count145
+\babel@savecnt=\count147
 \U@D=\dimen153
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/generic/babel\txtbabel.d
 ef")
-\bbl@dirlevel=\count146
+\bbl@dirlevel=\count148
 )
-\es@quottoks=\toks29
-\es@quotdepth=\count147
+\es@quottoks=\toks30
+\es@quotdepth=\count149
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
@@ -525,7 +544,7 @@ ty"
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/apacite\apacite.st
 y"
 Package: apacite 2013/07/21 v6.03 APA citation
-\c@BibCnt=\count148
+\c@BibCnt=\count150
 \bibleftmargin=\skip58
 \bibindent=\skip59
 \bibparsep=\skip60
@@ -588,8 +607,8 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip98
 \cftfigindent=\skip99
 \cftfignumwidth=\skip100
-\c@lofdepth=\count149
-\c@lotdepth=\count150
+\c@lofdepth=\count151
+\c@lotdepth=\count152
 \cftbeforelottitleskip=\skip101
 \cftafterlottitleskip=\skip102
 \cftbeforetabskip=\skip103
@@ -604,7 +623,7 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \aftertitleunit=\skip107
 \ttl@plus=\dimen154
 \ttl@minus=\dimen155
-\ttl@toksa=\toks30
+\ttl@toksa=\toks31
 \titlewidth=\dimen156
 \titlewidthlast=\dimen157
 \titlewidthfirst=\dimen158
@@ -616,40 +635,37 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count151
-\c@Blindtext=\count152
-\c@blind@countparstart=\count153
-\blind@countxx=\count154
-\blindtext@numBlindtext=\count155
-\blind@countyy=\count156
-\c@blindlist=\count157
-\c@blindlistlevel=\count158
-\c@blindlist@level=\count159
-\blind@listitem=\count160
-\c@blind@listcount=\count161
-\c@blind@levelcount=\count162
-\blind@mathformula=\count163
-\blind@Mathformula=\count164
-\c@blind@randomcount=\count165
-\c@blind@randommax=\count166
-\c@blind@pangramcount=\count167
-\c@blind@pangrammax=\count168
+\c@blindtext=\count153
+\c@Blindtext=\count154
+\c@blind@countparstart=\count155
+\blind@countxx=\count156
+\blindtext@numBlindtext=\count157
+\blind@countyy=\count158
+\c@blindlist=\count159
+\c@blindlistlevel=\count160
+\c@blindlist@level=\count161
+\blind@listitem=\count162
+\c@blind@listcount=\count163
+\c@blind@levelcount=\count164
+\blind@mathformula=\count165
+\blind@Mathformula=\count166
+\c@blind@randomcount=\count167
+\c@blind@randommax=\count168
+\c@blind@pangramcount=\count169
+\c@blind@pangrammax=\count170
 )
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\verbatim.sty
 "
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks31
-\verbatim@line=\toks32
+\every@verbatim=\toks32
+\verbatim@line=\toks33
 \verbatim@in@stream=\read1
 ) (Template2TFM.aux
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
 
 
 LaTeX Warning: Label `fig:MAE' multiply defined.
-
-
-LaTeX Warning: Label `fig:UnidadesDistintasPrediccion' multiply defined.
 
 )
 \openout1 = `Template2TFM.aux'.
@@ -675,17 +691,17 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count169
+\scratchcounter=\count171
 \scratchdimen=\dimen159
 \scratchbox=\box65
-\nofMPsegments=\count170
-\nofMParguments=\count171
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count172
+\nofMPsegments=\count172
+\nofMParguments=\count173
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count174
 \MPscratchDim=\dimen160
-\MPnumerator=\count173
-\makeMPintoPDFobject=\count174
-\everyMPtoPDFconversion=\toks34
+\MPnumerator=\count175
+\makeMPintoPDFobject=\count176
+\everyMPtoPDFconversion=\toks35
 )
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
 base.sty"
@@ -702,7 +718,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count175
+\c@lstlisting=\count177
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -717,7 +733,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count176
+\c@section@level=\count178
 )
 LaTeX Info: Redefining \ref on input line 82.
 LaTeX Info: Redefining \pageref on input line 82.
@@ -763,7 +779,7 @@ LaTeX Info: Redefining \nameref on input line 82.
 
 LaTeX Info: Redefining \. on input line 82.
 LaTeX Info: Redefining \% on input line 82.
-\c@maskedRefs=\count177
+\c@maskedRefs=\count179
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/apacite\spanish.ap
 c"
@@ -771,7 +787,7 @@ File: spanish.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 138.
 LaTeX Info: Redefining \BHBI on input line 139.
 )
-<recursos/escudo_urjc.jpg, id=211, 143.226pt x 156.366pt>
+<recursos/escudo_urjc.jpg, id=203, 143.226pt x 156.366pt>
 File: recursos/escudo_urjc.jpg Graphic file (type jpg)
 <use recursos/escudo_urjc.jpg>
 Package pdftex.def Info: recursos/escudo_urjc.jpg  used on input line 133.
@@ -826,55 +842,56 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.159 \blankpage
+l.160 \blankpage
                  [1
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 185.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 186.
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.217 \end{titlepage}
+l.212 \end{titlepage}
                       [1]pdfTeX warning (ext4): destination with the same ident
 ifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.218 \blankpage
+l.213 \blankpage
+                 [1]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 244.
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.245 \end{titlepage}
+                      [1]pdfTeX warning (ext4): destination with the same ident
+ifier (name{page.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.246 \blankpage
                  [1]pdfTeX warning (ext4): destination with the same identifier
  (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.242 \end{titlepage}
+l.277 \end{titlepage}
                       [1]pdfTeX warning (ext4): destination with the same ident
 ifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.243 \blankpage
-                 [1]pdfTeX warning (ext4): destination with the same identifier
- (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.256 \end{titlepage}
-                      [1]pdfTeX warning (ext4): destination with the same ident
-ifier (name{page.}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.257 \blankpage
+l.278 \blankpage
                  [1] (Template2TFM.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <12> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 2.
  [1])
 \tf@toc=\write4
 \openout4 = `Template2TFM.toc'.
 
-LaTeX Info: Redefining \. on input line 265.
-LaTeX Info: Redefining \% on input line 265.
+LaTeX Info: Redefining \. on input line 286.
+LaTeX Info: Redefining \% on input line 286.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -892,271 +909,287 @@ LaTeX Info: Redefining \% on input line 1.
  (Template2TFM.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [3
 
-]
-Overfull \hbox (13.79622pt too wide) in paragraph at lines 22--22
+Overfull \hbox (4.23705pt too wide) in paragraph at lines 6--6
+ [][] [][][]\T1/ptm/m/n/12 Comparación de me-to-do-lo-gías de Mi-ne-ría de Da-t
+os. Re-cu-pe-ra-do de [][][]Moine, 
+ []
+
+
+Overfull \hbox (13.79622pt too wide) in paragraph at lines 14--14
  [][] [][][]\T1/ptm/m/n/12 Fórmula de MAE. Re-cu-pe-ra-do de https://medium.com
 /human-in-a-machine- 
  []
 
 
-Overfull \hbox (19.80809pt too wide) in paragraph at lines 23--23
+Overfull \hbox (19.80809pt too wide) in paragraph at lines 15--15
  [][] [][][]\T1/ptm/m/n/12 Fórmula de RM-SE. Re-cu-pe-ra-do de https://medium.c
 om/human-in-a-machine- 
  []
 
-)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3
+
+])
 \tf@lof=\write6
 \openout6 = `Template2TFM.lof'.
 
 \glsf@default=\write7
 \openout7 = `Template2TFM.gls.aux'.
 
-Package gloss Info: Writing gloss file Template2TFM.gls.aux on input line 268.
-LaTeX Info: Redefining \. on input line 269.
-LaTeX Info: Redefining \% on input line 269.
- [4] (Introduccion.tex
+Package gloss Info: Writing gloss file Template2TFM.gls.aux on input line 289.
+LaTeX Info: Redefining \. on input line 290.
+LaTeX Info: Redefining \% on input line 290.
+
+[4] (Introduccion.tex
 Cap\IeC {\'\i }tulo 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 2.
-<recursos/processor_performance.jpg, id=465, 1145.78062pt x 686.565pt>
-File: recursos/processor_performance.jpg Graphic file (type jpg)
-<use recursos/processor_performance.jpg>
-Package pdftex.def Info: recursos/processor_performance.jpg  used on input line
- 10.
-(pdftex.def)             Requested size: 256.07741pt x 153.4438pt.
-<recursos/bandwidth-growth-nielsen-law.png, id=466, 1694.33pt x 1195.46625pt>
-File: recursos/bandwidth-growth-nielsen-law.png Graphic file (type png)
-<use recursos/bandwidth-growth-nielsen-law.png>
-Package pdftex.def Info: recursos/bandwidth-growth-nielsen-law.png  used on inp
-ut line 17.
-(pdftex.def)             Requested size: 213.39568pt x 150.56387pt.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
+<recursos/NumeroAlumnosClase.png, id=434, 447.47176pt x 187.902pt>
+File: recursos/NumeroAlumnosClase.png Graphic file (type png)
+<use recursos/NumeroAlumnosClase.png>
+Package pdftex.def Info: recursos/NumeroAlumnosClase.png  used on input line 14
+.
+(pdftex.def)             Requested size: 341.43437pt x 143.3747pt.
 [1
 
- <./recursos/processor_performance.jpg> <./recursos/bandwidth-growth-nielsen-la
-w.png>]
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
- [2]
-<recursos/artPublicados.png, id=503, 204.765pt x 148.75575pt>
-File: recursos/artPublicados.png Graphic file (type png)
-<use recursos/artPublicados.png>
-Package pdftex.def Info: recursos/artPublicados.png  used on input line 45.
-(pdftex.def)             Requested size: 256.07741pt x 186.04408pt.
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
- [3 <./recursos/artPublicados.png>]
-LaTeX Info: Redefining \. on input line 104.
-LaTeX Info: Redefining \% on input line 104.
- [4]) (JustTeorica.tex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [5]
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
+ <./recursos/NumeroAlumnosClase.png>]
+<recursos/GastoEducacion.png, id=456, 356.532pt x 145.14224pt>
+File: recursos/GastoEducacion.png Graphic file (type png)
+<use recursos/GastoEducacion.png>
+Package pdftex.def Info: recursos/GastoEducacion.png  used on input line 32.
+(pdftex.def)             Requested size: 341.43437pt x 139.00719pt.
+LaTeX Info: Redefining \. on input line 78.
+LaTeX Info: Redefining \% on input line 78.
+ [2 <./recursos/GastoEducacion.png>]
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
 
-[6
+[3]) (JustTeorica.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [4]
+Cap\IeC {\'\i }tulo 2.
+[5
 
 ]
-Cap\IeC {\'\i }tulo 2.
-[7]
-LaTeX Info: Redefining \. on input line 52.
-LaTeX Info: Redefining \% on input line 52.
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
+ [6]
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
+ [7]
+LaTeX Info: Redefining \. on input line 71.
+LaTeX Info: Redefining \% on input line 71.
  [8]
-LaTeX Info: Redefining \. on input line 83.
-LaTeX Info: Redefining \% on input line 83.
- [9]
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
- [10]
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
- [11]
-<recursos/ComparacionModelosDM.png, id=601, 334.24875pt x 272.81924pt>
+<recursos/ComparacionModelosDM.png, id=552, 334.24875pt x 272.81924pt>
 File: recursos/ComparacionModelosDM.png Graphic file (type png)
 <use recursos/ComparacionModelosDM.png>
 Package pdftex.def Info: recursos/ComparacionModelosDM.png  used on input line 
-120.
+87.
 (pdftex.def)             Requested size: 341.43437pt x 278.70488pt.
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
- [12 <./recursos/ComparacionModelosDM.png>]
-<recursos/PrecisionMetodos.png, id=635, 412.54124pt x 214.401pt>
-File: recursos/PrecisionMetodos.png Graphic file (type png)
-<use recursos/PrecisionMetodos.png>
-Package pdftex.def Info: recursos/PrecisionMetodos.png  used on input line 140.
-
-(pdftex.def)             Requested size: 341.43437pt x 177.44896pt.
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
- [13 <./recursos/PrecisionMetodos.png>]
-<recursos/ComparacionModelos.png, id=653, 454.69875pt x 222.23026pt>
-File: recursos/ComparacionModelos.png Graphic file (type png)
-<use recursos/ComparacionModelos.png>
-Package pdftex.def Info: recursos/ComparacionModelos.png  used on input line 15
-5.
-(pdftex.def)             Requested size: 341.43437pt x 166.87573pt.
-
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
+ [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 166.
-LaTeX Info: Redefining \% on input line 166.
- [14 <./recursos/ComparacionModelos.png>]
-<recursos/top10tools.jpg, id=684, 451.6875pt x 319.94531pt>
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+ [10 <./recursos/ComparacionModelosDM.png>]
+<recursos/PrecisionMetodos.png, id=591, 412.54124pt x 214.401pt>
+File: recursos/PrecisionMetodos.png Graphic file (type png)
+<use recursos/PrecisionMetodos.png>
+Package pdftex.def Info: recursos/PrecisionMetodos.png  used on input line 107.
+
+(pdftex.def)             Requested size: 341.43437pt x 177.44896pt.
+LaTeX Info: Redefining \. on input line 114.
+LaTeX Info: Redefining \% on input line 114.
+ [11 <./recursos/PrecisionMetodos.png>]
+<recursos/ComparacionModelos.png, id=609, 454.69875pt x 222.23026pt>
+File: recursos/ComparacionModelos.png Graphic file (type png)
+<use recursos/ComparacionModelos.png>
+Package pdftex.def Info: recursos/ComparacionModelos.png  used on input line 12
+2.
+(pdftex.def)             Requested size: 341.43437pt x 166.87573pt.
+LaTeX Info: Redefining \. on input line 133.
+LaTeX Info: Redefining \% on input line 133.
+
+[12 <./recursos/ComparacionModelos.png>]
+<recursos/top10tools.jpg, id=640, 451.6875pt x 319.94531pt>
 File: recursos/top10tools.jpg Graphic file (type jpg)
 <use recursos/top10tools.jpg>
-Package pdftex.def Info: recursos/top10tools.jpg  used on input line 182.
-(pdftex.def)             Requested size: 426.79135pt x 302.33038pt.
-LaTeX Info: Redefining \. on input line 185.
-LaTeX Info: Redefining \% on input line 185.
- [15]
-<recursos/gartner.png, id=693, 386.6445pt x 423.38174pt>
+Package pdftex.def Info: recursos/top10tools.jpg  used on input line 149.
+(pdftex.def)             Requested size: 341.43437pt x 241.86235pt.
+<recursos/gartner.png, id=643, 386.6445pt x 423.38174pt>
 File: recursos/gartner.png Graphic file (type png)
 <use recursos/gartner.png>
-Package pdftex.def Info: recursos/gartner.png  used on input line 194.
+Package pdftex.def Info: recursos/gartner.png  used on input line 161.
 (pdftex.def)             Requested size: 256.07741pt x 280.42123pt.
-LaTeX Info: Redefining \. on input line 197.
-LaTeX Info: Redefining \% on input line 197.
- [16 <./recursos/top10tools.jpg>]
-LaTeX Info: Redefining \. on input line 213.
-LaTeX Info: Redefining \% on input line 213.
- [17 <./recursos/gartner.png>]) (PropuestaIntervencion.tex
+LaTeX Info: Redefining \. on input line 168.
+LaTeX Info: Redefining \% on input line 168.
+ [13]
+LaTeX Info: Redefining \. on input line 168.
+LaTeX Info: Redefining \% on input line 168.
+ [14 <./recursos/top10tools.jpg> <./recursos/gartner.png>]) (PropuestaIntervenc
+ion.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [18]
-Cap\IeC {\'\i }tulo 3.
-[19
+ [15
 
 ]
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
- [20]
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
- [21]) (Disenio.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [22]
+ [16
+
+]
+Cap\IeC {\'\i }tulo 3.
+[17]
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+ [18]
+LaTeX Info: Redefining \. on input line 54.
+LaTeX Info: Redefining \% on input line 54.
+ [19]) (Disenio.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [20]
 Cap\IeC {\'\i }tulo 4.
-<recursos/arquitecturaDWH2.png, id=743, 784.73175pt x 434.22224pt>
-File: recursos/arquitecturaDWH2.png Graphic file (type png)
-<use recursos/arquitecturaDWH2.png>
-Package pdftex.def Info: recursos/arquitecturaDWH2.png  used on input line 25.
-(pdftex.def)             Requested size: 341.43437pt x 188.9249pt.
-[23
-
- <./recursos/arquitecturaDWH2.png>]
-<recursos/Esquema_en_estrella.png, id=754, 534.99875pt x 439.6425pt>
-File: recursos/Esquema_en_estrella.png Graphic file (type png)
-<use recursos/Esquema_en_estrella.png>
-Package pdftex.def Info: recursos/Esquema_en_estrella.png  used on input line 3
-7.
-(pdftex.def)             Requested size: 341.43437pt x 280.59206pt.
-<recursos/modelo-dimensional-cubo.png, id=761, 357.58594pt x 234.1247pt>
-File: recursos/modelo-dimensional-cubo.png Graphic file (type png)
-<use recursos/modelo-dimensional-cubo.png>
-Package pdftex.def Info: recursos/modelo-dimensional-cubo.png  used on input li
-ne 47.
-(pdftex.def)             Requested size: 341.43437pt x 223.56036pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-LaTeX Info: Redefining \. on input line 50.
-LaTeX Info: Redefining \% on input line 50.
-[24 <./recursos/Esquema_en_estrella.png (PNG copy)>]
-LaTeX Info: Redefining \. on input line 59.
-LaTeX Info: Redefining \% on input line 59.
- [25 <./recursos/modelo-dimensional-cubo.png>]
-<recursos/CRISPCicloIBM.png, id=779, 378.81525pt x 348.70274pt>
+<recursos/CRISPCicloIBM.png, id=705, 378.81525pt x 348.70274pt>
 File: recursos/CRISPCicloIBM.png Graphic file (type png)
 <use recursos/CRISPCicloIBM.png>
-Package pdftex.def Info: recursos/CRISPCicloIBM.png  used on input line 76.
+Package pdftex.def Info: recursos/CRISPCicloIBM.png  used on input line 26.
 (pdftex.def)             Requested size: 256.07741pt x 235.72067pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
-[26]
-LaTeX Info: Redefining \. on input line 95.
-LaTeX Info: Redefining \% on input line 95.
- [27 <./recursos/CRISPCicloIBM.png>]
-LaTeX Info: Redefining \. on input line 122.
-LaTeX Info: Redefining \% on input line 122.
- [28]
-LaTeX Info: Redefining \. on input line 148.
-LaTeX Info: Redefining \% on input line 148.
- [29]
-LaTeX Info: Redefining \. on input line 171.
-LaTeX Info: Redefining \% on input line 171.
- [30]
-LaTeX Info: Redefining \. on input line 203.
-LaTeX Info: Redefining \% on input line 203.
- [31]
-<recursos/arbol_decision_img1.jpg, id=847, 650.43pt x 243.91125pt>
-File: recursos/arbol_decision_img1.jpg Graphic file (type jpg)
-<use recursos/arbol_decision_img1.jpg>
-Package pdftex.def Info: recursos/arbol_decision_img1.jpg  used on input line 2
-08.
-(pdftex.def)             Requested size: 341.43437pt x 128.04042pt.
-<recursos/RedNeuronalArtificial.png, id=854, 144.54pt x 80.58105pt>
-File: recursos/RedNeuronalArtificial.png Graphic file (type png)
-<use recursos/RedNeuronalArtificial.png>
-Package pdftex.def Info: recursos/RedNeuronalArtificial.png  used on input line
- 245.
-(pdftex.def)             Requested size: 256.07741pt x 142.77106pt.
-LaTeX Info: Redefining \. on input line 248.
-LaTeX Info: Redefining \% on input line 248.
- [32 <./recursos/arbol_decision_img1.jpg>]
-LaTeX Info: Redefining \. on input line 273.
-LaTeX Info: Redefining \% on input line 273.
- [33 <./recursos/RedNeuronalArtificial.png>]
-<recursos/SVM.png, id=876, 428.19975pt x 248.72925pt>
-File: recursos/SVM.png Graphic file (type png)
-<use recursos/SVM.png>
-Package pdftex.def Info: recursos/SVM.png  used on input line 277.
-(pdftex.def)             Requested size: 256.07741pt x 148.7491pt.
-<recursos/k_NN.png, id=881, 588.69937pt x 408.02437pt>
-File: recursos/k_NN.png Graphic file (type png)
-<use recursos/k_NN.png>
-Package pdftex.def Info: recursos/k_NN.png  used on input line 291.
-(pdftex.def)             Requested size: 256.07741pt x 177.48294pt.
-LaTeX Info: Redefining \. on input line 302.
-LaTeX Info: Redefining \% on input line 302.
- [34 <./recursos/SVM.png> <./recursos/k_NN.png>]
-<recursos/mae.png, id=892, 264.38776pt x 95.1555pt>
+[21
+
+]
+LaTeX Info: Redefining \. on input line 45.
+LaTeX Info: Redefining \% on input line 45.
+ [22 <./recursos/CRISPCicloIBM.png>]
+LaTeX Info: Redefining \. on input line 72.
+LaTeX Info: Redefining \% on input line 72.
+ [23]
+LaTeX Info: Redefining \. on input line 98.
+LaTeX Info: Redefining \% on input line 98.
+ [24]
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
+ [25]
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
+ [26]
+<recursos/mae.png, id=774, 264.38776pt x 95.1555pt>
 File: recursos/mae.png Graphic file (type png)
 <use recursos/mae.png>
-Package pdftex.def Info: recursos/mae.png  used on input line 317.
+Package pdftex.def Info: recursos/mae.png  used on input line 168.
 (pdftex.def)             Requested size: 170.71393pt x 61.44377pt.
-
-Underfull \hbox (badness 2103) in paragraph at lines 324--324
-[]\T1/ptm/m/n/12 Figura 4.10: |Fór-mu-la de RM-SE. Re-cu-pe-ra-do de https://me
-dium.com/human-in-a-
- []
-
-<recursos/rmse.png, id=893, 276.43275pt x 94.55325pt>
+<recursos/rmse.png, id=775, 276.43275pt x 94.55325pt>
 File: recursos/rmse.png Graphic file (type png)
 <use recursos/rmse.png>
-Package pdftex.def Info: recursos/rmse.png  used on input line 325.
+Package pdftex.def Info: recursos/rmse.png  used on input line 176.
 (pdftex.def)             Requested size: 170.71393pt x 58.39444pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Info: Redefining \. on input line 328.
-LaTeX Info: Redefining \% on input line 328.
-[35 <./recursos/mae.png>]
-Underfull \vbox (badness 3128) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 374.
-LaTeX Info: Redefining \% on input line 374.
- [36 <./recursos/rmse.png>]
+LaTeX Info: Redefining \. on input line 179.
+LaTeX Info: Redefining \% on input line 179.
+[27 <./recursos/mae.png>]
+LaTeX Info: Redefining \. on input line 206.
+LaTeX Info: Redefining \% on input line 206.
+ [28 <./recursos/rmse.png>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `T1/ptm/b/it' tried instead on input line 380.
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 212.
 ) (Analisis.tex
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [29]
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+
+[30
+
+]
+Cap\IeC {\'\i }tulo 5.
+<recursos/ImagenesR/estadisticos.png, id=804, 511.31026pt x 134.904pt>
+File: recursos/ImagenesR/estadisticos.png Graphic file (type png)
+<use recursos/ImagenesR/estadisticos.png>
+Package pdftex.def Info: recursos/ImagenesR/estadisticos.png  used on input lin
+e 13.
+(pdftex.def)             Requested size: 426.79135pt x 112.61047pt.
+<recursos/ImagenesR/boxplotNorm.png, id=807, 385.44pt x 255.354pt>
+File: recursos/ImagenesR/boxplotNorm.png Graphic file (type png)
+<use recursos/ImagenesR/boxplotNorm.png>
+Package pdftex.def Info: recursos/ImagenesR/boxplotNorm.png  used on input line
+ 25.
+(pdftex.def)             Requested size: 341.43437pt x 226.20064pt.
+[31 <./recursos/ImagenesR/estadisticos.png>]
+<recursos/ImagenesR/histDat.png, id=818, 397.485pt x 233.673pt>
+File: recursos/ImagenesR/histDat.png Graphic file (type png)
+<use recursos/ImagenesR/histDat.png>
+Package pdftex.def Info: recursos/ImagenesR/histDat.png  used on input line 40.
+
+(pdftex.def)             Requested size: 256.07741pt x 150.545pt.
+<recursos/ImagenesR/DistSobrepoblacion.png, id=819, 423.984pt x 269.808pt>
+File: recursos/ImagenesR/DistSobrepoblacion.png Graphic file (type png)
+<use recursos/ImagenesR/DistSobrepoblacion.png>
+Package pdftex.def Info: recursos/ImagenesR/DistSobrepoblacion.png  used on inp
+ut line 48.
+(pdftex.def)             Requested size: 341.43437pt x 217.2835pt.
+LaTeX Info: Redefining \. on input line 51.
+LaTeX Info: Redefining \% on input line 51.
+ [32 <./recursos/ImagenesR/boxplotNorm.png> <./recursos/ImagenesR/histDat.png>]
+<recursos/ImagenesR/matrizcorrelacion.png, id=831, 317.988pt x 260.77425pt>
+File: recursos/ImagenesR/matrizcorrelacion.png Graphic file (type png)
+<use recursos/ImagenesR/matrizcorrelacion.png>
+Package pdftex.def Info: recursos/ImagenesR/matrizcorrelacion.png  used on inpu
+t line 64.
+(pdftex.def)             Requested size: 341.43437pt x 280.01648pt.
+<recursos/ImagenesR/mayorescorrelaciones.png, id=832, 216.81pt x 148.1535pt>
+File: recursos/ImagenesR/mayorescorrelaciones.png Graphic file (type png)
+<use recursos/ImagenesR/mayorescorrelaciones.png>
+Package pdftex.def Info: recursos/ImagenesR/mayorescorrelaciones.png  used on i
+nput line 71.
+(pdftex.def)             Requested size: 256.07741pt x 175.00725pt.
+<recursos/ImagenesR/mayorcorrelacion.png, id=833, 219.219pt x 148.1535pt>
+File: recursos/ImagenesR/mayorcorrelacion.png Graphic file (type png)
+<use recursos/ImagenesR/mayorcorrelacion.png>
+Package pdftex.def Info: recursos/ImagenesR/mayorcorrelacion.png  used on input
+ line 79.
+(pdftex.def)             Requested size: 256.07741pt x 173.0857pt.
+LaTeX Info: Redefining \. on input line 87.
+LaTeX Info: Redefining \% on input line 87.
+ [33 <./recursos/ImagenesR/DistSobrepoblacion.png>]
+<recursos/ImagenesR/variablesRatio.png, id=845, 449.88075pt x 140.32425pt>
+File: recursos/ImagenesR/variablesRatio.png Graphic file (type png)
+<use recursos/ImagenesR/variablesRatio.png>
+Package pdftex.def Info: recursos/ImagenesR/variablesRatio.png  used on input l
+ine 93.
+(pdftex.def)             Requested size: 341.43437pt x 106.49765pt.
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [34 <./recursos/ImagenesR/matrizcorrelacion.png>]
+LaTeX Info: Redefining \. on input line 96.
+LaTeX Info: Redefining \% on input line 96.
+ [35 <./recursos/ImagenesR/mayorescorrelaciones.png> <./recursos/ImagenesR/mayo
+rcorrelacion.png> <./recursos/ImagenesR/variablesRatio.png>]
+<recursos/ImagenesR/UnidadesDistintasPrediccion.png, id=862, 331.83975pt x 268.
+00125pt>
+File: recursos/ImagenesR/UnidadesDistintasPrediccion.png Graphic file (type png
+)
+<use recursos/ImagenesR/UnidadesDistintasPrediccion.png>
+Package pdftex.def Info: recursos/ImagenesR/UnidadesDistintasPrediccion.png  us
+ed on input line 122.
+(pdftex.def)             Requested size: 256.07741pt x 206.82777pt.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+ [36
+
+ <./recursos/ImagenesR/UnidadesDistintasPrediccion.png>]) (Conclusiones.tex
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
  [37]
@@ -1165,24 +1198,17 @@ LaTeX Info: Redefining \% on input line 1.
  [38
 
 ]
-Cap\IeC {\'\i }tulo 5.
-[39]
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
- [40]) (Conclusiones.tex
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [41]
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
- [42
-
-]
 Cap\IeC {\'\i }tulo 6.
-) [43] (Template2TFM.bbl
+[39]
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
+ [40]
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
+ [41]) (Template2TFM.bbl
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [44]
+ [42]
 Cap\IeC {\'\i }tulo 7.
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 31.
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1pcr.fd"
@@ -1200,81 +1226,70 @@ ion Sup-port Sys-tems\T1/ptm/m/n/12 , \T1/ptm/m/it/12 49\T1/ptm/m/n/12 (4), 498
  -
  []
 
-[45
+[43
 
 ]
-Underfull \hbox (badness 2538) in paragraph at lines 366--380
+Underfull \hbox (badness 2538) in paragraph at lines 369--383
 \T1/ptm/m/it/12 sis es-ta-dís-ti-co.  \T1/ptm/m/n/12 Des-car-ga-do 2019-04-16, 
 de [][]$\T1/pcr/m/n/12 https :// www [] .genbeta [] .com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 366--380
+Underfull \hbox (badness 10000) in paragraph at lines 369--383
 \T1/pcr/m/n/12 desarrollo / r [] -un [] -lenguaje [] -y [] -entorno [] -de [] -
 programacion [] -para []
  []
 
 
-Underfull \hbox (badness 5302) in paragraph at lines 499--512
+Underfull \hbox (badness 5302) in paragraph at lines 479--492
 []\T1/ptm/m/n/12 kassambara.  (2018).  \T1/ptm/m/it/12 Step-wi-se re-gres-sion 
 es-sen-tials in r.  \T1/ptm/m/n/12 Des-car-ga-do
  []
 
-LaTeX Info: Redefining \. on input line 541.
-LaTeX Info: Redefining \% on input line 541.
-[46]
-Underfull \hbox (badness 4024) in paragraph at lines 782--804
-[]\T1/ptm/m/n/12 Mohamad, S. K., y Ta-sir, Z.  (2013).  Edu-ca-tio-nal da-ta mi
--ning: A re-
- []
-
-
-Underfull \hbox (badness 2980) in paragraph at lines 782--804
-\T1/ptm/m/n/12 view.  \T1/ptm/m/it/12 Pro-ce-dia - So-cial and Beha-vio-ral Sci
-en-ces\T1/ptm/m/n/12 , \T1/ptm/m/it/12 97\T1/ptm/m/n/12 , 320 - 324.  Des-
- []
-
-
-Underfull \hbox (badness 4792) in paragraph at lines 782--804
-\T1/ptm/m/n/12 car-ga-do de [][]$\T1/pcr/m/n/12 http :// www [] .sciencedirect 
-[] .com / science / article / pii /
- []
-
-LaTeX Info: Redefining \. on input line 842.
-LaTeX Info: Redefining \% on input line 842.
-[47]
-Underfull \hbox (badness 3302) in paragraph at lines 870--882
+LaTeX Info: Redefining \. on input line 529.
+LaTeX Info: Redefining \% on input line 529.
+[44]
+Underfull \hbox (badness 3302) in paragraph at lines 761--773
 []\T1/ptm/m/n/12 Orellana, L.  (2001).  \T1/ptm/m/it/12 Es-ta-dís-ti-ca des-cri
 p-ti-va.  \T1/ptm/m/n/12 Des-car-ga-do de [][]$\T1/pcr/m/n/12 http ://
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 870--882
+Underfull \hbox (badness 10000) in paragraph at lines 761--773
 \T1/pcr/m/n/12 www [] .dm [] .uba [] .ar / materias / estadistica [] []Q / 2011
  / 1 / modulo %
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 993--1007
+LaTeX Info: Redefining \. on input line 817.
+LaTeX Info: Redefining \% on input line 817.
+[45]
+Underfull \hbox (badness 10000) in paragraph at lines 861--875
 \T1/pcr/m/n/12 -learning [] -conceptos [] -básicos [] -del [] -aprendizaje [] -
 supervisado []
  []
 
-LaTeX Info: Redefining \. on input line 1067.
-LaTeX Info: Redefining \% on input line 1067.
-[48])
-LaTeX Info: Redefining \. on input line 376.
-LaTeX Info: Redefining \% on input line 376.
- [49]
-LaTeX Info: Redefining \. on input line 386.
-LaTeX Info: Redefining \% on input line 386.
+LaTeX Info: Redefining \. on input line 1051.
+LaTeX Info: Redefining \% on input line 1051.
+[46])
+LaTeX Info: Redefining \. on input line 397.
+LaTeX Info: Redefining \% on input line 397.
+ [47]
+LaTeX Info: Redefining \. on input line 399.
+LaTeX Info: Redefining \% on input line 399.
+ [48
+
+]
+Cap\IeC {\'\i }tulo 8.
+[49]
+LaTeX Info: Redefining \. on input line 417.
+LaTeX Info: Redefining \% on input line 417.
  [50
 
 
 ] [51] [52] (anexos.tex
 ANEXOS A.
 
-Overfull \hbox (9.7304pt too wide) in paragraph at lines 98--99
+Overfull \hbox (9.7304pt too wide) in paragraph at lines 108--109
 \T1/ptm/m/n/12 TU-RA-LE-ZA, CD-POS-TAL, IT-CO-ME-DOR, IT-TRANS-POR-TE, IT-BI-LI
 N-GUE, CD_NIVEL
  []
@@ -1282,285 +1297,246 @@ N-GUE, CD_NIVEL
 [53
 
 ]
-<recursos/ImagenesR/estadisticos.png, id=1060, 511.31026pt x 134.904pt>
-File: recursos/ImagenesR/estadisticos.png Graphic file (type png)
-<use recursos/ImagenesR/estadisticos.png>
-Package pdftex.def Info: recursos/ImagenesR/estadisticos.png  used on input lin
-e 107.
-(pdftex.def)             Requested size: 426.79135pt x 112.61047pt.
-<recursos/ImagenesR/boxplotNorm.png, id=1061, 385.44pt x 255.354pt>
-File: recursos/ImagenesR/boxplotNorm.png Graphic file (type png)
-<use recursos/ImagenesR/boxplotNorm.png>
-Package pdftex.def Info: recursos/ImagenesR/boxplotNorm.png  used on input line
- 115.
-(pdftex.def)             Requested size: 341.43437pt x 226.20064pt.
-LaTeX Info: Redefining \. on input line 118.
-LaTeX Info: Redefining \% on input line 118.
- [54 <./recursos/ImagenesR/estadisticos.png>]
-<recursos/ImagenesR/normalidadSUM.png, id=1068, 302.93175pt x 119.84775pt>
+<recursos/ImagenesR/normalidadSUM.png, id=996, 302.93175pt x 119.84775pt>
 File: recursos/ImagenesR/normalidadSUM.png Graphic file (type png)
 <use recursos/ImagenesR/normalidadSUM.png>
 Package pdftex.def Info: recursos/ImagenesR/normalidadSUM.png  used on input li
-ne 133.
+ne 127.
 (pdftex.def)             Requested size: 341.43437pt x 135.08987pt.
-LaTeX Info: Redefining \. on input line 136.
-LaTeX Info: Redefining \% on input line 136.
- [55 <./recursos/ImagenesR/boxplotNorm.png>]
-<recursos/ImagenesR/normalidadGRAF.png, id=1075, 416.757pt x 280.04625pt>
+LaTeX Info: Redefining \. on input line 130.
+LaTeX Info: Redefining \% on input line 130.
+ [54]
+<recursos/ImagenesR/normalidadGRAF.png, id=1001, 416.757pt x 280.04625pt>
 File: recursos/ImagenesR/normalidadGRAF.png Graphic file (type png)
 <use recursos/ImagenesR/normalidadGRAF.png>
 Package pdftex.def Info: recursos/ImagenesR/normalidadGRAF.png  used on input l
-ine 142.
+ine 136.
 (pdftex.def)             Requested size: 341.43437pt x 229.43428pt.
-<recursos/ImagenesR/norm1.png, id=1077, 419.76825pt x 279.444pt>
+<recursos/ImagenesR/norm1.png, id=1003, 419.76825pt x 279.444pt>
 File: recursos/ImagenesR/norm1.png Graphic file (type png)
 <use recursos/ImagenesR/norm1.png>
-Package pdftex.def Info: recursos/ImagenesR/norm1.png  used on input line 153.
+Package pdftex.def Info: recursos/ImagenesR/norm1.png  used on input line 147.
 (pdftex.def)             Requested size: 341.43437pt x 227.30353pt.
-LaTeX Info: Redefining \. on input line 156.
-LaTeX Info: Redefining \% on input line 156.
- [56 <./recursos/ImagenesR/normalidadSUM.png> <./recursos/ImagenesR/normalidadG
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
+ [55 <./recursos/ImagenesR/normalidadSUM.png> <./recursos/ImagenesR/normalidadG
 RAF.png>]
-<recursos/ImagenesR/norm2.png, id=1084, 423.38174pt x 272.81924pt>
+<recursos/ImagenesR/norm2.png, id=1011, 423.38174pt x 272.81924pt>
 File: recursos/ImagenesR/norm2.png Graphic file (type png)
 <use recursos/ImagenesR/norm2.png>
-Package pdftex.def Info: recursos/ImagenesR/norm2.png  used on input line 161.
+Package pdftex.def Info: recursos/ImagenesR/norm2.png  used on input line 155.
 (pdftex.def)             Requested size: 341.43437pt x 220.01659pt.
-LaTeX Info: Redefining \. on input line 164.
-LaTeX Info: Redefining \% on input line 164.
- [57 <./recursos/ImagenesR/norm1.png> <./recursos/ImagenesR/norm2.png>]
-<recursos/ImagenesR/norm3.png, id=1093, 416.757pt x 278.84175pt>
+LaTeX Info: Redefining \. on input line 158.
+LaTeX Info: Redefining \% on input line 158.
+ [56 <./recursos/ImagenesR/norm1.png> <./recursos/ImagenesR/norm2.png>]
+<recursos/ImagenesR/norm3.png, id=1020, 416.757pt x 278.84175pt>
 File: recursos/ImagenesR/norm3.png Graphic file (type png)
 <use recursos/ImagenesR/norm3.png>
-Package pdftex.def Info: recursos/ImagenesR/norm3.png  used on input line 171.
+Package pdftex.def Info: recursos/ImagenesR/norm3.png  used on input line 165.
 (pdftex.def)             Requested size: 341.43437pt x 228.44746pt.
-<recursos/ImagenesR/barplot1.png, id=1094, 371.58826pt x 254.1495pt>
+<recursos/ImagenesR/barplot1.png, id=1021, 371.58826pt x 254.1495pt>
 File: recursos/ImagenesR/barplot1.png Graphic file (type png)
 <use recursos/ImagenesR/barplot1.png>
 Package pdftex.def Info: recursos/ImagenesR/barplot1.png  used on input line 17
-9.
+3.
 (pdftex.def)             Requested size: 341.43437pt x 233.54115pt.
-LaTeX Info: Redefining \. on input line 182.
-LaTeX Info: Redefining \% on input line 182.
- [58
+LaTeX Info: Redefining \. on input line 176.
+LaTeX Info: Redefining \% on input line 176.
+ [57
 
  <./recursos/ImagenesR/norm3.png>]
-<recursos/ImagenesR/barplot2.png, id=1100, 374.5995pt x 119.84775pt>
+<recursos/ImagenesR/barplot2.png, id=1027, 374.5995pt x 119.84775pt>
 File: recursos/ImagenesR/barplot2.png Graphic file (type png)
 <use recursos/ImagenesR/barplot2.png>
 Package pdftex.def Info: recursos/ImagenesR/barplot2.png  used on input line 18
-7.
+1.
 (pdftex.def)             Requested size: 341.43437pt x 109.23717pt.
-<recursos/ImagenesR/matrizcorrelacion.png, id=1103, 317.988pt x 260.77425pt>
-File: recursos/ImagenesR/matrizcorrelacion.png Graphic file (type png)
-<use recursos/ImagenesR/matrizcorrelacion.png>
-Package pdftex.def Info: recursos/ImagenesR/matrizcorrelacion.png  used on inpu
-t line 200.
-(pdftex.def)             Requested size: 341.43437pt x 280.01648pt.
-LaTeX Info: Redefining \. on input line 203.
-LaTeX Info: Redefining \% on input line 203.
- [59 <./recursos/ImagenesR/barplot1.png> <./recursos/ImagenesR/barplot2.png>]
-<recursos/ImagenesR/mayorescorrelaciones.png, id=1110, 216.81pt x 148.1535pt>
-File: recursos/ImagenesR/mayorescorrelaciones.png Graphic file (type png)
-<use recursos/ImagenesR/mayorescorrelaciones.png>
-Package pdftex.def Info: recursos/ImagenesR/mayorescorrelaciones.png  used on i
-nput line 209.
-(pdftex.def)             Requested size: 256.07741pt x 175.00725pt.
-LaTeX Info: Redefining \. on input line 212.
-LaTeX Info: Redefining \% on input line 212.
- [60 <./recursos/ImagenesR/matrizcorrelacion.png> <./recursos/ImagenesR/mayores
-correlaciones.png>]
-<recursos/ImagenesR/mayorcorrelacion.png, id=1117, 219.219pt x 148.1535pt>
-File: recursos/ImagenesR/mayorcorrelacion.png Graphic file (type png)
-<use recursos/ImagenesR/mayorcorrelacion.png>
-Package pdftex.def Info: recursos/ImagenesR/mayorcorrelacion.png  used on input
- line 217.
-(pdftex.def)             Requested size: 256.07741pt x 173.0857pt.
-<recursos/ImagenesR/RelacionAlumnGrupos.png, id=1123, 429.40425pt x 268.00125pt
+<recursos/ImagenesR/RelacionAlumnGrupos.png, id=1030, 429.40425pt x 268.00125pt
 >
 File: recursos/ImagenesR/RelacionAlumnGrupos.png Graphic file (type png)
 <use recursos/ImagenesR/RelacionAlumnGrupos.png>
 Package pdftex.def Info: recursos/ImagenesR/RelacionAlumnGrupos.png  used on in
-put line 229.
+put line 196.
 (pdftex.def)             Requested size: 256.07741pt x 159.8328pt.
-LaTeX Info: Redefining \. on input line 232.
-LaTeX Info: Redefining \% on input line 232.
- [61
-
- <./recursos/ImagenesR/mayorcorrelacion.png>]
-<recursos/ImagenesR/RelacionGruposYUnidades.png, id=1130, 422.17725pt x 260.774
+LaTeX Info: Redefining \. on input line 199.
+LaTeX Info: Redefining \% on input line 199.
+ [58 <./recursos/ImagenesR/barplot1.png> <./recursos/ImagenesR/barplot2.png>]
+<recursos/ImagenesR/RelacionGruposYUnidades.png, id=1037, 422.17725pt x 260.774
 25pt>
 File: recursos/ImagenesR/RelacionGruposYUnidades.png Graphic file (type png)
 <use recursos/ImagenesR/RelacionGruposYUnidades.png>
 Package pdftex.def Info: recursos/ImagenesR/RelacionGruposYUnidades.png  used o
-n input line 238.
+n input line 205.
 (pdftex.def)             Requested size: 256.07741pt x 158.18074pt.
-<recursos/ImagenesR/VarImpRF.png, id=1133, 414.348pt x 243.91125pt>
+<recursos/ImagenesR/VarImpRF.png, id=1040, 414.348pt x 243.91125pt>
 File: recursos/ImagenesR/VarImpRF.png Graphic file (type png)
 <use recursos/ImagenesR/VarImpRF.png>
-Package pdftex.def Info: recursos/ImagenesR/VarImpRF.png  used on input line 25
-1.
+Package pdftex.def Info: recursos/ImagenesR/VarImpRF.png  used on input line 21
+9.
 (pdftex.def)             Requested size: 256.07741pt x 150.74329pt.
-LaTeX Info: Redefining \. on input line 254.
-LaTeX Info: Redefining \% on input line 254.
- [62 <./recursos/ImagenesR/RelacionAlumnGrupos.png> <./recursos/ImagenesR/Relac
+LaTeX Info: Redefining \. on input line 222.
+LaTeX Info: Redefining \% on input line 222.
+ [59 <./recursos/ImagenesR/RelacionAlumnGrupos.png> <./recursos/ImagenesR/Relac
 ionGruposYUnidades.png>]
-<recursos/ImagenesR/backwardSum.png, id=1142, 511.31026pt x 123.46124pt>
+<recursos/ImagenesR/backwardSum.png, id=1049, 511.31026pt x 123.46124pt>
 File: recursos/ImagenesR/backwardSum.png Graphic file (type png)
 <use recursos/ImagenesR/backwardSum.png>
 Package pdftex.def Info: recursos/ImagenesR/backwardSum.png  used on input line
- 269.
+ 237.
 (pdftex.def)             Requested size: 426.79135pt x 103.05867pt.
-LaTeX Info: Redefining \. on input line 272.
-LaTeX Info: Redefining \% on input line 272.
- [63 <./recursos/ImagenesR/VarImpRF.png>]
-<recursos/ImagenesR/backward.png, id=1148, 230.66174pt x 145.7445pt>
+LaTeX Info: Redefining \. on input line 240.
+LaTeX Info: Redefining \% on input line 240.
+ [60 <./recursos/ImagenesR/VarImpRF.png>]
+<recursos/ImagenesR/backward.png, id=1055, 230.66174pt x 145.7445pt>
 File: recursos/ImagenesR/backward.png Graphic file (type png)
 <use recursos/ImagenesR/backward.png>
-Package pdftex.def Info: recursos/ImagenesR/backward.png  used on input line 27
-9.
+Package pdftex.def Info: recursos/ImagenesR/backward.png  used on input line 24
+7.
 (pdftex.def)             Requested size: 256.07741pt x 161.805pt.
-<recursos/ImagenesR/seqSum.png, id=1151, 510.10574pt x 103.587pt>
+<recursos/ImagenesR/seqSum.png, id=1058, 510.10574pt x 103.587pt>
 File: recursos/ImagenesR/seqSum.png Graphic file (type png)
 <use recursos/ImagenesR/seqSum.png>
-Package pdftex.def Info: recursos/ImagenesR/seqSum.png  used on input line 291.
+Package pdftex.def Info: recursos/ImagenesR/seqSum.png  used on input line 259.
 
 (pdftex.def)             Requested size: 426.79135pt x 86.6695pt.
-LaTeX Info: Redefining \. on input line 297.
-LaTeX Info: Redefining \% on input line 297.
- [64 <./recursos/ImagenesR/backwardSum.png> <./recursos/ImagenesR/backward.png>
+LaTeX Info: Redefining \. on input line 265.
+LaTeX Info: Redefining \% on input line 265.
+ [61 <./recursos/ImagenesR/backwardSum.png> <./recursos/ImagenesR/backward.png>
  <./recursos/ImagenesR/seqSum.png>]
-<recursos/ImagenesR/seq.png, id=1160, 229.45724pt x 142.131pt>
+<recursos/ImagenesR/seq.png, id=1068, 229.45724pt x 142.131pt>
 File: recursos/ImagenesR/seq.png Graphic file (type png)
 <use recursos/ImagenesR/seq.png>
-Package pdftex.def Info: recursos/ImagenesR/seq.png  used on input line 302.
+Package pdftex.def Info: recursos/ImagenesR/seq.png  used on input line 270.
 (pdftex.def)             Requested size: 256.07741pt x 158.63257pt.
-<recursos/ImagenesR/fordwardSum.png, id=1162, 510.10574pt x 103.587pt>
+<recursos/ImagenesR/fordwardSum.png, id=1070, 510.10574pt x 103.587pt>
 File: recursos/ImagenesR/fordwardSum.png Graphic file (type png)
 <use recursos/ImagenesR/fordwardSum.png>
 Package pdftex.def Info: recursos/ImagenesR/fordwardSum.png  used on input line
- 315.
+ 283.
 (pdftex.def)             Requested size: 426.79135pt x 86.6695pt.
-<recursos/ImagenesR/fordward.png, id=1164, 229.45724pt x 142.73325pt>
+<recursos/ImagenesR/fordward.png, id=1072, 229.45724pt x 142.73325pt>
 File: recursos/ImagenesR/fordward.png Graphic file (type png)
 <use recursos/ImagenesR/fordward.png>
-Package pdftex.def Info: recursos/ImagenesR/fordward.png  used on input line 32
-5.
+Package pdftex.def Info: recursos/ImagenesR/fordward.png  used on input line 29
+3.
 (pdftex.def)             Requested size: 256.07741pt x 159.30475pt.
-LaTeX Info: Redefining \. on input line 327.
-LaTeX Info: Redefining \% on input line 327.
- [65 <./recursos/ImagenesR/seq.png> <./recursos/ImagenesR/fordwardSum.png>]
-LaTeX Info: Redefining \. on input line 336.
-LaTeX Info: Redefining \% on input line 336.
- [66 <./recursos/ImagenesR/fordward.png>]
+LaTeX Info: Redefining \. on input line 295.
+LaTeX Info: Redefining \% on input line 295.
+ [62 <./recursos/ImagenesR/seq.png> <./recursos/ImagenesR/fordwardSum.png>]
+LaTeX Info: Redefining \. on input line 304.
+LaTeX Info: Redefining \% on input line 304.
+ [63 <./recursos/ImagenesR/fordward.png>]
+LaTeX Info: Redefining \. on input line 304.
+LaTeX Info: Redefining \% on input line 304.
+ [64
+
+]
 ANEXOS B.
 
-Overfull \hbox (12.09328pt too wide) in paragraph at lines 364--393
+Overfull \hbox (12.09328pt too wide) in paragraph at lines 332--361
  [][] 
  []
 
-[67
-
-]
-<recursos/ImagenesR/ComparacionModelos2.png, id=1183, 328.22626pt x 205.9695pt>
+[65]
+<recursos/ImagenesR/ComparacionModelos2.png, id=1094, 328.22626pt x 205.9695pt>
 
 File: recursos/ImagenesR/ComparacionModelos2.png Graphic file (type png)
 <use recursos/ImagenesR/ComparacionModelos2.png>
 Package pdftex.def Info: recursos/ImagenesR/ComparacionModelos2.png  used on in
-put line 402.
+put line 370.
 (pdftex.def)             Requested size: 341.43437pt x 214.25978pt.
-<recursos/ImagenesR/ComparacionModelosTiempo.png, id=1184, 324.0105pt x 210.185
+<recursos/ImagenesR/ComparacionModelosTiempo.png, id=1095, 324.0105pt x 210.185
 26pt>
 File: recursos/ImagenesR/ComparacionModelosTiempo.png Graphic file (type png)
 <use recursos/ImagenesR/ComparacionModelosTiempo.png>
 Package pdftex.def Info: recursos/ImagenesR/ComparacionModelosTiempo.png  used 
-on input line 410.
+on input line 378.
 (pdftex.def)             Requested size: 341.43437pt x 221.4932pt.
-LaTeX Info: Redefining \. on input line 412.
-LaTeX Info: Redefining \% on input line 412.
- [68 <./recursos/ImagenesR/ComparacionModelos2.png>]
-<recursos/ImagenesR/UnidadesDistintasPrediccion.png, id=1190, 331.83975pt x 268
-.00125pt>
-File: recursos/ImagenesR/UnidadesDistintasPrediccion.png Graphic file (type png
-)
-<use recursos/ImagenesR/UnidadesDistintasPrediccion.png>
-Package pdftex.def Info: recursos/ImagenesR/UnidadesDistintasPrediccion.png  us
-ed on input line 420.
-(pdftex.def)             Requested size: 256.07741pt x 206.82777pt.
+LaTeX Info: Redefining \. on input line 380.
+LaTeX Info: Redefining \% on input line 380.
+ [66 <./recursos/ImagenesR/ComparacionModelos2.png>]
+LaTeX Info: Redefining \. on input line 383.
+LaTeX Info: Redefining \% on input line 383.
+ [67 <./recursos/ImagenesR/ComparacionModelosTiempo.png>]
+LaTeX Info: Redefining \. on input line 383.
+LaTeX Info: Redefining \% on input line 383.
+ [68
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 427.
-LaTeX Info: Redefining \% on input line 427.
- [69 <./recursos/ImagenesR/ComparacionModelosTiempo.png> <./recursos/ImagenesR/
-UnidadesDistintasPrediccion.png>]
-<recursos/CentrosResumenI.png, id=1198, 663.07726pt x 469.15276pt>
+]
+ANEXOS C.
+<recursos/CentrosResumenI.png, id=1112, 663.07726pt x 469.15276pt>
 File: recursos/CentrosResumenI.png Graphic file (type png)
 <use recursos/CentrosResumenI.png>
-Package pdftex.def Info: recursos/CentrosResumenI.png  used on input line 436.
+Package pdftex.def Info: recursos/CentrosResumenI.png  used on input line 397.
 (pdftex.def)             Requested size: 426.79135pt x 301.97481pt.
-<recursos/CentrosResumenII.png, id=1200, 484.81125pt x 457.71pt>
+<recursos/CentrosResumenII.png, id=1114, 484.81125pt x 457.71pt>
 File: recursos/CentrosResumenII.png Graphic file (type png)
 <use recursos/CentrosResumenII.png>
-Package pdftex.def Info: recursos/CentrosResumenII.png  used on input line 444.
+Package pdftex.def Info: recursos/CentrosResumenII.png  used on input line 405.
 
 (pdftex.def)             Requested size: 426.79135pt x 402.95367pt.
-LaTeX Info: Redefining \. on input line 446.
-LaTeX Info: Redefining \% on input line 446.
- [70 <./recursos/CentrosResumenI.png>]
-<recursos/FaltasAsistenciaI.png, id=1206, 643.80525pt x 468.5505pt>
+[69 <./recursos/CentrosResumenI.png>]
+<recursos/FaltasAsistenciaI.png, id=1120, 643.80525pt x 468.5505pt>
 File: recursos/FaltasAsistenciaI.png Graphic file (type png)
 <use recursos/FaltasAsistenciaI.png>
-Package pdftex.def Info: recursos/FaltasAsistenciaI.png  used on input line 456
+Package pdftex.def Info: recursos/FaltasAsistenciaI.png  used on input line 417
 .
 (pdftex.def)             Requested size: 426.79135pt x 310.61699pt.
-LaTeX Info: Redefining \. on input line 458.
-LaTeX Info: Redefining \% on input line 458.
- [71 <./recursos/CentrosResumenII.png>]
-<recursos/FaltasAsistenciaII.png, id=1213, 643.203pt x 469.755pt>
+LaTeX Info: Redefining \. on input line 419.
+LaTeX Info: Redefining \% on input line 419.
+
+
+Package Fancyhdr Warning: \headheight is too small (15.13202pt): 
+Make it at least 29.63202pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[70 <./recursos/CentrosResumenII.png>]
+<recursos/FaltasAsistenciaII.png, id=1127, 643.203pt x 469.755pt>
 File: recursos/FaltasAsistenciaII.png Graphic file (type png)
 <use recursos/FaltasAsistenciaII.png>
-Package pdftex.def Info: recursos/FaltasAsistenciaII.png  used on input line 46
-6.
+Package pdftex.def Info: recursos/FaltasAsistenciaII.png  used on input line 42
+7.
 (pdftex.def)             Requested size: 426.79135pt x 311.70221pt.
-LaTeX Info: Redefining \. on input line 468.
-LaTeX Info: Redefining \% on input line 468.
- [72 <./recursos/FaltasAsistenciaI.png>]
-<recursos/STPivotUnidades.png, id=1220, 724.50674pt x 376.40625pt>
+LaTeX Info: Redefining \. on input line 429.
+LaTeX Info: Redefining \% on input line 429.
+ [71 <./recursos/FaltasAsistenciaI.png>]
+<recursos/STPivotUnidades.png, id=1134, 724.50674pt x 376.40625pt>
 File: recursos/STPivotUnidades.png Graphic file (type png)
 <use recursos/STPivotUnidades.png>
-Package pdftex.def Info: recursos/STPivotUnidades.png  used on input line 476.
+Package pdftex.def Info: recursos/STPivotUnidades.png  used on input line 437.
 (pdftex.def)             Requested size: 426.79135pt x 221.73314pt.
-LaTeX Info: Redefining \. on input line 478.
-LaTeX Info: Redefining \% on input line 478.
- [73 <./recursos/FaltasAsistenciaII.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 392.
-LaTeX Info: Redefining \. on input line 392.
-LaTeX Info: Redefining \% on input line 392.
- [74 <./recursos/STPivotUnidades.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 392.
- (Template2TFM.aux
-LaTeX Info: Redefining \. on input line 23.
-LaTeX Info: Redefining \% on input line 23.
+LaTeX Info: Redefining \. on input line 439.
+LaTeX Info: Redefining \% on input line 439.
+
+[72 <./recursos/FaltasAsistenciaII.png>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 423.
+LaTeX Info: Redefining \. on input line 423.
+LaTeX Info: Redefining \% on input line 423.
+ [73 <./recursos/STPivotUnidades.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 423.
+(Template2TFM.aux
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 392.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 392.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 423.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 423.
 Package rerunfilecheck Info: File `Template2TFM.out' has not changed.
-(rerunfilecheck)             Checksum: 5D5FC6B2E02F1211E96080974F288D0C;4121.
+(rerunfilecheck)             Checksum: 2C5C675656179D711BA5437D660AB5D4;3886.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 392.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 423.
  ) 
 Here is how much of TeX's memory you used:
- 12789 strings out of 492946
- 195699 string characters out of 3126266
- 332030 words of memory out of 3000000
- 16134 multiletter control sequences out of 15000+200000
- 67995 words of font info for 68 fonts, out of 3000000 for 9000
+ 13180 strings out of 492946
+ 200610 string characters out of 3126266
+ 343129 words of memory out of 3000000
+ 16528 multiletter control sequences out of 15000+200000
+ 72487 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,43p,1292b,651s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,14n,43p,1292b,692s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr
 8a.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/
@@ -1568,9 +1544,9 @@ utmb8a.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/ti
 mes/utmbi8a.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/u
 rw/times/utmr8a.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmri8a.pfb>
-Output written on Template2TFM.pdf (86 pages, 2974934 bytes).
+Output written on Template2TFM.pdf (85 pages, 2331416 bytes).
 PDF statistics:
- 1310 PDF objects out of 1440 (max. 8388607)
- 263 named destinations out of 1000 (max. 500000)
- 657 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1221 PDF objects out of 1440 (max. 8388607)
+ 250 named destinations out of 1000 (max. 500000)
+ 616 words of extra memory for PDF output out of 10000 (max. 10000000)
 

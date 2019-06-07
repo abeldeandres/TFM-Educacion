@@ -1,21 +1,69 @@
-\chapter{CONCLUSIONES}
+\chapter{CONCLUSIONES Y APORTACIONES} %LISTA DE ACRONIMOS
+
+Una vez realizado el estudio y obtenido los resultados, es hora de realizar una valoración en forma de aportaciones y conclusiones.
+
+\section{Aportaciones de este TFM}
+En esta sección se quiere hacer especial hincapié en las contribuciones de este TFM.
+
+En primer lugar, se debe destacar las relaciones de las variables con la ratio. Estas relaciones son útiles ya que por ejemplo a partir de variables como los servicios ofertados por un centro, se puede tener la certeza que los centros que poseen dichos servicios van a ser los más demandados y, por lo tanto, se debe tener un mayor cuidado con el número de plazas ofertadas y con la sobrepoblación. Otro claro ejemplo son los centros privados, que como se muestra, su ratio suele ser más bajo (están menos sobrepoblados). 
+
+Otra aportación que se realiza es el uso de herramientas de minería de datos para realizar la planificación de grupos en los centros educativos. Como se observa, la gran mayoría de artículos relacionados con la minería de datos en el entorno educativo, tratan sobre el rendimiento académico de forma directa. En esta investigación se ha contemplado otros aspectos del entorno educativo, como es el control de las ratios y la mejor planificación educativa.
+
+Relacionado con la aportación anterior está el uso de modelos predictivos. En este TFM se puede observar como algunos modelos obtienen mejor predicción que otros para este conjunto de datos y en este ámbito de la educación.
+
+Este TFM también aporta una investigación relativa a la gestión y a la planificación. Como ya se ha comentado, la mayoría de los artículos analizados se basan en la predicción del rendimiento de los alumnos y los factores que provocan dicho rendimiento (positivo o negativo), en este aspecto se abre el campo de estudio a lo referente a la planificación educativa. Destacando su importancia también en el aprendizaje y el resultado de los alumnos.
+
+% SE APORTA UN MODELO!!!! 
+% se aporta un modelo a la CEI para que esta pueda realizar nuevas planificaciones de grupos. De esta forma solo deben cargar el Excel de grupos en dicho ``Script'' y exportar los resultados con la predicción.
+
+Por último, con este TFM, además de aportar un modelo predictivo que se ajusta a los datos y que ayude a la Unidad de Planificación de la CEI, se aportan variables que ayuden a controlar la ratio del aula y de esta forma, evitar que exista una sobrepoblación. 
+
+
+%En las aportaciones tengo que intentar usar los conceptos que he utilizado en el máster. La educacion no solo consiste en dar clase, tambien hay que gestionarla. Hay que intentar hilbanar todo eso, para que sean las conclusiones
+
 \section{Conclusiones}
-Una vez que se ha realizado el estudio y se han obtenido los resultados, es hora de realizar una pequeña valoración en forma de conclusiones.
+Estas conclusiones se van a vincular con los objetivos propuestos en la introducción de este TFM.
 
-En primer lugar, la realización de este TFM ha tenido como objetivo satisfacer las necesidades de la CEI, realizando un estudio para la obtención de modelos que sean capaces de conseguir una gran predicción.
+La realización de este TFM tiene como objetivo principal satisfacer las necesidades de la CEI, contribuyendo a la óptima planificación de los grupos escolares para los nuevos cursos, evitando así la sobrepoblación en el aula. Para satisfacer este objetivo, se deben satisfacer unos sub objetivos establecidos. Apartado \ref{objetivos} Objetivos de la Introducción 
 
-Para realizar estas predicciones se han utilizado una serie de algoritmos como las redes neuronales, regresión lineal, bosques aleatorios, arboles de decisión, K-vecinos cercanos y soporte de máquinas vectoriales. Siendo el árbol de decisión el que mayor precisión ha aportado. Sin embargo, el ``Script'' que automatiza el proceso se realiza utilizando el algoritmo de regresión lineal, ya que es el que menor tiempo tarda en entrenar y aporta unos resultados similares al árbol de decisión.
+El primer sub objetivo consiste en la selección de variables de interés, para ello se procede a utilizar algunas de las variables propuestas a partir de la instrucción de la Unidad de Planificación \cite{INSTRCONSE}. Se tienen en cuenta inicialmente 27 variables (nombre, código y naturaleza del centro, código genérico de este, etc.), sin embargo, para el análisis predictivo se usan 11\footnote{Las variables utilizadas son: el código genérico del centro, su naturaleza, su código postal, sus servicios de transporte, comedor o bilingüismo (en caso que tengan), los niveles educativos, el curso del grupo a predecir, el número actual de unidades, la ratio de estas y el numero de unidades reales del siguiente curso}. Se eliminan todas las variables del tipo descriptivo, como por ejemplo el nombre del centro (ya que no interesa, ni tampoco su código).
 
-Ademas, se ha podido observar como la eliminación de las variables en los modelos no ha alterado demasiado la precisión aunque si se ha notado diferencia en los tiempos de predicción (puesto que los algoritmos no trabajan con tantos datos). Obviamente existen variables que desde el inicio, a priori, no aportan gran información sobre el conjunto de datos, sin embargo, se decide tenerlas en cuenta por si aportaban información oculta.
+El segundo sub objetivo que debe cumplirse es el estudio de la relación de estas variables para comprender el contexto de la sobrepoblación en el aula. Para ello se utiliza la correlación entre las variables. A partir de estas relaciones se observa, concretamente, los factores que hacen que la ratio aumente o disminuya, y también se observa en qué grado lo hace. 
 
-Por ultimo, mediante este TFM se ha obtenido además información intrínseca de las variables, que pueden servir para la realización de otras investigaciones.
+Las variables más correlacionadas con la ratio son: el número de alumnos, la naturaleza, el servicio de comedor, el código genérico del centro y el servicio de bilingüismo. Estas variables son las que hacen que la ratio aumente o disminuya con más intensidad.
+
+Una buena planificación en las aulas evita la superpoblación de estas y, por otra parte, también evita el gasto inadecuado de recursos. Este TFM no se centra en poner en duda la ratio de alumnos actual, sino más bien en optimizar los recursos según dicha ratio.
+
+Para llevar a cabo esta planificación, en esta investigación se tienen en cuenta principalmente 10 variables: el código genérico del centro, su naturaleza, su código postal, sus servicios de transporte, comedor o bilingüismo (en caso que tengan), los niveles educativos, el curso del grupo a predecir, el número actual de unidades y la ratio de estas. Estas variables mayoritariamente son las que se utilizan actualmente en la CEI de la Comunidad de Madrid. Sin embargo, se proponen además nuevas variables como son la tasa de aprobados o suspensos de un determinado grupo, ya que, si la tasa de suspensos es alta, el número de matriculaciones para dicho grupo debe reducirse, y este factor condiciona claramente las futuras predicciones.
+
+Finalmente, las variables utilizadas que realmente condicionan la predicción son las que se obtienen utilizando los algoritmos de eliminación de variables y son las siguientes: naturaleza del centro, numero de curso, número de unidades, nivel de enseñanza y ratio. Todas estas variables supeditan la sobrepoblación del aula.
+
+Es necesario destacar la existencia de otras variables expuestas en artículos analizados previamente. Estas variables son las que están relacionadas con el entorno del centro como por ejemplo: carreteras de acceso a este, estaciones de metro cercanas, generalmente, estructuras que puedan intervenir positiva o negativamente a la tasa de matriculaciones. Estas variables son de gran interés, puesto que pueden afectar a la planificación de grupos.
+
+El tercer sub objetivo consiste en probar distintos modelos y seleccionar aquellos con mayor precisión, por ello, se utilizan una serie de algoritmos como las redes neuronales, regresión lineal, bosques aleatorios, arboles de decisión, K-vecinos cercanos y soporte de máquinas vectoriales. De estos modelos se obtiene que el árbol de decisión es el que mejor precisión obtiene. Sin embargo, la regresión lineal obtiene resultados parecidos y su tiempo de entrenamiento es inferior.
+
+En la tabla \ref{tab:ComparacionModelos} del Anexo \ref{appendix:B}  se puede observar una comparativa sobre la precisión y el tiempo de entrenamiento de los modelos para los datos utilizados. 
+
+En el último sub objetivo se utiliza el algoritmo que mayor precisión aporta (arboles de decisión) con el fin de realizar predicciones con datos existentes (los 10 últimos años de la Comunidad de Madrid). Este modelo de árboles de decisión, por tanto, se aplica para el curso 2017/2018, obteniendo las predicciones para el curso 2018/2019. Estas predicciones no pueden ser contrastadas con las que realmente se producen para ese curso. Sin embargo, en reuniones posteriores, se admite que son pocos los centros que cambian el número de unidades de un curso a otro, coincidiendo con los resultados obtenidos.
+
+Por último, se realiza una automatización del sistema de predicción, que ayuda a las personas de la CEI a planificar recursos respecto al número de unidades existentes. Se debe recordar que hasta ahora, la CEI, utiliza técnicas manuales que pueden tender a error en las predicciones. %NO QUEDA CLARO!!!! Para ello se realiza un ``Script'' en el que los usuarios introducen un archivo Microsoft Excel y obtienen las predicciones correspondientes de esos datos.
+
+%PONER UN ULTIMO PARRAFO DONDE SE HABLE SOBRE EL MASTER Y SOBRE LA GESTION EDUCATIVA. EL MASTER ME HA APORTADO NOSEQUE Y AQUI LO UTILIZO PARA LA GESTION EDUCATIVA
+
+Para concluir, con este TFM se han obtenido conocimientos mas allá de los adquiridos por el resto de asignaturas de este máster, con el fin también de mejorar el aprendizaje en el aula. Concretamente, este TFM se centra en nada menos que en la planificación y la gestión de la educación, parte trascendental para favorecer y mejorar la situación en el aula. Sin esta gestión y planificación, el aprendizaje dentro del aula se ve mermado. Se debe recordar que la situación actual en aula se debe gracias a la planificación y gestión de los recursos. Como docente se debe tener en cuenta el equilibrio entre el numero de grupos y los recursos, también tiene que comprenderse que, aunque la reducción del ratio es algo positivo, la mayoría de veces no se dispone de los recursos para afrontar dicha reducción.
 
 
-\section{Lineas Futuras}
+
+\section{Líneas De Trabajo Futuro}
 Existen ciertos puntos que se deben considerar en futuras investigaciones o en la ampliación de este trabajo.
 
-En primer lugar, es necesario destacar el uso de otras variables que no se han estudiado en este TFM, por ejemplo, aspectos físicos como el acceso al centro, su comunicación con grandes vías urbanas, etc. Además, deben investigarse otras variables que no se han considerado por falta de datos, como por ejemplo la tasa de aprobados o de suspensos para un grupo de un nivel determinado.
+En primer lugar, es necesario destacar el uso de otras variables que no se estudian en este TFM, por ejemplo, aspectos físicos como el acceso al centro, su comunicación con grandes vías urbanas, etc. Además, deben investigarse otras variables que no se consideran por falta de datos, como por ejemplo la tasa de aprobados o de suspensos para un grupo de un nivel determinado.
 
-En segundo lugar, se deben tener en cuenta otros modelos y otros parámetros para crear los modelos como por ejemplo la regresión logística, métodos robustos, combinación de modelos, etc.
+Estas variables son importantes, puesto que dependiendo de esta tasa de suspensos o aprobados, se podrán aumentar o disminuir el número de matrículas para este determinado nivel. Podría incluirse, además, el número de enseñanzas del centro, sus modalidades del bachillerato, etc.
 
-Por último, se debe tener en cuenta la realización de una interfaz para sustituir el ``Script'' creado por un Software en el que los usuarios simplemente tengan que cargar la plantilla Microsoft Excel en dicho Software y que este devuelva dicha plantilla rellena con las predicciones.
+Otras variables, como ya se comenta anteriormente son las referidas a la geolocalización del centro, su posición estratégica, y como esto puede influir al aumento de la ratio y por ende a las predicciones finales.
+
+En segundo lugar, se deben tener en cuenta otros modelos y otros parámetros para crear los modelos como por ejemplo la regresión logística, métodos robustos, combinación de modelos, etc. Variando los parámetros de estos algoritmos se consigue una mayor precisión.
+
+Por último, se debe tener en cuenta la realización de un Software teniendo en cuenta los modelos estudiados, que sea capaz, con una interfaz gráfica, de ayudar a los miembros de la Unidad de Planificación de Centros, sustituyendo el ``Script'' creado.
+

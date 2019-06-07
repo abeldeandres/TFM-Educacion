@@ -1,0 +1,399 @@
+---
+title: "CodigoTFM"
+author: "Abel"
+date: "17 de mayo de 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(corrplot)
+library(ggpubr)
+library(randomForest)
+library(reshape)
+library(MASS)
+library(klaR)
+library(MVN)
+library(factoextra)
+datos <- read.csv("C:/Users/abelt/Dropbox/TFM Educacion/Codigo/datos.csv")
+```
+
+## Seleccionamos las variables que necesitemos
+
+
+```{r cars}
+
+datos <- datos[,c("CDGENERICO","CDNATURALEZA","CDPOSTAL","ITCOMEDOR","ITTRANSPORTE","ITBILINGUE","CD_NIVEL","NM_CURSO","NM_ALUMNOS","NM_UNIDADES","RATIO","GRUPOS_PREDECIR")]
+
+datos <- na.omit(datos)
+
+```
+
+## Convertimos variables character a numeric
+```{r}
+#datos$ITCONCIERTO <- as.numeric(datos$ITCONCIERTO)
+datos$ITCOMEDOR <- as.numeric(datos$ITCOMEDOR)
+datos$ITBILINGUE <- as.numeric(datos$ITBILINGUE)
+datos$ITTRANSPORTE <- as.numeric(datos$ITTRANSPORTE)
+datos$NM_CURSO <- as.numeric(datos$NM_CURSO)
+
+```
+
+```{r}
+par(mfrow=c(2,2))
+barplot(table(datos$ITTRANSPORTE), main="Servicio de Transporte")
+barplot(table(datos$ITCOMEDOR), main="Servicio de Comedor")
+barplot(table(datos$ITBILINGUE), main="Bilingüismo")
+barplot(table(datos$CDNATURALEZA), main="Naturaleza del Centro")
+par(mfrow=c(2,2))
+barplot(table(datos$CD_NIVEL), main="Nivel de Enseñanza")
+barplot(table(datos$CDGENERICO), main="Código Genérico")
+
+
+```
+
+
+## Ver valores NULL
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+sapply(datos, function(x) sum(is.na(x)))
+```
+
+```{r}
+summary(datos)
+```
+
+
+
+## Ver histogramas
+
+```{r}
+boxplot(datos,las = 2,cex.main=0.75, cex.lab=0.7, cex.axis=0.6)
+```
+```{r}
+boxplot(datos$RATIO,  ylab = "RATIO")
+```
+
+```{r}
+outliers<-boxplot(datos$NM_ALUMNOS,  ylab = "Num Alumnos")
+```
+* Estos son los anomalas:
+```{r , echo=FALSE}
+outliers<-outliers$out
+outliers
+```
+
+###ANÁLISIS DE NORMALIDAD
+
+  * En primer lugar, visualizaremos la densidad de nuestras variables (individualmente), con el objetivo de observar a simple vista si cumplen o no con una distribucion normal.
+
+
+```{r , echo=FALSE}
+par(mfrow=c(2,2))
+plot(density(datos$CDGENERICO))
+plot(density(datos$CDNATURALEZA))
+plot(density(datos$NM_UNIDADES))
+#plot(density(datos$ITCONCIERTO))
+plot(density(datos$CDPOSTAL))
+par(mfrow=c(2,2))
+plot(density(datos$ITCOMEDOR))
+plot(density(datos$ITTRANSPORTE))
+plot(density(datos$ITBILINGUE))
+plot(density(datos$CD_NIVEL))
+par(mfrow=c(2,2))
+plot(density(datos$NM_CURSO))
+plot(density(datos$RATIO))
+plot(density(datos$NM_ALUMNOS))
+plot(density(datos$NM_UNIDADES))
+
+```
+
+
+```{r}
+result <- mvn(data = datos, mvnTest = "mardia" ,univariatePlot = "qqplot")
+result
+```
+
+###Estudio de correlación
+
+* Para el estudio de la correlacion, utilizaremos el **coeficiente de correlacion de Pearson (R)**. Mediante el siguiente grafico, vamos a observar las relaciones que tienen los pares de variables entre si.
+
+```{r , echo=FALSE}
+MCOR <- cor(datos)
+#corrplot(MCOR, method = "number")
+corrplot.mixed(MCOR) # Display the correlation coefficient
+```
+
+
+  * En este grafico podemos observar como por ejemplo las variables de *"motor"*, *"verbal"* y *"eye"* tienen bastante relacion y dependencia entre si. Sin embargo hay algo que no nos cuadra y es que no existe una gran dependencia entre la variable "age" y la variable de "outcome", aspecto que podria ser mas sustancial en la naturaleza.
+  
+  * Teniendo en cuenta los valores de la variable *"outcome"* (1 fallece y 0 vive), la correlacion negativa de las variable del test de glasgow (eye, motor, verbal) tiene sentido, puesto que en general, cuanto mayor sea el valor de estas variables, mejor pronostico de vida hay. La variable de "pupils" es al contrario, cuanto mayores sean sus valores, mas probable es el pronostico de fallecimiento.
+
+```{r , echo=FALSE}
+MCOR <- cor(datos)
+col <- colorRampPalette(c("#BB4444", "#EE9988", "#FFFFFF", "#77AADD", "#4477AA"))
+cex.before <- par("cex")
+par(cex = 0.5)
+corrplot(MCOR, method="color", col=col(200),  
+         type="upper", order="hclust", 
+         addCoef.col = "black", # Add coefficient of correlation
+         tl.col="black", tl.srt=45, tl.cex = 1/par("cex"), #Text label color and rotation
+         # hide correlation coefficient on the principal diagonal
+         diag=FALSE 
+         )
+```
+
+* Como se ha podido apreciar en las 2 graficas anteriores, existe una gran correlacion entre las variables *"motor"*, *"eye"* y *"verbal"*. 
+
+```{r , echo=FALSE}
+ggscatter(datos, x = "NM_ALUMNOS", y = "NM_UNIDADES", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "NM_ALUMNOS", ylab = "NM_UNIDADES")
+```
+```{r , echo=FALSE}
+ggscatter(datos, x = "NM_UNIDADES", y = "GRUPOS_PREDECIR", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "NM_UNIDADES", ylab = "GRUPOS_PREDECIR")
+```
+
+* En la grafica anterior podemos volver a comprobar que existe una gran relacion lineal positiva entre las variables mas correlacionadas que son "verbal" y "eye".
+
+
+* A continuación, a modo de información, se muestra un listado en orden descendente con las mayores correlaciones existentes:
+
+```{r , echo=FALSE}
+variablesmascorreladas <- function(mydataframe,numtoreport)
+  {
+     # find the correlations
+     cormatrix <- cor(mydataframe)
+     # set the correlations on the diagonal or lower triangle to zero,
+     # so they will not be reported as the highest ones:
+     diag(cormatrix) <- 0
+     cormatrix[lower.tri(cormatrix)] <- 0
+     # flatten the matrix into a dataframe for easy sorting
+     fm <- as.data.frame(as.table(cormatrix))
+     # assign human-friendly names
+     names(fm) <- c("First.Variable", "Second.Variable","Correlation")
+     # sort and print the top n correlations
+     head(fm[order(abs(fm$Correlation),decreasing=T),],n=numtoreport)
+}
+variablesmascorreladas(datos,12)
+```
+
+* Las correlaciones entre las variables y la clase ordenadas en orden descendente son las siguientes:
+```{r , echo=FALSE}
+correlacionesconoutcome <- function(mydataframe,numtoreport)
+  {
+     # find the correlations
+     cormatrix <- cor(mydataframe)
+     # set the correlations on the diagonal or lower triangle to zero,
+     # so they will not be reported as the highest ones:
+     diag(cormatrix) <- 0
+     cormatrix[lower.tri(cormatrix)] <- 0
+     # flatten the matrix into a dataframe for easy sorting
+     fm <- as.data.frame(as.table(cormatrix))
+     # assign human-friendly names
+     names(fm) <- c("First.Variable", "Second.Variable","Correlation")
+     # sort and print the top n correlations
+     fm<-fm[fm$Second.Variable=="GRUPOS_PREDECIR",]
+     head(fm[order(abs(fm$Correlation),decreasing=T) ,],n=numtoreport)
+}
+correlacionesconoutcome(datos,12)
+```
+
+#Selección de variables con más importancia. 
+## Uso de "Random Forest"
+
+* En este apartado, se buscara obtener un listado con las variables mas importantes, usando el algoritmo de *"Random Forest"* para posteriormente tener en cuenta posibles descartes de variables en estudios posteriores.
+
+* La idea que existe detras de los *"Random Forest"* es generar un numero importante de arboles, entrenarlos y calcular el promedio de su salida.
+
+* En cada iteracion del algoritmo de *"Random Forest"* se genera un error conocido como **OOB**, este error ira aumentando o disminuyendo en cada iteracion y por cada variable que se incluya en el algoritmo.
+
+* En cada paso (nodo) se recalcula el conjunto de **"m"** predictores permitidos. Lo más típico es elegir la raiz cuadrada del numero total de variables.En nuestro caso, contamos con un total de 13 variables, por lo que se escogerian 4 variables (redondeando hacia arriba en caso de no ser un número entero) en el caso de **árboles de clasificación** y **m=p/3** en el caso de **árboles de regresión**. Siendo **"p"** el numero de variables.
+
+
+* Como se puede comprobar, el error OOB, se estabiliza, indicando cuantas particiones se deben realizar para obtener los mejores resultados En este caso, con **4 variables sería suficiente** (puesto que es el numero donde se estabiliza el error OOB).
+
+* Las variables mas importantesson las siguientes:
+```{r , echo=FALSE, include=FALSE}
+fit=randomForest(GRUPOS_PREDECIR~.,data=datos,importance=T)
+#(VI_F=importance(fit))
+#Creamos un objeto con las "importancias" de las variables
+importancia=data.frame(importance(fit))
+importancia<-sort_df(importancia,vars='X.IncMSE')
+importancia
+```
+```{r , echo=FALSE}
+#head(VI_F[order(abs(VI_F),decreasing=T), ],14)
+importancia
+```
+
+* La variable **"IncNodePurity"** se la conoce tambien como la media de decrecimiento de de Gini. El indice de Gini es una "medida de desorden" en este caso *"IncNodePurity"* tiene el siguiente sentido, a mayor medida, mayor importancia en los modelos creados, puesto que valores proximos a 0 implican un mayor desorden. Por tanto, si computamos la media del "decrecimiento" del indice de Gini cuanto mayor sea esta medida, mas variabilidad aporta a la variable dependiente.
+
+* Por otro lado, la variable **"IncMSE"** es la media de decrecimiento en la precision, y es tambien un indicador sobre la importancia de las variables en el modelo.
+
+* El siguiente grafico representa la importancia de las variables segun su media y los valores de *"Random Forest"* mostrados anteriormente:
+
+```{r , echo=FALSE}
+varImpPlot(fit)
+```
+
+```{r, echo=FALSE}
+set.seed(123)
+# Set up repeated k-fold cross-validation
+train.control <- trainControl(method = "cv", number = 10)
+# Train the model
+step.model <- train(GRUPOS_PREDECIR~.,data=datos,
+                    method = "leapBackward", 
+                    tuneGrid = data.frame(nvmax = 1:5),
+                    trControl = train.control
+                    )
+step.model$results
+```
+```{r}
+summary(step.model$finalModel)
+```
+```{r}
+plot(step.model, type = c("g", "o"))
+```
+
+```{r}
+# Set seed for reproducibility
+set.seed(123)
+# Set up repeated k-fold cross-validation
+train.control <- trainControl(method = "cv", number = 10)
+# Train the model
+step.model <- train(GRUPOS_PREDECIR~.,data=datos,
+                    method = "leapSeq", 
+                    tuneGrid = data.frame(nvmax = 1:5),
+                    trControl = train.control
+                    )
+step.model$results
+```
+```{r}
+summary(step.model$finalModel)
+```
+```{r}
+plot(step.model, type = c("g", "o"))
+```
+```{r}
+# Set seed for reproducibility
+set.seed(123)
+# Set up repeated k-fold cross-validation
+train.control <- trainControl(method = "cv", number = 10)
+# Train the model
+step.model <- train(GRUPOS_PREDECIR~.,data=datos,
+                    method = "leapForward", 
+                    tuneGrid = data.frame(nvmax = 1:5),
+                    trControl = train.control
+                    )
+step.model$results
+```
+```{r}
+summary(step.model$finalModel)
+```
+
+```{r}
+plot(step.model, type = c("g", "o"))
+```
+
+## Uso del método de regresión paso a paso (Stepwise Fordward)
+```{r}
+#Max-Min Normalization
+normalize <- function(x) {
+  return ((x - min(x)) / (max(x) - min(x)))
+}
+datos<-as.data.frame(lapply(datos, normalize))
+```
+* Este método es uno de los que se utilizan en la seleccion algoritmica del modelo. Se utiliza para identificar aquellas variables que se deberan integrar o no en los modelos a estudiar.
+
+*La logica subyaciente de este algoritmo consiste en conservar las variables independientes que contienen informacion relevante y a la vez prescindir de aquellas que resulten redundantes respecto de las que quedaron en el modelo.
+```{r , echo=FALSE}
+full <- glm(GRUPOS_PREDECIR~.,family=binomial, data= datos)
+summary(full)
+```
+* Como podemos comprobar a simple vista, todas las variables son estadisticamente significante excepto "age" y "cause", cuyo p-valor es mayor a 0.05.
+* A continuacion utilizamos el algoritmo de regresion paso a paso:
+```{r , echo=FALSE}
+step<-stepAIC(full,trace=FALSE)
+step$anova
+```
+* Una vez mas podemos comprobar que las variables de *"cause"* y *"sex"* son las que se descartan usando este algoritmo.
+
+#Analisis de PCA
+* En primer lugar, antes de proceder con el analisis de componentes principales, vamos a tener en cuenta la matriz de correlaciones, puesto que un PCA tiene sentido si existen altas correlaciones entre las variables, ya que como se ha comentado con anteriorirdad, esto es indicativo de que existe informacion redundante y, por tanto, pocos factores explicaran gran parte de la variabilidad total.
+
+* Como ya vimos con las matrices de correlaciones solo obtuvimos correlaciones medianamente fuertes entre las variables de *"motor"*, *"eye"* y *"verbal"*, pero la correlación no era significativa por lo que no se descartó ninguna variable.
+
+* Un problema en el análisis de datos multivariante es la reducción de la dimensionalidad: es decir, si se puede conseguir  con precisión los valores de las variables (p)  con un pequeño subconjunto de ellas (r<p), habremos conseguido reducir la dimensión a costa de una pequeña perdida de información. 
+
+* El análisis de componentes principales tiene este objetivo. Dada n observaciones de p variables, se analiza si es posible representar adecuadamente esta información con un conjunto menor de variables (construidas como combinaciones lineales de las originales).
+
+* El primer paso en el análisis de componentes principales consiste en la obtención de los valores y vectores propios de la matriz de covarianzas muestral o de la matriz de coeficientes de correlación que se obtienen a partir de los datos. 
+
+* Debemos saber que el analisis de componentes principales utiliza la versión normalizada de los predictores originales. Estas variables pueden encontrarse en distintas escalas (kilometros, litros, euros, etc.) y por lo tanto, las varianzas tambien tendran varias escalas.
+
+* Realizar el PCA con variables no normalizadas dara lugar a que haya cargas bastante grandes para variables con una varianza alta y a su vez, esto llevará a la dependencia de una componente principal con la variable con la varianza mas alta. Esto no es deseable. Por lo que se llevara a cabo una normalización de las variables. Al normalizar las variables, la distribución de la variabilidad entre las componentes parece más racional.
+
+
+
+* Veamos que ocurre si utilizamos la **matriz de covarianza**, sin haber normalizado las variables:
+```{r echo=FALSE, , echo=FALSE}
+pca.final<- prcomp(datos,scale=FALSE)
+summary(pca.final)
+plot(pca.final)
+```
+
+```{r echo=FALSE, , echo=FALSE}
+biplot(pca.final, scale = 0)
+```
+
+* Como se puede comprobar en la grafica anterior, al no haber escalado las variables, la primera componente principal (PC1) esta dominada por la variable *"age"*, mientras que la segunda componente principal esta dominada por las variables: *"eye"*, *"motor"* y *"verbal"*.
+
+* Ahora vamos a utilizar la **matriz de covarianza**, habiendo normalizado todas las variables.
+```{r echo=FALSE, , echo=FALSE}
+pca.final <- prcomp(datos)
+summary(pca.final)
+```
+```{r echo=FALSE, , echo=FALSE}
+plot(pca.final)
+```
+
+```{r echo=FALSE, , echo=FALSE}
+biplot(pca.final, scale = 0)
+```
+
+* Como se puede comprobar en la grafica anterior, al normalizar las variables, vemos que el peso de estas se distribuye de forma mas uniforme entre las 2 componentes principales.
+
+  * Para elegir nuestras componentes principales, podremos utilizar dos métodos: 
+    + Por un lado, podemos utilizar el **criterio de Kaiser**, que consiste en conservar aquellos factores cuya desviación estándar al cuadrado asociada sea mayor que 1. 
+    
+    ```{r echo=FALSE, , echo=FALSE}
+        (pca.final$sdev)^2 
+    ```
+      Como se puede comprobar, utilizando este criterio, podriamos quedarnos con los componentes PC1,PC2,PC3,PC4 y PC5.
+    + Otra forma para saber cuántos componentes tener en cuenta es mantener el número decomponentes necesarios para explicar al menos un porcentaje del total de la varianza. Por ejemplo, es importante **explicar al menos un 80%** de la varianza.
+    
+    ```{r echo=FALSE, , echo=FALSE}
+      get_eig(pca.final)
+    ```
+    ```{r echo=FALSE, , echo=FALSE}
+      fviz_eig(pca.final,ncp = 14)
+    ```
+
+* Segun este criterio, deberiamos quedarnos con los primeros componentes principales: PC1,PC2,PC3,PC4,PC5,PC6,PC7,PC8 y PC9.
+ 
+* A continuacion, podremos ver la carga de cada variable respecto a las componentes principales.
+
+```{r echo=FALSE, , echo=FALSE}
+pca.final$rotation
+```
+
+  * Como conclusiones teniendo en cuenta el PCA y las matrices de correlaciones, no se puede descartar ninguna variable por los siguientes motivos:
+    + Las correlaciones entre las variables *"eye"*, *"motor"* y *"verbal"* no son lo suficientemente fuertes como para considerar que existe informacion redundante.El resto de pares de variables tienen una correlacion poco significativa.
+    + Los criterios utilizados para elegir las componentes principales nos han indicado que se necesitan al menos 5 componentes principales usando el criterio de Kaiser y 9 utilizando el criterio del 80% de la proporcion de la varianza. Teniendo en cuenta que poseemos 14 variables, la reducción no es significativa y se perderia interpretabilidad.

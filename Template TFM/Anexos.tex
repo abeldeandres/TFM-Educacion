@@ -88,6 +88,16 @@ En este apartado se definen las variables y sus valores que se van a utilizar en
 			\hline 
 			RATIO & Ratio de alumnos por grupo para cada nivel y numero de curso. &  \\ 
 			\hline 
+			CDSUBDIR & Direccion de Area Territorial (DAT). &  			\begin{minipage}[t]{0.4\textwidth}
+				\begin{itemize}
+					\item DAT-Norte = 1
+					\item DAT-Sur = 2
+					\item DAT-Este = 3
+					\item DAT-Oeste = 4
+					\item DAT-Centro = 5
+				\end{itemize}
+			\end{minipage}\\ 
+			\hline 
 			GRUPO\_PREDECIR & Grupo a predecir  &  \\ 
 			\hline 
 	\end{tabular}}
@@ -100,25 +110,9 @@ Las variables existentes en las bases de datos originales son: CDGENERICO, CDNAT
 El resto de variables se obtienen a partir de las transformaciones correspondientes. Por ejemplo, las variables NM\_UNIDADES NM\_ALUMNOS y GRUPO\_PREDECIR se obtienen de realizar consultas que agrupan por determinados aspectos. Sin embargo, la variable RATIO, que indica la ratio de alumnos para un determinado grupo, se ha obtenido dividiendo la variable de NM\_ALUMNOS entre 30 o 35 (dependiendo del nivel educativo), y este resultado se ha divido entre el número de grupos NM\_GRUPOS para ese nivel educativo. Estos ratios se regulan mediante el \textit{Real Decreto 132/2010, de 12 de febrero, por el que se establecen los requisitos mínimos de los centros que impartan las enseñanzas del segundo ciclo de la educación infantil, la educación primaria y la educación secundaria.} para los niveles de enseñanza de Educación Infantil, Educación Primaria, Educación Secundaria Obligatoria y Bachillerato y el \textit{Real Decreto 1147/2011, de 29 de julio, por el que se establece la ordenación general de la formación profesional del sistema educativo} para los niveles de Formación Profesional. Siendo las ratios los siguientes: 30 para Educación Secundaria Obligatoria y Formación profesional y 35 para Bachillerato.
 
 \section{Análisis exploratorio}
-\subsection{Estadísticos más relevantes}
-\begin{figure*}[htb]
-	\centering
-	\caption{Estadísticos de las variables. Elaboración propia}
-	\includegraphics[width=1\textwidth]{recursos/ImagenesR/estadisticos}
-	\label{fig:estadisticos}
-\end{figure*}
-\FloatBarrier
-
-\begin{figure*}[htb]
-	\centering
-	\caption{Diagrama de cajas normalizado. Elaboración propia}
-	\includegraphics[width=0.8\textwidth]{recursos/ImagenesR/boxplotNorm}
-	\label{fig:boxplotNorm}
-\end{figure*}
-\FloatBarrier
-
 
 \subsection{Análisis de normalidad}
+\label{appendix:AB1}
 En primer lugar, se pueden ver la densidad de las variables individualmente de observar a simple vista si cumplen o no con una distribución normal. 
 
 El análisis de normalidad es importante, ya que la falta de normalidad afecta a los modelos que se vayan a utilizar, por ejemplo, a su intervalo de confianza. Dicha falta de normalidad no suele afectar a las predicciones puntuales, pero si a los intervalos o ``errores'' en la predicción.
@@ -192,35 +186,8 @@ Las figuras \ref{fig:norm1} y \ref{fig:norm2}, muestran de forma general los val
 Tanto en la figuras \ref{fig:barplot1} y \ref{fig:barplot2} se puede hacer una comparativa sobre los servicios que ofrecen los centros. Se puede observar como la mayoría de centros no tienen transporte. Existe un ligero número de centros que tiene comedor sobre centros que no tienen, de la misma manera ocurre con el bilingüismo. La mayoría de los datos que se tiene son del nivel 13, que corresponde con la Educación Secundaria Obligatoria y la mayoría de estos datos corresponden a centros con el código genérico 42 y 72 (IES y CPR INF-PRI-SEC, respectivamente).
 
 \subsection{Relaciones entre variables}
-	\label{appendix:AB3}
+	\label{appendix:AB2}
 Para el estudio de la correlación se utiliza el Coeficiente de Correlación de Pearson (R).
-\begin{figure*}[htb]
-	\centering
-	\caption{Matriz de correlaciones. Elaboración propia}
-	\includegraphics[width=0.8\textwidth]{recursos/ImagenesR/matrizcorrelacion}
-	\label{fig:matrizcorrelaciones}
-\end{figure*}
-\FloatBarrier
-
-
-\begin{figure*}[htb]
-	\centering
-	\caption{Variables más correladas. Elaboración propia}
-	\includegraphics[width=0.6\textwidth]{recursos/ImagenesR/mayorescorrelaciones}
-	\label{fig:mayorescorrelaciones}
-\end{figure*}
-\FloatBarrier
-
-\begin{figure*}[htb]
-	\centering
-	\caption{Mayor correlación con variable a predecir. Elaboración propia}
-	\includegraphics[width=0.6\textwidth]{recursos/ImagenesR/mayorcorrelacion}
-	\label{fig:mayorcorrelacionpredecir}
-\end{figure*}
-\FloatBarrier
-En las figuras \ref{fig:matrizcorrelaciones}, \ref{fig:mayorescorrelaciones} y \ref{fig:mayorcorrelacionpredecir} se muestra prácticamente la misma información, la correlación entre variables. En la figura \ref{fig:mayorescorrelaciones} se muestran aquellos pares de variables que poseen la mayor correlación. Se puede apreciar en esta figura que la variable NMUNIDADES y GRUPOSPREDECIR tienen una correlación casi perfecta, lo que implica que aportarían la misma información al conjunto de datos.
-
-En la figura \ref{fig:mayorcorrelacionpredecir} se muestran aquellas variables que tienen mayor correlación con la variable a predecir. Podemos observar que las variables de NMUNIDADES y NMALUMNOS tienen una enorme correlación con la variable a predecir. Esta relación es lógica, ya que, a mayor número de alumnos o grupos, la variable a predecir aumenta. También se puede destacar que la naturaleza (pública o privada) de un centro está relacionada con el número de grupos a predecir. Al aumentar el valor de la naturaleza, disminuye el número de unidades. De esta premisa se puede deducir que los padres suelen matricular a sus hijos en centros públicos, y por lo tanto, el número de grupos tiende a aumentar. El servicio de comedor también es un factor con relación con el número de grupos, lo que implica que los padres suelen matricular a los alumnos en centros que dispongan del servicio de comedor.
 
 \begin{figure*}[htb]
 	\centering
@@ -244,6 +211,7 @@ En la figura \ref{fig:RelacionGruposYUnidades} se observa la gran relación (pr�
 
 \section{Selección de Variables}
 \subsection{Usando Random Forest}
+\label{appendix:AC1}
 \begin{figure*}[htb]
 	\centering
 	\caption{Variables más importantes usando Random Forest. Elaboración propia}
@@ -361,35 +329,35 @@ Ademas de los modelos comentados, se han entrenado dichos modelos, pero teniendo
 	\caption{Tabla comparación modelos (precisión y tiempo)}
 	\label{tab:ComparacionModelos}
 	\centering
-\begin{tabular}{|c|c|c|}
-	\hline 
-	Modelos & Precisión & Tiempo Entrenamiento \\ 
-	\hline 
-	Redes neuronales (NN) & 0.5236718 & 52.10 \\ 
-	\hline 
-	Redes neuronales - 5 variables (NN2) & 0.5242227 & 29.38 \\ 
-	\hline 
-	K-Vecinos Cercanos (KKNN) & 0.6468044 & 16.69 \\ 
-	\hline 
-	K-Vecinos Cercanos - 5 variables (KKNN2) & 0.5982330 & 14.86 \\ 
-	\hline 
-	Random Forest (RF) & 0.5264411 & 947.03 \\ 
-	\hline 
-	Random Forest - 5 variables (RF2) & 0.5577621 & 515.49 \\ 
-	\hline 
-	Vector de Máquinas Soporte (SVM) & 0.5336122 & 37.93 \\ 
-	\hline 
-	Vector de Máquinas Soporte - 5 variables (SVM2) & 0.5409171 & 21.22 \\ 
-	\hline 
-	Regresión Linear (enet) & 0.5256446 & 2.78 \\ 
-	\hline 
-	Regresión Linear - 5 variables (enet2) & 0.5245138 & 2.13 \\ 
-	\hline 
-	Árbol de decisión (xgbTree) & 0.5146266 & 247.83 \\ 
-	\hline 
-	Árbol de decisión -5 variables (xgbTree2) & 0.5311688 & 228.45 \\ 
-	\hline 
-\end{tabular} 
+	\begin{tabular}{|c|c|c|}
+		\hline 
+		Modelos & Precisión & Tiempo Entrenamiento \\ 
+		\hline 
+		Redes neuronales (NN) & 0.5236718 & 52.10 \\ 
+		\hline 
+		Redes neuronales - 5 variables (NN2) & 0.5242227 & 29.38 \\ 
+		\hline 
+		K-Vecinos Cercanos (KKNN) & 0.6468044 & 16.69 \\ 
+		\hline 
+		K-Vecinos Cercanos - 5 variables (KKNN2) & 0.5982330 & 14.86 \\ 
+		\hline 
+		Random Forest (RF) & 0.5264411 & 947.03 \\ 
+		\hline 
+		Random Forest - 5 variables (RF2) & 0.5577621 & 515.49 \\ 
+		\hline 
+		Vector de Máquinas Soporte (SVM) & 0.5336122 & 37.93 \\ 
+		\hline 
+		Vector de Máquinas Soporte - 5 variables (SVM2) & 0.5409171 & 21.22 \\ 
+		\hline 
+		Regresión Linear (enet) & 0.5256446 & 2.78 \\ 
+		\hline 
+		Regresión Linear - 5 variables (enet2) & 0.5245138 & 2.13 \\ 
+		\hline 
+		Árbol de decisión (xgbTree) & 0.5146266 & 247.83 \\ 
+		\hline 
+		Árbol de decisión -5 variables (xgbTree2) & 0.5311688 & 228.45 \\ 
+		\hline 
+	\end{tabular} 
 \end{table}
 \FloatBarrier
 
@@ -410,19 +378,12 @@ A continuación, se muestra gráficamente los resultados de la tabla anterior.
 	\includegraphics[width=0.8\textwidth]{recursos/ImagenesR/ComparacionModelosTiempo}
 \end{figure*}
 \FloatBarrier
+\end{subappendices}
 
-\section{Predicción utilizando el modelo de árbol de decisión}
-
-\begin{figure*}[htb]
-	\centering
-	\caption{Aumento o disminución de grupos en la predicción. Elaboración propia}
-	\label{fig:UnidadesDistintasPrediccion}
-	\includegraphics[width=0.6\textwidth]{recursos/ImagenesR/UnidadesDistintasPrediccion}
-\end{figure*}
-\FloatBarrier
-
-\section{Sistema de Explotación de la Consejería de Educación e Investigación}
-	\label{appendix:BC}
+\chapter{Sistema de Explotación de la Consejería de Educación e Investigación}
+\setcounter{figure}{0} \renewcommand{\thefigure}{C.\arabic{figure}}
+\setcounter{table}{0} \renewcommand{\thetable}{C.\arabic{table}}
+	\label{appendix:C}
 En este apartado se van a mostrar una serie de imágenes de la aplicación de explotación de datos de la Consejería de Educación e Investigación. Concretamente se van a mostrar dos Cuadros de Mandos.
 
 En primer lugar, se ha realizado un Cuadro de Mando relativo a los centros sostenidos con fondos públicos. En este cuadro de mando se muestran aspectos como el número de alumnos matriculados, el numero de unidades, el porcentaje de centros públicos y concertados, la nacionalidad de los alumnos, el sexo, etc. Véase la figura \ref{fig:CentrosResumenI}
@@ -436,11 +397,11 @@ Existe un filtro, donde se puede seleccionar los parámetros de la búsqueda. En
 	\includegraphics[width=1\textwidth]{recursos/CentrosResumenI}
 \end{figure*}
 
-En la figura \ref{fig:UnidadesDistintasPrediccion} se ha realizado una búsqueda sobre el nivel educativo de E.S.O. en el centro educativo de ``Jose Luis Sampedro'', que se encuentra en Tres Cantos (DAT-Norte).
+En la figura \ref{fig:CentrosResumenII} se ha realizado una búsqueda sobre el nivel educativo de E.S.O. en el centro educativo de ``Jose Luis Sampedro'', que se encuentra en Tres Cantos (DAT-Norte).
 \begin{figure*}[htb]
 	\centering
 	\caption{Cuadro de Mandos de Centros II. Elaboración propia}
-	\label{fig:UnidadesDistintasPrediccion}
+	\label{fig:CentrosResumenII}
 	\includegraphics[width=1\textwidth]{recursos/CentrosResumenII}
 \end{figure*}
 \FloatBarrier
@@ -477,6 +438,6 @@ Además, aunque no se haya creado cuadro de mandos, se ha realizado cubos OLAP d
 \end{figure*}
 \FloatBarrier
 
-\end{subappendices}
+
 
 

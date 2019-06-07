@@ -565,4 +565,35 @@
   url    = {https://www.businessintelligence.info},
 }
 
+@WWW{carlospesquera2019,
+  author = {Carlos Pesquera},
+  title  = {Qué son las tablas de hechos y de dimensión},
+  year   = {2019},
+  date   = {2019-06-03},
+  url    = {http://carlospesquera.com},
+}
+
+@WWW{HILDA2014,
+  author = {Hilda Fingermann},
+  title  = {Aulas Superpobladas},
+  year   = {2014},
+  date   = {2019-06-04},
+  url    = {https://educacion.laguia2000.com/general/aulas-superpobladas},
+}
+
+@Book{PANORAMA2018,
+  author = {{Ministerio de Educación y Formacion Profesional}},
+  title  = {Panorama de la educación Indicadores de la OCDE 2018},
+  year   = {2018},
+  date   = {2019-06-04},
+}
+
+@Thesis{LILIA2013,
+  author      = {Lilia Victoria Mendoza Racancoj},
+  title       = {Sobrepoblación estudiantil y desempeño docente en el aula},
+  institution = {Universidad Rafael Landívar},
+  year        = {2013},
+  date        = {2019-06-05},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}

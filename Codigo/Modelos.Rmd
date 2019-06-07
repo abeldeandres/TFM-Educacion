@@ -1,0 +1,1348 @@
+---
+title: "ModelosII"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(Encoding="UTF-8")
+```
+
+```{r , echo=FALSE, include=FALSE}
+library(caTools)
+library(caret)
+library(caretEnsemble)
+library(e1071)
+library(randomForest)
+library(nnet)
+library(neuralnet)
+library(party) #ctree
+library(gbm)
+library(rfUtilities)
+library(NeuralNetTools)
+library(e1071)
+library(ada) #adaboost
+library(corrplot)
+library(pROC)
+library(ROCR) 
+library(mlbench)
+gc(reset=TRUE)
+rm(list = ls())
+datos <- read.csv("C:/Users/abelt/Dropbox/TFM Educacion/Codigo/datos.csv")
+arrayTiemposTrain<-c()
+arrayTiemposPredict<-c()
+```
+
+```{r cars}
+
+datos <- datos[,c("CDGENERICO","CDNATURALEZA","CDPOSTAL","ITCOMEDOR","ITTRANSPORTE","ITBILINGUE","CD_NIVEL","NM_CURSO","NM_ALUMNOS","NM_UNIDADES","GRUPOS_PREDECIR")]
+
+datos <- na.omit(datos)
+
+```
+## TERMINOS GENERALES
+### Matriz de confusión
+  * Una matriz de confusión es una tabla que se usa a menudo para describir el rendimiento de un modelo de clasificación sobre en un conjunto de datos de prueba para los cuales se conocen los valores verdaderos.
+
+  * Definamos ahora los términos más básicos para nuestro estudio:
+    + Verdaderos Positivos (TP): estos son casos en los que predijimos que sí (van a fallecer), y sí fallecen.
+    + Verdaderos Negativos (TN): Predijimos que no iban a fallecer, y los pacientes no fallecen.
+    + Falsos Positivos (FP): Predijimos que sí iban a fallecer, pero en realidad no han fallecido.
+    + Falsos Negativos (FN): Predijimos que no, pero en realidad tienen la enfermedad.
+    
+  * En nuestro estudio se ha tomado como positivo, el valor de "F", es decir, que el paciente fallezca.
+  
+  * Otra información a tener en cuenta en los siguientes graficos:
+    + Reference V, Prediction V -> Verdaderos Negativos (TN).
+    + Reference F, Prediction V -> Falsos Negativos (FN)
+    + Reference V, Prediction F -> Falsos Positivos (FP)
+    + Reference F, Prediction F -> Verdaderos Positivos (TP)
+    
+  * Estimadores de mejora
+    + Para modelos de regresion
+      + R2
+      + Root mean Square error
+      + Correlación de Spearman
+    + Para modelos de clasificacion
+      + Overall Accuracy
+      + Kappa Statistics
+
+      
+### OVERFITTING     
+* El overfitting, tambien llamado sobreajuste: es el efecto que se da al entrenar de mas un algoritmo de aprendizaje, de este modo el algoritmo queda muy ajustado a caracteristicas muy especificas y por lo tanto, su respuesta a nuevos datos empeora.
+
+* Existen distintas tecnicas para evitar el sobreajuste:
+  + Cross-Validation: esta técnica consiste en dividir los datos en varios conjuntos de datos y luego elegir uno de los conjuntos para medir la precisión de la predicción "test" y el resto para entrenar.Concretamente se divide la muestra en K submuestras, de forma que se utilizan K-1 para estimar el modelo y la restante como submuestra de evaluación, este proceso se repite K veces, de forma que cada submuestra es utilizada una vez para evaluar el modelo y K-1 veces para el ajuste. 
+  + Detención temprana: proporciona información sobre cuántas iteraciones se pueden ejecutar antes de que el algoritmo de aprendizaje comience a sobrepasar el límite.
+  + Poda: Simplemente elimina los nodos que agregan poca capacidad de predicción para el problema en cuestión.
+  + Regularización: introduce un término de costo a la hora de obtener más variables con la función objetivo. Intenta reducir a cero los coeficientes de muchas variables consiguiendo asi reducir el término de costo.
+  
+* https://www.r-project.org/conferences/useR-2013/Tutorials/kuhn/user_caret_2up.pdf
+
+## Datos de entrenamiento y test
+* En primer lugar, diviremos los datos en un conjunto de entreno (train) y un conjunto de pruebas (test). Tenemos 6930 registros por lo que el 30% son datos de prueba (2096) y el 70% datos de entrenamiento del modelo (4890).
+
+
+```{r , echo=FALSE}
+#Cambiamos la variable outcome a factor para trabajar con el modelo
+set.seed(42)
+ind<-sample.split(Y=datos$GRUPOS_PREDECIR,SplitRatio =0.7)
+train <- datos[ind,]
+test <- datos[!ind,]
+```
+
+## REGRESION LOGISTICA 
+
+### Usando todos los predictores
+* En primer lugar vamos a construir nuestro modelo de regresion logistica con los datos de entrenamiento.
+```{r echo=TRUE, , echo=FALSE}
+set.seed(42)
+#ctrl <- trainControl(method = "cv", number = 10, savePredictions = TRUE,classProbs=FALSE,
+#summaryFunction=twoClassSummary)
+nnetGrid <-  expand.grid(
+  usekernel = FALSE, #c(TRUE,FALSE),
+  fL = 0, #seq(from = 0, to = 10, by = 1),
+  adjust = 0 #seq(from = 0, to = 10, by = 1)
+)
+
+time <- system.time(model.LR <- caret::train(GRUPOS_PREDECIR~.,data = train, method="logicBag", family="binomial" tuneGrid=nnetGrid))
+arrayTiemposTrain<-c(arrayTiemposTrain, as.numeric(time[3]))
+summary(model.LR)
+```
+
+* Una vez hecho esto, vamos a utilizar los datos de test para predecir el modelo que hemos construido y comprobaremos el ajuste de este.
+
+```{r , echo=FALSE}
+timePred<-system.time(pred.LR <- predict(model.LR, newdata=test))
+arrayTiemposPredict<-c(arrayTiemposPredict, as.numeric(timePred[3]))
+confusionMatrixLOG<-caret::confusionMatrix(data = pred.LR, reference = test$outcome,positive="F")
+confusionMatrixLOG
+```
+
+```{r , echo=FALSE}
+fourfoldplot(confusionMatrixLOG$table)
+```
+
+* Como podemos comprobar, el modelo se ajusta bastante bien, con un 76%. Dicho de otra forma, el modelo es capaz de predecir correctamente un 76% de los datos de los pacientes.
+
+* A continuacion, vamos a utilizar la curva de ROC con los valores de pAUC:
+
+```{r , echo=FALSE}
+pred.LR = predict(model.LR, newdata=test,type="prob")
+
+```
+
+
+### Eliminando los predictores "sex" y "cause""
+* Al igual que hicimos en el modelo anterior, vamos a construir el modelo eliminando las variables de "sex" y "cause"
+
+```{r , echo=FALSE}
+set.seed(42)
+ctrl <- trainControl(method = "cv", number = 10, savePredictions = TRUE,classProbs=TRUE,
+summaryFunction=twoClassSummary)
+model.LR1 <- caret::train(outcome ~ age+ec+eye+motor+verbal+pupils+phm+sah+oblt+mdls+hmt,data = train, method="glm", family="binomial",trControl = ctrl, tuneLength = 5,metric="ROC")
+summary(model.LR1)
+```
+```{r , echo=FALSE}
+model.LR1
+```
+
+* Una vez hecho esto, vamos a utilizar los datos de test para predecir el modelo que hemos construido y comprobaremos el ajuste de este.
+```{r , echo=FALSE}
+pred.LR1 = predict(model.LR1, newdata=test)
+confusionMatrixLOG2<-caret::confusionMatrix(data = pred.LR1, reference = test$outcome,positive="F")
+confusionMatrixLOG2
+```
+
+```{r , echo=FALSE}
+fourfoldplot(confusionMatrixLOG2$table)
+```
+
+* Como podemos comprobar, aunque el AIC ha mejorado (reducido su valor) utilizando este modelo (sin las variables de sexo y causa) respecto al modelo con todas las variables, ha empeorado las prediciones.
+
+* A continuacion, vamos a utilizar la curva de ROC con los valores de pAUC:
+```{r , echo=FALSE}
+pred.LR1 = predict(model.LR1, newdata=test,type="prob")
+
+```
+
+## NAIVES BAYES
+*Las redes bayesianas, junto con los árboles de decisión y las redes neuronales artificiales, han sido los tres métodos más usados en aprendizaje automático durante estos últimos años en tareas como la clasificación.
+* La idea de Naïve Bayes es sencilla y es usar las probabilidades condicionales de los valores de una variable para determinar a qué categoría pertenece, estas probabilidades se calculan con el teorema de Bayes.
+* Por ejemplo, si quisieramos clasificar la valoracion de un determinado servicio, podriamos hacerlo en dos categorias, "positiva" y "negativa"; de esta forma, tenemos que determinar que palabras son mas probables de encontrar en cada una de estas categorias. Se puede intuir que es mas probable que una valoracion pertenezca a la categoria "positiva", si los valores son "bueno" o "excelente" y menos probable si contiene palabras como "malo" o "deficiente".
+*Por tanto, deberemos obtener la probabilidad de que una valoracion pertenezca a la categoria "positiva", dado que la valoracion contiene la palabra "excelente". Por tanto deberiamos calcular p(positiva|excelente)
+* Debido a que este algoritmo calcula las probabilidades de cada valor por separado, como si los valores fueran independientes unos de otros, se conoce como "ingenuo". Lo que se hace, por lo tanto, es calcular la probabilidad condicional de cada valor, asumiendo de forma "ingenua", que en esta probabilidad no importa cuales valores de variables lo acompañan en cada registro.
+* En este caso, tambien vamos a utilizar el paquete de caret para realizar el entrenamiento del modelo. Utilizaremos tambien la validacion cruzada con 10 iteraciones.
+* Los parametros con los que hemos hecho la fuerza bruta ha sido los siguientes:
+  + useKernel: tipo de distribucion
+  + fL: la corrección de Laplace
+  + adjust: Ajuste de ancho de banda
+```{r , echo=FALSE, include=FALSE}
+set.seed(42)
+nnetGrid <-  expand.grid(
+  usekernel = FALSE, #c(TRUE,FALSE),
+  fL = 0, #seq(from = 0, to = 10, by = 1),
+  adjust = 0 #seq(from = 0, to = 10, by = 1)
+)
+trainControl <- trainControl(method="cv", number=10)
+time<-system.time(model.nb <- caret::train(outcome~., data=train, method="nb", 
+                  trControl=trainControl,tuneGrid = nnetGrid
+                  ))
+arrayTiemposTrain<-c(arrayTiemposTrain, as.numeric(time[3]))
+```
+```{r , echo=FALSE}
+print(model.nb)
+```
+```{r , echo=FALSE}
+#plot(model.nb)
+```
+* Con estas iteraciones se ha conseguido que para construir el mejor modelo, se necesitan los siguientes parametros: 
+  + fL=0
+  + usekernel=FALSE
+  + nu=0
+  
+* Una vez hecho esto, pasamos a predecir usando el modelo construido y los datos de test.
+```{r , echo=FALSE}
+timePred<-system.time(pred.NB<-predict(model.nb,test))
+arrayTiemposPredict<-c(arrayTiemposPredict, as.numeric(timePred[3]))
+confusionMatrixNaive<-caret::confusionMatrix(data = pred.NB, reference = test$outcome,positive="F")
+```
+*Mostramos la matriz de confusion.
+```{r , echo=FALSE}
+confusionMatrixNaive
+```
+```{r , echo=FALSE}
+fourfoldplot(confusionMatrixNaive$table)
+```
+* A continuacion, vamos a utilizar la curva de ROC con los valores de pAUC:
+```{r warning=FALSE, , echo=FALSE}
+pred.NB <- predict(model.nb, newdata = test, type="prob")
+pred.NB<-data.frame(pred.NB)
+colnames(pred.NB) <- c("F", "V")
+
+```
+### Eliminando los predictores "sex" y "cause""
+```{r warning=FALSE, , echo=FALSE}
+set.seed(42)
+nnetGrid <-  expand.grid(
+  usekernel = FALSE,
+  fL = 0,
+  adjust = 0
+)
+trainControl <- trainControl(method="cv", number=10)
+model.nb2 <- caret::train(outcome ~ age+ec+eye+motor+verbal+pupils+phm+sah+oblt+mdls+hmt,data = train, method="nb",trControl=trainControl,tuneGrid = nnetGrid)
+print(model.nb2)
+```
+```{r echo=TRUE, , echo=FALSE}
+pred.NB2<-predict(model.nb2,test)
+confusionMatrixNaive2<-caret::confusionMatrix(data = pred.NB2, reference = test$outcome,positive="F")
+confusionMatrixNaive2
+```
+* A continuacion, vamos a utilizar la curva de ROC con los valores de pAUC:
+```{r echo=TRUE, warning=FALSE, , echo=FALSE}
+pred.NB2 <- predict(model.nb2, newdata = test, type="prob")
+pred.NB2<-data.frame(pred.NB)
+colnames(pred.NB2) <- c("F", "V")
+
+```
+## RANDOM FOREST
+* Random forest es otra técnica de aprendizaje automático y nace como mejora sustancial de los árboles simples. Combina una cantidad grande de árboles de decisión independientes probados sobre conjuntos de datos aleatorios con igual distribución.
+  * La fase de aprendizaje consiste en crear una gran cantidad de árboles de decisión independientes. Estos arboles se construyen a partir de los datos de entrada ligeramente modificados. Se modifica el conjunto inicial de partida, de la siguiente forma:
+    + Se selecciona aleatoriamente con reemplazamiento un porcentaje de datos de la muestra total.
+  * Es habitual incluir un segundo nivel aleatoriedad, esta vez afectando los atributos:
+    + En cada nodo, al seleccionar la partición óptima, tenemos en cuenta sólo una porción de los atributos, elegidos al azar en cada ocasión.
+  * Una vez que se tienen muchos árboles -500 por ejemplo- la fase de clasificación se lleva a cabo de la siguiente manera:
+    + Cada árbol se evalúa de forma independiente y la predicción del bosque será la media de los 500 árboles. La proporción de árboles que toman una misma respuesta se interpreta como la probabilidad de la misma.
+* El modelo de Random Forest tambien lo construiremos con los mismos datos de entrenamiento que utilizamos en la regresion logistica.
+```{r , echo=FALSE}
+mtry=tuneRF(x = train[,-14],       # data set de entrenamiento 
+       y = train$outcome,  # variable a predecir
+       mtryStart  = 1,   # cantidad de variables inicial 
+       stepFactor = 2,   # incremento de variables
+       ntreeTry   = 500, # cantidad arboles a ejecutar en cada iteracion
+       improve    = .01  # mejora minina del OOB para seguir iteraciones
+      )
+best.m <- mtry[mtry[, 2] == min(mtry[, 2]), 1]
+print(mtry)
+```
+* Utilizamos el siguiente valor como "mtry".
+```{r , echo=FALSE}
+print(best.m)
+```
+* Una vez obtenido el optimo valor de mtry, vamos a volver a construir el modelo con el mtry optimo.
+```{r , echo=FALSE}
+#time<-system.time(model.RF2<-randomForest(outcome~.,data=train,importance=T,ntree=500, mtry=best.m))
+# train model
+control <- trainControl(method="cv", number=10)
+#tunegrid <- expand.grid(.mtry=c(1:15), .ntree=c(1:2500))
+tunegrid <-  expand.grid(
+  mtry = best.m
+)
+metric <- "Accuracy"
+time<-system.time(model.RF <- caret::train(outcome~., data=train, method="rf", metric=metric, tuneGrid=tunegrid, trControl=control))
+arrayTiemposTrain<-c(arrayTiemposTrain, as.numeric(time[3]))
+print(model.RF)
+```
+* Despues de construir el modelo, vamos a utilizar los datos de test para predecirlo. Comprobaremos una vez mas el ajuste de este.
+```{r , echo=FALSE}
+timePred<-system.time(predRF <- predict(model.RF, newdata = test))
+arrayTiemposPredict<-c(arrayTiemposPredict, as.numeric(timePred[3]))
+confusionMatrixRF<-caret::confusionMatrix(data=predRF,reference=test$outcome,positive="F")
+confusionMatrixRF
+```
+```{r , echo=FALSE}
+fourfoldplot(confusionMatrixRF$table)
+```
+* A continuacion, vamos a utilizar la curva de ROC con los valores de pAUC:
+```{r , echo=FALSE}
+pred.RF <- predict(model.RF, newdata = test, type="prob")
+pred.RF<- data.frame(pred.RF)
+
+```
+### Eliminando los predictores "sex" y "cause""
+```{r , echo=FALSE}
+set.seed(42)
+control <- caret::trainControl(method="cv", number=10)
+tunegrid <-  expand.grid(
+  mtry = best.m
+)
+model.RF2 <- caret::train(outcome ~ age+ec+eye+motor+verbal+pupils+phm+sah+oblt+mdls+hmt,data = train, method="rf", metric=metric, tuneGrid=tunegrid, trControl=control)
+print(model.RF2)
+```
+* Despues de construir el modelo, vamos a utilizar los datos de test para predecirlo. Comprobaremos una vez mas el ajuste de este.
+```{r , echo=FALSE}
+set.seed(42)
+pred.RF2 <- predict(model.RF2, newdata = test)
+confusionMatrixRF2<-caret::confusionMatrix(data=pred.RF2,reference=test$outcome,positive="F")
+confusionMatrixRF2
+```
+```{r , echo=FALSE}
+set.seed(42)
+pred.RF2 <- predict(model.RF2, newdata = test, type="prob")
+pred.RF2<- data.frame(pred.RF2)
+
+```
+## Adaboost
+* El algoritmo AdaBoost propone entrenar iterativamente una serie de clasificadores base, de tal modo que cada nuevo clasificador preste mayor atención a los datos clasificados erróneamente por los clasificadores anteriores, y combinarlos de tal modo que se obtenga un clasificador con elevadas prestaciones.
+* Las caracteristicas que lo convierten en un buen metodo son: su capacidad de evadir el **overfitting** y su menor porcentaje de error a cambio de tener un error mayor durante el entrenamiento.
+
+* En primer lugar vamos a utilizar el paquete de "caret" con el objetivo de encontrar el modelo optimo usando adaboost. Aplicaremos la validación cruzada.
+
+
+```{r , echo=FALSE}
+set.seed(42)
+trainControl <- trainControl(method="cv", number=10)
+metric <- "Accuracy"
+model.ada1 <- caret::train(outcome~., data=train, method="ada", 
+                  trControl=trainControl,metric=metric)
+print(model.ada1)
+```
+```{r , echo=FALSE}
+plot(model.ada1)
+```
+
+* Como se puede comprobar en el grafico anterior, con 3 iteraciones, conseguimos una mayor precision (0.767).
+
+* Tambien podemos comprobar como el paquete caret nos indica cuales son los mejores parametros que debemos utilizar para obtener la mejor precision.
+
+* Sin embargo, realizando pruebas mas exaustivas y utilizando la fuerza bruta con el paquete de "caret" y jugando con los valores de los argumentos necesarios en adaboost, hemos obtenido mejores resultados.
+
+* Los parametros con los que hemos hecho la fuerza bruta ha sido con los siguientes:
+  + iter: número de iteraciones de refuerzo para realizar. Se ha iterado desde 1 hasta 200 de diez en diez.
+  + maxdepth: Profundidad (complejidad) del arbol. Se ha iterado desde 1 hasta 10 de uno en uno.
+  + nu: parámetro de contracción. Se ha iterado desde 0.1 a 0.4 de 0.1 en 0.1.
+
+* Con estas iteraciones se ha conseguido que para construir el mejor modelo, se necesitan los siguientes parametros: 
+  + iter=141
+  + maxdepth=1
+  + nu=0.3
+
+* Con estos parametros (numero de iteraciones, maxima profundidad y nu -parametro para truncar-) construimos nuestro modelo:
+
+```{r , echo=FALSE}
+set.seed(42)
+time<-system.time(model.ada<-ada(outcome~.,data=train,iter=150,nu=0.1,control=rpart.control(maxdepth=3)))
+arrayTiemposTrain<-c(arrayTiemposTrain, as.numeric(time[3]))
+print(model.ada)
+```
+
+```{r , echo=FALSE}
+plot(model.ada)
+```
+
+* Despues de construir el modelo con los datos de entrenamiento y habiendo entrenado el modelo construido con los datos de prueba, obtenemos la matriz de confusion:
+
+```{r , echo=FALSE}
+timePred<-system.time(pred.ada<-predict(model.ada,test))
+arrayTiemposPredict<-c(arrayTiemposPredict, as.numeric(timePred[3]))
+confusionMatrixAdaBoost<-caret::confusionMatrix(data=pred.ada,reference=test$outcome,positive="F")
+confusionMatrixAdaBoost
+```
+
+```{r , echo=FALSE}
+fourfoldplot(confusionMatrixAdaBoost$table)
+```
+
+* A continuacion, vamos a utilizar la curva de ROC con los valores de pAUC:
+
+```{r , echo=FALSE}
+pred.ada <- predict(model.ada, newdata = test, type="prob")
+pred.ada<-data.frame(pred.ada)
+colnames(pred.ada) <- c("F", "V")
+
+```
+### Eliminando los predictores "sex" y "cause""
+```{r , echo=FALSE}
+set.seed(42)
+model.ada2<-ada(outcome ~ age+ec+eye+motor+verbal+pupils+phm+sah+oblt+mdls+hmt,data = train,iter=150,nu=0.1,control=rpart.control(maxdepth=3))
+print(model.ada2)
+```
+```{r , echo=FALSE}
+plot(model.ada2)
+```
+
+* Despues de construir el modelo con los datos de entrenamiento y habiendo entrenado el modelo construido con los datos de prueba, obtenemos la matriz de confusion:
+
+```{r , echo=FALSE}
+set.seed(42)
+pred.ada2=predict(model.ada2,test)
+confusionMatrixAdaBoost2<-caret::confusionMatrix(data=pred.ada2,reference=test$outcome,positive="F")
+confusionMatrixAdaBoost2
+```
+
+```{r , echo=FALSE}
+set.seed(42)
+pred.ada2 <- predict(model.ada2, newdata = test, type="prob")
+pred.ada2<-data.frame(pred.ada2)
+colnames(pred.ada2) <- c("F", "V")
+
+```
+
+## GBM
+* La idea general es obtener una secuencia de árboles (muy) simples, donde cada árbol sucesivo se construye con los residuos de predicción del árbol anterior.
+
+* Una vez generado los arboles uno a uno, se suman las predicciones de los árboles individuales:
+
+* D(x)= dtree1(x) + dtree2(x) + ...
+
+*  El siguiente árbol de decisiones -dtree3- intenta reducir la diferencia entre la función objetivo f(x) y la predicción del conjunto actual al reconstruir el residuo (dtree1 +dtree2).
+
+* Ademas, el siguiente árbol -dtree3- en el conjunto debe complementarse bien con los árboles existentes y minimizar el error de entrenamiento del conjunto.
+
+* D(x) + dtree3(x) = f(x)
+
+* Para acercarnos a una prediccion sin errores, entrenamos un árbol para reconstruir la diferencia entre la función objetivo y las predicciones actuales de un conjunto, esta diferencia se denomina residuo: 
+
+* R(x)= f(x) - D(x)
+
+* Como podemos observar, si el árbol de decisión reconstruye completamente R(x), todo el conjunto daria predicciones sin errores, es decir, predicciones exactas. Esto en la practica nunca sucede.
+
+* Uno de los principales problemas de todos los algoritmos de aprendizaje automático es 'saber cuándo detenerse', es decir, cómo evitar que el algoritmo de aprendizaje se ajuste tanto, que probablemente no mejore la validez predictiva del modelo. Este problema también se conoce como el problema del sobreajuste (overfitting).
+
+* Para establecer el limite de estos algoritmos, tenemos en cuenta la iteracion (numero de arboles) en la que se consigue un menor error.
+
+
+* El modelo de GBM tambien lo construiremos con los mismos datos de entrenamiento que utilizamos en los modelos anteriores.
+
+
+* A continuacion construimos el modelo automaticamente utilizando el paquete de "caret", igual que en ejemplos anteriores se ha utilizado la validacion cruzada.
+
+```{r , echo=FALSE}
+#https://rpubs.com/omicsdata/gbm
+set.seed(42)
+fitControl = trainControl(method="cv", number=10)
+metric <- "Accuracy"
+tunegrid <-  expand.grid(
+   n.trees = 100,
+   shrinkage = 0.1,
+   interaction.depth = 1,
+   n.minobsinnode = 10
+)
+time<-system.time(modelGBM <- caret::train(outcome~., data=train, method="gbm",trControl=fitControl, tuneGrid=tunegrid,verbose=F))
+arrayTiemposTrain<-c(arrayTiemposTrain, as.numeric(time[3]))
+print(modelGBM)
+```
+
+
+* Vemos que al construir al construir el modelo automaticamente, se utilizan los siguientes valores:
+  + n.trees = 100. Numero de iteraciones.
+  + shrinkage = 0.1.Es el ratio de aprendizaje. Simboliza la velocidad a la que se adapta el algoritmo.
+  + interaction.depth = 1. Este parametro es la complejidad del arbol.
+  + n.minobsinnode = 10. Es el número mínimo de muestras del conjunto de entrenamiento para que un nodo comience a dividirse.
+
+* Tambien podemos observar en el grafico es que la mejor precision se consigue con una iteracion de 100.
+
+* Vamos a construir otro modelo utilizando fuerza bruta. El objetivo es obtener una mejor precision jugando con los parametros ya vistos para este modelo anteriormente.
+
+* Para ello:
+  + Iteramos la variable n.trees de 1 a 200 aumentando 10.
+  + Iteramos la variable interaction.depth de 1 a 5 aumentando 1.
+  + Iteramos la variable shrinkage de 0.1 a 0.4 aumentando 0.1.
+  + Iteramos la variable n.minobsinnode de 1 a 15 aumentando 1.
+  
+* Utilizando esta configuracion, se ha obtenido resultados similares en la precision.
+
+* Después de construir el modelo, vamos a predecir utilizando los datos de test, con el objetivo de obtener la precision de este.
+
+
+
+```{r , echo=FALSE}
+timePred<-system.time(pred.GBM <- predict(modelGBM, test))
+arrayTiemposPredict<-c(arrayTiemposPredict, as.numeric(timePred[3]))
+confusionMatrixGBM<-caret::confusionMatrix(data=pred.GBM,reference=test$outcome,positive="F")
+confusionMatrixGBM
+```
+```{r , echo=FALSE}
+fourfoldplot(confusionMatrixGBM$table)
+```
+
+* A continuacion, vamos a utilizar la curva de ROC con los valores de pAUC:
+```{r , echo=FALSE}
+pred.GBM = predict(modelGBM, test, type="prob")
+```
+
+### Eliminando los predictores "sex" y "cause"
+```{r , echo=FALSE}
+#https://rpubs.com/omicsdata/gbm
+set.seed(42)
+fitControl <- trainControl(method="cv", number=10)
+tunegrid <-  expand.grid(
+   n.trees = 100,
+   shrinkage = 0.1,
+   interaction.depth = 1,
+   n.minobsinnode = 10
+)
+model.GBM2 <- caret::train(outcome ~ age+ec+eye+motor+verbal+pupils+phm+sah+oblt+mdls+hmt, data=train, method="gbm",trControl=fitControl, tuneGrid=tunegrid,verbose=F )
+print(model.GBM2)
+```
+* Predecimos
+```{r , echo=FALSE}
+pred.GBM2 <- predict(model.GBM2, test, na.action = na.pass)
+confusionMatrixGBM2<-caret::confusionMatrix(data=pred.GBM2,reference=test$outcome,positive="F")
+confusionMatrixGBM2
+```
+
+```{r echo=TRUE, , echo=FALSE}
+pred.GBM2 <- predict(model.GBM2, test, type="prob")
+```
+
+## XGBOOST
+
+  * XGBoost es la abreviatura de 'Extreme Gradient Boosting'. Esta basado en en el modelo original GBM (ya estudiado anteriormente).
+
+  * A continuacion se muestran algunas de las ventajas de XGBOOST frente GBM:
+    +Regularizacion: La implementacion de GBM no tiene regularizacion, lo que provoca que XGBOOST reduzca el sobreajuste.
+    + Procesammiento paralelo: XGBoost implementa el procesamiento paralelo y es sorprendentemente más rápido en comparación con GBM.
+    + Mayor flexibilidad: XGBoost permite a los usuarios definir objetivos de optimización personalizados y criterios de evaluación.
+    + Manejo de valores perdidos: XGBoost tiene una rutina incorporada para manejar los valores perdidos.
+    + Poda: El algoritmo GBM dejaría de dividir un nodo cuando encuentre una pérdida negativa en una división. Por lo tanto XGBoost es mas codicioso. XGBoost por otro lado hace divisiones hasta la **max_depth** especificada y luego comienza a podar el árbol hacia atrás y a eliminar divisiones de las cuales no hay ganancia positiva.
+    + Incorpora Cross-Validation: XGBoost permite al usuario ejecutar una validación cruzada en cada iteración del proceso de "boosting" y, por lo tanto, es fácil obtener el número óptimo  de iteraciones de "boosting" en una sola ejecución. Con GBM tenemos que ejecutar una búsqueda en cuadrícula y solo se pueden probar valores limitados.
+    
+  * Igual que con los modelos construidos con anterioridad, vamos a volver a utilizar "caret" para la validacion cruzada, ademas utilizaremos los siguientes parametros de ajuste para XGBoost que nos ofrece el paquete "xgbtree":
+    + nrounds:Es el número de iteraciones que el modelo ejecuta antes de que se detenga. Con el valor más alto del modelo nrounds tomará más tiempo y viceversa.
+    + max_depth (Profundidad máxima del árbol):Un valor alto de max_depth creará árboles más profundos, es decir, creará un modelo más complejo. Un valor más alto de max_depth puede crear un ajuste excesivo y un valor inferior de max_depth puede crear un ajuste insuficiente. Todo depende de los datos disponibles. 
+    + eta (Shrinkage): Con un valor alto, el modelo funcionará más rápido y viceversa. Con un "eta" más alto y un menor "round", el modelo tardará menos tiempo en ejecutarse. Con un "eta" menor y un modelo de "nround" más alto tomará más tiempo.
+    + gamma (reducción de pérdida mínima): Para crear una partición adicional en un nodo hoja del árbol Se requiere una reducción de pérdida mínima.
+    + colsample_bytree (proporción de columnas de la submuestra): Se escogen aleatoriamente columnas de entre todas las columnas o variables durante el proceso de construccion del arbol. Es similar al parametro de "mtry" de los "Random Forest". Un valor alto puede crear un ajuste excesivo (overfitting) y un valor pequeño puede crear un ajuste insuficiente.
+    + min_child_weight (suma mínima del peso de la instancia): Si el paso de la partición del árbol da como resultado un nodo hoja con la suma del peso de la instancia menor que min_child_weight, entonces el proceso de construcción dejará de particionar más.
+
+    
+
+```{r , echo=FALSE}
+set.seed(42)
+ControlParamteres <- trainControl(method = "cv",
+                                  number = 10, #usamos 5 fold cross-validation
+                                  savePredictions = TRUE,
+                                  classProbs = TRUE #give the probabilities for each class.Not just the class labels
+)
+ parametersGrid <-  expand.grid(eta = 0.2, 
+                            colsample_bytree=0.4,
+                            max_depth=1,
+                            nrounds=71,
+                            gamma=1,
+                            min_child_weight=4,
+                            subsample = 1
+                            )
+time<-system.time( modelxgboost <- caret::train(outcome~., 
+                  data = train,
+                  method = "xgbTree",
+                  trControl = ControlParamteres,
+                  tuneGrid=parametersGrid))
+ arrayTiemposTrain<-c(arrayTiemposTrain, as.numeric(time[3]))
+ modelxgboost
+```
+
+* Ahora predecimos
+
+```{r , echo=FALSE}
+timePred<-system.time(pred.XGB<-predict(modelxgboost,test))
+arrayTiemposPredict<-c(arrayTiemposPredict, as.numeric(timePred[3]))
+confusionMatrixGBOOST<-caret::confusionMatrix(data = pred.XGB, reference = test$outcome,positive="F")
+confusionMatrixGBOOST
+```
+
+```{r , echo=FALSE}
+fourfoldplot(confusionMatrixGBOOST$table)
+```
+
+```{r , echo=FALSE}
+pred.XGB<-predict(modelxgboost,test,type="prob")
+```
+### Eliminando los predictores "sex" y "cause"
+```{r , echo=FALSE}
+set.seed(42)
+ControlParamteres <- trainControl(method = "cv",
+                                  number = 10, #usamos 5 fold cross-validation
+                                  savePredictions = TRUE,
+                                  classProbs = TRUE #give the probabilities for each class.Not just the class labels
+)
+ parametersGrid <-  expand.grid(eta = 0.2, 
+                            colsample_bytree=0.4,
+                            max_depth=1,
+                            nrounds=71,
+                            gamma=1,
+                            min_child_weight=4,
+                            subsample = 1
+                            )
+model.xgboost2 <- caret::train(outcome ~ age+ec+eye+motor+verbal+pupils+phm+sah+oblt+mdls+hmt, 
+                  data = train,
+                  method = "xgbTree",
+                  metric="RMSE", preProc=c("center", "scale"),
+                  trControl = ControlParamteres,
+                  tuneGrid=parametersGrid)
+ model.xgboost2
+```
+* Ahora predecimos
+
+```{r , echo=FALSE}
+pred.XGB2<-predict(model.xgboost2,test)
+confusionMatrixGBOOST2<-caret::confusionMatrix(data = pred.XGB2, reference = test$outcome,positive="F")
+confusionMatrixGBOOST2
+```
+
+```{r , echo=FALSE}
+pred.XGB2<-predict(model.xgboost2,test,type="prob")
+```
+
+## Redes de neuronas
+
+* Las redes neuronales son sistemas computacionales de aprendizaje basados en el funcionamiento de las redes neuronales biologicas presentes en el cerebro de los animales.
+
+* Estas redes estan construidas a partir de una serie de nodos llamados "neuronas" que se organizan en forma de capas. Existe una capa de entrada, una capa de salida y al menos una capa intermedia o capa "oculta".
+
+* La capa de entrada debe tener tantas neuronas como variables de entrada tenga el sistema que se va a modelar. La capa de salida debe tener tantas neuronas como variables que estemos intentando predecir, en nuestro caso solo una. 
+
+* En cuanto a las capas ocultas, sus neuronas realizan transformaciones no lineales sobre la informacion que los atraviesa mediante una funcion de activacion. Las salidas de estas funciones de activacion suelen variar entre 0 y 1.  Estas neuronas se activan o no dependiendo de si la informacion que entra en estas neuronas Si la informacion que entra en esta neurona supera un valor umbral. 
+
+* Las tareas de estas neuronas "ocultas" es realizar una suma ponderada de todas las entradas que tiene y aplicarle una funcion de activacion para posteriormente pasar este valor a las neuronas de la siguiente capa, que a su vez repetiran el proceso.
+
+* En primer lugar, antes de comenzar con la construccion del modelo de redes neuronales, es necesario normalizar los datos. 
+
+## Mejorar la precision de nuestro modelo
+
+* Para poder obtener las mejores prediciones (precision) con nuestro modelo de redes neuronales, deberemos tener en cuenta aspectos como:
+  + *Numero de capas ocultas*.
+  + *Numero de neuronas por capa oculta:*  Si se usa una cantidad inadecuada de neuronas, la red no podrá modelar datos complejos y el ajuste resultante será deficiente. Si se utilizan demasiadas neuronas, el tiempo de entrenamiento puede ser excesivamente largo y, lo que es peor, la red puede sobreajustar los datos.No hay una regla práctica para elegir el número de neuronas, pero puede considerar esta:
+    + N es el número de neuronas ocultas.
+    + N = 2/3 del tamaño de la capa de entrada, más el tamaño de la capa de salida.
+    + N < dos veces el tamaño de la capa de entrada.
+  + *Funcion de activacion de las capas ocultas:* Cambiar la función de activación puede ser un factor decisivo.Se pueden probar distintas funciones de activacion: sigmoide, tanh y unidades lineales rectificadas.
+  + *Funcion de activacion de las capas de salida:* Para una sola capa la elección de la función de activación para la capa de salida dependerá de la tarea que realizaremos con la red (es decir, categorización o regresión). Sin embargo, en redes multicapas, generalmente es deseable que las capas ocultas tengan funciones de activación no lineales (por ejemplo, sigmoide, logística o tanh).
+  
+### Usando todas las variables
+
+```{r , echo=FALSE}
+#Max-Min Normalization
+normalize <- function(x) {
+  return ((x - min(x)) / (max(x) - min(x)))
+}
+trainNorm<-train 
+testNorm<-test
+trainNorm$outcome<-as.numeric(trainNorm$outcome)
+testNorm$outcome<-as.numeric(testNorm$outcome)
+trainNorm <- as.data.frame(lapply(trainNorm, normalize))
+testNorm <- as.data.frame(lapply(testNorm, normalize))
+trainNorm$outcome<-train$outcome
+testNorm$outcome<-test$outcome
+```
+
+
+```{r , echo=FALSE}
+MCOR <- cor(final[,1:13])
+col <- colorRampPalette(c("#BB4444", "#EE9988", "#FFFFFF", "#77AADD", "#4477AA"))
+cex.before <- par("cex")
+par(cex = 0.5)
+corrplot(MCOR, method="color", col=col(200),  
+         type="upper", order="hclust", 
+         addCoef.col = "black", # Add coefficient of correlation
+         tl.col="black", tl.srt=45, tl.cex = 1/par("cex"), #Text label color and rotation
+         # hide correlation coefficient on the principal diagonal
+         diag=FALSE 
+         )
+# calculate correlation matrix
+correlationMatrix <- cor(final[,1:13])
+# find attributes that are highly corrected (ideally >0.75)
+highlyCorrelated <- findCorrelation(correlationMatrix, cutoff=0.50)
+highlyCorrelated
+```
+
+* Para construir el modelo, una vez nos hemos ayudado con el paquete "Caret" y su validacion cruzada con 10 iteraciones.
+
+* En la construccion del modelo, es necesario probar distintos parametros, concretamente:
+  + actfun: es la funcion de activación.
+  + nhid: es el numero de capas ocultas.
+  
+* Estos valores, se han ido probando mediante "fuerza bruta" hasta obtener los mejores valores de precisión.El parametro de "actfun" ira variando entre todas las funciones de activación. El parametro de "nhid" se ha ido variando desde 0 hasta 50 en 1 unidad.
+
+```{r , echo=FALSE, include=FALSE}
+set.seed(42)
+fitControl <- trainControl(method = "cv", number = 10, returnResamp = "all", search = "random",classProbs = TRUE,summaryFunction = twoClassSummary)
+nnetGrid <-  expand.grid(
+  nhid = seq(from = 1, to = 50, by = 1),
+  actfun= c("sig","sin","radbas","hardlim","hardlims","satlins","tansig","tribas","poslin","purelin")
+)
+elm_fun <- getModelInfo("elm")[[1]]
+elm_fun$prob <- function (modelFit, newdata, submodels = NULL)  {
+  out <- exp(predict(modelFit, newdata))
+  t(apply(out, 1, function(x) x/sum(x)))
+}
+model.nn <- caret::train(outcome ~ ., 
+                 data = trainNorm,
+                 method = elm_fun,
+                 trControl = fitControl,
+                 tuneGrid = nnetGrid
+                 )
+print(model.nn)
+```
+
+
+```{r , echo=FALSE}
+plot(model.nn)
+```
+* Como se puede observar en el grafico anterior, la funcion de activacion que nos proporciona una mayor precision es "purelin", que es una funcion de activacion puramente lineal.
+
+```{r , echo=FALSE}
+set.seed(42)
+nnetGrid <-  expand.grid(
+  nhid = 14,
+  actfun= "purelin"
+)
+elm_fun <- getModelInfo("elm")[[1]]
+elm_fun$prob <- function (modelFit, newdata, submodels = NULL)  {
+  out <- exp(predict(modelFit, newdata))
+  t(apply(out, 1, function(x) x/sum(x)))
+}
+time<-system.time(model.nn <- caret::train(outcome ~ ., 
+                 data = trainNorm,
+                 method = elm_fun,
+                 trControl = fitControl,
+                 tuneGrid = nnetGrid
+                 ))
+arrayTiemposTrain<-c(arrayTiemposTrain, as.numeric(time[3]))
+print(model.nn)
+```
+
+```{r , echo=FALSE}
+timePred<-system.time(pred.NN1 <-predict(model.nn, testNorm))
+arrayTiemposPredict<-c(arrayTiemposPredict, as.numeric(timePred[3]))
+confusionMatrixNET<-caret::confusionMatrix(data=pred.NN1,reference=testNorm$outcome,positive="F")
+confusionMatrixNET
+```
+
+```{r , echo=FALSE}
+fourfoldplot(confusionMatrixNET$table)
+```
+```{r , echo=FALSE}
+pred.NN1<-predict(model.nn,testNorm,type="prob")
+```
+
+### Eliminamos las variables mas correladas: Verbal
+
+```{r echo=TRUE, , echo=FALSE}
+set.seed(42)
+trainNormCor <-trainNorm[,-7]
+testNormCor <-testNorm[,-7]
+fitControl <- trainControl(method = "cv", number = 10, returnResamp = "all", search = "random",classProbs = TRUE,summaryFunction = twoClassSummary 
+                          
+                         )
+nnetGrid <-  expand.grid(
+  nhid = 14,
+  actfun= "purelin"
+)
+elm_fun <- getModelInfo("elm")[[1]]
+elm_fun$prob <- function (modelFit, newdata, submodels = NULL)  {
+  out <- exp(predict(modelFit, newdata))
+  t(apply(out, 1, function(x) x/sum(x)))
+}
+model.nn2 <- caret::train(outcome ~ ., 
+                 data = trainNormCor,
+                 method = elm_fun,
+                 trControl = fitControl,
+                 tuneGrid = nnetGrid
+                 )
+print(model.nn2)
+```
+
+
+
+* Predecimos
+```{r , echo=FALSE}
+pred.NN2 <-predict(model.nn2, testNormCor)
+confusionMatrixNET2<-caret::confusionMatrix(data=pred.NN2,reference=testNormCor$outcome,positive="F")
+confusionMatrixNET2
+```
+
+```{r , echo=FALSE}
+fourfoldplot(confusionMatrixNET2$table)
+```
+
+
+```{r , echo=FALSE}
+pred.NN2<-predict(model.nn2,testNormCor,type="prob")
+```
+
+### Usando caretensemble
+
+* Usando CaretList
+```{r warning=FALSE, , echo=FALSE}
+set.seed(42)
+trainControl <- trainControl(method="cv", number=10,
+                             savePredictions=TRUE, classProbs=TRUE)
+tunelist<- list(
+    glm=caretModelSpec(method="glm", tuneLength=2),
+    nb=caretModelSpec(method="nb", tuneGrid=data.frame(.fL=0,.usekernel=FALSE,.adjust=0)),
+   rf=caretModelSpec(method="rf", tuneGrid=data.frame(.mtry=2)),
+    ada=caretModelSpec(method="ada", tuneGrid=data.frame(.iter=150,.maxdepth=3,.nu=0.1)),
+    gbm=caretModelSpec(method="gbm",tuneGrid=data.frame(.n.trees=100,.interaction.depth = 1,.shrinkage = 0.1,.n.minobsinnode=10)),
+    xgbTree=caretModelSpec(method="xgbTree", tuneGrid=data.frame(.nrounds = 100,.max_depth = 3,.eta = 0.1,.gamma = 1,.colsample_bytree
+ = 0.7,.min_child_weight = 2,.subsample = 1)) 
+)
+algorithmList <- c("glm","nb","rf","ada","gbm","xgbTree", "blackboost","parRF","knn","glmnet")
+set.seed(42)
+models <- caretEnsemble::caretList(outcome~., data=train, trControl=trainControl,methodList=algorithmList)
+results <- resamples(models)
+summary(results)
+```
+
+```{r , echo=FALSE}
+dotplot(results)
+```
+
+```{r , echo=FALSE}
+splom(results)
+```
+
+```{r , echo=FALSE}
+correlation<-modelCor(resamples(models))
+correlation
+```
+
+```{r , echo=FALSE}
+corrplot.mixed(correlation) 
+```
+* Vemos que existen grandes correlaciones:
+* En primer lugar, existe una gran correlacion entre RF y parRF
+* Tambien existe una gran correlacion entre glm y glmnet
+* Existe tambien muchas correlaciones entre ada y glmnet
+* Existe tambien una gran correlacion entre ada y GBM
+* Existe tambien una gran correlacion entre ada y GLM
+
+* Ahora usamos caretensemble
+```{r , echo=FALSE}
+set.seed(42)
+trainControl <- trainControl(method="cv", number=10, savePredictions=TRUE, classProbs=TRUE)
+CE_TRAIN_COMPLETO <- caretEnsemble(
+  models,
+  metric="Accuracy",
+  trControl=trainControl
+  )
+summary(CE_TRAIN_COMPLETO)
+```
+
+* Predecimos CaretEnsemble
+```{r , echo=FALSE}
+CE_PREDICT_COMPLETO <- predict(CE_TRAIN_COMPLETO, newdata=test)
+matriz_Confusion_CE_Completo<-confusionMatrix(data=CE_PREDICT_COMPLETO, reference=test$outcome)
+print(matriz_Confusion_CE_Completo)
+```
+
+
+
+* Obtenemos las variables mas importantes usando CaretEnsemble
+```{r , echo=FALSE}
+var_imp_CE_Completo  <-varImp(CE_TRAIN_COMPLETO)
+print(var_imp_CE_Completo) 
+```
+
+* Utilizamos careStack con GLM (COMPLETO)
+```{r warning=FALSE, , echo=FALSE}
+set.seed(42)
+time<-system.time(stack.glm.completo <- caretStack(models, method="glm", metric="Accuracy", trControl=trainControl))
+arrayTiemposTrain<-c(arrayTiemposTrain, as.numeric(time[3]))
+print(stack.glm.completo)
+```
+
+```{r , echo=FALSE}
+timePred<-system.time(pred.GLM.ensemble <- predict(stack.glm.completo, test))
+arrayTiemposPredict<-c(arrayTiemposPredict, as.numeric(timePred[3]))
+confusionMatrixGLM.ensemble.completo<-caret::confusionMatrix(data=pred.GLM.ensemble,reference=test$outcome)
+confusionMatrixGLM.ensemble.completo
+```
+
+* Utilizamos caretStack con GBM (COMPLETO)
+```{r warning=FALSE, , echo=FALSE}
+set.seed(42)
+stack.gbm.completo <- caretStack(models, method="gbm", metric="Accuracy", trControl=trainControl)
+print(stack.gbm.completo)
+```
+
+```{r warning=FALSE, , echo=FALSE}
+plot(stack.gbm.completo)
+```
+
+* Utilizamos caretStack con GBM y TUNING (COMPLETO)
+```{r warning=FALSE, , echo=FALSE}
+set.seed(42)
+nnetGrid <-  expand.grid(
+  n.trees = 50,
+  interaction.depth = 1,
+  shrinkage = 0.1,
+  n.minobsinnode = 10
+)
+time<-system.time(stack.gbm.completo <- caretStack(models, method="gbm", metric="Accuracy", trControl=trainControl, tuneGrid=nnetGrid))
+arrayTiemposTrain<-c(arrayTiemposTrain, as.numeric(time[3]))
+print(stack.gbm.completo)
+```
+
+```{r , echo=FALSE}
+timePred<-system.time(pred.GBM.ensemble.completo <- predict(stack.gbm.completo, test))
+arrayTiemposPredict<-c(arrayTiemposPredict, as.numeric(timePred[3]))
+confusionMatrixGBM.ensemble.completo<-caret::confusionMatrix(data=pred.GBM.ensemble.completo,reference=test$outcome)
+confusionMatrixGBM.ensemble.completo
+```
+
+* ELiminamos ada, glm y rf
+
+* Utilizamos caretList 
+```{r warning=FALSE, , echo=FALSE}
+set.seed(42)
+trainControl <- trainControl(method="cv", number=10, savePredictions=TRUE, classProbs=TRUE)
+algorithmList <- c("glm","nb","rf","gbm","xgbTree", "blackboost","knn")
+models <- caretEnsemble::caretList(outcome~., data=train, trControl=trainControl,methodList=algorithmList)
+results <- resamples(models)
+summary(results)
+```
+
+```{r , echo=FALSE}
+dotplot(results)
+```
+
+```{r , echo=FALSE}
+splom(results)
+```
+
+* Vemos la correlacion
+```{r , echo=FALSE}
+correlation<-modelCor(resamples(models))
+correlation
+```
+
+```{r , echo=FALSE}
+corrplot.mixed(correlation) 
+```
+
+*Utilizamos CaretEnsemble
+```{r , echo=FALSE}
+set.seed(42)
+trainControl <- trainControl(method="cv", number=10, savePredictions=TRUE, classProbs=TRUE)
+CE_TRAIN <- caretEnsemble(
+  models,
+  metric="Accuracy", 
+  trControl=trainControl
+  )
+summary(CE_TRAIN)
+```
+* Predecimos
+```{r , echo=FALSE}
+pred <- predict(CE_TRAIN, newdata=test)
+conf<-caret::confusionMatrix(data=pred, reference=test$outcome)
+conf 
+```
+*Obtenemos las variables importantes del caretensemble
+```{r , echo=FALSE}
+gbmImp  <-varImp(CE_TRAIN)
+print(gbmImp) 
+```
+* Utilizamos caretStack con GLM
+```{r warning=FALSE, , echo=FALSE}
+set.seed(42)
+stack.glm <- caretStack(models, method="glm", metric="Accuracy", trControl=trainControl)
+print(stack.glm)
+```
+```{r , echo=FALSE}
+pred.GLM.ensemble <- predict(stack.glm, test)
+confusionMatrixGLM.ensemble<-caret::confusionMatrix(data=pred.GLM.ensemble,reference=test$outcome)
+confusionMatrixGLM.ensemble
+```
+* Utilizamos caretStack con GBM
+```{r warning=FALSE, , echo=FALSE}
+set.seed(42)
+stack.gbm <- caretStack(models, method="gbm", metric="Accuracy", trControl=trainControl)
+print(stack.gbm)
+```
+```{r warning=FALSE, , echo=FALSE}
+plot(stack.gbm)
+```
+```{r warning=FALSE, , echo=FALSE}
+set.seed(42)
+nnetGrid <-  expand.grid(
+  n.trees = 50,
+  interaction.depth = 1,
+  shrinkage = 0.1,
+  n.minobsinnode = 10
+)
+stack.gbm <- caretStack(models, method="gbm", metric="Accuracy", trControl=trainControl, tuneGrid=nnetGrid)
+print(stack.gbm)
+```
+```{r , echo=FALSE}
+pred.GBM.ensemble <- predict(stack.gbm, test)
+confusionMatrixGBM.ensemble<-caret::confusionMatrix(data=pred.GBM.ensemble,reference=test$outcome)
+confusionMatrixGBM.ensemble
+```
+## VALIDACION DE MODELOS
+### Graficamos todas las matrices de confusión
+```{r , echo=FALSE}
+par(mfrow=c(2,2))
+fourfoldplot(confusionMatrixLOG$table,main="R.Log")
+fourfoldplot(confusionMatrixLOG2$table,main="R.Log -sex y cause-")
+fourfoldplot(confusionMatrixNaive$table,main="Bayes Naïve")
+fourfoldplot(confusionMatrixNaive2$table,main="Bayes Naïve -sex y cause-")
+par(mfrow=c(2,2))
+fourfoldplot(confusionMatrixRF$table,main="R.Forest")
+fourfoldplot(confusionMatrixRF2$table,main="R.Forest -sex y cause-")
+fourfoldplot(confusionMatrixAdaBoost$table,main="Adaboost")
+fourfoldplot(confusionMatrixAdaBoost2$table,main="Adaboost -sex y cause-")
+par(mfrow=c(2,2))
+fourfoldplot(confusionMatrixGBM$table,main="GBM")
+fourfoldplot(confusionMatrixGBM2$table,main="GBM -sex y cause-")
+fourfoldplot(confusionMatrixGBOOST$table,main="XGB")
+fourfoldplot(confusionMatrixGBOOST2$table,main="XGB -sex y cause-")
+par(mfrow=c(2,2))
+fourfoldplot(confusionMatrixNET$table,main="Neural Network")
+fourfoldplot(confusionMatrixNET2$table,main="Neural Network-verbal-")
+fourfoldplot(confusionMatrixGLM.ensemble.completo$table,main="GLM Ens.Comp")
+fourfoldplot(confusionMatrixGBM.ensemble.completo$table,main="GBM Ens.Comp")
+par(mfrow=c(2,2))
+fourfoldplot(confusionMatrixGLM.ensemble$table,main="GLM Ens.Parc")
+fourfoldplot(confusionMatrixGBM.ensemble$table,main="GBM Ens.Parc")
+```
+### Comparación de modelos usando el AUCsp y AUCse
+```{r , echo=FALSE, include=FALSE}
+ctrl <- trainControl(method = "cv", number = 10, savePredictions = TRUE,classProbs=TRUE,
+summaryFunction=twoClassSummary)
+mod_fit_Complete <- caret::train(outcome ~ .,data = train, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5,metric="ROC")
+mod_fit_1<- caret::train(outcome ~ age+ec+verbal+hmt+motor+eye+oblt+mdls+sah+cause+pupils+sex,data = train, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5,metric="ROC")
+mod_fit_2<- caret::train(outcome ~ age+ec+verbal+hmt+motor+eye+oblt+mdls+sah+cause+pupils,data = train, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5,metric="ROC")
+mod_fit_3<- caret::train(outcome ~ age+ec+verbal+hmt+motor+eye+oblt+mdls+sah+cause,data = train, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5,metric="ROC")
+mod_fit_4<- caret::train(outcome ~ age+ec+verbal+hmt+motor+eye+oblt+mdls+sah,data = train, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5,metric="ROC")
+mod_fit_5<- caret::train(outcome ~ age+ec+verbal+hmt+motor+eye+oblt+mdls,data = train, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5,metric="ROC")
+mod_fit_6<- caret::train(outcome ~ age+ec+verbal+hmt+motor+eye+oblt,data = train, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5,metric="ROC")
+mod_fit_7<- caret::train(outcome ~ age+ec+verbal+hmt+motor+eye,data = train, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5,metric="ROC")
+mod_fit_8<- caret::train(outcome ~ age+ec+verbal+hmt+motor,data = train, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5,metric="ROC")
+mod_fit_9<- caret::train(outcome ~ age+ec+verbal+hmt,data = train, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5,metric="ROC")
+mod_fit_10<- caret::train(outcome ~ age+ec+verbal,data = train, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5,metric="ROC")
+mod_fit_11<- caret::train(outcome ~ age+ec,data = train, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5,metric="ROC")
+mod_fit_12<- caret::train(outcome ~ age,data = train, method="glm", family="binomial",
+                 trControl = ctrl, tuneLength = 5,metric="ROC")
+dfarray <- list(mod_fit_Complete,mod_fit_1,mod_fit_2,mod_fit_3,mod_fit_4,mod_fit_5,mod_fit_6,mod_fit_7,mod_fit_8,mod_fit_9,mod_fit_10,mod_fit_11,mod_fit_12) 
+dfPredictArray<-list(pred.NN1,pred.NN2,pred.XGB,pred.GBM,pred.ada,pred.RF,pred.NB,pred.LR1)
+for (i in dfarray){
+  predIter<-predict(i,test,type="prob")
+  dfPredictArray<-c(dfPredictArray, list(predIter))
+}
+nameVector<-c("NN","NN2","XGBoost","GBM","Adaboost","R Forest","N.BAYES","RLog_13","RLog_Comp","RLog_1","RLog_2","RLog_3","RLog_4","RLog_5","RLog_6","RLog_7","RLog_8","RLog_9","RLog_10","RLog_11","RLog_12")
+aucSE= c()
+aucSP= c()
+for (i in 1:length(dfPredictArray)){
+  auc1<-plot.roc(test$outcome,dfPredictArray[[i]]$F,          # data
+         percent = TRUE,                    # show all values in percent
+         partial.auc=c(100, 90), 
+         partial.auc.correct=TRUE,          # define a partial AUC (pAUC)
+         print.auc=TRUE,                    
+         #display pAUC value on the plot with following options:
+         print.auc.pattern = "pAUC (100-90%% SP):\n%.1f%%",
+         print.auc.col = "#1c61b6",
+         auc.polygon = TRUE, 
+         auc.polygon.col = "#1c61b6",       # show pAUC as a polygon
+         max.auc.polygon = TRUE, 
+         max.auc.polygon.col = "#1c61b622", # also show the 100% polygon
+         main = "Partial AUC (pAUC)")
+   auc2<-plot.roc(test$outcome, dfPredictArray[[i]]$F,
+         percent = TRUE, 
+         add = TRUE, 
+         type = "n",                        # add to plot, but don't re-add the ROC itself (useless)
+         partial.auc = c(100, 90), 
+         partial.auc.correct = TRUE,
+         partial.auc.focus = "se",          # focus pAUC on the sensitivity
+         print.auc = TRUE, 
+         print.auc.pattern = "pAUC (100-90%% SE):\n%.1f%%", 
+         print.auc.col = "#008600",
+         print.auc.y = 40,                  # do not print auc over the previous one
+         auc.polygon = TRUE, 
+         auc.polygon.col = "#008600",
+         max.auc.polygon = TRUE, 
+         max.auc.polygon.col = "#00860022")
+  aucSP<-c(aucSP, as.numeric(auc1$auc))
+  aucSE<-c(aucSE, as.numeric(auc2$auc))
+}
+```
+```{r , echo=FALSE}
+plot(aucSP,xaxt="n",ann=FALSE,type="b", col="blue")
+par(new=TRUE)
+plot(aucSE,xaxt="n",yaxt='n',ann=FALSE,type="b", col="red")
+axis(1,at=1:length(nameVector),labels=nameVector, las = 2)
+axis(2,labels=FALSE)
+legend(x= "center", y="bottom", # places a legend at the appropriate place 
+       c("AUCsp","AUCse"), # puts text in the legend 
+lty=c(1,1), # gives the legend appropriate symbols (lines)
+lwd=c(2.5,2.5),col=c("blue","red")) # gives the legend lines the correct color and width
+```
+####Comparacion entre todos los modelos distintos
+```{r , echo=FALSE}
+auc= c()
+colores <-  c("blue","red", "orange", "yellow",
+"green", "brown", "purple", "indianred", "aliceblue","antiquewhite","aquamarine","beige","black","blueviolet","burlywood","cadetblue","chocolate","coral","cornflowerblue","cyan","darkgrey")
+color1 <-colores[1:9]
+nameVector1<-nameVector[1:9]
+png(filename = "RplotROCComp1.png",
+    width = 600, height = 600,res = 130, units = "px", pointsize = 12,
+     bg = "white")
+for (i in 1:9){
+  resRoc <- roc(test$outcome, dfPredictArray[[i]]$F)
+  auc<-c(auc, as.numeric(resRoc$auc))
+  if( i==1){
+    plot(resRoc, col=colores[i])
+  }else{
+    plot(resRoc, col=colores[i],add=TRUE)
+  }
+  
+}
+legend(x= "right", y="bottom", legend=nameVector1,
+       col=color1, lty=1:2, cex=0.8,
+       title="Modelos", text.font=4, bg='lightblue')
+```
+####Comparacion con AUC de Regresion Logistica (sus modelos)
+```{r , echo=FALSE}
+color2 <-colores[9:length(dfPredictArray)]
+nameVector2<-nameVector[9:length(dfPredictArray)]
+png(filename = "RplotROCComp2.png",
+    width = 600, height = 600,res = 130, units = "px", pointsize = 12,
+     bg = "white")
+for (i in 9:length(dfPredictArray)){
+  resRoc <- roc(test$outcome, dfPredictArray[[i]]$F)
+  auc<-c(auc, as.numeric(resRoc$auc))
+  if( i==9){
+    plot(resRoc, col=colores[i])
+  }else{
+    plot(resRoc, col=colores[i],add=TRUE)
+  }
+  
+}
+legend(x= "right", y="bottom", legend=nameVector2,
+       col=color2, lty=1:2, cex=0.8,
+       title="Modelos", text.font=4, bg='lightblue')
+```
+####Comparacion con AUC de 5 modelos
+```{r , echo=FALSE}
+color3 <-colores[1:6]
+nameVector3<-c()
+nameVector3<-c(nameVector3, nameVector[9])
+nameVector3<-c(nameVector3, nameVector[17])
+nameVector3<-c(nameVector3, nameVector[18])
+nameVector3<-c(nameVector3, nameVector[19])
+nameVector3<-c(nameVector3, nameVector[20])
+nameVector3<-c(nameVector3, nameVector[21])
+vectorAEstudiar<-c(9,17,18,19,20,21)
+png(filename = "RplotROCComp3.png",
+    width = 600, height = 600,res = 130, units = "px", pointsize = 12,
+     bg = "white")
+for (i in 1:length(vectorAEstudiar)){
+  resRoc <- roc(test$outcome, dfPredictArray[[vectorAEstudiar[i]]]$F)
+  auc<-c(auc, as.numeric(resRoc$auc))
+  if( i==1){
+    plot(resRoc, col=color3[i])
+  }else{
+    plot(resRoc, col=color3[i],add=TRUE)
+  }
+  
+}
+legend(x= "right", y="bottom", legend=nameVector3,
+       col=color3, lty=1:2, cex=0.8,
+       title="Modelos", text.font=4, bg='lightblue')
+```
+####Comparacion con AUC de 5 modelos AUCsp
+```{r eval=FALSE, , echo=FALSE, include=FALSE}
+color4 <-colores[1:6]
+nameVector4<-c()
+nameVector4<-c(nameVector4, nameVector[9])
+nameVector4<-c(nameVector4, nameVector[17])
+nameVector4<-c(nameVector4, nameVector[18])
+nameVector4<-c(nameVector4, nameVector[19])
+nameVector4<-c(nameVector4, nameVector[20])
+nameVector4<-c(nameVector4, nameVector[21])
+vectorAEstudiar<-c(9,17,18,19,20,21)
+png(filename = "RplotROCComp4.png",
+    width = 600, height = 600,res = 130, units = "px", pointsize = 12,
+     bg = "white")
+for (i in 1:length(vectorAEstudiar)){
+  if( i==1){
+     plot.roc(test$outcome,dfPredictArray[[vectorAEstudiar[i]]]$F,
+         percent = TRUE,                    # show all values in percent
+         partial.auc=c(100, 90), 
+         partial.auc.correct=TRUE,          # define a partial AUC (pAUC)
+         col=color4[i],
+         print.auc.col = "#1c61b6",
+         auc.polygon = TRUE, 
+         auc.polygon.col = "#1c61b6",       # show pAUC as a polygon
+         max.auc.polygon = TRUE, 
+         max.auc.polygon.col = "#1c61b622", # also show the 100% polygon
+         main = "Partial AUCsp (pAUC)")
+  }else{
+     plot.roc(test$outcome,dfPredictArray[[vectorAEstudiar[i]]]$F,
+         percent = TRUE,                    # show all values in percent
+         add=TRUE,
+         col=color4[i],
+         partial.auc=c(100, 90), 
+         partial.auc.correct=TRUE,          # define a partial AUC (pAUC)
+         print.auc.col = "#1c61b6",
+         auc.polygon = TRUE, 
+         auc.polygon.col = "#1c61b6",       # show pAUC as a polygon
+         max.auc.polygon = TRUE, 
+         max.auc.polygon.col = "#1c61b622", # also show the 100% polygon
+         main = "Partial AUCsp (pAUC)")
+  }
+}
+legend(x= "right", y="bottom", legend=nameVector4,
+       col=color4, lty=1:2, cex=0.8,
+       title="Modelos", text.font=4, bg='lightblue')
+```
+####Comparacion con AUC de 5 modelos AUCse
+```{r eval=FALSE, , echo=FALSE, include=FALSE}
+color4 <-colores[1:6]
+nameVector4<-c()
+nameVector4<-c(nameVector4, nameVector[9])
+nameVector4<-c(nameVector4, nameVector[17])
+nameVector4<-c(nameVector4, nameVector[18])
+nameVector4<-c(nameVector4, nameVector[19])
+nameVector4<-c(nameVector4, nameVector[20])
+nameVector4<-c(nameVector4, nameVector[21])
+vectorAEstudiar<-c(9,17,18,19,20,21)
+png(filename = "RplotROCComp5.png",
+    width = 600, height = 600,res = 130, units = "px", pointsize = 12,
+     bg = "white")
+for (i in 1:length(vectorAEstudiar)){
+  if( i==1){
+     plot.roc(test$outcome,dfPredictArray[[vectorAEstudiar[i]]]$F,
+         percent = TRUE, 
+         #type = "n",                        # add to plot, but don't re-add the ROC itself (useless)
+         partial.auc = c(100, 90), 
+         partial.auc.correct = TRUE,
+         partial.auc.focus = "se",          # focus pAUC on the sensitivity
+         col=color4[i],
+         print.auc = TRUE, 
+         print.auc.col = "#008600",
+         print.auc.y = 40,                  # do not print auc over the previous one
+         auc.polygon = TRUE, 
+         auc.polygon.col = "#008600",
+         max.auc.polygon = TRUE, 
+         max.auc.polygon.col = "#00860022")
+  }else{
+     plot.roc(test$outcome,dfPredictArray[[vectorAEstudiar[i]]]$F,
+         percent = TRUE, 
+         add=TRUE,
+         #type = "n",                        # add to plot, but don't re-add the ROC itself (useless)
+         partial.auc = c(100, 90), 
+         partial.auc.correct = TRUE,
+         partial.auc.focus = "se",          # focus pAUC on the sensitivity
+         col=color4[i],
+         print.auc = TRUE, 
+         print.auc.col = "#008600",
+         print.auc.y = 40,                  # do not print auc over the previous one
+         auc.polygon = TRUE, 
+         auc.polygon.col = "#008600",
+         max.auc.polygon = TRUE, 
+         max.auc.polygon.col = "#00860022")
+  }
+}
+legend(x= "right", y="bottom", legend=nameVector4,
+       col=color4, lty=1:2, cex=0.8,
+       title="Modelos", text.font=4, bg='lightblue')
+```
+####Comparacion con AUC de Regresion Logistica (sus modelos)
+```{r , echo=FALSE}
+#plot(auc,xaxt="n",ann=FALSE,type="b", col="blue")
+#axis(1,at=1:length(nameVector),labels=nameVector, las = 2)
+#axis(2,labels=FALSE)
+#aucArrStr<-strtrim(as.character(auc), 5) 
+#text(auc, aucArrStr, labels=auc, cex= 0.7, pos=1)
+```
+### Comparación de modelos usando la precisión.
+```{r , echo=FALSE}
+nameVectorConf<-c("NN","NN2","XGBoost","GBM","Adaboost","R Forest","N.BAYES","RLog_Comp","RLog_13","GLM.Ens","GBM.Ens","GLM.Ens","GBM.Ens")
+dfConfMatArray <- list(confusionMatrixNET,confusionMatrixNET2,confusionMatrixGBOOST,confusionMatrixGBM,confusionMatrixAdaBoost,confusionMatrixRF,confusionMatrixNaive,confusionMatrixLOG,confusionMatrixLOG2
+  ,confusionMatrixGLM.ensemble.completo,confusionMatrixGBM.ensemble.completo,confusionMatrixGLM.ensemble,confusionMatrixGBM.ensemble) 
+accuracyArr<-c()
+kappaArr<-c()
+for (i in 1:length(dfConfMatArray)){
+  accuracy<-as.numeric(dfConfMatArray[[i]]$overall[1])
+  kappa<-as.numeric(dfConfMatArray[[i]]$overall[2])
+  accuracyArr<-c(accuracyArr, accuracy)
+  kappaArr<-c(kappaArr, kappa)
+}
+#Accuracy
+plot(accuracyArr,xaxt="n",ann=FALSE,type="b", col="blue")
+axis(1,at=1:length(nameVectorConf),labels=nameVectorConf, las = 2)
+axis(2,labels=FALSE)
+accuracyArrStr<-strtrim(as.character(accuracyArr), 6) 
+text(accuracyArr, accuracyArrStr, labels=accuracyArr, cex= 0.7, pos=1)
+```
+```{r , echo=FALSE}
+#Kappa
+plot(kappaArr,xaxt="n",ann=FALSE,type="b", col="blue")
+axis(1,at=1:length(nameVectorConf),labels=nameVectorConf, las = 2)
+axis(2,labels=FALSE)
+accuracyArrStr<-strtrim(as.character(kappaArr), 6) 
+text(kappaArr, accuracyArrStr, labels=kappaArr, cex= 0.7, pos=1)
+```
+* Como se puede observar en el grafico anterior, usando XGBoost se alcanza respecto al resto de los modelos. Esto significa que es capaz de precedir y de obtener el mayor numero de verdaderos negativos (TN) y verdaderos positivos (TN).
+### Comparativas de tiempo
+```{r , echo=FALSE}
+nameVectorTime<-c("GLM","NB","RF","Adaboost","GBM","XGBoost","R.Neuronal","GLM.Ens","GBM.Ens")
+#png(filename = "TimeCompare.png",
+#    width = 850, height = 850,res = 130, units = "px", pointsize = 12,
+#     bg = "white")
+plot(arrayTiemposTrain,xaxt="n",ann=FALSE,type="b", col="blue")
+par(new=TRUE)
+plot(arrayTiemposPredict,xaxt="n",yaxt='n',ann=FALSE,type="b", col="red")
+axis(1,at=1:length(nameVectorTime),labels=nameVectorTime, las = 2)
+axis(2,labels=FALSE)
+TimeArrStr<-strtrim(as.character(arrayTiemposTrain), 6) 
+legend(x= "center", y="bottom", # places a legend at the appropriate place 
+       c("Train","Predict"), # puts text in the legend 
+lty=c(1,1), # gives the legend appropriate symbols (lines)
+lwd=c(2.5,2.5),col=c("blue","red")) # gives the legend lines the correct color and width
+```

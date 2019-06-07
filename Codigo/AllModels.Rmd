@@ -1,0 +1,116 @@
+---
+title: "Todos los Modelos"
+author: "Abel"
+date: "26 de mayo de 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r , echo=FALSE, include=FALSE}
+library(caTools)
+library(caret)
+library(caretEnsemble)
+library(e1071)
+library(randomForest)
+library(nnet)
+library(neuralnet)
+library(party) #ctree
+library(gbm)
+library(rfUtilities)
+library(NeuralNetTools)
+library(e1071)
+library(ada) #adaboost
+library(corrplot)
+library(pROC)
+library(ROCR) 
+library(mlbench)
+library(doParallel)
+gc(reset=TRUE)
+rm(list = ls())
+datos <- read.csv("C:/Users/abelt/Dropbox/TFM Educacion/Codigo/datos.csv")
+arrayTiemposTrain<-c()
+arrayTiemposPredict<-c()
+```
+
+```{r cars}
+
+datos <- datos[,c("CDGENERICO","CDNATURALEZA","CDPOSTAL","ITCOMEDOR","ITTRANSPORTE","ITBILINGUE","CD_NIVEL","NM_CURSO","NM_ALUMNOS","NM_UNIDADES","RATIO","GRUPOS_PREDECIR")]
+
+datos <- na.omit(datos)
+
+```
+
+## Convertimos variables character a numeric
+```{r}
+#datos$ITCONCIERTO <- as.numeric(datos$ITCONCIERTO)
+datos$ITCOMEDOR <- as.numeric(datos$ITCOMEDOR)
+datos$ITBILINGUE <- as.numeric(datos$ITBILINGUE)
+datos$ITTRANSPORTE <- as.numeric(datos$ITTRANSPORTE)
+datos$NM_CURSO <- as.numeric(datos$NM_CURSO)
+
+```
+
+
+
+```{r , echo=FALSE}
+X = datos[, -12]
+Y = datos[, 12]
+set.seed(123)
+part.index <- createDataPartition(datos$GRUPOS_PREDECIR, 
+                                  p = 0.70,                         
+                                  list = FALSE)
+X_train <- X[part.index, ]
+X_test <- X[-part.index, ]
+y_train <- Y[part.index]
+y_test <- Y[-part.index]
+```
+
+
+```{r}
+registerDoParallel(4)
+getDoParWorkers()
+set.seed(123)
+my_control <- trainControl(method = "cv", # for "cross-validation"
+                           number = 10, # number of k-folds
+                           savePredictions = "final",
+                           search = "random",
+                           allowParallel = TRUE)
+
+```
+```{r}
+set.seed(222)
+model_list <- caretList(X_train,
+                        y_train,
+                        trControl = my_control,
+                        methodList = c("kknn", "brnn", "svmLinear", 
+                                       "rf","bayesglm", "M5"),
+                        tuneLength = 4,
+                        continue_on_fail = FALSE, 
+                        preProcess = c("center","scale"))
+```
+
+```{r}
+model_list$knn
+```
+
+```{r}
+options(digits = 3)
+model_results <- data.frame(
+ knn = min(model_list$knn$results$RMSE),
+ brnn = min(model_list$brnn$results$RMSE),
+ RF = min(model_list$rf$results$RMSE),
+ svmLinear = min(model_list$svmLinear$results$RMSE),
+ M5 = min(model_list$M5$results$RMSE),
+ bayesglm = min(model_list$bayesglm$results$RMSE)
+ )
+print(model_results)
+```
+
+```{r}
+resamples <- resamples(model_list)
+dotplot(resamples, metric = "RMSE")
+```
+

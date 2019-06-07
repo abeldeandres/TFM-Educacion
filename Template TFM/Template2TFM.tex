@@ -26,7 +26,7 @@
 \usepackage{graphics}
 \usepackage{enumitem}
 \usepackage{caption}
-
+\usepackage{acronym} 
 
 \usepackage{hyperref}
 \hypersetup{
@@ -64,7 +64,7 @@
 \usepackage{titlesec, blindtext, color}
 \definecolor{gray75}{gray}{0.75}
 \newcommand{\hsp}{\hspace{20pt}}
-\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+\titleformat{\chapter}[hang]{\Large\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Large\bfseries}
 
 \titlespacing*{\chapter}{0pt}{-50pt}{20pt}
 
@@ -136,7 +136,7 @@
 	\textsc{\Large Trabajo Fin de Máster }\\[0.2cm]
 	% TITLE SECTION
 	\HRule \\[0.4cm]
-	{ \Huge \bfseries Explotación y modelos para predicción de datos en el Sistema Educativo de la Comunidad de Madrid}\\[0.2cm] % Title of your document
+	{ \Huge \bfseries Uso de técnicas predictivas para la planificación de grupos en Secundaria y FP}\\[0.2cm] % Title of your document
 	\HRule \\[1cm]
 	
 	\textsc{\Large Máster Universitario En Formación del Profesorado de Ed.Secundaria, Bachillerato, FP e Idiomas }\\[0.7cm]
@@ -147,7 +147,8 @@
 	\begin{flushright}
 		\large
 		AUTOR: Abel de Andrés Gómez\\
-		DIRECTOR: Aurelio Berges García\linebreak
+		TUTOR: Aurelio Berges García\linebreak 
+				{\small \textit{DOCTOR INGENIERO DE TELECOMUNICACIÓN}}
 	\end{flushright}
 	
 	%\vspace{1cm}
@@ -185,31 +186,25 @@
 {\large \bf AGRADECIMIENTOS}
 \vspace{10pt}
 
-{\normalsize Desde estas lineas me gustaría expresar mi mas sincero agradecimiento: \newline
+{\normalsize Desde estas lineas me gustaría expresar mi mas sincero agradecimiento: 
 	
-A mi tutor Aurelio Berges, por ayudarme y guiarme durante todo el proyecto.
-\newline
+A mi tutor Aurelio Berges, por ayudarme, aconsejarme y guiarme durante todo el proyecto, sobretodo en los momentos duros; y durante mi estancia en la Consejería de Educación. Gracias por todos los conocimientos aportados.
 
-A Felipe Retortillo, por ayudarme con toda la información necesaria para realizar este TFM.
-\newline
+Al director de este máster, Miguel Ángel Marcos, por las indicaciones que me ha proporcionado en la redacción de este TFM.
+
+A Felipe Retortillo, por ayudarme con toda la información técnica y de ámbito educativo necesaria para realizar este TFM.
 
 A mis padres, por haberme proporcionado la mejor educación y lecciones de vida.
-\newline
 
 En especial a mi padre, por haberme enseñado que, con esfuerzo, trabajo y constancia todo se consigue, y que en esta vida nadie regala nada.
-\newline
 
-En especial a mi madre, por hacerme ver cada dia la vida de una forma diferente y confiar en mis decisiones. Sin olvidar su infinita ayuda durante estos últimos años.
-\newline
+En especial a mi madre, por hacerme ver cada día la vida de una forma diferente y confiar en mis decisiones. Sin olvidar su infinita ayuda durante estos últimos años.
 
 A todos mis familiares por haberme apoyado y animado.
-\newline
 
 A mis compañeros del máster, con los que he compartido buenos momentos a lo largo de las intensas tardes del máster.
-\newline
 
 A mis amigos, por estar siempre a mi lado.
-\newline
 
 A todos aquellos que siguen estando cerca de mi y que le regalan a mi vida algo de ellos.}
 % agregar tu dedicatoria
@@ -228,17 +223,25 @@ A todos aquellos que siguen estando cerca de mi y que le regalan a mi vida algo 
 		\\
 		\vspace{10pt}
 		\textit{}
-		{La planificación de grupos escolares es una tarea complicada que debe realizar la Consejería de Educación e Investigación de la Comunidad de Madrid. Gestionar los recursos de la mejor forma es vital para mejorar la calidad educativa. Por tanto, se hace necesario el estudio de las variables más importante que permitan un mejor reparto de los medios disponibles.
-	%Las lesiones traumáticas cerebrales son un problema de salud mundial. Por tanto, se hace necesario el estudio de los predictivos considerados medicinalmente más importantes. El motivo es establecer estrategias, decisiones clínicas y protocolos para el tratamiento de estas lesiones de forma óptima y tratando siempre de obtener el mejor resultado en el paciente.
-	
-	En los estudios que se realizan se utilizan datos de los grupos actuales de distintos centros, entre otras variables. Con esta información se han construido varios modelos que permitan predecir el número de grupos que deben planificarse para el curso siguiente y poder así repartir los recursos disponibles (profesores, suministros, etc.).
-	
-	En este estudio se realiza una clasificación sobre la importancia de las variables existentes, además se realizan estudios estadísticos para obtener la relación que existen entre estas variables para posteriormente utilizar distintos modelos con el objeto de conseguir la mayor predicción posible.
-	
-	Para obtener el mejor modelo se utilizan distintas métricas con el objetivo de poder compararlos entre sí en función de las necesidades que se requieran.
+		{ 
+	La planificación de grupos escolares en la etapa de Secundaria y Formación Profesional es una tarea complicada a la que se enfrentan anualmente de forma genérica las Unidades responsables que tienen esa competencia en las diferentes Comunidades Autónomas y, en particular, la Unidad de Planificación de Centros de la Dirección General de Infantil, Primaria y Secundaria de la Consejería de Educación e Investigación (CEI) de la Comunidad de Madrid.
+
+Gestionar los recursos de la mejor forma es vital para mejorar la calidad en el sistema educativo. Por tanto, se hace necesario el estudio de los factores educativos más importantes que permitan un mejor reparto de los recursos disponibles.
+
+En la investigación que se realiza en este trabajo de fin de máster se utilizan datos de centros educativos como por ejemplo el número de alumnos, los números de grupos y ratio para un determinado centro; su naturaleza, etc, con el objetivo de controlar la sobrepoblación en el aula.
+
+Con esta información se construyen varios modelos predictivos que van a ayudar a la Unidad de Planificación de Centros a predecir el número de grupos que deben planificarse para el nuevo curso y poder así repartir los recursos disponibles (profesores, suministros, etc.). De esta forma, se consigue facilitar el trabajo final de dicha Unidad de Planificación.  
+
+Ademas, en este TFM, se realiza una clasificación sobre la importancia de las variables (como por ejemplo el número de grupos, ratio, número de alumnos, naturaleza del centro, etc) existentes en el entorno educativo, además se realizan estudios estadísticos para obtener la relación que existe entre estas variables para posteriormente utilizar distintos modelos con el objeto de conseguir la mejor predicción posible. 
+
+Para obtener el mejor modelo se utilizan distintas métricas con el objetivo de poder compararlos entre sí en función de las necesidades que se requieran.
+
+Estos modelos propuestos junto con las variables seleccionadas se validan mediante reuniones con la CEI, quien da el visto bueno para realizar la comparación de dichos modelos.
+%PENSAR 
 
 		} % agregar tu dedicatoria
 	\end{flushright}
+\textbf{Palabras clave: } sobrepoblación, educación, gestión, planificación, ratio, aula, minería de datos, modelos predictivos
 \end{titlepage}
 \blankpage
 %----------------------------------------------------------------------------------------
@@ -249,10 +252,28 @@ A todos aquellos que siguen estando cerca de mi y que le regalan a mi vida algo 
 	
 	\begin{flushright}
 		{\large \bf ABSTRACT}
-		\\
-		\textit{}
-		{} % agregar tu dedicatoria
-	\end{flushright}
+\\
+\vspace{10pt}
+\textit{}
+{ 
+
+	The planning of school groups in the stage of Secondary and Vocational Education is a complicated task that is faced annually in a generic way by the responsible Units that have this competence in the different Autonomous Communities and, in particular, the Educational Center Planning Unit of the General Directorate of Children, Primary and Secondary of the Ministry of Education and Research (CEI) of the Community of Madrid.
+	
+	Managing resources in the best way is vital to improve quality in the education system. Therefore, it is necessary to study the most important educational factors that allow a better distribution of available resources.
+	
+	In the research carried out in this end-of-master project, data from educational centers are used, such as the number of students, the group numbers and the ratio for a given center; its nature, etc., with the objective of controlling overpopulation in the classroom.
+	
+	With this information, several predictive models are constructed that will help the Center Planning Unit to predict the number of groups that must be planned for the new course and thus be able to distribute the available resources (teachers, supplies, etc.). In this way, it is possible to facilitate the final work of the Planning Unit.
+	
+	In addition, in this TFM, a classification is made on the importance of the variables (such as the number of groups, ratio, number of students, nature of the center, etc.) existing in the educational environment, in addition statistical studies are carried out to obtain the relationship that exists between these variables to later use different models in order to achieve the best possible prediction.
+	
+	To obtain the best model, different metrics are used in order to be able to compare them according to the needs that are required.
+	
+	These proposed models together with the selected variables are validated through meetings with the CEI, who gives the approval to make the comparison of these models.
+	
+} % agregar tu dedicatoria
+\end{flushright}
+\textbf{Key Words: } overcrowding, education, management, planning, ratio, class, datamining, predictive models
 \end{titlepage}
 \blankpage
 
@@ -374,6 +395,16 @@ A todos aquellos que siguen estando cerca de mi y que le regalan a mi vida algo 
 \bibliography{referencias_prueba} % nombre del archivo .bib
 %\addcontentsline{toc}{chapter}{REFERENCIAS}
 \newpage
+
+\chapter{LISTA DE ACRÓNIMOS}
+\begin{acronym}
+	\acro{CEI}{Consejería de Educación e Investigación}
+	\acro{TFM}{Trabajo Fin de Máster}
+	\acro{ESO}{Educación Secundaria Obligatoria}
+	\acro{ESA}{Educación Secundaria para Adultos}
+	\acro{CM}{Comunidad de Madrid}
+	\acro{FP}{Formación Profesional}
+\end{acronym}
 
 
 %----------------------------------------------------------------------------------------
