@@ -1,0 +1,40 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+\APACcitebtitle {Manual CRISP-DM de IBM SPSS Modeler}}{%
+\APACcitebtitle {Manual CRISP-DM de IBM SPSS Modeler}}{%
+{\protect \APACyear {2012}}%
+}]{%
+IBMCRISP2012}
+\APACinsertmetastar {%
+IBMCRISP2012}%
+\APACrefbtitle {Manual CRISP-DM de IBM SPSS Modeler.} {Manual crisp-dm de ibm
+  spss modeler.}
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Racancoj%
+}{%
+Racancoj%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+LILIA2013}
+\APACinsertmetastar {%
+LILIA2013}%
+\begin{APACrefauthors}%
+Racancoj, L\BPBI V\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2013}.
+\unskip\
+\newblock
+\APACrefbtitle {Sobrepoblación estudiantil y desempeño docente en el aula}
+  {Sobrepoblación estudiantil y desempeño docente en el aula}\
+  \APACtypeAddressSchool {Thesis}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
