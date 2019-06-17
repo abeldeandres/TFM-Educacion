@@ -1,6 +1,34 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+{Consejería de Educación e Investigación}%
+}{%
+{Consejería de Educación e Investigación}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+INSTRCONSE}
+\APACinsertmetastar {%
+INSTRCONSE}%
+\begin{APACrefauthors}%
+{Consejería de Educación e Investigación}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {Instrucciones de la dirección general de educación infantil,
+  primaria y secundaria sobre la planificación del próximo curso escolar
+  2018/2019 en los centros públicos que imparten eso y bachillerato, creación
+  de nuevos centros y modificación de la red, implantación y autorización de
+  enseñanzas y propuesta de grupos.} {Instrucciones de la dirección general
+  de educación infantil, primaria y secundaria sobre la planificación del
+  próximo curso escolar 2018/2019 en los centros públicos que imparten eso y
+  bachillerato, creación de nuevos centros y modificación de la red,
+  implantación y autorización de enseñanzas y propuesta de grupos.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 \APACcitebtitle {Manual CRISP-DM de IBM SPSS Modeler}}{%
 \APACcitebtitle {Manual CRISP-DM de IBM SPSS Modeler}}{%
 {\protect \APACyear {2012}}%
@@ -12,6 +40,27 @@ IBMCRISP2012}%
   spss modeler.}
 \newblock
 \APACrefYearMonthDay{2012}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Ministerio de Educación y Formacin Profesional}%
+}{%
+{Ministerio de Educación y Formacin Profesional}%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+PANORAMA2018}
+\APACinsertmetastar {%
+PANORAMA2018}%
+\begin{APACrefauthors}%
+{Ministerio de Educación y Formacin Profesional}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2018}.
+\newblock
+\APACrefbtitle {Panorama de la educación Indicadores de la OCDE 2018}
+  {Panorama de la educación indicadores de la ocde 2018}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

@@ -1,0 +1,39 @@
+1 transparencia: Este proyecto no se me ha ocurrido, en el año 2018 estuve trabajando con cargo a un convenio con la comunidad de Madrid.
+Contactaron conmigo a traves de una persona de la UPM (Marina). Estuve trabajando de junio a diciembre.
+En el convenio trabajaron 2 personas, 2 profesores y 3 personas de la Comunidad de Madrid.
+En ese convenio el objetivo era estudiar todos los datos de la comunidad de madrid para hacer una explotacion razonable. AL hilo de este proyecto, surge la necesidad de avanzar mas
+darle una vuelta de tuerca, surge la posibilidad de utilizar tecnicas predictivas para la gestion educativa. Estaba en el nucleo donde se toman las decisioines.
+Se trabajaba con el director del area tecnica. He interactuado con profesores que han sido directores y ahora son ATD (Asesor Tecnico Docente).
+
+Introduccion -> En una transparencia tengo que ser capaz de hablar sobre que es la gesiton de la educacion. Alguna referencia externa ademas de la Consejeria de la Educacion de Madrid.
+Los resultados son extrapolables. Poner algo sobre la gestion de educacion. Las dos transparencias hay que dejarlo en una.
+
+Mi tutor junto con otras personas de la Consejeria estuvimos valorando sobre lo que podria ser mas interesante para trabajar en tecnicas predictivas.
+
+Objetivos(I) y OBJETIVOS(II). En una transparencia el objetivo global y en la otra el resto.
+
+Justificacion teorica: Tocar 2 articulos más importantes (Brasil).
+
+Propuesta de intevencion-> Resumir mas
+
+Diseño de la investigacion -> Solamente la figura.
+
+Explicar que es analisis exploratorio y analisis predictivo brevemente.
+
+COnclusiones con respecto a las aportaciones de este trabajo de investigacion
+El segundo bullet de aportaciones, lo ponemos en la primera primera posicion. Aportacion de conceptos 
+de data mining o mineria de datos en el entorno educativo.
+Comparacion de modelos: Se generan unos modelos y a partir de esos modelos, comparandolos, se puede elegir el que mejor se comporta
+Descubrimiento de relaciones entre variables, lo ponemos en ultimo lugar. Aqui se aporta
+analisis estadistico y los resultados son buenos para la gestion educativa
+
+Conclusiones, hay que poner un parrafo. A continuacion voy se va a tratar de relacionar las conclusiones
+con los objetivos. Esponjar y quitar texto.
+
+Ultimo bullet, para hacerle la pelota a ellos, estais haciendo las cosas bien, he aprendido
+y he puesto la guinda en el pastel de esta forma.
+
+De cara a nuevas experiencias que se van a iniciar en la COnsejeria de Educacion....
+
+
+

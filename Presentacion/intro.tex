@@ -4,31 +4,25 @@
 \usepackage[spanish]{babel}
 \usepackage{beamerthemeshadow}
 \usepackage{times} %font times
-\usepackage[T1]{fontenc} %% Usar la codificaci�n T1
+\usepackage[T1]{fontenc} 
 %\usepackage{apacite}
 %\usepackage{fontspec}
 %\usepackage[latin1]{inputenc}
 \usepackage{multicol}
-\usepackage[numberedbib]{apacite}
+\usepackage[notocbib]{apacite}
 
 %para que cuando se seleccione un texto las letras acentuadad y las � se copien bien
 \usepackage{enumerate}
 \usefonttheme{professionalfonts}
 
-\newtheorem{defi}{Definición} 
-
-
 
 \mode<presentation>{
-\usetheme{Frankfurt}
+\usetheme{Montpellier}
 \setbeamercovered{transparent}
  \setbeamertemplate{navigation symbols}{}
  \usecolortheme{beaver}
  \setbeamercolor{local structure}{fg=darkred}
 \setbeamercolor{structure}{fg=darkred}
-
-
-
 }
 
 \makeatletter
@@ -50,12 +44,14 @@
 \makeatother
 
 
+
 \title{Uso de técnicas predictivas para la planificación de grupos en Secundaria y FP}
 \vspace{-5mm}
 \author{Universidad Rey Juan Carlos}
 
 \institute{\textbf {Autor: Abel de Andrés Gómez\\ Tutor: Aurelio Berges García}} % auteur
 \date{{\small \today}}
+
 
 
 
@@ -90,6 +86,16 @@
 %introducci�n
 
 \section{Introducción} % Nueva Secci�n
+\begin{frame}
+\begin{center}
+	\begin{beamercolorbox}[
+		sep=8pt,center,rounded=true,shadow=true]{part title}
+		\usebeamerfont{part title}
+		\secname
+	\end{beamercolorbox}
+\end{center}
+\end{frame}
+
 \subsection{Introducción} % Nueva Subsecci�n
 
 \begin{frame}[allowframebreaks=1]
@@ -104,8 +110,8 @@ Es la relación entre el número de alumnos y profesores, es un factor important
 \framebreak
 \begin{itemize}
 	\item La ratio creció en España en 2012 un 20\%, ahorrándose así 464 millones de euros.
-	\item Las ratios en España son superiores a la media de la OCDE y la UE22.
-	\item Los recursos de las administraciones publicas no son infinitos.
+	\item Las ratios en España son superiores a la media de la OCDE y la UE22. \cite{PANORAMA2018}
+	\item Los recursos de las administraciones públicas no son infinitos.
 	\item \textbf{¡Se debe planificar!}
 	
 	
@@ -117,11 +123,14 @@ Es la relación entre el número de alumnos y profesores, es un factor important
 \begin{frame}[allowframebreaks=1]
 \frametitle{\secname : \subsecname}
 
+El \textbf{objetivo general} es proponer un modelo para contribuir a la óptima planificación de los grupos escolares para los nuevos cursos, evitando así el gasto innecesario de recursos y controlando la sobrepoblación en el aula. \newline
 
+Este objetivo se divide en los siguiente sub objetivos:
 
 \begin{itemize}
 	\item Seleccionar variables de interés, relativas a la resolución de la necesidad anteriormente expuesta por Unidad de Planificación, que aporten valor en el desarrollo de este TFM. 
-	\item Estudiar la relación entre dichas variables con el  propósito de comprender el contexto de la sobrepoblación en el aula y la planificación de grupos.
+	\framebreak
+	\item Estudiar la relación entre dichas variables con el propósito de comprender el contexto de la sobrepoblación en el aula y la planificación de grupos.
 	\item Probar distintos modelos predictivos y seleccionar aquellos que aporten mayor precisión en la predicción de los grupos. 
 	\item Obtener y utilizar el modelo de mayor precisión para realizar predicciones.
 	
@@ -132,40 +141,113 @@ Es la relación entre el número de alumnos y profesores, es un factor important
 
 \section{Justificación teórica}
 \begin{frame}
-\frametitle{\secname : \subsecname}
+\begin{center}
+	\begin{beamercolorbox}[
+		sep=8pt,center,rounded=true,shadow=true]{part title}
+		\usebeamerfont{part title}
+		\secname
+	\end{beamercolorbox}
+\end{center}
+\end{frame}
 
+\subsection{}
+\begin{frame}
+\frametitle{\secname}
+\begin{block}{Objeto de búsqueda}
+	Documentación científica acerca de la minería de datos en el ámbito educativo, concretamente, en la gestión de la educación.
+	\begin{itemize}
+		\item ScienceDirect, Scopus, Google Academics, etc.
+	\end{itemize}
+\end{block}
+
+\begin{itemize}
+	\item ¿Existen artículos relacionados con la minería de datos en la educación?
+	\item ¿Existen artículos relacionados con la planificación educativa?
+	\item ¿Que metodologías se siguen?
+	\item ¿Que modelos predictivos contemplan?
+	\item ¿Que variables se utilizan?
+	\item ¿Que herramientas se usan?
+\end{itemize}
 
 \end{frame}
 
 \section{Propuesta de intervención}
 \begin{frame}
-\frametitle{\secname : \subsecname}
+\begin{center}
+	\begin{beamercolorbox}[
+		sep=8pt,center,rounded=true,shadow=true]{part title}
+		\usebeamerfont{part title}
+		\secname
+	\end{beamercolorbox}
+\end{center}
+\end{frame}
 
+\subsection{}
+\begin{frame}
+\frametitle{\secname}
+\begin{itemize}
+	\item Actualmente, la Unidad de Planificación de Centros Públicos utiliza herramientas poco automatizadas para conocer el número de alumnos y unidades, y no disponen de algoritmos predictivos que faciliten y mejoren esta labor.
+	\item  Diseñar un sistema que sea capaz de ayudar en la predicción a la Unidad de Planificación de Centros Públicos.
+	\begin{itemize}
+		\item Global: que se pueda utilizar en distintos dispositivos y evite la transferencia de archivos.
+		\item Flexible: que permita la inclusión y eliminación de nuevas variables.
+		\item Fiable: que otorgue garantía en la planificación de grupos.
+		\item Evitar y detectar la sobrepoblación en el aula.
+	\end{itemize}
+	\item Además, con los datos se pretende identificar los factores que impliquen mayor demanda en un determinado centro o curso.
+\end{itemize}
 
 \end{frame}
 
 \section{Diseño de la investigación}
 \begin{frame}
-\frametitle{\secname : \subsecname}
-\begin{figure}[htb]
-\centering
-\caption{Fases del ciclo de vida de CRISP-DM. Recuperado de \protect\citeA{IBMCRISP2012}.}
-\includegraphics[width=0.6\textwidth]{../TemplateTFM/recursos/CRISPCicloIBM}
-\end{figure}
+\begin{center}
+	\begin{beamercolorbox}[
+		sep=8pt,center,rounded=true,shadow=true]{part title}
+		\usebeamerfont{part title}
+		\secname
+	\end{beamercolorbox}
+\end{center}
+\end{frame}
 
+\begin{frame}[allowframebreaks=1]
+\frametitle{\secname : \subsecname}
+	\begin{figure}[htb]
+	\centering
+	\caption{Fases del ciclo de vida de CRISP-DM. Recuperado de \protect\citeA{IBMCRISP2012}.}
+	\includegraphics[width=0.5\textwidth]{../TemplateTFM/recursos/CRISPCicloIBM}
+	\end{figure}
+		\begin{itemize}
+	\item Comprensión del negocio: Obtener información acerca de los objetivos de la investigación. Estudio de la situación de la educación en la Comunidad de Madrid.
+	\item Comprensión de los datos:
+	\item Preparación de los datos: Se realiza un tratamiento de los datos, se eliminan valores y variables vacías, se separan o se juntan variables a conveniencia de la investigación. Se separan los datos en dos subconjuntos (entrenamiento y pruebas)
+	\item Modelado: Se utilizan y comparan los modelos predictivos. Para ello se utilizan métricas de selección de variables
+	\item Evaluación: Se utilizan métricas de precisión para evaluar los modelos. Además, también se cuenta el tiempo que tardan en entrenarse. A partir de estas métricas se toma una decisión.
+	\item Distribución: Toda la información recogida en la investigación se documenta. En esta parte se indica el modelo, las variables, herramientas y metodología que deben utilizarse para el control del proceso de la minería de datos.
+\end{itemize}
 \end{frame}
 
 \section{Analisis de Resultados}
+\begin{frame}
+\begin{center}
+	\begin{beamercolorbox}[
+		sep=8pt,center,rounded=true,shadow=true]{part title}
+		\usebeamerfont{part title}
+		\secname
+	\end{beamercolorbox}
+\end{center}
+\end{frame}
+
 
 \subsection{Análisis exploratorio}
 \begin{frame}
 \frametitle{\secname : \subsecname}
  \begin{itemize}
- 	\item La media de la ratio de la Comunidad de Madrid es de 0,88, por lo tanto los centros educativos no están sobrepoblados.
- 	\item Las variables de numero de alumnos y número de grupos son importantes a la hora de predecir el numero de grupos finales.
+ 	\item La media de la ratio de la Comunidad de Madrid es de 0,88, por lo tanto, los centros educativos no están sobrepoblados.
+ 	\item Las variables de número de alumnos y número de grupos son importantes a la hora de predecir el número de grupos finales.
  	\item La DAT que sufre mayor sobrepoblación en las aulas es la DAT-Centro, seguida de la DAT-Sur.
- 	\item Las variables que mayor correlacionan con la \textbf{ratio} son: numero de alumnos, servicio de comedor, naturaleza del centro y código genérico del centro.
- 	\item Las variables que mayor correlacionan con el\textbf{ numero de grupos a planificar} son:
+ 	\item Las variables que mayor correlacionan con la \textbf{ratio} son: número de alumnos, servicio de comedor, naturaleza del centro y código genérico del centro.
+ 	\item Las variables que mayor correlacionan con el\textbf{número de grupos a planificar} son: número de alumnos, unidades, naturaleza, código genérico y servicio de comedor.
  \end{itemize}
  
 
@@ -174,52 +256,81 @@ Es la relación entre el número de alumnos y profesores, es un factor important
 \begin{frame}
 \frametitle{\secname : \subsecname}
 \begin{itemize}
-	\item Utilizando algoritmos se observan que las variables más importantes para realizar la predicción son: naturaleza del centro, numero de curso, número de unidades, nivel de enseñanza y ratio.
+	\item Utilizando algoritmos se observan que las variables más importantes para realizar la predicción son: naturaleza del centro, número de curso, número de unidades, nivel de enseñanza y ratio.
 	\item El algoritmo que mejores predicciones obtiene es el Árbol de Decisión, seguido de la Regresión Lineal.
-	\item Se observa que en los resultados de la predicción, de 4436 datos existentes para grupos, unicamente 52 grupos se modifican. De estos 52 grupos, 30 de ellos disminuyen en el numero de unidades y 22 aumentan. Se observa para este curso 2017/2018, que  \textbf{se reduce la población en el aula}.
+	\item Se observa que, en los resultados de la predicción, de 4436 datos existentes para grupos, únicamente 52 grupos se modifican. De estos 52 grupos, 30 de ellos disminuyen en el número de unidades y 22 aumentan. Se observa para este curso 2017/2018, que \textbf{se reduce la población en el aula}.
 \end{itemize}
 
 \end{frame}
 
 \section{Conclusiones}
+\begin{frame}
+\begin{center}
+	\begin{beamercolorbox}[
+		sep=8pt,center,rounded=true,shadow=true]{part title}
+		\usebeamerfont{part title}
+		\secname
+	\end{beamercolorbox}
+\end{center}
+\end{frame}
 
 \subsection{Aportaciones del TFM}
 
 \begin{frame}
 \frametitle{\secname : \subsecname}
- 
-\begin{defi}
-
-\end{defi}
+ \begin{itemize}
+ 	\item Descubrimiento de relaciones entre variables.
+ 	\item Uso de herramientas de minería de datos para la planificación académica.
+ 	\item Comparación de modelos predictivos en el entorno educativo para la planificación de grupos.
+ 	\item Investigación relativa a la gestión y planificación en el entorno educativo.
+ \end{itemize}
 
 \end{frame}
 
 \subsection{Conclusiones}
 
-\begin{frame}
+\begin{frame}[allowframebreaks=1]
 \frametitle{\secname : \subsecname}
-
-\begin{columns}
- \begin{column}{6cm}
-      \includegraphics [width =0.8 \textwidth ]{figures/slots.jpg}
-  \end{column}
-  \begin{column}{6cm}
-       \includegraphics [width =0.8 \textwidth ]{figures/memram.jpg}
-  \end{column}
-\end{columns}
+\begin{enumerate}
+	\item \textbf{Selección de variables:} Se utilizan algunas de las variables propuestas a partir de la instrucción de la Unidad de Planificación. \cite{INSTRCONSE}
+	\begin{itemize}
+		\item Se parte de 27 variables, finalmente se eligen 11 para el estudio de predicción. Se eliminan variables descriptivas (nombre del centro, código de este, etc.)
+	\end{itemize}
+	\item \textbf{Estudio de la relación entre variables para comprender el contexto de sobrepoblación en el aula:} Para ello se utiliza la matriz de correlación. Se han obtenido las variables que hacen que la ratio en las aulas aumente o disminuya. Se han obtenido también las variables con más importancia en la predicción de grupos.
+	\item \textbf{Pruebas con distintos modelos predictivos y selección de los óptimos:} De todos los modelos propuestos, se han elegido dos: Árbol de decisión y Regresión Linear. Ambos modelos son los que mejores resultados (en cuanto a precisión y tiempo de entrenamiento han obtenido).
+	\item \textbf{Se utiliza el algoritmo de mayor precisión en la predicción con datos existentes:} A partir del modelo de árbol de decisión se obtiene la predicción esperada para el curso 2017/2018 a partir del modelo entrenado a partir de los datos de 2016/2017.
+\end{enumerate}
 \end{frame}
+
 
 
 \subsection{Lineas de Trabajo Futuro}
 
 \begin{frame}
 \frametitle{\secname : \subsecname}
-
+\begin{itemize}
+	\item Inclusión a la investigación de nuevas variables como aspectos físicos del centro, acceso a este, comunicaciones, estaciones de metro cercana, paradas de autobús, etc.
+	\item Número y nuevas enseñanzas.
+	\item Nuevos modelos de predicción y parámetros de ajustes.
+	\item Realización de Software usando modelos investigados.
+\end{itemize}
 \end{frame}
 
-\begin{frame}[shrink=30]{Referencias}
-\bibliographystyle{apacite} % estilo de la bibliografia
-\bibliography{../TemplateTFM/referencias_prueba} % nombre del archivo .bib
+\section{Referencias}
+\begin{frame}
+\begin{center}
+	\begin{beamercolorbox}[
+		sep=8pt,center,rounded=true,shadow=true,shadow=true]{part title}
+		\usebeamerfont{part title}
+		\secname
+	\end{beamercolorbox}
+\end{center}
+\end{frame}
+
+\begin{frame}[shrink=30]
+\frametitle{Referencias}
+	\bibliographystyle{apacite} % estilo de la bibliografia
+	\bibliography{../TemplateTFM/referencias_prueba}
 
 \end{frame}
 
@@ -227,5 +338,3 @@ Es la relación entre el número de alumnos y profesores, es un factor important
 
 
 \end{document}
-
-

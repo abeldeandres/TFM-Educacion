@@ -5,64 +5,91 @@
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
 \headcommand {\sectionentry {1}{Introducci\IeC {\'o}n}{3}{Introducci\IeC {\'o}n}{0}}
-\headcommand {\beamer@subsectionpages {3}{2}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{Introducci\IeC {\'o}n}}
-\headcommand {\slideentry {1}{1}{1}{3/3}{Introducci\IeC {\'o}n}{0}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\slideentry {1}{1}{1}{3/4}{Introducci\IeC {\'o}n}{0}}
-\headcommand {\beamer@framepages {3}{4}}
-\headcommand {\beamer@subsectionpages {3}{4}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{5}{Objetivos}}
-\headcommand {\slideentry {1}{2}{1}{5/5}{Objetivos}{0}}
-\headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@sectionpages {3}{5}}
-\headcommand {\beamer@subsectionpages {5}{5}}
-\headcommand {\sectionentry {2}{Justificaci\IeC {\'o}n te\IeC {\'o}rica}{6}{Justificaci\IeC {\'o}n te\IeC {\'o}rica}{0}}
-\headcommand {\slideentry {2}{0}{1}{6/6}{}{0}}
+\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{Introducci\IeC {\'o}n}}
+\headcommand {\slideentry {1}{1}{1}{4/4}{Introducci\IeC {\'o}n}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{1}{1}{4/5}{Introducci\IeC {\'o}n}{0}}
+\headcommand {\beamer@framepages {4}{5}}
+\headcommand {\beamer@subsectionpages {4}{5}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{6}{Objetivos}}
+\headcommand {\slideentry {1}{2}{1}{6/6}{Objetivos}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@sectionpages {6}{6}}
-\headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\sectionentry {3}{Propuesta de intervenci\IeC {\'o}n}{7}{Propuesta de intervenci\IeC {\'o}n}{0}}
-\headcommand {\slideentry {3}{0}{1}{7/7}{}{0}}
-\headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@sectionpages {7}{7}}
-\headcommand {\beamer@subsectionpages {7}{7}}
-\headcommand {\sectionentry {4}{Dise\IeC {\~n}o de la investigaci\IeC {\'o}n}{8}{Dise\IeC {\~n}o de la investigaci\IeC {\'o}n}{0}}
-\headcommand {\slideentry {4}{0}{1}{8/8}{}{0}}
+\headcommand {\slideentry {1}{2}{1}{6/7}{Objetivos}{0}}
+\headcommand {\beamer@framepages {6}{7}}
+\headcommand {\beamer@sectionpages {3}{7}}
+\headcommand {\beamer@subsectionpages {6}{7}}
+\headcommand {\sectionentry {2}{Justificaci\IeC {\'o}n te\IeC {\'o}rica}{8}{Justificaci\IeC {\'o}n te\IeC {\'o}rica}{0}}
+\headcommand {\slideentry {2}{0}{1}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@sectionpages {8}{8}}
 \headcommand {\beamer@subsectionpages {8}{8}}
-\headcommand {\sectionentry {5}{Analisis de Resultados}{9}{Analisis de Resultados}{0}}
-\headcommand {\beamer@subsectionpages {9}{8}}
-\headcommand {\beamer@subsectionentry {0}{5}{1}{9}{An\IeC {\'a}lisis exploratorio}}
-\headcommand {\slideentry {5}{1}{1}{9/9}{An\IeC {\'a}lisis exploratorio}{0}}
+\headcommand {\slideentry {2}{1}{1}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@sectionpages {8}{9}}
 \headcommand {\beamer@subsectionpages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{5}{2}{10}{An\IeC {\'a}lisis predictivo}}
-\headcommand {\slideentry {5}{2}{1}{10/10}{An\IeC {\'a}lisis predictivo}{0}}
+\headcommand {\sectionentry {3}{Propuesta de intervenci\IeC {\'o}n}{10}{Propuesta de intervenci\IeC {\'o}n}{0}}
+\headcommand {\slideentry {3}{0}{1}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@sectionpages {9}{10}}
 \headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\sectionentry {6}{Conclusiones}{11}{Conclusiones}{0}}
-\headcommand {\beamer@subsectionpages {11}{10}}
-\headcommand {\beamer@subsectionentry {0}{6}{1}{11}{Aportaciones del TFM}}
-\headcommand {\slideentry {6}{1}{1}{11/11}{Aportaciones del TFM}{0}}
+\headcommand {\slideentry {3}{1}{1}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@sectionpages {10}{11}}
 \headcommand {\beamer@subsectionpages {11}{11}}
-\headcommand {\beamer@subsectionentry {0}{6}{2}{12}{Conclusiones}}
-\headcommand {\slideentry {6}{2}{1}{12/12}{Conclusiones}{0}}
+\headcommand {\sectionentry {4}{Dise\IeC {\~n}o de la investigaci\IeC {\'o}n}{12}{Dise\IeC {\~n}o de la investigaci\IeC {\'o}n}{0}}
+\headcommand {\slideentry {4}{0}{1}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{6}{3}{13}{Lineas de Trabajo Futuro}}
-\headcommand {\slideentry {6}{3}{1}{13/13}{Lineas de Trabajo Futuro}{0}}
+\headcommand {\slideentry {4}{0}{2}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@sectionpages {11}{13}}
-\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\sectionentry {7}{Referencias}{14}{Referencias}{0}}
-\headcommand {\slideentry {7}{0}{0}{14/14}{Lineas de Trabajo Futuro}{0}}
-\headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@partpages {1}{14}}
-\headcommand {\beamer@subsectionpages {13}{14}}
-\headcommand {\beamer@sectionpages {11}{14}}
-\headcommand {\beamer@documentpages {14}}
-\headcommand {\gdef \inserttotalframenumber {14}}
+\headcommand {\slideentry {4}{0}{2}{13/14}{}{0}}
+\headcommand {\beamer@framepages {13}{14}}
+\headcommand {\slideentry {4}{0}{2}{13/15}{}{0}}
+\headcommand {\beamer@framepages {13}{15}}
+\headcommand {\beamer@sectionpages {12}{15}}
+\headcommand {\beamer@subsectionpages {12}{15}}
+\headcommand {\sectionentry {5}{Analisis de Resultados}{16}{Analisis de Resultados}{0}}
+\headcommand {\slideentry {5}{0}{1}{16/16}{}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{17}{An\IeC {\'a}lisis exploratorio}}
+\headcommand {\slideentry {5}{1}{1}{17/17}{An\IeC {\'a}lisis exploratorio}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{18}{An\IeC {\'a}lisis predictivo}}
+\headcommand {\slideentry {5}{2}{1}{18/18}{An\IeC {\'a}lisis predictivo}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\beamer@sectionpages {16}{18}}
+\headcommand {\beamer@subsectionpages {18}{18}}
+\headcommand {\sectionentry {6}{Conclusiones}{19}{Conclusiones}{0}}
+\headcommand {\slideentry {6}{0}{1}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\beamer@subsectionpages {19}{19}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{20}{Aportaciones del TFM}}
+\headcommand {\slideentry {6}{1}{1}{20/20}{Aportaciones del TFM}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@subsectionpages {20}{20}}
+\headcommand {\beamer@subsectionentry {0}{6}{2}{21}{Conclusiones}}
+\headcommand {\slideentry {6}{2}{1}{21/21}{Conclusiones}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {6}{2}{1}{21/22}{Conclusiones}{0}}
+\headcommand {\beamer@framepages {21}{22}}
+\headcommand {\beamer@subsectionpages {21}{22}}
+\headcommand {\beamer@subsectionentry {0}{6}{3}{23}{Lineas de Trabajo Futuro}}
+\headcommand {\slideentry {6}{3}{1}{23/23}{Lineas de Trabajo Futuro}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\beamer@sectionpages {19}{23}}
+\headcommand {\beamer@subsectionpages {23}{23}}
+\headcommand {\sectionentry {7}{Referencias}{24}{Referencias}{0}}
+\headcommand {\slideentry {7}{0}{1}{24/24}{}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@sectionpages {24}{24}}
+\headcommand {\beamer@subsectionpages {24}{24}}
+\headcommand {\sectionentry {8}{Referencias}{25}{Referencias}{0}}
+\headcommand {\slideentry {8}{0}{0}{25/25}{}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\beamer@partpages {1}{25}}
+\headcommand {\beamer@subsectionpages {24}{25}}
+\headcommand {\beamer@sectionpages {24}{25}}
+\headcommand {\beamer@documentpages {25}}
+\headcommand {\gdef \inserttotalframenumber {25}}
