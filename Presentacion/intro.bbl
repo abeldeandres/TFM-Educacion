@@ -86,4 +86,34 @@ Racancoj, L\BPBI V\BPBI M.%
   \APACtypeAddressSchool {Thesis}{}{}.
 \PrintBackRefs{\CurrentBib}
 
+\bibitem [\protect \citeauthoryear {%
+Valenzuela%
+, Montoya%
+\BCBL {}\ \BBA {} Alfaro%
+}{%
+Valenzuela%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+valenzuela2009construccion}
+\APACinsertmetastar {%
+valenzuela2009construccion}%
+\begin{APACrefauthors}%
+Valenzuela, J\BPBI R.%
+, Montoya, M\BPBI S\BPBI R.%
+\BCBL {}\ \BBA {} Alfaro, J\BPBI A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Construcci{\'o}n de indicadores institucionales para la
+  mejora de la gesti{\'o}n y la calidad educativa} {Construcci{\'o}n de
+  indicadores institucionales para la mejora de la gesti{\'o}n y la calidad
+  educativa}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Revista Iberoamericana de Evaluaci{\'o}n
+  Educativa}{2}{2}{59--81}.
+\PrintBackRefs{\CurrentBib}
+
 \end{thebibliography}

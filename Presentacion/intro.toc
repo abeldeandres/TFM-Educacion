@@ -1,15 +1,8 @@
 \babel@toc {spanish}{}
 \beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Introducci\IeC {\'o}n}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{Objetivos}{6}{0}{1}
 \beamer@sectionintoc {2}{Justificaci\IeC {\'o}n te\IeC {\'o}rica}{8}{0}{2}
 \beamer@sectionintoc {3}{Propuesta de intervenci\IeC {\'o}n}{10}{0}{3}
 \beamer@sectionintoc {4}{Dise\IeC {\~n}o de la investigaci\IeC {\'o}n}{12}{0}{4}
-\beamer@sectionintoc {5}{Analisis de Resultados}{16}{0}{5}
-\beamer@subsectionintoc {5}{1}{An\IeC {\'a}lisis exploratorio}{17}{0}{5}
-\beamer@subsectionintoc {5}{2}{An\IeC {\'a}lisis predictivo}{18}{0}{5}
-\beamer@sectionintoc {6}{Conclusiones}{19}{0}{6}
-\beamer@subsectionintoc {6}{1}{Aportaciones del TFM}{20}{0}{6}
-\beamer@subsectionintoc {6}{2}{Conclusiones}{21}{0}{6}
-\beamer@subsectionintoc {6}{3}{Lineas de Trabajo Futuro}{23}{0}{6}
-\beamer@sectionintoc {7}{Referencias}{24}{0}{7}
+\beamer@sectionintoc {5}{Analisis de Resultados}{14}{0}{5}
+\beamer@sectionintoc {6}{Conclusiones}{17}{0}{6}
+\beamer@sectionintoc {7}{Referencias}{23}{0}{7}

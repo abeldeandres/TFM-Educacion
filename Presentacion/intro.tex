@@ -10,10 +10,25 @@
 %\usepackage[latin1]{inputenc}
 \usepackage{multicol}
 \usepackage[notocbib]{apacite}
+\usepackage{tikz}
 
 %para que cuando se seleccione un texto las letras acentuadad y las � se copien bien
 \usepackage{enumerate}
 \usefonttheme{professionalfonts}
+
+
+%PARA LAS NOTAS
+\usepackage{pgfpages}
+%\setbeameroption{show notes on second screen}
+
+\newcommand<>{\mynote}[1]{%
+	\alt#2{%
+		\note{\textcolor{red}{#1}}
+	}
+	{%
+		\note{#1}
+	}
+}
 
 
 \mode<presentation>{
@@ -43,6 +58,23 @@
 }
 \makeatother
 
+%Para la numeracion de los framebreak
+\makeatletter
+\defbeamertemplate*{frametitle continuation}{only if multiple}{%
+	\ifnum \numexpr\beamer@endpageofframe+1-\beamer@startpageofframe\relax > 1
+	\textmd{(%
+		\insertcontinuationcountroman)}%
+	\fi%
+}
+\makeatother
+
+\newcommand\Wider[2][3em]{%
+	\makebox[\linewidth][c]{%
+		\begin{minipage}{\dimexpr\textwidth+#1\relax}
+			\raggedright#2
+		\end{minipage}%
+	}%
+}
 
 
 \title{Uso de técnicas predictivas para la planificación de grupos en Secundaria y FP}
@@ -50,7 +82,7 @@
 \author{Universidad Rey Juan Carlos}
 
 \institute{\textbf {Autor: Abel de Andrés Gómez\\ Tutor: Aurelio Berges García}} % auteur
-\date{{\small \today}}
+\date{{\small 25 de junio de 2019}}
 
 
 
@@ -71,13 +103,16 @@
 %indice
 \begin{frame}
 \frametitle{Índice} %Esquema es el titulo de la diapositiva
-\begin{multicols}{2}
 	\tableofcontents
-\end{multicols}
 \end{frame}
 
 
-
+\mynote<2>{Este proyecto no se me ha ocurrido, en el año 2018 estuve trabajando con cargo a un convenio con la comunidad de Madrid.
+	Contactaron conmigo a traves de una persona de la UPM (Marina). Estuve trabajando de junio a diciembre.
+	En el convenio trabajaron 2 personas, 2 profesores y 3 personas de la Comunidad de Madrid.
+	En ese convenio el objetivo era estudiar todos los datos de la comunidad de madrid para hacer una explotacion razonable. AL hilo de este proyecto, surge la necesidad de avanzar mas
+	darle una vuelta de tuerca, surge la posibilidad de utilizar tecnicas predictivas para la gestion educativa. Estaba en el nucleo donde se toman las decisioines.
+	Se trabajaba con el director del area tecnica. He interactuado con profesores que han sido directores y ahora son ATD (Asesor Tecnico Docente).}
 
 %\begin{frame}[plain]<beamer>{Outline}
 %\tableofcontents[currentsection,currentsubsection]
@@ -96,10 +131,16 @@
 \end{center}
 \end{frame}
 
-\subsection{Introducción} % Nueva Subsecci�n
+\subsection*{Introducción} % Nueva Subsecci�n
 
 \begin{frame}[allowframebreaks=1]
 \frametitle{\secname : \subsecname}
+
+\begin{block}{¿Que es la gestión educativa?} 
+	Es un proceso continuo de toma de decisiones; desde las fases de planeación hasta las de evaluación, pasando por procesos
+	intermedios de organización, asignación de recursos, implementación de procesos, etc. \cite{valenzuela2009construccion}
+\end{block}
+
 \begin{block}{¿Que es la Sobrepoblación en el aula?}  % define un marco
 Es el exceso del número de estudiantes que se encuentran en un espacio determinado cuya capacidad no es adecuada para acogerlos ni cuenta con las condiciones adecuadas para el buen desenvolvimiento de los mismos. \cite{LILIA2013}
 \end{block}
@@ -107,7 +148,7 @@ Es el exceso del número de estudiantes que se encuentran en un espacio determin
 \begin{block}{¿Que es la ratio?}  % define un marco
 Es la relación entre el número de alumnos y profesores, es un factor importante a la hora de realizar la planificación de los recursos.
 \end{block} %acaba marco
-\framebreak
+
 \begin{itemize}
 	\item La ratio creció en España en 2012 un 20\%, ahorrándose así 464 millones de euros.
 	\item Las ratios en España son superiores a la media de la OCDE y la UE22. \cite{PANORAMA2018}
@@ -119,17 +160,20 @@ Es la relación entre el número de alumnos y profesores, es un factor important
 	
 \end{frame}
 
-\subsection{Objetivos}
+
+
+\subsection*{Objetivos}
 \begin{frame}[allowframebreaks=1]
 \frametitle{\secname : \subsecname}
 
 El \textbf{objetivo general} es proponer un modelo para contribuir a la óptima planificación de los grupos escolares para los nuevos cursos, evitando así el gasto innecesario de recursos y controlando la sobrepoblación en el aula. \newline
 
+\framebreak
+
 Este objetivo se divide en los siguiente sub objetivos:
 
 \begin{itemize}
 	\item Seleccionar variables de interés, relativas a la resolución de la necesidad anteriormente expuesta por Unidad de Planificación, que aporten valor en el desarrollo de este TFM. 
-	\framebreak
 	\item Estudiar la relación entre dichas variables con el propósito de comprender el contexto de la sobrepoblación en el aula y la planificación de grupos.
 	\item Probar distintos modelos predictivos y seleccionar aquellos que aporten mayor precisión en la predicción de los grupos. 
 	\item Obtener y utilizar el modelo de mayor precisión para realizar predicciones.
@@ -185,18 +229,8 @@ Este objetivo se divide en los siguiente sub objetivos:
 \subsection{}
 \begin{frame}
 \frametitle{\secname}
-\begin{itemize}
-	\item Actualmente, la Unidad de Planificación de Centros Públicos utiliza herramientas poco automatizadas para conocer el número de alumnos y unidades, y no disponen de algoritmos predictivos que faciliten y mejoren esta labor.
-	\item  Diseñar un sistema que sea capaz de ayudar en la predicción a la Unidad de Planificación de Centros Públicos.
-	\begin{itemize}
-		\item Global: que se pueda utilizar en distintos dispositivos y evite la transferencia de archivos.
-		\item Flexible: que permita la inclusión y eliminación de nuevas variables.
-		\item Fiable: que otorgue garantía en la planificación de grupos.
-		\item Evitar y detectar la sobrepoblación en el aula.
-	\end{itemize}
-	\item Además, con los datos se pretende identificar los factores que impliquen mayor demanda en un determinado centro o curso.
-\end{itemize}
 
+\makebox[\textwidth]{\includegraphics[width=12.5cm,height=6cm]{figures/PropuestaIntervencion}}
 \end{frame}
 
 \section{Diseño de la investigación}
@@ -210,22 +244,32 @@ Este objetivo se divide en los siguiente sub objetivos:
 \end{center}
 \end{frame}
 
-\begin{frame}[allowframebreaks=1]
+\begin{frame}
 \frametitle{\secname : \subsecname}
+\Wider[3em]{
 	\begin{figure}[htb]
 	\centering
 	\caption{Fases del ciclo de vida de CRISP-DM. Recuperado de \protect\citeA{IBMCRISP2012}.}
 	\includegraphics[width=0.5\textwidth]{../TemplateTFM/recursos/CRISPCicloIBM}
 	\end{figure}
-		\begin{itemize}
-	\item Comprensión del negocio: Obtener información acerca de los objetivos de la investigación. Estudio de la situación de la educación en la Comunidad de Madrid.
-	\item Comprensión de los datos:
-	\item Preparación de los datos: Se realiza un tratamiento de los datos, se eliminan valores y variables vacías, se separan o se juntan variables a conveniencia de la investigación. Se separan los datos en dos subconjuntos (entrenamiento y pruebas)
-	\item Modelado: Se utilizan y comparan los modelos predictivos. Para ello se utilizan métricas de selección de variables
-	\item Evaluación: Se utilizan métricas de precisión para evaluar los modelos. Además, también se cuenta el tiempo que tardan en entrenarse. A partir de estas métricas se toma una decisión.
-	\item Distribución: Toda la información recogida en la investigación se documenta. En esta parte se indica el modelo, las variables, herramientas y metodología que deben utilizarse para el control del proceso de la minería de datos.
-\end{itemize}
+}
+
+
+
+
 \end{frame}
+
+\mynote<2>{
+	\footnotesize
+	\begin{itemize}
+		\item Comprensión del negocio: Obtener información acerca de los objetivos de la investigación. Estudio de la situación de la educación en la Comunidad de Madrid.
+			\item Comprensión de los datos:
+			\item Preparación de los datos: Se realiza un tratamiento de los datos, se eliminan valores y variables vacías, se separan o se juntan variables a conveniencia de la investigación. Se separan los datos en dos subconjuntos (entrenamiento y pruebas)
+			\item Modelado: Se utilizan y comparan los modelos predictivos. Para ello se utilizan métricas de selección de variables
+			\item Evaluación: Se utilizan métricas de precisión para evaluar los modelos. Además, también se cuenta el tiempo que tardan en entrenarse. A partir de estas métricas se toma una decisión.
+			\item Distribución: Toda la información recogida en la investigación se documenta. En esta parte se indica el modelo, las variables, herramientas y metodología que deben utilizarse para el control del proceso de la minería de datos.
+	\end{itemize}
+}
 
 \section{Analisis de Resultados}
 \begin{frame}
@@ -239,26 +283,34 @@ Este objetivo se divide en los siguiente sub objetivos:
 \end{frame}
 
 
-\subsection{Análisis exploratorio}
-\begin{frame}
+\subsection*{Análisis exploratorio}
+\begin{frame}[allowframebreaks=1]
+\footnotesize
+\begin{block}{Análisis exploratorio}
+	Se \textbf{examinan los datos} previo a la aplicación de técnicas estadísticas, para
+	conseguir un entendimiento básico de estos y las relaciones existentes entre las variables analizadas. 
+\end{block}
 \frametitle{\secname : \subsecname}
  \begin{itemize}
- 	\item La media de la ratio de la Comunidad de Madrid es de 0,88, por lo tanto, los centros educativos no están sobrepoblados.
- 	\item Las variables de número de alumnos y número de grupos son importantes a la hora de predecir el número de grupos finales.
- 	\item La DAT que sufre mayor sobrepoblación en las aulas es la DAT-Centro, seguida de la DAT-Sur.
- 	\item Las variables que mayor correlacionan con la \textbf{ratio} son: número de alumnos, servicio de comedor, naturaleza del centro y código genérico del centro.
- 	\item Las variables que mayor correlacionan con el\textbf{número de grupos a planificar} son: número de alumnos, unidades, naturaleza, código genérico y servicio de comedor.
+ 	\item Media de ratio en la CM -> 0,88; centros no sobrepoblados.
+ 	\item Número de alumnos y de grupos son importantes a la hora de predecir el número de grupos finales.
+ 	\item Mayor sobrepoblación en DAT-Centro, seguido de DAT-Sur.
+ 	\item Variables mayor correladas con \textbf{ratio} son: número de alumnos, servicio de comedor, naturaleza del centro y código genérico del centro.
+ 	\item Variables mayor correladas con \textbf{número de grupos a planificar} son: número de alumnos, unidades, naturaleza, código genérico y servicio de comedor.
  \end{itemize}
  
 
 \end{frame}
-\subsection{Análisis predictivo}
+\subsection*{Análisis predictivo}
 \begin{frame}
+\begin{block}{Análisis predictivo}
+	Se muestran los resultados obtenidos en el analisis de predicción.
+\end{block}
 \frametitle{\secname : \subsecname}
 \begin{itemize}
-	\item Utilizando algoritmos se observan que las variables más importantes para realizar la predicción son: naturaleza del centro, número de curso, número de unidades, nivel de enseñanza y ratio.
-	\item El algoritmo que mejores predicciones obtiene es el Árbol de Decisión, seguido de la Regresión Lineal.
-	\item Se observa que, en los resultados de la predicción, de 4436 datos existentes para grupos, únicamente 52 grupos se modifican. De estos 52 grupos, 30 de ellos disminuyen en el número de unidades y 22 aumentan. Se observa para este curso 2017/2018, que \textbf{se reduce la población en el aula}.
+	\item Las variables más importantes para realizar la predicción son: naturaleza del centro, número de curso, número de unidades, nivel de enseñanza y ratio.
+	\item Algoritmo con mejores predicciones: Árbol de Decisión, seguido de la Regresión Lineal.
+	\item En la prediccion: de 4436 datos existentes para grupos, únicamente 52 se modifican. De estos 52 grupos, 30 de ellos disminuyen en el número de unidades y 22 aumentan. Se observa para este curso 2017/2018, que \textbf{se reduce la población en el aula}.
 \end{itemize}
 
 \end{frame}
@@ -274,23 +326,26 @@ Este objetivo se divide en los siguiente sub objetivos:
 \end{center}
 \end{frame}
 
-\subsection{Aportaciones del TFM}
+\subsection*{Aportaciones del TFM}
 
 \begin{frame}
 \frametitle{\secname : \subsecname}
  \begin{itemize}
- 	\item Descubrimiento de relaciones entre variables.
  	\item Uso de herramientas de minería de datos para la planificación académica.
  	\item Comparación de modelos predictivos en el entorno educativo para la planificación de grupos.
+ 	\item Descubrimiento de relaciones entre variables.
  	\item Investigación relativa a la gestión y planificación en el entorno educativo.
+ 	\item Nuevas experiencias e ideas que se puedan iniciar no solo en la en la Consejería de Educación de la Comunidad de Madrid, sino en otras comunidades autónomas.
  \end{itemize}
 
 \end{frame}
 
-\subsection{Conclusiones}
+\subsection*{Conclusiones}
 
 \begin{frame}[allowframebreaks=1]
 \frametitle{\secname : \subsecname}
+A continuación se va a tratar de relacionar las conclusiones
+con los objetivos establecidos:
 \begin{enumerate}
 	\item \textbf{Selección de variables:} Se utilizan algunas de las variables propuestas a partir de la instrucción de la Unidad de Planificación. \cite{INSTRCONSE}
 	\begin{itemize}
@@ -300,11 +355,17 @@ Este objetivo se divide en los siguiente sub objetivos:
 	\item \textbf{Pruebas con distintos modelos predictivos y selección de los óptimos:} De todos los modelos propuestos, se han elegido dos: Árbol de decisión y Regresión Linear. Ambos modelos son los que mejores resultados (en cuanto a precisión y tiempo de entrenamiento han obtenido).
 	\item \textbf{Se utiliza el algoritmo de mayor precisión en la predicción con datos existentes:} A partir del modelo de árbol de decisión se obtiene la predicción esperada para el curso 2017/2018 a partir del modelo entrenado a partir de los datos de 2016/2017.
 \end{enumerate}
+Destacar la gran utilidad de este máster en la formación de profesores, que hace posible que los futuros docentes adquieran la capacidad de detectar y solucionar cualquier dificultad existente en el contexto educativo para mejorar su calidad. No solamente dentro del aula, sino también en el plano de la gestión y planificación.
+\mynote<1>{note one\\}
+\mynote<2>{ note 2\\ }
+\mynote<3>{ note 3\\ }
+\mynote<1>{ note 4\\ }
+
 \end{frame}
 
 
 
-\subsection{Lineas de Trabajo Futuro}
+\subsection*{Lineas de Trabajo Futuro}
 
 \begin{frame}
 \frametitle{\secname : \subsecname}
@@ -334,6 +395,11 @@ Este objetivo se divide en los siguiente sub objetivos:
 
 \end{frame}
 
+
+\begin{frame}{}
+\centering \Huge
+\emph{GRACIAS POR SU ATENCIÓN}
+\end{frame}
 
 
 
