@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  19 JUN 2019 12:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  19 JUN 2019 22:12
 entering extended mode
 **./intro.tex
 (intro.tex
@@ -984,21 +984,21 @@ LaTeX Info: Redefining \% on input line 23.
 )
 \openout1 = `intro.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 90.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
+LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 92.
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -1069,7 +1069,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box87
-Package hyperref Info: Link coloring OFF on input line 90.
+Package hyperref Info: Link coloring OFF on input line 92.
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
 ty"
@@ -1081,9 +1081,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count193
 )
-LaTeX Info: Redefining \ref on input line 90.
-LaTeX Info: Redefining \pageref on input line 90.
-LaTeX Info: Redefining \nameref on input line 90.
+LaTeX Info: Redefining \ref on input line 92.
+LaTeX Info: Redefining \pageref on input line 92.
+LaTeX Info: Redefining \nameref on input line 92.
  (intro.out) (intro.out)
 \@outlinefile=\write5
 \openout5 = `intro.out'.
@@ -1113,8 +1113,8 @@ Dictionary: translator-numbers-dictionary, Language: English
 tor-theorem-dictionary-English.dict"
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 90.
-LaTeX Info: Redefining \% on input line 90.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
 \c@maskedRefs=\count194
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/apacite\spanish.ap
@@ -1124,14 +1124,14 @@ LaTeX Info: Redefining \BPBI on input line 138.
 LaTeX Info: Redefining \BHBI on input line 139.
 ) (intro.nav)
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <6> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 90.
-<figures/escudo_urjc.jpg, id=84, 143.226pt x 156.366pt>
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 92.
+<figures/escudo_urjc.jpg, id=88, 143.226pt x 156.366pt>
 File: figures/escudo_urjc.jpg Graphic file (type jpg)
 <use figures/escudo_urjc.jpg>
-Package pdftex.def Info: figures/escudo_urjc.jpg  used on input line 101.
+Package pdftex.def Info: figures/escudo_urjc.jpg  used on input line 103.
 (pdftex.def)             Requested size: 92.1879pt x 100.6489pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 101.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 103.
  [1
 
 {C:/Users/abelt/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figures/e
@@ -1140,23 +1140,23 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 107.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 109.
  [2
 
 ] [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 161.
+LaTeX Font Info:    Try loading font information for U+msa on input line 163.
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 161.
+LaTeX Font Info:    Try loading font information for U+msb on input line 163.
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 161.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 163.
 [4
 
 ] [5
@@ -1174,25 +1174,25 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
 ] [10
 
 ]
-<figures/PropuestaIntervencion.png, id=221, 696.80325pt x 275.8305pt>
-File: figures/PropuestaIntervencion.png Graphic file (type png)
-<use figures/PropuestaIntervencion.png>
-Package pdftex.def Info: figures/PropuestaIntervencion.png  used on input line 
-234.
-(pdftex.def)             Requested size: 355.66266pt x 170.71431pt.
+<figures/PropuestaIntervencion3.png, id=228, 648.62325pt x 216.20775pt>
+File: figures/PropuestaIntervencion3.png Graphic file (type png)
+<use figures/PropuestaIntervencion3.png>
+Package pdftex.def Info: figures/PropuestaIntervencion3.png  used on input line
+ 236.
+(pdftex.def)             Requested size: 355.66508pt x 118.55502pt.
  [11
 
- <./figures/PropuestaIntervencion.png>]
+ <./figures/PropuestaIntervencion3.png>]
 [12
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 260.
-<../TemplateTFM/recursos/CRISPCicloIBM.png, id=247, 378.81525pt x 348.70274pt>
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 263.
+<../TemplateTFM/recursos/CRISPCicloIBM.png, id=254, 378.81525pt x 348.70274pt>
 File: ../TemplateTFM/recursos/CRISPCicloIBM.png Graphic file (type png)
 <use ../TemplateTFM/recursos/CRISPCicloIBM.png>
 Package pdftex.def Info: ../TemplateTFM/recursos/CRISPCicloIBM.png  used on inp
-ut line 260.
+ut line 263.
 (pdftex.def)             Requested size: 170.06993pt x 156.54764pt.
  [13
 
@@ -1200,7 +1200,7 @@ ut line 260.
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 303.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 306.
  [15
 
 ] [16
@@ -1229,7 +1229,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <24.88> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 402.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 426.
  [25
 
 ]
@@ -1242,33 +1242,41 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <24.88> not available
 \tf@snm=\write8
 \openout8 = `intro.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 406.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 406.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 430.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 430.
  (intro.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 406.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 406.
-Package rerunfilecheck Info: File `intro.out' has not changed.
-(rerunfilecheck)             Checksum: 8692ED711DD2C31C034D3F0C81A23C31;1036.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 430.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 430.
+
+
+Package rerunfilecheck Warning: File `intro.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `intro.out':
+(rerunfilecheck)             Before: D34FEF99300703283A30CF86B474FC95;1079
+(rerunfilecheck)             After:  AA2AF6DCC2B5CCC732024CAC6FBCEF96;1082.
  ) 
 Here is how much of TeX's memory you used:
- 22404 strings out of 492946
- 440917 string characters out of 3126266
- 532481 words of memory out of 3000000
- 25694 multiletter control sequences out of 15000+200000
+ 22416 strings out of 492946
+ 441209 string characters out of 3126266
+ 532482 words of memory out of 3000000
+ 25704 multiletter control sequences out of 15000+200000
  52361 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,15n,63p,774b,847s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
-}<C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helvetic/uhv
-b8a.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/helve
-tic/uhvr8a.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/ur
-w/helvetic/uhvro8a.pfb>
-Output written on intro.pdf (25 pages, 359367 bytes).
+}<C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+symbols/msam10.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/urw/helvetic/uhvb8a.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on intro.pdf (25 pages, 358376 bytes).
 PDF statistics:
- 420 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
- 254 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 430 PDF objects out of 1000 (max. 8388607)
+ 75 named destinations out of 1000 (max. 500000)
+ 262 words of extra memory for PDF output out of 10000 (max. 10000000)
 

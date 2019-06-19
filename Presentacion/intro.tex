@@ -68,6 +68,8 @@
 }
 \makeatother
 
+\setbeamertemplate{caption}{\raggedright\insertcaption\par} %eliminamos la palabra figura de las figuras
+
 \newcommand\Wider[2][3em]{%
 	\makebox[\linewidth][c]{%
 		\begin{minipage}{\dimexpr\textwidth+#1\relax}
@@ -137,7 +139,7 @@
 \frametitle{\secname : \subsecname}
 
 \begin{block}{¿Que es la gestión educativa?} 
-	Es un proceso continuo de toma de decisiones; desde las fases de planeación hasta las de evaluación, pasando por procesos
+	Es un proceso continuo de toma de decisiones; desde las fases de planificación hasta las de evaluación, pasando por procesos
 	intermedios de organización, asignación de recursos, implementación de procesos, etc. \cite{valenzuela2009construccion}
 \end{block}
 
@@ -146,7 +148,7 @@ Es el exceso del número de estudiantes que se encuentran en un espacio determin
 \end{block}
 
 \begin{block}{¿Que es la ratio?}  % define un marco
-Es la relación entre el número de alumnos y profesores, es un factor importante a la hora de realizar la planificación de los recursos.
+Relación entre el número de alumnos y profesores, es un factor importante a la hora de realizar la planificación de los recursos y tiene gran influencia en la calidad educativa. \cite{TALIS2018}
 \end{block} %acaba marco
 
 \begin{itemize}
@@ -230,10 +232,11 @@ Este objetivo se divide en los siguiente sub objetivos:
 \begin{frame}
 \frametitle{\secname}
 
-\makebox[\textwidth]{\includegraphics[width=12.5cm,height=6cm]{figures/PropuestaIntervencion}}
+\makebox[\textwidth]{\includegraphics[width=12.5cm,height=6cm,keepaspectratio]{figures/PropuestaIntervencion3}}
 \end{frame}
 
 \section{Diseño de la investigación}
+
 \begin{frame}
 \begin{center}
 	\begin{beamercolorbox}[
@@ -250,7 +253,7 @@ Este objetivo se divide en los siguiente sub objetivos:
 	\begin{figure}[htb]
 	\centering
 	\caption{Fases del ciclo de vida de CRISP-DM. Recuperado de \protect\citeA{IBMCRISP2012}.}
-	\includegraphics[width=0.5\textwidth]{../TemplateTFM/recursos/CRISPCicloIBM}
+	\includegraphics[width=0.5\textwidth,keepaspectratio]{../TemplateTFM/recursos/CRISPCicloIBM}
 	\end{figure}
 }
 
@@ -271,7 +274,7 @@ Este objetivo se divide en los siguiente sub objetivos:
 	\end{itemize}
 }
 
-\section{Analisis de Resultados}
+\section{Análisis de Resultados}
 \begin{frame}
 \begin{center}
 	\begin{beamercolorbox}[
@@ -304,13 +307,13 @@ Este objetivo se divide en los siguiente sub objetivos:
 \subsection*{Análisis predictivo}
 \begin{frame}
 \begin{block}{Análisis predictivo}
-	Se muestran los resultados obtenidos en el analisis de predicción.
+	Se muestran los resultados obtenidos en el análisis de predicción.
 \end{block}
 \frametitle{\secname : \subsecname}
 \begin{itemize}
 	\item Las variables más importantes para realizar la predicción son: naturaleza del centro, número de curso, número de unidades, nivel de enseñanza y ratio.
 	\item Algoritmo con mejores predicciones: Árbol de Decisión, seguido de la Regresión Lineal.
-	\item En la prediccion: de 4436 datos existentes para grupos, únicamente 52 se modifican. De estos 52 grupos, 30 de ellos disminuyen en el número de unidades y 22 aumentan. Se observa para este curso 2017/2018, que \textbf{se reduce la población en el aula}.
+	\item En la predicción: de 4436 datos existentes para grupos, únicamente 52 se modifican. De estos 52 grupos, 30 de ellos disminuyen en el número de unidades y 22 aumentan. Se observa para este curso 2017/2018, que \textbf{se reduce la población en el aula}.
 \end{itemize}
 
 \end{frame}
@@ -334,6 +337,9 @@ Este objetivo se divide en los siguiente sub objetivos:
  	\item Uso de herramientas de minería de datos para la planificación académica.
  	\item Comparación de modelos predictivos en el entorno educativo para la planificación de grupos.
  	\item Descubrimiento de relaciones entre variables.
+ 	\begin{itemize}
+ 		\item Con resultados positivos para la gestión educativa.
+ 	\end{itemize}
  	\item Investigación relativa a la gestión y planificación en el entorno educativo.
  	\item Nuevas experiencias e ideas que se puedan iniciar no solo en la en la Consejería de Educación de la Comunidad de Madrid, sino en otras comunidades autónomas.
  \end{itemize}
@@ -344,18 +350,36 @@ Este objetivo se divide en los siguiente sub objetivos:
 
 \begin{frame}[allowframebreaks=1]
 \frametitle{\secname : \subsecname}
-A continuación se va a tratar de relacionar las conclusiones
+A continuación, se va a tratar de relacionar las conclusiones
 con los objetivos establecidos:
 \begin{enumerate}
-	\item \textbf{Selección de variables:} Se utilizan algunas de las variables propuestas a partir de la instrucción de la Unidad de Planificación. \cite{INSTRCONSE}
+	\item \textbf{Selección de variables:} Uso de algunas variables propuestas a partir de la instrucción de la Unidad de Planificación. \cite{INSTRCONSE}
 	\begin{itemize}
-		\item Se parte de 27 variables, finalmente se eligen 11 para el estudio de predicción. Se eliminan variables descriptivas (nombre del centro, código de este, etc.)
+		\item Se parte de 27 variables, finalmente se eligen 11. Se eliminan variables descriptivas (nombre del centro, código de este, etc.)
 	\end{itemize}
-	\item \textbf{Estudio de la relación entre variables para comprender el contexto de sobrepoblación en el aula:} Para ello se utiliza la matriz de correlación. Se han obtenido las variables que hacen que la ratio en las aulas aumente o disminuya. Se han obtenido también las variables con más importancia en la predicción de grupos.
-	\item \textbf{Pruebas con distintos modelos predictivos y selección de los óptimos:} De todos los modelos propuestos, se han elegido dos: Árbol de decisión y Regresión Linear. Ambos modelos son los que mejores resultados (en cuanto a precisión y tiempo de entrenamiento han obtenido).
+	\item \textbf{Estudio de la relación entre variables para comprender el contexto de sobrepoblación en el aula} 
+	\begin{itemize}
+		\item Uso de la matriz de Correlación.
+		\item Obtención de variables que hacen que la ratio aumente.
+		\item Obtención de variables que mayor relación tengan con el número de grupos.
+	\end{itemize}
+	\item \textbf{Pruebas con distintos modelos predictivos y selección de los óptimos}
+	\begin{itemize}
+		\item Del total de modelos se eligen 2: Árbol de decisión y Regresión Linear
+		\item Mejores resultados (precisión y tiempo de entrenamiento).
+	\end{itemize}
 	\item \textbf{Se utiliza el algoritmo de mayor precisión en la predicción con datos existentes:} A partir del modelo de árbol de decisión se obtiene la predicción esperada para el curso 2017/2018 a partir del modelo entrenado a partir de los datos de 2016/2017.
 \end{enumerate}
-Destacar la gran utilidad de este máster en la formación de profesores, que hace posible que los futuros docentes adquieran la capacidad de detectar y solucionar cualquier dificultad existente en el contexto educativo para mejorar su calidad. No solamente dentro del aula, sino también en el plano de la gestión y planificación.
+\framebreak
+Por último:
+\setbeamertemplate{items}[triangle]
+\begin{itemize}
+	\item Destacar la gran utilidad de este máster, que hace posible que los futuros docentes adquieran la capacidad de detectar y solucionar dificultades en el contexto educativo.
+	\item Subrayar las competencias adquiridas con la realización de este TFM, relacionadas con el establecimiento de modelos de mejoras de la calidad en la educación y el analisis y conocimiento de la situación actual de esta.
+\end{itemize}
+%Destacar la gran utilidad de este máster en la formación de profesores, que hace posible que los futuros docentes adquieran la capacidad de detectar y solucionar cualquier dificultad existente en el contexto educativo para mejorar su calidad. No solamente dentro del aula, sino también en el plano de la gestión y planificación.
+
+
 \mynote<1>{note one\\}
 \mynote<2>{ note 2\\ }
 \mynote<3>{ note 3\\ }
@@ -365,7 +389,7 @@ Destacar la gran utilidad de este máster en la formación de profesores, que ha
 
 
 
-\subsection*{Lineas de Trabajo Futuro}
+\subsection*{Líneas de Trabajo Futuro}
 
 \begin{frame}
 \frametitle{\secname : \subsecname}
@@ -395,7 +419,7 @@ Destacar la gran utilidad de este máster en la formación de profesores, que ha
 
 \end{frame}
 
-
+\section*{FIN}
 \begin{frame}{}
 \centering \Huge
 \emph{GRACIAS POR SU ATENCIÓN}
