@@ -11,10 +11,16 @@
 \usepackage{multicol}
 \usepackage[notocbib]{apacite}
 \usepackage{tikz}
+\usepackage{textpos}
 
 %para que cuando se seleccione un texto las letras acentuadad y las � se copien bien
 \usepackage{enumerate}
 \usefonttheme{professionalfonts}
+
+\addtobeamertemplate{frametitle}{}{%
+	\begin{textblock*}{100mm}(0.9\textwidth,-1.08cm)
+		\includegraphics[height=1cm,width=2cm]{figures/universidad-rey-juan-carlos}
+\end{textblock*}}
 
 
 %PARA LAS NOTAS
@@ -102,6 +108,8 @@
 \titlepage
 \end{frame}
 
+\mynote<2>{Buenas tardes a todos, soy Abel de Andres y con permiso de este tribunal paso a presentar mi TFM con el titulo de "Uso de tecnicas predictivas para la planificacion de grupos en secundaria y FP"}
+
 %indice
 \begin{frame}
 \frametitle{Índice} %Esquema es el titulo de la diapositiva
@@ -109,12 +117,10 @@
 \end{frame}
 
 
-\mynote<2>{Este proyecto no se me ha ocurrido, en el año 2018 estuve trabajando con cargo a un convenio con la comunidad de Madrid.
-	Contactaron conmigo a traves de una persona de la UPM (Marina). Estuve trabajando de junio a diciembre.
-	En el convenio trabajaron 2 personas, 2 profesores y 3 personas de la Comunidad de Madrid.
-	En ese convenio el objetivo era estudiar todos los datos de la comunidad de madrid para hacer una explotacion razonable. AL hilo de este proyecto, surge la necesidad de avanzar mas
-	darle una vuelta de tuerca, surge la posibilidad de utilizar tecnicas predictivas para la gestion educativa. Estaba en el nucleo donde se toman las decisioines.
-	Se trabajaba con el director del area tecnica. He interactuado con profesores que han sido directores y ahora son ATD (Asesor Tecnico Docente).}
+\mynote<2>{%Este proyecto no se me ha ocurrido, en el año 2018 estuve trabajando con cargo a un convenio con la comunidad de Madrid. Contactaron conmigo a traves de una persona de la UPM (Marina). Estuve trabajando de junio a diciembre.En el convenio trabajaron 2 personas, 2 profesores y 3 personas de la Comunidad de Madrid. En ese convenio el objetivo era estudiar todos los datos de la comunidad de madrid para hacer una explotacion razonable. AL hilo de este proyecto, surge la necesidad de avanzar mas darle una vuelta de tuerca, surge la posibilidad de utilizar tecnicas predictivas para la gestion educativa. Estaba en el nucleo donde se toman las decisioines. Se trabajaba con el director del area tecnica. He interactuado con profesores que han sido directores y ahora son ATD (Asesor Tecnico Docente).
+	En primer lugar y antes de nada, debo destacar que este proyecto no se me ha ocurrido a mi solo. En 2018 estuve trabajando en la Consejería de Educación a través de un convenio con la Universidad Politécnica de Madrid. Este convenio tenia por objeto estudiar y hacer una explotación razonables de los datos educativos de la Comunidad de Madrid. Para ello, he tenido que interactuar con profesores y directores que ahora son ATD(Asesor Tecnico docente).
+	Una vez dicho esto paso a comentar los apartados en los que dividiremos esta presentación...
+}
 
 %\begin{frame}[plain]<beamer>{Outline}
 %\tableofcontents[currentsection,currentsubsection]
@@ -296,8 +302,8 @@ Este objetivo se divide en los siguiente sub objetivos:
 \frametitle{\secname : \subsecname}
  \begin{itemize}
  	\item Media de ratio en la CM -> 0,88; centros no sobrepoblados.
+ 	 \item Mayor sobrepoblación en DAT-Centro, seguido de DAT-Sur.
  	\item Número de alumnos y de grupos son importantes a la hora de predecir el número de grupos finales.
- 	\item Mayor sobrepoblación en DAT-Centro, seguido de DAT-Sur.
  	\item Variables mayor correladas con \textbf{ratio} son: número de alumnos, servicio de comedor, naturaleza del centro y código genérico del centro.
  	\item Variables mayor correladas con \textbf{número de grupos a planificar} son: número de alumnos, unidades, naturaleza, código genérico y servicio de comedor.
  \end{itemize}
@@ -312,7 +318,6 @@ Este objetivo se divide en los siguiente sub objetivos:
 \frametitle{\secname : \subsecname}
 \begin{itemize}
 	\item Las variables más importantes para realizar la predicción son: naturaleza del centro, número de curso, número de unidades, nivel de enseñanza y ratio.
-	\item Algoritmo con mejores predicciones: Árbol de Decisión, seguido de la Regresión Lineal.
 	\item En la predicción: de 4436 datos existentes para grupos, únicamente 52 se modifican. De estos 52 grupos, 30 de ellos disminuyen en el número de unidades y 22 aumentan. Se observa para este curso 2017/2018, que \textbf{se reduce la población en el aula}.
 \end{itemize}
 
@@ -365,7 +370,7 @@ con los objetivos establecidos:
 	\end{itemize}
 	\item \textbf{Pruebas con distintos modelos predictivos y selección de los óptimos}
 	\begin{itemize}
-		\item Del total de modelos se eligen 2: Árbol de decisión y Regresión Linear
+		\item Del total de modelos (6) se eligen 2: Árbol de decisión y Regresión Linear
 		\item Mejores resultados (precisión y tiempo de entrenamiento).
 	\end{itemize}
 	\item \textbf{Se utiliza el algoritmo de mayor precisión en la predicción con datos existentes:} A partir del modelo de árbol de decisión se obtiene la predicción esperada para el curso 2017/2018 a partir del modelo entrenado a partir de los datos de 2016/2017.
@@ -380,10 +385,10 @@ Por último:
 %Destacar la gran utilidad de este máster en la formación de profesores, que hace posible que los futuros docentes adquieran la capacidad de detectar y solucionar cualquier dificultad existente en el contexto educativo para mejorar su calidad. No solamente dentro del aula, sino también en el plano de la gestión y planificación.
 
 
-\mynote<1>{note one\\}
-\mynote<2>{ note 2\\ }
-\mynote<3>{ note 3\\ }
-\mynote<1>{ note 4\\ }
+%\mynote<1>{note one\\}
+%\mynote<2>{ note 2\\ }
+%\mynote<3>{ note 3\\ }
+%\mynote<1>{ note 4\\ }
 
 \end{frame}
 

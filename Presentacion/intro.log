@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  19 JUN 2019 22:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  22 JUN 2019 17:53
 entering extended mode
 **./intro.tex
 (intro.tex
@@ -944,6 +944,21 @@ File: pgfmodulematrix.code.tex 2019/01/05 v3.1 (3.1)
 r/tikz/libraries\tikzlibrarytopaths.code.tex"
 File: tikzlibrarytopaths.code.tex 2019/01/05 v3.1 (3.1)
 )))
+("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/textpos\textpos.st
+y"
+Package: textpos 2019/04/15 v1.9
+
+Package: textpos 2019/04/15 1.9, absolute positioning of text on the page
+\TP@textbox=\box85
+\TPHorizModule=\dimen264
+\TPVertModule=\dimen265
+\TP@margin=\dimen266
+\TP@absmargin=\dimen267
+Grid set 16 x 16 = 22.7622pt x 17.07166pt
+\TPboxrulesize=\dimen268
+\TP@tbargs=\toks48
+\TP@prevdepth=\dimen269
+)
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamerfontt
 hemeprofessionalfonts.sty")
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/pgf/utilities\pgfp
@@ -954,8 +969,8 @@ Package: pgfpages 2011/01/05 ver 0.02
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count178
 \calc@Bcount=\count179
-\calc@Adimen=\dimen264
-\calc@Bdimen=\dimen265
+\calc@Adimen=\dimen270
+\calc@Bdimen=\dimen271
 \calc@Askip=\skip64
 \calc@Bskip=\skip65
 LaTeX Info: Redefining \setlength on input line 80.
@@ -969,9 +984,9 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \pgf@currentshipout=\count184
 \pgf@cpn=\count185
 \pgf@shipoutnextto=\count186
-\pgfphysicalheight=\dimen266
-\pgfphysicalwidth=\dimen267
-\pgfpages@shipoutbox=\box85
+\pgfphysicalheight=\dimen272
+\pgfphysicalwidth=\dimen273
+\pgfpages@shipoutbox=\box86
 )
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/beamer\beamertheme
 Montpellier.sty"
@@ -984,21 +999,21 @@ LaTeX Info: Redefining \% on input line 23.
 )
 \openout1 = `intro.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
+LaTeX Font Info:    ... okay on input line 98.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 98.
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -1042,16 +1057,16 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count187
-\scratchdimen=\dimen268
-\scratchbox=\box86
+\scratchdimen=\dimen274
+\scratchbox=\box87
 \nofMPsegments=\count188
 \nofMParguments=\count189
-\everyMPshowfont=\toks48
+\everyMPshowfont=\toks49
 \MPscratchCnt=\count190
-\MPscratchDim=\dimen269
+\MPscratchDim=\dimen275
 \MPnumerator=\count191
 \makeMPintoPDFobject=\count192
-\everyMPtoPDFconversion=\toks49
+\everyMPtoPDFconversion=\toks50
 )
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-
 base.sty"
@@ -1068,8 +1083,8 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box87
-Package hyperref Info: Link coloring OFF on input line 92.
+\AtBeginShipoutBox=\box88
+Package hyperref Info: Link coloring OFF on input line 98.
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
 ty"
@@ -1081,9 +1096,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count193
 )
-LaTeX Info: Redefining \ref on input line 92.
-LaTeX Info: Redefining \pageref on input line 92.
-LaTeX Info: Redefining \nameref on input line 92.
+LaTeX Info: Redefining \ref on input line 98.
+LaTeX Info: Redefining \pageref on input line 98.
+LaTeX Info: Redefining \nameref on input line 98.
  (intro.out) (intro.out)
 \@outlinefile=\write5
 \openout5 = `intro.out'.
@@ -1113,8 +1128,8 @@ Dictionary: translator-numbers-dictionary, Language: English
 tor-theorem-dictionary-English.dict"
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \. on input line 92.
-LaTeX Info: Redefining \% on input line 92.
+LaTeX Info: Redefining \. on input line 98.
+LaTeX Info: Redefining \% on input line 98.
 \c@maskedRefs=\count194
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/apacite\spanish.ap
@@ -1124,14 +1139,14 @@ LaTeX Info: Redefining \BPBI on input line 138.
 LaTeX Info: Redefining \BHBI on input line 139.
 ) (intro.nav)
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <6> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 92.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 98.
 <figures/escudo_urjc.jpg, id=88, 143.226pt x 156.366pt>
 File: figures/escudo_urjc.jpg Graphic file (type jpg)
 <use figures/escudo_urjc.jpg>
-Package pdftex.def Info: figures/escudo_urjc.jpg  used on input line 103.
+Package pdftex.def Info: figures/escudo_urjc.jpg  used on input line 109.
 (pdftex.def)             Requested size: 92.1879pt x 100.6489pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <8> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 103.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 109.
  [1
 
 {C:/Users/abelt/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figures/e
@@ -1139,47 +1154,177 @@ scudo_urjc.jpg>] (intro.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 109.
- [2
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 117.
+Package epstopdf Info: Output file is already uptodate.
 
-] [3
+
+pdfTeX warning: pdflatex.exe (file ./figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1
+.5> allowed
+<figures/universidad-rey-juan-carlos-eps-converted-to.pdf, id=114, 413.545pt x 
+157.58875pt>
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 117.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 117.
+[2
+
+ <./figures/universidad-rey-juan-carlos-eps-converted-to.pdf>] [3
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 163.
+LaTeX Font Info:    Try loading font information for U+msa on input line 169.
 
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 163.
+LaTeX Font Info:    Try loading font information for U+msb on input line 169.
 ("C:\Users\abelt\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 163.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 169.
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 169.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 169.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
 [4
 
-] [5
+]
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 169.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 169.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
+ [5
 
 
-] [6
+]
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 191.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 191.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
+ [6
 
-] [7
+]
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 191.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 191.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
+ [7
 
 
 ] [8
 
-] [9
+]
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 224.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 224.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
+ [9
 
 ] [10
 
 ]
-<figures/PropuestaIntervencion3.png, id=228, 648.62325pt x 216.20775pt>
+<figures/PropuestaIntervencion3.png, id=233, 648.62325pt x 216.20775pt>
 File: figures/PropuestaIntervencion3.png Graphic file (type png)
 <use figures/PropuestaIntervencion3.png>
 Package pdftex.def Info: figures/PropuestaIntervencion3.png  used on input line
- 236.
+ 242.
 (pdftex.def)             Requested size: 355.66508pt x 118.55502pt.
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 242.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 242.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
  [11
 
  <./figures/PropuestaIntervencion3.png>]
@@ -1187,49 +1332,209 @@ Package pdftex.def Info: figures/PropuestaIntervencion3.png  used on input line
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 263.
-<../TemplateTFM/recursos/CRISPCicloIBM.png, id=254, 378.81525pt x 348.70274pt>
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 269.
+<../TemplateTFM/recursos/CRISPCicloIBM.png, id=259, 378.81525pt x 348.70274pt>
 File: ../TemplateTFM/recursos/CRISPCicloIBM.png Graphic file (type png)
 <use ../TemplateTFM/recursos/CRISPCicloIBM.png>
 Package pdftex.def Info: ../TemplateTFM/recursos/CRISPCicloIBM.png  used on inp
-ut line 263.
+ut line 269.
 (pdftex.def)             Requested size: 170.06993pt x 156.54764pt.
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 269.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 269.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
  [13
 
  <../TemplateTFM/recursos/CRISPCicloIBM.png>] [14
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 306.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 312.
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 312.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 312.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
  [15
 
-] [16
+]
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 324.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 324.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
+ [16
 
 ] [17
 
 ]
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 352.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 352.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
+
 [18
 
-] [19
+]
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 393.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 393.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
+ [19
 
-] [20
+]
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 393.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 393.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
+ [20
 
 
-] [21
+]
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 393.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 393.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
+ [21
 
 
-] [22
+]
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 407.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 407.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
+ [22
 
 ] [23
 
 ] (intro.bbl
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 28.
-) [24
+)
+Package epstopdf Info: Source file: <figures/universidad-rey-juan-carlos.eps>
+(epstopdf)                    date: 2014-02-25 00:10:24
+(epstopdf)                    size: 408457 bytes
+(epstopdf)             Output file: <figures/universidad-rey-juan-carlos-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2019-06-22 17:45:16
+(epstopdf)                    size: 20774 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/universidad-rey-jua
+n-carlos-eps-converted-to.pdf figures/universidad-rey-juan-carlos.eps>
+(epstopdf)             \includegraphics on input line 425.
+Package epstopdf Info: Output file is already uptodate.
+File: figures/universidad-rey-juan-carlos-eps-converted-to.pdf Graphic file (ty
+pe pdf)
+<use figures/universidad-rey-juan-carlos-eps-converted-to.pdf>
+Package pdftex.def Info: figures/universidad-rey-juan-carlos-eps-converted-to.p
+df  used on input line 425.
+(pdftex.def)             Requested size: 56.9052pt x 28.45131pt.
+ [24
 
 ]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <24.88> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 426.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 431.
  [25
 
 ]
@@ -1242,41 +1547,34 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <24.88> not available
 \tf@snm=\write8
 \openout8 = `intro.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 430.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 430.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
  (intro.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 430.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 430.
-
-
-Package rerunfilecheck Warning: File `intro.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `intro.out':
-(rerunfilecheck)             Before: D34FEF99300703283A30CF86B474FC95;1079
-(rerunfilecheck)             After:  AA2AF6DCC2B5CCC732024CAC6FBCEF96;1082.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
+Package rerunfilecheck Info: File `intro.out' has not changed.
+(rerunfilecheck)             Checksum: AA2AF6DCC2B5CCC732024CAC6FBCEF96;1082.
  ) 
 Here is how much of TeX's memory you used:
- 22416 strings out of 492946
- 441209 string characters out of 3126266
- 532482 words of memory out of 3000000
- 25704 multiletter control sequences out of 15000+200000
+ 22515 strings out of 492946
+ 442856 string characters out of 3126266
+ 535914 words of memory out of 3000000
+ 25787 multiletter control sequences out of 15000+200000
  52361 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,15n,63p,774b,847s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,15n,63p,828b,847s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
 }<C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 symbols/msam10.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/urw/helvetic/uhvb8a.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/abelt/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on intro.pdf (25 pages, 358376 bytes).
+Output written on intro.pdf (25 pages, 378025 bytes).
 PDF statistics:
- 430 PDF objects out of 1000 (max. 8388607)
+ 435 PDF objects out of 1000 (max. 8388607)
  75 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 267 words of extra memory for PDF output out of 10000 (max. 10000000)
 
