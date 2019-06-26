@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  7 JUN 2019 11:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.17)  9 JUN 2019 11:36
 entering extended mode
 **./Template2TFM.tex
 (Template2TFM.tex
@@ -1531,7 +1531,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 423.
  ) 
 Here is how much of TeX's memory you used:
  13180 strings out of 492946
- 200610 string characters out of 3126266
+ 200593 string characters out of 3126266
  343129 words of memory out of 3000000
  16528 multiletter control sequences out of 15000+200000
  72487 words of font info for 71 fonts, out of 3000000 for 9000

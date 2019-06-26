@@ -488,7 +488,7 @@
 
 @Misc{INSTRCONSE,
   author = {{Consejería de Educación e Investigación}},
-  title  = {INSTRUCCIONES DE LA DIRECCIÓN GENERAL DE EDUCACIÓN INFANTIL, PRIMARIA Y SECUNDARIA SOBRE LA PLANIFICACIÓN DEL PRÓXIMO CURSO ESCOLAR 2018/2019 EN LOS CENTROS PÚBLICOS QUE IMPARTEN ESO Y BACHILLERATO, CREACIÓN DE NUEVOS CENTROS Y MODIFICACIÓN DE LA RED, IMPLANTACIÓN Y AUTORIZACIÓN DE ENSEÑANZAS Y PROPUESTA DE GRUPOS.},
+  title  = {Instrucciones de la dirección general de educación infantil, primaria y secundaria sobre la planificación del próximo curso escolar 2018/2019 en los centros públicos que imparten eso y bachillerato, creación de nuevos centros y modificación de la red, implantación y autorización de enseñanzas y propuesta de grupos.},
   year   = {2018},
 }
 
@@ -582,7 +582,7 @@
 }
 
 @Book{PANORAMA2018,
-  author = {{Ministerio de Educación y Formacion Profesional}},
+  author = {{Ministerio de Educación y Formacin Profesional}},
   title  = {Panorama de la educación Indicadores de la OCDE 2018},
   year   = {2018},
   date   = {2019-06-04},
@@ -603,6 +603,23 @@
   journal={Revista de Educaci{\'o}n, 343, 301-323.},
   year={2007},
   publisher={Ministerio de Educaci{\'o}n, Cultura y Deporte. Secretar{\'\i}a General T{\'e}cnica}
+}
+
+@article{valenzuela2009construccion,
+  title={Construcci{\'o}n de indicadores institucionales para la mejora de la gesti{\'o}n y la calidad educativa},
+  author={Valenzuela, Jaime Ricardo and Montoya, Mar{\'\i}a Soledad Ram{\'\i}rez and Alfaro, Jorge Antonio},
+  journal={Revista Iberoamericana de Evaluaci{\'o}n Educativa},
+  volume={2},
+  number={2},
+  pages={59--81},
+  year={2009},
+  publisher={Red Iberoamericana de Investigaci{\'o}n sobre Cambio y Eficacia Escolar}
+}
+
+@Book{TALIS2018,
+  author = {{TALIS}},
+  title  = {TALIS 2018 .Estudio internacional de la enseñanza y del aprendizaje.},
+  year   = {2018},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

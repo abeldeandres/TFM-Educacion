@@ -43,9 +43,9 @@ IBMCRISP2012}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-{Ministerio de Educación y Formacin Profesional}%
+{Ministerio de Educación y Formación Profesional}%
 }{%
-{Ministerio de Educación y Formacin Profesional}%
+{Ministerio de Educación y Formación Profesional}%
 }{%
 {\protect \APACyear {2018}}%
 }]{%
@@ -53,7 +53,7 @@ PANORAMA2018}
 \APACinsertmetastar {%
 PANORAMA2018}%
 \begin{APACrefauthors}%
-{Ministerio de Educación y Formacin Profesional}.%
+{Ministerio de Educación y Formación Profesional}.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -103,8 +103,8 @@ TALIS2018}%
 \newblock
 \APACrefYear{2018}.
 \newblock
-\APACrefbtitle {TALIS 2018. Estudio internacional de la enseñanza y del
-  aprendizaje.} {Talis 2018. estudio internacional de la enseñanza y del
+\APACrefbtitle {TALIS 2018 .Estudio internacional de la enseñanza y del
+  aprendizaje.} {Talis 2018 .estudio internacional de la enseñanza y del
   aprendizaje.}
 \PrintBackRefs{\CurrentBib}
 
